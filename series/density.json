@@ -1,0 +1,95 @@
+{
+  "points": [
+    {
+      "date": "2026-06-16",
+      "candidates": 183,
+      "daily_candidates": 79,
+      "universe": 5204,
+      "ratio": 0.03516525749423521
+    },
+    {
+      "date": "2026-06-17",
+      "candidates": 178,
+      "daily_candidates": 73,
+      "universe": 5204,
+      "ratio": 0.03420445810914681
+    },
+    {
+      "date": "2026-06-18",
+      "candidates": 184,
+      "daily_candidates": 85,
+      "universe": 5204,
+      "ratio": 0.035357417371252885
+    },
+    {
+      "date": "2026-06-22",
+      "candidates": 194,
+      "daily_candidates": 184,
+      "universe": 5204,
+      "ratio": 0.03727901614142967
+    },
+    {
+      "date": "2026-06-23",
+      "candidates": 106,
+      "daily_candidates": 110,
+      "universe": 5204,
+      "ratio": 0.020368946963873945
+    },
+    {
+      "date": "2026-06-24",
+      "candidates": 125,
+      "daily_candidates": 91,
+      "universe": 5204,
+      "ratio": 0.024019984627209837
+    },
+    {
+      "date": "2026-06-25",
+      "candidates": 135,
+      "daily_candidates": 76,
+      "universe": 5204,
+      "ratio": 0.025941583397386624
+    },
+    {
+      "date": "2026-06-26",
+      "candidates": 67,
+      "daily_candidates": 43,
+      "universe": 5204,
+      "ratio": 0.012874711760184473
+    },
+    {
+      "date": "2026-06-29",
+      "candidates": 100,
+      "daily_candidates": 277,
+      "universe": 5204,
+      "ratio": 0.01921598770176787
+    },
+    {
+      "date": "2026-06-30",
+      "candidates": 107,
+      "daily_candidates": 153,
+      "universe": 5204,
+      "ratio": 0.020561106840891623
+    },
+    {
+      "date": "2026-07-01",
+      "candidates": 116,
+      "daily_candidates": 277,
+      "universe": 5204,
+      "ratio": 0.022290545734050732
+    },
+    {
+      "date": "2026-07-02",
+      "candidates": 79,
+      "daily_candidates": 75,
+      "universe": 5204,
+      "ratio": 0.015180630284396618
+    },
+    {
+      "date": "2026-07-03",
+      "candidates": 187,
+      "daily_candidates": 201,
+      "universe": 5204,
+      "ratio": 0.03593389700230592
+    }
+  ]
+}
