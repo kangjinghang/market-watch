@@ -40,34 +40,49 @@ function renderDensity(density) {
     </section>`;
 }
 
-/** 用历史密度序列画 sparkline（内联 SVG，不依赖图表库） */
+/** 用历史密度序列画 sparkline（渐变发光 + 脉冲） */
 function renderSparkline(series) {
   const svg = $("#sparkline");
   if (!svg || series.points.length < 2) return;
 
   const w = svg.clientWidth || 320;
-  const h = 48;
-  const pad = 2;
+  const h = 64;
+  const pad = 6;
   const ratios = series.points.map((p) => p.ratio);
   const min = Math.min(...ratios);
   const max = Math.max(...ratios);
   const range = max - min || 1;
 
   const stepX = (w - pad * 2) / (ratios.length - 1);
-  const points = ratios.map((r, i) => {
-    const x = pad + i * stepX;
-    const y = pad + (1 - (r - min) / range) * (h - pad * 2);
-    return `${x.toFixed(1)},${y.toFixed(1)}`;
-  });
-
-  // 最后一个点高亮
-  const lastX = pad + (ratios.length - 1) * stepX;
-  const lastY = pad + (1 - (ratios[ratios.length - 1] - min) / range) * (h - pad * 2);
+  const pts = ratios.map((r, i) => ({
+    x: pad + i * stepX,
+    y: pad + (1 - (r - min) / range) * (h - pad * 2)
+  }));
+  const line = pts.map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+  const fill = [...pts, { x: pts[pts.length-1].x, y: h }, { x: pts[0].x, y: h }]
+    .map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+  const last = pts[pts.length - 1];
 
   svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
   svg.innerHTML = `
-    <polyline points="${points.join(" ")}" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
-    <circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="3" fill="#58a6ff"/>
+    <defs>
+      <linearGradient id="sparkFill" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="sparkLine" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      </linearGradient>
+      <filter id="glow">
+        <feGaussianBlur stdDeviation="2.5" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <polygon points="${fill}" fill="url(#sparkFill)"/>
+    <polyline points="${line}" fill="none" stroke="url(#sparkLine)" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${last.x.toFixed(1)}" cy="${last.y.toFixed(1)}" r="4" fill="#38bdf8" filter="url(#glow)" opacity="0.6"/>
+    <circle cx="${last.x.toFixed(1)}" cy="${last.y.toFixed(1)}" r="2" fill="#fff" opacity="0.95"/>
   `;
 }
 
@@ -122,7 +137,7 @@ function renderHistory(allDates, currentDate) {
     const cls = d === currentDate ? "active" : "";
     return `<a href="?date=${d}" class="${cls}">${d.slice(5)}</a>`;
   }).join("");
-  return `<div class="history">${links}</div>`;
+  return `<div class="history"><span class="history-label">历史数据</span>${links}</div>`;
 }
 
 async function main() {
