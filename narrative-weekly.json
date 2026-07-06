@@ -1,0 +1,1577 @@
+{
+  "weeks": [
+    {
+      "week": "2026-W10",
+      "date_range": "03-02 ~ 03-08",
+      "total_reasons": 1,
+      "top_concepts": [
+        {
+          "concept": "电池",
+          "count": 1
+        }
+      ],
+      "emerging": [],
+      "fading": []
+    },
+    {
+      "week": "2026-W13",
+      "date_range": "03-23 ~ 03-29",
+      "total_reasons": 24,
+      "top_concepts": [
+        {
+          "concept": "电子化学品",
+          "count": 12
+        },
+        {
+          "concept": "PCB",
+          "count": 6
+        },
+        {
+          "concept": "叠加半导体",
+          "count": 3
+        },
+        {
+          "concept": "专用设备",
+          "count": 1
+        },
+        {
+          "concept": "营业务增长乏力及",
+          "count": 1
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "电子化学品",
+          "count": 12,
+          "prev_count": 0
+        },
+        {
+          "concept": "PCB",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "叠加半导体",
+          "count": 3,
+          "prev_count": 0
+        }
+      ],
+      "fading": []
+    },
+    {
+      "week": "2026-W14",
+      "date_range": "03-30 ~ 04-05",
+      "total_reasons": 4,
+      "top_concepts": [
+        {
+          "concept": "AI",
+          "count": 2
+        },
+        {
+          "concept": "电子气体",
+          "count": 2
+        }
+      ],
+      "emerging": [],
+      "fading": [
+        {
+          "concept": "电子化学品",
+          "count": 0,
+          "prev_count": 12
+        },
+        {
+          "concept": "PCB",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "叠加半导体",
+          "count": 0,
+          "prev_count": 3
+        }
+      ]
+    },
+    {
+      "week": "2026-W15",
+      "date_range": "04-06 ~ 04-12",
+      "total_reasons": 30,
+      "top_concepts": [
+        {
+          "concept": "AI",
+          "count": 12
+        },
+        {
+          "concept": "存储芯片涨价带动",
+          "count": 7
+        },
+        {
+          "concept": "MATCH",
+          "count": 7
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 6
+        },
+        {
+          "concept": "芯片的",
+          "count": 6
+        },
+        {
+          "concept": "ITC",
+          "count": 6
+        },
+        {
+          "concept": "PCB",
+          "count": 4
+        },
+        {
+          "concept": "电子化学品",
+          "count": 3
+        },
+        {
+          "concept": "品板块整体走强及",
+          "count": 3
+        },
+        {
+          "concept": "半导体",
+          "count": 2
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "存储芯片涨价带动",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "MATCH",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "芯片的",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "ITC",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "PCB",
+          "count": 4,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子化学品",
+          "count": 3,
+          "prev_count": 0
+        },
+        {
+          "concept": "品板块整体走强及",
+          "count": 3,
+          "prev_count": 0
+        }
+      ],
+      "fading": []
+    },
+    {
+      "week": "2026-W16",
+      "date_range": "04-13 ~ 04-19",
+      "total_reasons": 32,
+      "top_concepts": [
+        {
+          "concept": "玻璃基板",
+          "count": 12
+        },
+        {
+          "concept": "子化学品行业靶材",
+          "count": 6
+        },
+        {
+          "concept": "电子化学品",
+          "count": 6
+        },
+        {
+          "concept": "TGV",
+          "count": 6
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 6
+        },
+        {
+          "concept": "AI",
+          "count": 5
+        },
+        {
+          "concept": "电子布",
+          "count": 3
+        },
+        {
+          "concept": "中国巨石作为",
+          "count": 3
+        },
+        {
+          "concept": "板企业涨价潮推动",
+          "count": 2
+        },
+        {
+          "concept": "PCB",
+          "count": 2
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "子化学品行业靶材",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "TGV",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子布",
+          "count": 3,
+          "prev_count": 0
+        },
+        {
+          "concept": "中国巨石作为",
+          "count": 3,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "存储芯片涨价带动",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "MATCH",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "芯片的",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "ITC",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "品板块整体走强及",
+          "count": 0,
+          "prev_count": 3
+        }
+      ]
+    },
+    {
+      "week": "2026-W17",
+      "date_range": "04-20 ~ 04-26",
+      "total_reasons": 11,
+      "top_concepts": [
+        {
+          "concept": "半导体设备",
+          "count": 7
+        },
+        {
+          "concept": "半导体行业",
+          "count": 2
+        },
+        {
+          "concept": "半导体",
+          "count": 2
+        },
+        {
+          "concept": "液冷服务器概念",
+          "count": 1
+        },
+        {
+          "concept": "液冷服务器",
+          "count": 1
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "半导体设备",
+          "count": 7,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "玻璃基板",
+          "count": 0,
+          "prev_count": 12
+        },
+        {
+          "concept": "子化学品行业靶材",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "电子化学品",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "TGV",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "AI",
+          "count": 0,
+          "prev_count": 5
+        },
+        {
+          "concept": "电子布",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
+          "concept": "中国巨石作为",
+          "count": 0,
+          "prev_count": 3
+        }
+      ]
+    },
+    {
+      "week": "2026-W18",
+      "date_range": "04-27 ~ 05-03",
+      "total_reasons": 49,
+      "top_concepts": [
+        {
+          "concept": "PCB",
+          "count": 9
+        },
+        {
+          "concept": "概念",
+          "count": 8
+        },
+        {
+          "concept": "AI",
+          "count": 6
+        },
+        {
+          "concept": "HBM",
+          "count": 5
+        },
+        {
+          "concept": "及半导体设备",
+          "count": 5
+        },
+        {
+          "concept": "CCL",
+          "count": 1
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "PCB",
+          "count": 9,
+          "prev_count": 0
+        },
+        {
+          "concept": "概念",
+          "count": 8,
+          "prev_count": 0
+        },
+        {
+          "concept": "AI",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "HBM",
+          "count": 5,
+          "prev_count": 0
+        },
+        {
+          "concept": "及半导体设备",
+          "count": 5,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "半导体设备",
+          "count": 0,
+          "prev_count": 7
+        }
+      ]
+    },
+    {
+      "week": "2026-W19",
+      "date_range": "05-04 ~ 05-10",
+      "total_reasons": 43,
+      "top_concepts": [
+        {
+          "concept": "半导体",
+          "count": 13
+        },
+        {
+          "concept": "电子化学品",
+          "count": 10
+        },
+        {
+          "concept": "学品板块受半导体",
+          "count": 10
+        },
+        {
+          "concept": "PCB",
+          "count": 9
+        },
+        {
+          "concept": "GPU",
+          "count": 7
+        },
+        {
+          "concept": "强带动光学光电子",
+          "count": 6
+        },
+        {
+          "concept": "AI",
+          "count": 4
+        },
+        {
+          "concept": "概念",
+          "count": 3
+        },
+        {
+          "concept": "CCL",
+          "count": 3
+        },
+        {
+          "concept": "求爆发推动半导体",
+          "count": 3
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "半导体",
+          "count": 13,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子化学品",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "学品板块受半导体",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "GPU",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "强带动光学光电子",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "CCL",
+          "count": 3,
+          "prev_count": 1
+        },
+        {
+          "concept": "求爆发推动半导体",
+          "count": 3,
+          "prev_count": 0
+        },
+        {
+          "concept": "全球存储芯片",
+          "count": 3,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "HBM",
+          "count": 0,
+          "prev_count": 5
+        },
+        {
+          "concept": "及半导体设备",
+          "count": 0,
+          "prev_count": 5
+        }
+      ]
+    },
+    {
+      "week": "2026-W20",
+      "date_range": "05-11 ~ 05-17",
+      "total_reasons": 74,
+      "top_concepts": [
+        {
+          "concept": "AI",
+          "count": 20
+        },
+        {
+          "concept": "半导体材料",
+          "count": 18
+        },
+        {
+          "concept": "PCB",
+          "count": 17
+        },
+        {
+          "concept": "带动元件行业",
+          "count": 6
+        },
+        {
+          "concept": "带动元件",
+          "count": 6
+        },
+        {
+          "concept": "人形机器人",
+          "count": 6
+        },
+        {
+          "concept": "光学光电子",
+          "count": 6
+        },
+        {
+          "concept": "彩虹股份作为",
+          "count": 6
+        },
+        {
+          "concept": "叠加港股人工智能",
+          "count": 6
+        },
+        {
+          "concept": "设备",
+          "count": 6
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "半导体材料",
+          "count": 18,
+          "prev_count": 0
+        },
+        {
+          "concept": "带动元件行业",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "带动元件",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "人形机器人",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "光学光电子",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "彩虹股份作为",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "叠加港股人工智能",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "设备",
+          "count": 6,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "半导体",
+          "count": 0,
+          "prev_count": 13
+        },
+        {
+          "concept": "电子化学品",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "学品板块受半导体",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "GPU",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "强带动光学光电子",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "概念",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
+          "concept": "CCL",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
+          "concept": "求爆发推动半导体",
+          "count": 0,
+          "prev_count": 3
+        }
+      ]
+    },
+    {
+      "week": "2026-W21",
+      "date_range": "05-18 ~ 05-24",
+      "total_reasons": 171,
+      "top_concepts": [
+        {
+          "concept": "MLCC",
+          "count": 29
+        },
+        {
+          "concept": "PCB",
+          "count": 27
+        },
+        {
+          "concept": "AI",
+          "count": 25
+        },
+        {
+          "concept": "概念",
+          "count": 15
+        },
+        {
+          "concept": "半导体材料",
+          "count": 10
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 7
+        },
+        {
+          "concept": "半导体",
+          "count": 6
+        },
+        {
+          "concept": "制冷剂",
+          "count": 6
+        },
+        {
+          "concept": "市场担忧半导体",
+          "count": 5
+        },
+        {
+          "concept": "半导体设备",
+          "count": 5
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "MLCC",
+          "count": 29,
+          "prev_count": 0
+        },
+        {
+          "concept": "概念",
+          "count": 15,
+          "prev_count": 0
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "半导体",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "制冷剂",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "市场担忧半导体",
+          "count": 5,
+          "prev_count": 0
+        },
+        {
+          "concept": "HBM",
+          "count": 5,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子化学品",
+          "count": 4,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "带动元件行业",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "带动元件",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "人形机器人",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "光学光电子",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "彩虹股份作为",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "叠加港股人工智能",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "设备",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "告及陶瓷基板概念",
+          "count": 0,
+          "prev_count": 3
+        }
+      ]
+    },
+    {
+      "week": "2026-W22",
+      "date_range": "05-25 ~ 05-31",
+      "total_reasons": 178,
+      "top_concepts": [
+        {
+          "concept": "AI",
+          "count": 33
+        },
+        {
+          "concept": "PCB",
+          "count": 14
+        },
+        {
+          "concept": "半导体设备",
+          "count": 12
+        },
+        {
+          "concept": "PTFE",
+          "count": 11
+        },
+        {
+          "concept": "芯片",
+          "count": 10
+        },
+        {
+          "concept": "股东减持叠加行业",
+          "count": 7
+        },
+        {
+          "concept": "股东减持叠加",
+          "count": 7
+        },
+        {
+          "concept": "光刻胶",
+          "count": 7
+        },
+        {
+          "concept": "玻纤概念",
+          "count": 6
+        },
+        {
+          "concept": "玻纤",
+          "count": 6
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "芯片",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "股东减持叠加行业",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "股东减持叠加",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "光刻胶",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "玻纤概念",
+          "count": 6,
+          "prev_count": 1
+        },
+        {
+          "concept": "玻纤",
+          "count": 6,
+          "prev_count": 1
+        },
+        {
+          "concept": "场担忧半导体材料",
+          "count": 5,
+          "prev_count": 0
+        },
+        {
+          "concept": "存储芯片",
+          "count": 5,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "半导体材料",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "制冷剂",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "市场担忧半导体",
+          "count": 0,
+          "prev_count": 5
+        },
+        {
+          "concept": "HBM",
+          "count": 0,
+          "prev_count": 5
+        },
+        {
+          "concept": "电子化学品",
+          "count": 0,
+          "prev_count": 4
+        },
+        {
+          "concept": "强带动电子化学品",
+          "count": 0,
+          "prev_count": 4
+        },
+        {
+          "concept": "覆铜板供需紧张及",
+          "count": 0,
+          "prev_count": 4
+        },
+        {
+          "concept": "概念走强带动元件",
+          "count": 0,
+          "prev_count": 4
+        }
+      ]
+    },
+    {
+      "week": "2026-W23",
+      "date_range": "06-01 ~ 06-07",
+      "total_reasons": 204,
+      "top_concepts": [
+        {
+          "concept": "AI",
+          "count": 33
+        },
+        {
+          "concept": "半导体",
+          "count": 29
+        },
+        {
+          "concept": "PCB",
+          "count": 26
+        },
+        {
+          "concept": "MLCC",
+          "count": 19
+        },
+        {
+          "concept": "概念",
+          "count": 13
+        },
+        {
+          "concept": "CPO",
+          "count": 11
+        },
+        {
+          "concept": "光刻机",
+          "count": 10
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 7
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 7
+        },
+        {
+          "concept": "弱叠加市场对存储",
+          "count": 7
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "CPO",
+          "count": 11,
+          "prev_count": 0
+        },
+        {
+          "concept": "光刻机",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "弱叠加市场对存储",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "业务突破及氟化工",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "PFA",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "光刻机概念",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "半导体行业",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "ESG",
+          "count": 5,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "半导体设备",
+          "count": 0,
+          "prev_count": 12
+        },
+        {
+          "concept": "芯片",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "股东减持叠加行业",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "股东减持叠加",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "光刻胶",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "玻纤概念",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "玻纤",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "场担忧半导体材料",
+          "count": 0,
+          "prev_count": 5
+        }
+      ]
+    },
+    {
+      "week": "2026-W24",
+      "date_range": "06-08 ~ 06-14",
+      "total_reasons": 468,
+      "top_concepts": [
+        {
+          "concept": "半导体材料",
+          "count": 67
+        },
+        {
+          "concept": "AI",
+          "count": 55
+        },
+        {
+          "concept": "半导体",
+          "count": 54
+        },
+        {
+          "concept": "电子特气",
+          "count": 34
+        },
+        {
+          "concept": "概念",
+          "count": 33
+        },
+        {
+          "concept": "MLCC",
+          "count": 26
+        },
+        {
+          "concept": "ESG",
+          "count": 22
+        },
+        {
+          "concept": "PCB",
+          "count": 20
+        },
+        {
+          "concept": "全球半导体",
+          "count": 16
+        },
+        {
+          "concept": "电子树脂",
+          "count": 15
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "半导体材料",
+          "count": 67,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子特气",
+          "count": 34,
+          "prev_count": 0
+        },
+        {
+          "concept": "全球半导体",
+          "count": 16,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子树脂",
+          "count": 15,
+          "prev_count": 0
+        },
+        {
+          "concept": "电子特气概念",
+          "count": 11,
+          "prev_count": 0
+        },
+        {
+          "concept": "有色金属",
+          "count": 11,
+          "prev_count": 0
+        },
+        {
+          "concept": "证券",
+          "count": 11,
+          "prev_count": 0
+        },
+        {
+          "concept": "行业",
+          "count": 9,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "CPO",
+          "count": 0,
+          "prev_count": 11
+        },
+        {
+          "concept": "光刻机",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "弱叠加市场对存储",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "业务突破及氟化工",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "PFA",
+          "count": 0,
+          "prev_count": 6
+        },
+        {
+          "concept": "房地产",
+          "count": 0,
+          "prev_count": 6
+        }
+      ]
+    },
+    {
+      "week": "2026-W25",
+      "date_range": "06-15 ~ 06-21",
+      "total_reasons": 482,
+      "top_concepts": [
+        {
+          "concept": "半导体",
+          "count": 54
+        },
+        {
+          "concept": "AI",
+          "count": 47
+        },
+        {
+          "concept": "半导体设备",
+          "count": 36
+        },
+        {
+          "concept": "概念",
+          "count": 35
+        },
+        {
+          "concept": "PCB",
+          "count": 33
+        },
+        {
+          "concept": "MLCC",
+          "count": 22
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 15
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 14
+        },
+        {
+          "concept": "创新药",
+          "count": 13
+        },
+        {
+          "concept": "存储芯片",
+          "count": 12
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "玻璃基板",
+          "count": 15,
+          "prev_count": 0
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 14,
+          "prev_count": 0
+        },
+        {
+          "concept": "创新药",
+          "count": 13,
+          "prev_count": 0
+        },
+        {
+          "concept": "存储芯片",
+          "count": 12,
+          "prev_count": 1
+        },
+        {
+          "concept": "提速带动",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "IPO",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "走强带动专用设备",
+          "count": 9,
+          "prev_count": 0
+        },
+        {
+          "concept": "半导体靶材",
+          "count": 8,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "半导体材料",
+          "count": 0,
+          "prev_count": 67
+        },
+        {
+          "concept": "ESG",
+          "count": 1,
+          "prev_count": 22
+        },
+        {
+          "concept": "全球半导体",
+          "count": 0,
+          "prev_count": 16
+        },
+        {
+          "concept": "电子树脂",
+          "count": 0,
+          "prev_count": 15
+        },
+        {
+          "concept": "电子特气概念",
+          "count": 0,
+          "prev_count": 11
+        },
+        {
+          "concept": "半导体硅片",
+          "count": 0,
+          "prev_count": 9
+        },
+        {
+          "concept": "行业",
+          "count": 1,
+          "prev_count": 9
+        },
+        {
+          "concept": "电子树脂概念",
+          "count": 0,
+          "prev_count": 8
+        }
+      ]
+    },
+    {
+      "week": "2026-W26",
+      "date_range": "06-22 ~ 06-28",
+      "total_reasons": 444,
+      "top_concepts": [
+        {
+          "concept": "AI",
+          "count": 35
+        },
+        {
+          "concept": "半导体设备",
+          "count": 28
+        },
+        {
+          "concept": "创新药",
+          "count": 25
+        },
+        {
+          "concept": "半导体",
+          "count": 23
+        },
+        {
+          "concept": "LG",
+          "count": 17
+        },
+        {
+          "concept": "PCB",
+          "count": 15
+        },
+        {
+          "concept": "氟化工",
+          "count": 14
+        },
+        {
+          "concept": "港股医药",
+          "count": 12
+        },
+        {
+          "concept": "创新药概念",
+          "count": 12
+        },
+        {
+          "concept": "大金融",
+          "count": 10
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "LG",
+          "count": 17,
+          "prev_count": 0
+        },
+        {
+          "concept": "氟化工",
+          "count": 14,
+          "prev_count": 0
+        },
+        {
+          "concept": "港股医药",
+          "count": 12,
+          "prev_count": 0
+        },
+        {
+          "concept": "大金融",
+          "count": 10,
+          "prev_count": 0
+        },
+        {
+          "concept": "ESG",
+          "count": 10,
+          "prev_count": 1
+        },
+        {
+          "concept": "小金属",
+          "count": 8,
+          "prev_count": 1
+        },
+        {
+          "concept": "医疗服务行业",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "医疗服务",
+          "count": 7,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "MLCC",
+          "count": 0,
+          "prev_count": 22
+        },
+        {
+          "concept": "玻璃基板",
+          "count": 0,
+          "prev_count": 15
+        },
+        {
+          "concept": "玻璃基板概念",
+          "count": 0,
+          "prev_count": 14
+        },
+        {
+          "concept": "提速带动",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "走强带动专用设备",
+          "count": 0,
+          "prev_count": 9
+        },
+        {
+          "concept": "半导体靶材",
+          "count": 0,
+          "prev_count": 8
+        },
+        {
+          "concept": "备板块整体走强及",
+          "count": 1,
+          "prev_count": 7
+        },
+        {
+          "concept": "稀土永磁",
+          "count": 0,
+          "prev_count": 7
+        }
+      ]
+    },
+    {
+      "week": "2026-W27",
+      "date_range": "06-29 ~ 07-05",
+      "total_reasons": 377,
+      "top_concepts": [
+        {
+          "concept": "创新药",
+          "count": 98
+        },
+        {
+          "concept": "创新药概念",
+          "count": 72
+        },
+        {
+          "concept": "机器人",
+          "count": 30
+        },
+        {
+          "concept": "机器人概念",
+          "count": 26
+        },
+        {
+          "concept": "半导体设备",
+          "count": 22
+        },
+        {
+          "concept": "医疗器械",
+          "count": 13
+        },
+        {
+          "concept": "人形机器人",
+          "count": 12
+        },
+        {
+          "concept": "汽车零部件",
+          "count": 9
+        },
+        {
+          "concept": "AI",
+          "count": 8
+        },
+        {
+          "concept": "半导体设备与材料",
+          "count": 7
+        }
+      ],
+      "emerging": [
+        {
+          "concept": "机器人",
+          "count": 30,
+          "prev_count": 0
+        },
+        {
+          "concept": "机器人概念",
+          "count": 26,
+          "prev_count": 0
+        },
+        {
+          "concept": "医疗器械",
+          "count": 13,
+          "prev_count": 1
+        },
+        {
+          "concept": "人形机器人",
+          "count": 12,
+          "prev_count": 0
+        },
+        {
+          "concept": "半导体设备与材料",
+          "count": 7,
+          "prev_count": 0
+        },
+        {
+          "concept": "人形机器人概念",
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "物流行业",
+          "count": 4,
+          "prev_count": 0
+        },
+        {
+          "concept": "金属新材料",
+          "count": 4,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
+        {
+          "concept": "LG",
+          "count": 0,
+          "prev_count": 17
+        },
+        {
+          "concept": "氟化工",
+          "count": 1,
+          "prev_count": 14
+        },
+        {
+          "concept": "港股医药",
+          "count": 0,
+          "prev_count": 12
+        },
+        {
+          "concept": "大金融",
+          "count": 0,
+          "prev_count": 10
+        },
+        {
+          "concept": "存储芯片",
+          "count": 1,
+          "prev_count": 9
+        },
+        {
+          "concept": "小金属",
+          "count": 0,
+          "prev_count": 8
+        },
+        {
+          "concept": "医疗服务行业",
+          "count": 0,
+          "prev_count": 7
+        },
+        {
+          "concept": "医疗服务",
+          "count": 1,
+          "prev_count": 7
+        }
+      ]
+    }
+  ],
+  "generated_at": "2026-07-06T18:23:44.136Z"
+}

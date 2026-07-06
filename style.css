@@ -402,6 +402,94 @@ section > h2 {
 }
 .sv-fib { color: var(--text-muted); }
 
+/* ── 市场叙事周报 ── */
+.nw-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  padding: 22px 22px 18px;
+  margin-bottom: 14px;
+  position: relative;
+}
+.nw-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, transparent 50%);
+  pointer-events: none;
+}
+.nw-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.nw-week {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+}
+.nw-dates {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.nw-reasons {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+.nw-section-label {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 12px 0 6px;
+  font-weight: 600;
+}
+.nw-concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.nw-concept-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+}
+.nw-concept-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.62rem;
+  opacity: 0.7;
+}
+.nw-emerging-tag {
+  background: rgba(52, 211, 153, 0.08);
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.15);
+}
+.nw-fading-tag {
+  background: rgba(239, 68, 68, 0.06);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.12);
+}
+.nw-fading-count {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.nw-arrow {
+  color: var(--text-muted);
+  font-size: 0.6rem;
+}
+
 /* ── 排头兵-补涨梯队 ── */
 .cub-summary {
   color: var(--text-dim);

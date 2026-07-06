@@ -396,6 +396,50 @@ function renderCatchUpBand(data) {
     </section>`;
 }
 
+/** 渲染市场叙事周报 */
+function renderNarrativeWeekly(data) {
+  if (!data || !data.weeks || data.weeks.length === 0) return "";
+
+  // 只展示最近 6 周
+  const recentWeeks = data.weeks.slice(-6).reverse();
+
+  const cards = recentWeeks.map(w => {
+    // Top concepts
+    const topTags = w.top_concepts.slice(0, 8).map(c =>
+      `<span class="nw-concept-tag">${c.concept}<span class="nw-concept-count">${c.count}</span></span>`
+    ).join("");
+
+    // Emerging
+    const emergingTags = w.emerging.slice(0, 5).map(c =>
+      `<span class="nw-concept-tag nw-emerging-tag">${c.concept}<span class="nw-concept-count">${c.prev_count}→${c.count}</span></span>`
+    ).join("");
+
+    // Fading
+    const fadingTags = w.fading.slice(0, 5).map(c =>
+      `<span class="nw-concept-tag nw-fading-tag">${c.concept}<span class="nw-concept-count nw-fading-count">${c.prev_count}→${c.count}</span></span>`
+    ).join("");
+
+    return `
+      <div class="nw-card">
+        <div class="nw-header">
+          <span class="nw-week">${w.week}</span>
+          <span class="nw-dates">${w.date_range}</span>
+        </div>
+        <div class="nw-reasons">${w.total_reasons} 条归因</div>
+        <div class="nw-section-label">主线</div>
+        <div class="nw-concepts">${topTags}</div>
+        ${emergingTags ? `<div class="nw-section-label">新兴热点</div><div class="nw-concepts">${emergingTags}</div>` : ""}
+        ${fadingTags ? `<div class="nw-section-label">退潮</div><div class="nw-concepts">${fadingTags}</div>` : ""}
+      </div>`;
+  }).join("");
+
+  return `
+    <section>
+      <h2>市场叙事周报</h2>
+      ${cards}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -404,6 +448,7 @@ async function main() {
     const silenceVolcano = await fetchJson("silence-volcano.json").catch(() => null);
     const conceptCooccur = await fetchJson("concept-cooccurrence.json").catch(() => null);
     const catchUpBand = await fetchJson("catch-up-band.json").catch(() => null);
+    const narrativeWeekly = await fetchJson("narrative-weekly.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -419,6 +464,7 @@ async function main() {
       renderSilenceVolcano(silenceVolcano) +
       renderConceptCooccurrence(conceptCooccur) +
       renderCatchUpBand(catchUpBand) +
+      renderNarrativeWeekly(narrativeWeekly) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
