@@ -229,6 +229,22 @@ section > h2 {
   background: var(--tag-new-bg);
   color: var(--tag-new);
 }
+.risk-flags {
+  display: inline-flex;
+  gap: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+.risk-tag {
+  display: inline-block;
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+  letter-spacing: 0.02em;
+}
 
 /* ── 历史 ── */
 .history {

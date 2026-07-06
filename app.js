@@ -115,10 +115,13 @@ function renderCandidates(candidates, title) {
     const meta = c.days != null ? `${c.days}天` : "";
     const summary = c.summary ? `<div class="cand-summary">${c.summary}</div>` : "";
     const reason = c.reason ? `<div class="cand-summary">${c.reason}</div>` : "";
+    const flags = (c.risk_flags && c.risk_flags.length > 0)
+      ? '<span class="risk-flags">' + c.risk_flags.map(f => `<span class="risk-tag">${f}</span>`).join("") + '</span>'
+      : "";
     return `
       <div class="cand-row">
         <div>
-          <div><span class="cand-name">${c.name}</span>${tag}</div>
+          <div><span class="cand-name">${c.name}</span>${tag}${flags}</div>
           <div class="cand-ticker">${c.ticker}</div>
         </div>
         <div>
