@@ -402,6 +402,129 @@ section > h2 {
 }
 .sv-fib { color: var(--text-muted); }
 
+/* ── 概念共现网络 ── */
+.cc-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.cc-tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.cc-tab {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.cc-tab:hover {
+  color: var(--text);
+  border-color: var(--border);
+}
+.cc-tab-active {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-color: rgba(56, 189, 248, 0.3);
+}
+.cc-legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.cc-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.cc-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* 热力矩阵 */
+.cc-matrix-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.cc-matrix {
+  display: block;
+  min-width: 500px;
+}
+.cc-label-vert {
+  font-size: 9px;
+  fill: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+.cc-label-horiz {
+  font-size: 9px;
+  fill: var(--text-dim);
+  text-anchor: end;
+  font-family: 'JetBrains Mono', monospace;
+}
+.cc-cell {
+  fill: var(--accent);
+  stroke: var(--bg);
+  stroke-width: 1;
+  rx: 2;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+.cc-cell:hover {
+  stroke: var(--text);
+  stroke-width: 1.5;
+}
+.cc-cell-diag {
+  fill: rgba(255, 255, 255, 0.04);
+  stroke: var(--bg);
+  stroke-width: 1;
+}
+.cc-cell-empty {
+  fill: rgba(255, 255, 255, 0.015);
+  stroke: var(--bg);
+  stroke-width: 1;
+}
+/* 力导向图 */
+.cc-graph {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.cc-edge {
+  stroke: var(--accent);
+  stroke-linecap: round;
+}
+.cc-node {
+  stroke: var(--bg);
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: r 0.15s ease;
+}
+.cc-node:hover {
+  filter: brightness(1.3);
+}
+.cc-node-sector { fill: var(--accent); }
+.cc-node-tech { fill: #a78bfa; }
+.cc-node-event { fill: #f97316; }
+.cc-node-label {
+  font-size: 8px;
+  fill: var(--text-dim);
+  text-anchor: middle;
+  font-family: 'JetBrains Mono', monospace;
+  pointer-events: none;
+}
+
 /* ── 历史 ── */
 .history {
   display: flex;

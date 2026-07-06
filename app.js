@@ -226,12 +226,132 @@ function renderSilenceVolcano(data) {
     </section>`;
 }
 
+/** 渲染概念共现网络 */
+function renderConceptCooccurrence(data) {
+  if (!data || data.total_concepts === 0) return "";
+
+  // 取 top 20 概念做热力矩阵（太多会看不清）
+  const topNodes = data.nodes.slice(0, 20);
+  const nodeIds = topNodes.map(n => n.id);
+
+  // 构建边的权重查找表
+  const edgeMap = new Map();
+  for (const e of data.edges) {
+    edgeMap.set(`${e.source}|${e.target}`, e.weight);
+    edgeMap.set(`${e.target}|${e.source}`, e.weight);
+  }
+
+  // 最大权重（用于颜色映射）
+  const maxWeight = Math.max(...data.edges.map(e => e.weight), 1);
+
+  // ── 热力矩阵 ──
+  const cellSize = 28;
+  const labelW = 72;
+  const labelH = 72;
+  const matrixW = labelW + nodeIds.length * cellSize + 10;
+  const matrixH = labelH + nodeIds.length * cellSize + 10;
+
+  let matrixHtml = `<div class="cc-matrix-wrap"><svg class="cc-matrix" viewBox="0 0 ${matrixW} ${matrixH}">`;
+
+  // 列标签（顶部，旋转 45°）
+  for (let j = 0; j < nodeIds.length; j++) {
+    const x = labelW + j * cellSize + cellSize / 2;
+    const y = labelH - 4;
+    matrixHtml += `<text x="${x}" y="${y}" transform="rotate(-45 ${x} ${y})" class="cc-label-vert">${nodeIds[j]}</text>`;
+  }
+
+  // 行标签 + 格子
+  for (let i = 0; i < nodeIds.length; i++) {
+    const y = labelH + i * cellSize;
+    matrixHtml += `<text x="${labelW - 4}" y="${y + cellSize / 2 + 4}" class="cc-label-horiz">${nodeIds[i]}</text>`;
+    for (let j = 0; j < nodeIds.length; j++) {
+      const x = labelW + j * cellSize;
+      if (i === j) {
+        // 对角线：自身
+        matrixHtml += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" class="cc-cell-diag"/>`;
+      } else {
+        const w = edgeMap.get(`${nodeIds[i]}|${nodeIds[j]}`) ?? 0;
+        if (w > 0) {
+          const opacity = 0.15 + (w / maxWeight) * 0.85;
+          matrixHtml += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" class="cc-cell" fill-opacity="${opacity.toFixed(2)}" data-source="${nodeIds[i]}" data-target="${nodeIds[j]}" data-weight="${w}"><title>${nodeIds[i]} ↔ ${nodeIds[j]}: ${w}</title></rect>`;
+        } else {
+          matrixHtml += `<rect x="${x}" y="${y}" width="${cellSize}" height="${cellSize}" class="cc-cell-empty"/>`;
+        }
+      }
+    }
+  }
+
+  matrixHtml += `</svg></div>`;
+
+  // ── 力导向图 ──
+  // 简易布局：圆形排列节点，边按权重画线
+  const graphR = 160;
+  const graphCX = 200;
+  const graphCY = 180;
+  const graphW = 400;
+  const graphH = 360;
+
+  // 节点位置（圆形）
+  const nodePos = new Map();
+  for (let i = 0; i < topNodes.length; i++) {
+    const angle = (i / topNodes.length) * Math.PI * 2 - Math.PI / 2;
+    nodePos.set(topNodes[i].id, {
+      x: graphCX + graphR * Math.cos(angle),
+      y: graphCY + graphR * Math.sin(angle),
+    });
+  }
+
+  let graphHtml = `<svg class="cc-graph" viewBox="0 0 ${graphW} ${graphH}">`;
+  // 画边
+  for (const e of data.edges) {
+    const p1 = nodePos.get(e.source);
+    const p2 = nodePos.get(e.target);
+    if (!p1 || !p2) continue;
+    const strokeWidth = 0.5 + (e.weight / maxWeight) * 4;
+    const opacity = 0.1 + (e.weight / maxWeight) * 0.5;
+    graphHtml += `<line x1="${p1.x.toFixed(1)}" y1="${p1.y.toFixed(1)}" x2="${p2.x.toFixed(1)}" y2="${p2.y.toFixed(1)}" class="cc-edge" stroke-width="${strokeWidth.toFixed(1)}" opacity="${opacity.toFixed(2)}"><title>${e.source} ↔ ${e.target}: ${e.weight}</title></line>`;
+  }
+  // 画节点
+  const maxNodeCount = topNodes[0]?.count ?? 1;
+  for (const n of topNodes) {
+    const pos = nodePos.get(n.id);
+    if (!pos) continue;
+    const r = 4 + (n.count / maxNodeCount) * 10;
+    const typeClass = n.type === "technology" ? "cc-node-tech" : n.type === "event" ? "cc-node-event" : "cc-node-sector";
+    graphHtml += `<circle cx="${pos.x.toFixed(1)}" cy="${pos.y.toFixed(1)}" r="${r.toFixed(1)}" class="cc-node ${typeClass}"><title>${n.id}: ${n.count}次</title></circle>`;
+    graphHtml += `<text x="${pos.x.toFixed(1)}" y="${(pos.y - r - 3).toFixed(1)}" class="cc-node-label">${n.id}</text>`;
+  }
+  graphHtml += `</svg>`;
+
+  // ── 图例 + 切换 ──
+  const legendHtml = `
+    <div class="cc-legend">
+      <span class="cc-legend-item"><span class="cc-dot cc-node-sector"></span>行业板块</span>
+      <span class="cc-legend-item"><span class="cc-dot cc-node-tech"></span>技术概念</span>
+      <span class="cc-legend-item"><span class="cc-dot cc-node-event"></span>事件</span>
+    </div>`;
+
+  return `
+    <section>
+      <h2>概念共现网络 · ${data.date_range}</h2>
+      <div class="cc-summary">从 ${data.total_reasons} 条归因文本提取 ${data.total_concepts} 个概念，${data.total_pairs} 个共现对</div>
+      <div class="cc-tabs">
+        <button class="cc-tab cc-tab-active" onclick="document.getElementById('cc-matrix').style.display='block';document.getElementById('cc-graph').style.display='none';this.classList.add('cc-tab-active');this.nextElementSibling.classList.remove('cc-tab-active')">热力矩阵</button>
+        <button class="cc-tab" onclick="document.getElementById('cc-matrix').style.display='none';document.getElementById('cc-graph').style.display='block';this.classList.add('cc-tab-active');this.previousElementSibling.classList.remove('cc-tab-active')">关系图</button>
+      </div>
+      ${legendHtml}
+      <div id="cc-matrix">${matrixHtml}</div>
+      <div id="cc-graph" style="display:none">${graphHtml}</div>
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
     const series = await fetchJson("series/density.json");
     const deathPatterns = await fetchJson("death-patterns.json").catch(() => null);
     const silenceVolcano = await fetchJson("silence-volcano.json").catch(() => null);
+    const conceptCooccur = await fetchJson("concept-cooccurrence.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -245,6 +365,7 @@ async function main() {
       renderCandidates(daily.daily_top, "单日异动 Top 20") +
       renderDeathPatterns(deathPatterns) +
       renderSilenceVolcano(silenceVolcano) +
+      renderConceptCooccurrence(conceptCooccur) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
