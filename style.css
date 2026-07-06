@@ -402,6 +402,123 @@ section > h2 {
 }
 .sv-fib { color: var(--text-muted); }
 
+/* ── 排头兵-补涨梯队 ── */
+.cub-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.cub-section-title {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+/* 热门概念 */
+.cub-heat-row {
+  display: grid;
+  grid-template-columns: 90px 50px 50px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+}
+.cub-heat-row:last-child { border-bottom: none; }
+.cub-heat-concept {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cub-heat-count {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--up);
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+.cub-heat-days {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-dim);
+  font-size: 0.7rem;
+}
+.cub-heat-bar-track {
+  height: 4px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.cub-heat-bar {
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #f472b6, #e879a0);
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* 补涨候选 */
+.cub-catchup-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.cub-catchup-row:last-child { border-bottom: none; }
+.cub-catchup-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.cub-catchup-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.cub-catchup-ticker {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.cub-catchup-concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.cub-catchup-tag {
+  font-size: 0.56rem;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 3px;
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent);
+  letter-spacing: 0.02em;
+}
+.cub-catchup-right {
+  text-align: right;
+  flex-shrink: 0;
+}
+.cub-catchup-pct {
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88rem;
+  color: var(--up);
+}
+.cub-catchup-meta {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 2px;
+}
+.cub-catchup-last {
+  color: var(--text-dim);
+  font-size: 0.65rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
 /* ── 概念共现网络 ── */
 .cc-summary {
   color: var(--text-dim);

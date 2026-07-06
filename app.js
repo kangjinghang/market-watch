@@ -345,6 +345,57 @@ function renderConceptCooccurrence(data) {
     </section>`;
 }
 
+/** 渲染排头兵-补涨梯队 */
+function renderCatchUpBand(data) {
+  if (!data || data.leaders.length === 0) return "";
+
+  // 热门概念 (heat_score >= 10)
+  const hotConcepts = data.hot_concepts.filter(c => c.heat_score >= 10).slice(0, 12);
+  const maxHeat = hotConcepts[0]?.heat_score ?? 1;
+
+  const heatRows = hotConcepts.map(c => {
+    const barPct = (c.heat_score / maxHeat * 100).toFixed(0);
+    return `
+      <div class="cub-heat-row">
+        <span class="cub-heat-concept">${c.concept}</span>
+        <span class="cub-heat-count">${c.leader_count}只</span>
+        <span class="cub-heat-days">${c.active_days}天</span>
+        <div class="cub-heat-bar-track"><div class="cub-heat-bar" style="width:${barPct}%"></div></div>
+      </div>`;
+  }).join("");
+
+  // 补涨候选
+  const catchupRows = data.catchup_candidates.slice(0, 15).map(c => {
+    const tags = c.shared_concepts.slice(0, 3).map(ct =>
+      `<span class="cub-catchup-tag">${ct}</span>`
+    ).join("");
+    const pct = c.trend_pct > 0 ? `+${c.trend_pct.toFixed(1)}%` : `${c.trend_pct.toFixed(1)}%`;
+    return `
+      <div class="cub-catchup-row">
+        <div class="cub-catchup-left">
+          <span class="cub-catchup-name">${c.name}</span>
+          <span class="cub-catchup-ticker">${c.ticker}</span>
+          <div class="cub-catchup-concepts">${tags}</div>
+        </div>
+        <div class="cub-catchup-right">
+          <div class="cub-catchup-pct">${pct}</div>
+          <div class="cub-catchup-meta">${c.trend_days}天趋势</div>
+          <div class="cub-catchup-last">末次 ${c.last_seen.slice(5)}</div>
+        </div>
+      </div>`;
+  }).join("");
+
+  return `
+    <section>
+      <h2>排头兵 · 补涨梯队 · ${data.date}</h2>
+      <div class="cub-summary">近 ${data.lookback_days} 天 ${data.leaders.length} 个排头兵，${data.hot_concepts.length} 个热门概念</div>
+      <div class="cub-section-title">热门概念（涨停密度 × 持续天数）</div>
+      ${heatRows}
+      <div class="cub-section-title">补涨梯队（同概念 + 趋势中 + 今日未涨停）</div>
+      ${catchupRows}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -352,6 +403,7 @@ async function main() {
     const deathPatterns = await fetchJson("death-patterns.json").catch(() => null);
     const silenceVolcano = await fetchJson("silence-volcano.json").catch(() => null);
     const conceptCooccur = await fetchJson("concept-cooccurrence.json").catch(() => null);
+    const catchUpBand = await fetchJson("catch-up-band.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -366,6 +418,7 @@ async function main() {
       renderDeathPatterns(deathPatterns) +
       renderSilenceVolcano(silenceVolcano) +
       renderConceptCooccurrence(conceptCooccur) +
+      renderCatchUpBand(catchUpBand) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
