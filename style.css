@@ -334,6 +334,74 @@ section > h2 {
   font-family: 'JetBrains Mono', monospace;
 }
 
+/* ── 沉默-火山爆发 ── */
+.sv-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.sv-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 12px;
+}
+.sv-row:last-child { border-bottom: none; }
+.sv-left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.sv-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+.sv-ticker {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.sv-status {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 3px;
+  display: inline-block;
+  width: fit-content;
+}
+.sv-ok { background: rgba(52, 211, 153, 0.1); color: #34d399; }
+.sv-hot { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+.sv-warn { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+.sv-right {
+  text-align: right;
+  flex-shrink: 0;
+}
+.sv-stats {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 3px;
+}
+.sv-stat {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+.sv-stat b { color: var(--up); }
+.sv-price {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.sv-fib { color: var(--text-muted); }
+
 /* ── 历史 ── */
 .history {
   display: flex;

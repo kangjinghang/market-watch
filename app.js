@@ -191,11 +191,47 @@ function renderDeathPatterns(data) {
     </section>`;
 }
 
+/** 渲染沉默-火山爆发候选 */
+function renderSilenceVolcano(data) {
+  if (!data || data.total_candidates === 0) return "";
+
+  const rows = data.candidates.map(c => {
+    const statusClass = c.status.includes("极度") ? "sv-hot" : c.status.includes("逼近") ? "sv-warn" : "sv-ok";
+    return `
+      <div class="sv-row">
+        <div class="sv-left">
+          <span class="sv-name">${c.name}</span>
+          <span class="sv-ticker">${c.ticker}</span>
+          <span class="sv-status ${statusClass}">${c.status}</span>
+        </div>
+        <div class="sv-right">
+          <div class="sv-stats">
+            <span class="sv-stat">前波 <b>+${c.peak_pct.toFixed(0)}%</b></span>
+            <span class="sv-stat">沉默 ${c.silence_days}天</span>
+            <span class="sv-stat">量比 ${c.volume_ratio.toFixed(2)}</span>
+          </div>
+          <div class="sv-price">
+            <span>现价 ${c.current_price}</span>
+            <span class="sv-fib">0.382=${c.fib_0382}</span>
+          </div>
+        </div>
+      </div>`;
+  }).join("");
+
+  return `
+    <section>
+      <h2>沉默 · 火山爆发</h2>
+      <div class="sv-summary">扫描 ${data.total_silent} 个沉默 ticker → ${data.total_candidates} 个通过全部筛选</div>
+      ${rows}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
     const series = await fetchJson("series/density.json");
     const deathPatterns = await fetchJson("death-patterns.json").catch(() => null);
+    const silenceVolcano = await fetchJson("silence-volcano.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -208,6 +244,7 @@ async function main() {
       renderCandidates(daily.top_candidates, "区间异动 Top 20") +
       renderCandidates(daily.daily_top, "单日异动 Top 20") +
       renderDeathPatterns(deathPatterns) +
+      renderSilenceVolcano(silenceVolcano) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
