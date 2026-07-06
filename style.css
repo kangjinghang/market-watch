@@ -246,6 +246,94 @@ section > h2 {
   letter-spacing: 0.02em;
 }
 
+/* ── 趋势死亡模式 ── */
+.death-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.death-bar-row {
+  display: grid;
+  grid-template-columns: 72px 1fr 80px;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 0;
+}
+.death-bar-label {
+  font-size: 0.75rem;
+  color: var(--text);
+  font-weight: 500;
+}
+.death-bar-track {
+  height: 6px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.death-bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.death-bar-count {
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--text-dim);
+  text-align: right;
+}
+.death-bar-pct {
+  color: var(--text-muted);
+}
+.death-recent-title {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.death-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+}
+.death-item:last-child { border-bottom: none; }
+.death-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.death-ticker {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.death-pattern-tag {
+  font-size: 0.56rem;
+  font-weight: 600;
+  padding: 1px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.02em;
+}
+.death-crash { background: rgba(220, 38, 38, 0.15); color: #dc2626; }
+.death-negative { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+.death-drop { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+.death-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--up);
+  margin-left: auto;
+  font-size: 0.75rem;
+}
+.death-date {
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
 /* ── 历史 ── */
 .history {
   display: flex;

@@ -143,10 +143,59 @@ function renderHistory(allDates, currentDate) {
   return `<div class="history"><span class="history-label">历史数据</span>${links}</div>`;
 }
 
+/** 渲染趋势死亡模式 */
+function renderDeathPatterns(data) {
+  if (!data || data.total_deaths === 0) return "";
+  const p = data.patterns;
+  const total = data.total_deaths;
+
+  const bars = [
+    { label: "高位回落", count: p["高位回落"] || 0, color: "#f97316" },
+    { label: "利空+下跌", count: (p["利空+下跌"] || 0) + (p["利空事件"] || 0), color: "#ef4444" },
+    { label: "闪崩", count: p["闪崩"] || 0, color: "#dc2626" },
+    { label: "自然退潮", count: p["自然退潮"] || 0, color: "#6b7280" },
+  ].filter(b => b.count > 0);
+
+  const barHtml = bars.map(b => {
+    const pct = (b.count / total * 100).toFixed(1);
+    return `
+      <div class="death-bar-row">
+        <span class="death-bar-label">${b.label}</span>
+        <div class="death-bar-track">
+          <div class="death-bar" style="width:${pct}%;background:${b.color}"></div>
+        </div>
+        <span class="death-bar-count">${b.count} <span class="death-bar-pct">(${pct}%)</span></span>
+      </div>`;
+  }).join("");
+
+  // Recent notable deaths
+  const recent = (data.recent_deaths || []).slice(0, 5);
+  const recentHtml = recent.map(d => {
+    const flag = d.pattern !== "自然退潮" ? `<span class="death-pattern-tag death-${d.pattern === "闪崩" ? "crash" : d.pattern.includes("利空") ? "negative" : "drop"}">${d.pattern}</span>` : "";
+    return `
+      <div class="death-item">
+        <span class="death-name">${d.name}</span>
+        <span class="death-ticker">${d.ticker}</span>
+        ${flag}
+        <span class="death-pct">+${d.peak_pct.toFixed(1)}%</span>
+        <span class="death-date">${d.death_date.slice(5)}</span>
+      </div>`;
+  }).join("");
+
+  return `
+    <section>
+      <h2>趋势死亡模式 · ${data.date_range}</h2>
+      <div class="death-summary">共 ${total} 次趋势终止</div>
+      ${barHtml}
+      ${recentHtml ? `<div class="death-recent-title">近期退场</div>${recentHtml}` : ""}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
     const series = await fetchJson("series/density.json");
+    const deathPatterns = await fetchJson("death-patterns.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -158,6 +207,7 @@ async function main() {
       renderSectors(daily.sectors) +
       renderCandidates(daily.top_candidates, "区间异动 Top 20") +
       renderCandidates(daily.daily_top, "单日异动 Top 20") +
+      renderDeathPatterns(deathPatterns) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
