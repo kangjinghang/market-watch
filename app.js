@@ -440,6 +440,75 @@ function renderNarrativeWeekly(data) {
     </section>`;
 }
 
+/** 渲染概念热度生命周期 */
+function renderConceptLifecycle(data) {
+  if (!data || !data.concepts || data.concepts.length === 0) return "";
+
+  // Stage filter tabs
+  const stages = ["高峰", "升温", "降温", "退潮"];
+  const stageCounts = {};
+  for (const c of data.concepts) {
+    stageCounts[c.stage] = (stageCounts[c.stage] || 0) + 1;
+  }
+
+  // 默认显示全部，点击 tab 过滤
+  const tabsHtml = stages.map(s => {
+    const count = stageCounts[s] || 0;
+    if (count === 0) return "";
+    return `<button class="cl-tab cl-tab-active" onclick="filterLifecycle('${s}', this)">${s} (${count})</button>`;
+  }).join("") + `<button class="cl-tab" onclick="filterLifecycle('all', this)">全部 (${data.concepts.length})</button>`;
+
+  // 构建每行的 mini sparkline
+  function makeSparkline(freqSeries, weeks) {
+    const w = 200;
+    const h = 24;
+    const max = Math.max(...freqSeries, 1);
+    const stepX = w / (freqSeries.length - 1 || 1);
+    const pts = freqSeries.map((f, i) => ({
+      x: i * stepX,
+      y: h - (f / max) * (h - 4) - 2
+    }));
+    const line = pts.map(p => `${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(" ");
+    const last = pts[pts.length - 1];
+    return `<svg class="cl-sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+      <polyline points="${line}" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+      <circle cx="${last.x.toFixed(1)}" cy="${last.y.toFixed(1)}" r="2.5" fill="var(--accent)"/>
+    </svg>`;
+  }
+
+  const rows = data.concepts.map(c => {
+    const stageClass = c.stage === "高峰" ? "cl-stage-peak"
+      : c.stage === "升温" ? "cl-stage-heating"
+      : c.stage === "退潮" ? "cl-stage-gone"
+      : "cl-stage-cooling";
+    const sparkline = makeSparkline(c.freq_series, c.weeks);
+    return `
+      <div class="cl-row" data-stage="${c.stage}">
+        <span class="cl-concept">${c.concept}</span>
+        ${sparkline}
+        <span class="cl-stage ${stageClass}">${c.stage}</span>
+        <span class="cl-peak">峰值 ${c.peak_freq}</span>
+      </div>`;
+  }).join("");
+
+  return `
+    <section>
+      <h2>概念热度生命周期 · ${data.date_range}</h2>
+      <div class="cl-summary">${data.concepts.length} 个概念，追踪 ${data.total_weeks} 周频次变化</div>
+      <div class="cl-tabs" id="cl-tabs">${tabsHtml}</div>
+      <div id="cl-list">${rows}</div>
+    </section>
+    <script>
+    function filterLifecycle(stage, btn) {
+      document.querySelectorAll('.cl-tab').forEach(t => t.classList.remove('cl-tab-active'));
+      btn.classList.add('cl-tab-active');
+      document.querySelectorAll('.cl-row').forEach(r => {
+        r.style.display = (stage === 'all' || r.dataset.stage === stage) ? '' : 'none';
+      });
+    }
+    </script>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -449,6 +518,7 @@ async function main() {
     const conceptCooccur = await fetchJson("concept-cooccurrence.json").catch(() => null);
     const catchUpBand = await fetchJson("catch-up-band.json").catch(() => null);
     const narrativeWeekly = await fetchJson("narrative-weekly.json").catch(() => null);
+    const conceptLifecycle = await fetchJson("concept-lifecycle.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -465,6 +535,7 @@ async function main() {
       renderConceptCooccurrence(conceptCooccur) +
       renderCatchUpBand(catchUpBand) +
       renderNarrativeWeekly(narrativeWeekly) +
+      renderConceptLifecycle(conceptLifecycle) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
