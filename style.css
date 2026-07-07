@@ -12,12 +12,17 @@
   --text-muted: #44505e;
   --accent: #38bdf8;
   --accent-dim: rgba(56, 189, 248, 0.08);
-  --up: #f472b6;
-  --up-soft: rgba(244, 114, 182, 0.06);
-  --bar-from: #f472b6;
-  --bar-to: #e879a0;
-  --tag-new-bg: rgba(52, 211, 153, 0.1);
-  --tag-new: #34d399;
+  /* A 股约定：涨红跌绿。红色仅表示价格上涨，绿色仅表示下跌，其余警戒用琥珀 */
+  --up: #ef4444;            /* 涨 */
+  --up-soft: rgba(239, 68, 68, 0.08);
+  --bar-from: #ef4444;
+  --bar-to: #f87171;
+  --down: #22c55e;          /* 跌 */
+  --down-soft: rgba(34, 197, 94, 0.08);
+  --warn: #f97316;          /* 警戒/危险（非涨跌） */
+  --warn-soft: rgba(249, 115, 22, 0.12);
+  --tag-new-bg: rgba(249, 115, 22, 0.12);
+  --tag-new: #f97316;
   --tag-continued-bg: rgba(56, 189, 248, 0.1);
   --tag-continued: #38bdf8;
 }
@@ -205,7 +210,7 @@ section > h2 {
   letter-spacing: -0.02em;
 }
 .cand-pct-down {
-  color: #ef4444;
+  color: var(--down);
 }
 .cand-meta {
   color: var(--text-muted);
@@ -244,8 +249,8 @@ section > h2 {
   font-weight: 600;
   padding: 1px 6px;
   border-radius: 3px;
-  background: rgba(239, 68, 68, 0.12);
-  color: #ef4444;
+  background: var(--warn-soft);
+  color: var(--warn);
   letter-spacing: 0.02em;
 }
 
@@ -321,9 +326,10 @@ section > h2 {
   border-radius: 3px;
   letter-spacing: 0.02em;
 }
-.death-crash { background: rgba(220, 38, 38, 0.15); color: #dc2626; }
-.death-negative { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
-.death-drop { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+/* 趋势死亡标签：这些是"危险/警戒"而非"下跌"信号，红涨模型下用琥珀色系避免与"涨"混淆 */
+.death-crash { background: rgba(249, 115, 22, 0.18); color: #fb923c; }
+.death-negative { background: rgba(249, 115, 22, 0.14); color: var(--warn); }
+.death-drop { background: rgba(234, 179, 8, 0.14); color: #eab308; }
 .death-pct {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
@@ -376,9 +382,10 @@ section > h2 {
   display: inline-block;
   width: fit-content;
 }
-.sv-ok { background: rgba(52, 211, 153, 0.1); color: #34d399; }
-.sv-hot { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
-.sv-warn { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+/* 状态严重度梯度（非涨跌信号）：ok=中性蓝，warn/hot=琥珀，红涨模型下避免误读为涨跌 */
+.sv-ok { background: var(--accent-dim); color: var(--accent); }
+.sv-hot { background: rgba(249, 115, 22, 0.18); color: #fb923c; }
+.sv-warn { background: var(--warn-soft); color: var(--warn); }
 .sv-right {
   text-align: right;
   flex-shrink: 0;
@@ -467,9 +474,10 @@ section > h2 {
   text-align: center;
   white-space: nowrap;
 }
-.cl-stage-peak { background: rgba(244, 114, 182, 0.12); color: #f472b6; }
-.cl-stage-heating { background: rgba(249, 115, 22, 0.12); color: #f97316; }
-.cl-stage-cooling { background: rgba(56, 189, 248, 0.1); color: #38bdf8; }
+/* 概念热度阶段：热度梯度（非涨跌），高峰最烈用亮琥珀 */
+.cl-stage-peak { background: rgba(251, 146, 60, 0.16); color: #fb923c; }
+.cl-stage-heating { background: var(--warn-soft); color: var(--warn); }
+.cl-stage-cooling { background: var(--accent-dim); color: var(--accent); }
 .cl-stage-gone { background: rgba(107, 114, 128, 0.12); color: #6b7280; }
 .cl-peak {
   font-family: 'JetBrains Mono', monospace;
@@ -547,15 +555,16 @@ section > h2 {
   font-size: 0.62rem;
   opacity: 0.7;
 }
+/* 概念热度方向（非股价涨跌）：新兴=升温用琥珀，退潮=降温用冷蓝 */
 .nw-emerging-tag {
-  background: rgba(52, 211, 153, 0.08);
-  color: #34d399;
-  border-color: rgba(52, 211, 153, 0.15);
+  background: var(--warn-soft);
+  color: var(--warn);
+  border-color: rgba(249, 115, 22, 0.18);
 }
 .nw-fading-tag {
-  background: rgba(239, 68, 68, 0.06);
-  color: #ef4444;
-  border-color: rgba(239, 68, 68, 0.12);
+  background: var(--accent-dim);
+  color: var(--accent);
+  border-color: rgba(56, 189, 248, 0.18);
 }
 .nw-fading-count {
   text-decoration: line-through;
@@ -615,10 +624,11 @@ section > h2 {
   border-radius: 2px;
   overflow: hidden;
 }
+/* 热度条（非涨跌）：琥珀热度渐变 */
 .cub-heat-bar {
   height: 100%;
   border-radius: 2px;
-  background: linear-gradient(90deg, #f472b6, #e879a0);
+  background: linear-gradient(90deg, #f97316, #fb923c);
   transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 /* 补涨候选 */
@@ -880,9 +890,23 @@ section > h2 {
   font-family: 'JetBrains Mono', monospace;
 }
 .sf-legend {
-  font-size: 9px;
-  fill: var(--text-dim);
-  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 8px;
+}
+.sf-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.sf-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  display: inline-block;
 }
 
 /* ── 早鸟指数 ── */
@@ -955,8 +979,9 @@ section > h2 {
   border-radius: 3px;
   text-align: center;
 }
-.anomaly-high { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
-.anomaly-medium { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+/* 异常严重度（非涨跌）：高=烈琥珀 */
+.anomaly-high { background: rgba(249, 115, 22, 0.18); color: #fb923c; }
+.anomaly-medium { background: var(--warn-soft); color: var(--warn); }
 .anomaly-label {
   font-weight: 600;
   color: var(--text);
@@ -975,8 +1000,9 @@ section > h2 {
   font-weight: 700;
   text-align: right;
 }
+/* 异常偏差幅度（非涨跌）：中性蓝强调幅度 */
 .anomaly-row:has(.anomaly-dev) .anomaly-dev {
-  color: var(--up);
+  color: var(--accent);
 }
 
 /* ── 被排除股追踪 ── */
@@ -1046,8 +1072,9 @@ section > h2 {
   font-weight: 700;
   text-align: right;
 }
+/* 漏网之鱼：被排除却大涨 = 涨，红 */
 .excl-escapee {
-  color: #34d399;
+  color: var(--up);
 }
 
 /* ── 羊群扩散 ── */
@@ -1082,8 +1109,9 @@ section > h2 {
   border-radius: 3px;
   text-align: center;
 }
-.herd-hot { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
-.herd-warm { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+/* 板块活跃度（非涨跌）：爆发=烈琥珀，退潮=灰 */
+.herd-hot { background: rgba(249, 115, 22, 0.18); color: #fb923c; }
+.herd-warm { background: var(--warn-soft); color: var(--warn); }
 .herd-cold { background: rgba(107, 114, 128, 0.12); color: #6b7280; }
 .herd-stat {
   font-family: 'JetBrains Mono', monospace;
@@ -1192,6 +1220,26 @@ section > h2 {
 @keyframes pulse {
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
+}
+/* 尊重用户的减少动画偏好：长期每日使用时，加载动画应可被关闭 */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* 键盘焦点可见：tab 按钮、历史日期链接、可点击 SVG 单元格默认无焦点环 */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+/* 元素自带圆角时让 outline 贴合形状 */
+a:focus-visible, button:focus-visible {
+  outline-offset: 1px;
 }
 section, .history {
   animation: fadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;

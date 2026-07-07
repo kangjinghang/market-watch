@@ -150,10 +150,11 @@ function renderDeathPatterns(data) {
   const p = data.patterns;
   const total = data.total_deaths;
 
+  // 趋势死亡：警戒色系（琥珀），红涨模型下避免用红表达"危险"
   const bars = [
-    { label: "高位回落", count: p["高位回落"] || 0, color: "#f97316" },
-    { label: "利空+下跌", count: (p["利空+下跌"] || 0) + (p["利空事件"] || 0), color: "#ef4444" },
-    { label: "闪崩", count: p["闪崩"] || 0, color: "#dc2626" },
+    { label: "高位回落", count: p["高位回落"] || 0, color: "#eab308" },
+    { label: "利空+下跌", count: (p["利空+下跌"] || 0) + (p["利空事件"] || 0), color: "#f97316" },
+    { label: "闪崩", count: p["闪崩"] || 0, color: "#fb923c" },
     { label: "自然退潮", count: p["自然退潮"] || 0, color: "#6b7280" },
   ].filter(b => b.count > 0);
 
@@ -441,6 +442,15 @@ function renderNarrativeWeekly(data) {
     </section>`;
 }
 
+/** 概念生命周期阶段过滤（顶层函数；innerHTML 注入的 <script> 浏览器不执行，故必须放此处） */
+function filterLifecycle(stage, btn) {
+  document.querySelectorAll('.cl-tab').forEach(t => t.classList.remove('cl-tab-active'));
+  btn.classList.add('cl-tab-active');
+  document.querySelectorAll('.cl-row').forEach(r => {
+    r.style.display = (stage === 'all' || r.dataset.stage === stage) ? '' : 'none';
+  });
+}
+
 /** 渲染概念热度生命周期 */
 function renderConceptLifecycle(data) {
   if (!data || !data.concepts || data.concepts.length === 0) return "";
@@ -452,12 +462,12 @@ function renderConceptLifecycle(data) {
     stageCounts[c.stage] = (stageCounts[c.stage] || 0) + 1;
   }
 
-  // 默认显示全部，点击 tab 过滤
+  // 默认显示全部，点击 tab 过滤（默认仅"全部"激活）
   const tabsHtml = stages.map(s => {
     const count = stageCounts[s] || 0;
     if (count === 0) return "";
-    return `<button class="cl-tab cl-tab-active" onclick="filterLifecycle('${s}', this)">${s} (${count})</button>`;
-  }).join("") + `<button class="cl-tab" onclick="filterLifecycle('all', this)">全部 (${data.concepts.length})</button>`;
+    return `<button class="cl-tab" onclick="filterLifecycle('${s}', this)">${s} (${count})</button>`;
+  }).join("") + `<button class="cl-tab cl-tab-active" onclick="filterLifecycle('all', this)">全部 (${data.concepts.length})</button>`;
 
   // 构建每行的 mini sparkline
   function makeSparkline(freqSeries, weeks) {
@@ -498,16 +508,7 @@ function renderConceptLifecycle(data) {
       <div class="cl-summary">${data.concepts.length} 个概念，追踪 ${data.total_weeks} 周频次变化</div>
       <div class="cl-tabs" id="cl-tabs">${tabsHtml}</div>
       <div id="cl-list">${rows}</div>
-    </section>
-    <script>
-    function filterLifecycle(stage, btn) {
-      document.querySelectorAll('.cl-tab').forEach(t => t.classList.remove('cl-tab-active'));
-      btn.classList.add('cl-tab-active');
-      document.querySelectorAll('.cl-row').forEach(r => {
-        r.style.display = (stage === 'all' || r.dataset.stage === stage) ? '' : 'none';
-      });
-    }
-    </script>`;
+    </section>`;
 }
 
 /** 渲染连续多日入选榜 */
@@ -546,7 +547,8 @@ function renderSectorFlow(data) {
   const chartW = w - pad.l - pad.r;
   const chartH = h - pad.t - pad.b;
   const sectors = top_sectors.slice(0, 6);
-  const colors = ["#38bdf8", "#f472b6", "#a78bfa", "#34d399", "#f97316", "#6b7280"];
+  // 板块类别色（非涨跌）：避开纯红/纯绿，防止与涨跌色混淆
+  const colors = ["#38bdf8", "#c084fc", "#a78bfa", "#2dd4bf", "#eab308", "#94a3b8"];
   let maxVal = 0;
   for (const p of points) for (const s of sectors) maxVal = Math.max(maxVal, p.sectors[s] ?? 0);
   if (maxVal === 0) maxVal = 1;
@@ -569,12 +571,12 @@ function renderSectorFlow(data) {
     });
     svg += `<polyline points="${pts.join(" ")}" fill="none" stroke="${colors[si]}" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>`;
   });
-  sectors.forEach((sector, si) => {
-    svg += `<rect x="${pad.l + si * 100}" y="2" width="8" height="8" rx="2" fill="${colors[si]}"/>`;
-    svg += `<text x="${pad.l + si * 100 + 12}" y="10" class="sf-legend">${sector}</text>`;
-  });
   svg += `</svg>`;
-  return `<section><h2>板块资金流向</h2>${svg}</section>`;
+  // 图例用 HTML 而非 SVG，flexbox 自动换行，避免长板块名超出 viewBox 被裁
+  const legend = sectors.map((sector, si) =>
+    `<span class="sf-legend-item"><span class="sf-legend-dot" style="background:${colors[si]}"></span>${sector}</span>`
+  ).join("");
+  return `<section><h2>板块资金流向</h2>${svg}<div class="sf-legend">${legend}</div></section>`;
 }
 
 /** 渲染早鸟指数 */
