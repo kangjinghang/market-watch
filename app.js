@@ -736,6 +736,39 @@ function renderHerdDiffusion(data) {
     </section>`;
 }
 
+/** 渲染资金属性画像 */
+function renderCapitalProfile(data) {
+  if (!data || !data.profiles || data.profiles.length === 0) return "";
+  const typeLabel = { institution: "机构", hot_money: "游资", mixed: "混合", unknown: "未知" };
+  const typeClass = { institution: "cp-inst", hot_money: "cp-hot", mixed: "cp-mixed", unknown: "cp-unk" };
+  const rows = data.profiles.slice(0, 15).map(p => {
+    const seats = p.seats.length > 0 ? p.seats.slice(0, 3).join("·") : "—";
+    const dtCount = p.dragon_tiger_count;
+    const latestReason = p.dragon_tiger_records[0]?.reason ?? "";
+    return `
+      <div class="cp-row">
+        <span class="cp-type ${typeClass[p.capital_type]}">${typeLabel[p.capital_type]}</span>
+        <span class="cp-name">${p.ticker}</span>
+        <span class="cp-conf">${p.confidence.toFixed(0)}分</span>
+        <span class="cp-seats">${seats}</span>
+        <span class="cp-dt">上榜${dtCount}次</span>
+        <span class="cp-reason" title="${latestReason}">${latestReason.slice(0, 16)}${latestReason.length > 16 ? "…" : ""}</span>
+      </div>`;
+  }).join("");
+  const bt = data.by_type;
+  return `
+    <section>
+      <h2>资金属性画像 · ${data.date}</h2>
+      <div class="cp-summary">
+        <span class="cp-type cp-inst">机构 ${bt.institution}</span>
+        <span class="cp-type cp-hot">游资 ${bt.hot_money}</span>
+        <span class="cp-type cp-mixed">混合 ${bt.mixed}</span>
+        <span class="cp-type cp-unk">未知 ${bt.unknown}</span>
+      </div>
+      ${rows}
+    </section>`;
+}
+
 /** 渲染选股验证组合分析（在 renderFitness 内追加） */
 function renderComboAnalysis(data) {
   if (!data || !data.combo_analysis || data.combo_analysis.length === 0) return "";
@@ -768,6 +801,7 @@ async function main() {
     const excluded = await fetchJson("excluded-report.json").catch(() => null);
     const herdDiffusion = await fetchJson("herd-diffusion.json").catch(() => null);
     const targetDate = getTargetDate(meta);
+    const capitalProfile = await fetchJson(`capital-profile-${targetDate}.json`).catch(() => null);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
     $("#title").textContent = `市场体检 · ${targetDate}`;
@@ -792,6 +826,7 @@ async function main() {
       renderFitness(fitness) +
       renderExcludedTracker(excluded) +
       renderHerdDiffusion(herdDiffusion) +
+      renderCapitalProfile(capitalProfile) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
