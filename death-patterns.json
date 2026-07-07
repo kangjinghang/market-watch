@@ -1,122 +1,14 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-03",
-  "total_deaths": 339,
+  "date_range": "2026-06-16 ~ 2026-07-07",
+  "total_deaths": 411,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 66,
+    "高位回落": 69,
     "利空事件": 2,
-    "利空+下跌": 7,
-    "自然退潮": 263
+    "利空+下跌": 8,
+    "自然退潮": 331
   },
   "recent_deaths": [
-    {
-      "ticker": "SZ301319",
-      "name": "唯特偶",
-      "death_date": "2026-06-26",
-      "peak_pct": 678.49,
-      "last_pct": 678.49,
-      "last_days": 95,
-      "appearances": 6,
-      "pattern": "利空+下跌",
-      "events": [
-        {
-          "description": "唯特偶2026-03-24收盘价41.37元，涨幅6.90%",
-          "timestamp": 1774281600000,
-          "reason": "电子化学品板块受PCB概念反弹带动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4aef925a-02f1-445d-b9b9-bdb18611febc&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-03-25收盘价45.02元，涨幅8.82%",
-          "timestamp": 1774368000000,
-          "reason": "电子化学品行业受存储芯片价格上涨预期带动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-8773c500-05c6-473a-8733-97ebeba5c7ac&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-04-17收盘价68.39元，涨幅20.00%",
-          "timestamp": 1776355200000,
-          "reason": "电子化学品行业靶材概念走强，市场传闻靶材企业普遍提价",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-83957cc3-d21f-4c7b-a205-00c7aca27703&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-04-28收盘价66.77元，跌幅12.12%",
-          "timestamp": 1777305600000,
-          "reason": "高管及股东减持计划引发市场抛售压力",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-9ec567df-bdfb-490d-b3be-da118654c3aa&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-05-06收盘价78.40元，涨幅10.78%",
-          "timestamp": 1777996800000,
-          "reason": "电子化学品板块受半导体行业景气度提升带动，PCB概念活跃推动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cc642b80-2b66-43fa-bb41-ae2f5baa8587&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-05-07收盘价88.16元，涨幅12.45%",
-          "timestamp": 1778083200000,
-          "reason": "市场看好光模块技术升级推动高端锡膏需求爆发",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4bc1ba01-04fb-4710-a93e-2f377fc53fcb&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-06-04收盘价137.57元，涨幅20.00%",
-          "timestamp": 1780502400000,
-          "reason": "市场看好公司在高端锡膏领域的国产替代潜力，特别是T7/T8产品在光模块供应链中的突破",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-38e8583d-47e4-4a90-9d89-bd8a801aa735&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-06-05收盘价119.77元，跌幅12.94%",
-          "timestamp": 1780588800000,
-          "reason": "深交所下发关注函要求公司澄清光模块业务细节，市场担忧前期涨幅透支预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-9d4ec136-5e5a-4878-a68f-cba0397b2b87&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "唯特偶2026-06-08收盘价143.49元，涨幅19.80%",
-          "timestamp": 1780848000000,
-          "reason": "市场对光模块及先进封装领域高端锡膏国产替代的预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f69edfa7-bf7f-4da4-b4ed-459211daea09&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH603186",
-      "name": "华正新材",
-      "death_date": "2026-06-25",
-      "peak_pct": 354.44,
-      "last_pct": 354.44,
-      "last_days": 94,
-      "appearances": 6,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "华正新材2026-05-12收盘价97.91元，涨幅10.00%",
-          "timestamp": 1778515200000,
-          "reason": "人形机器人产业链进入规模化商业化新阶段，带动元件行业板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-854ea632-4075-432a-b237-365de7867f95&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-05-22收盘价123.84元，涨幅10.00%",
-          "timestamp": 1779379200000,
-          "reason": "覆铜板板块大涨带动个股上涨，华正新材作为ABF膜国产替代标的受市场关注",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-98627688-453e-47c3-bd1a-ff2e24dfea61&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-06-01收盘价120.32元，跌幅8.92%",
-          "timestamp": 1780243200000,
-          "reason": "PCB概念板块整体下挫及市场对华正新材CBF膜量产进展的担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3f7b96e2-1ff9-49b0-b6b1-6db1959280f8&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-06-08收盘价136.03元，涨幅10.00%",
-          "timestamp": 1780848000000,
-          "reason": "物理AI概念持续走强带动元件板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1361e8c1-3be5-4203-8779-d733bcef52d6&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-06-23收盘价231.60元，跌幅7.06%",
-          "timestamp": 1782144000000,
-          "reason": "半导体及存储芯片板块整体回调拖累元件行业，市场担忧上游原材料涨价挤压利润",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3d3a8b0-8676-4b65-b541-fd381e820616&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
     {
       "ticker": "SZ000636",
       "name": "风华高科",
@@ -150,108 +42,6 @@
           "timestamp": 1781193600000,
           "reason": "MLCC概念板块整体调整，市场担忧高端MLCC产能扩张受限及短期涨幅过大",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7e32ac20-2b07-4c17-b6e5-1cff60f50b81&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ002484",
-      "name": "江海股份",
-      "death_date": "2026-06-25",
-      "peak_pct": 322.46,
-      "last_pct": 322.46,
-      "last_days": 94,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "江海股份2026-03-30收盘价29.76元，涨幅6.93%",
-          "timestamp": 1774800000000,
-          "reason": "市场对公司超级电容器在新能源及AI领域应用的乐观预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4826ebe4-e8ce-4487-b3af-8f7cee2158b6&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "江海股份2026-04-14收盘价33.39元，涨幅8.94%",
-          "timestamp": 1776096000000,
-          "reason": "PCB上游覆铜板企业涨价潮推动行业景气度提升",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cbaec4b3-b604-4de1-9dcd-23758b936e34&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "江海股份2026-04-27收盘价37.64元，涨幅9.99%",
-          "timestamp": 1777219200000,
-          "reason": "AI电源业务增长与电网调频需求推动超级电容业务预期改善",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c60c2f44-e60d-435e-a86c-c74aaab0b62b&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "江海股份2026-05-07收盘价44.00元，涨幅8.83%",
-          "timestamp": 1778083200000,
-          "reason": "存储芯片概念板块活跃带动元件行业上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0788d97c-f5e1-4da5-9d24-e67b6791eef3&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "江海股份2026-05-18收盘价53.35元，涨幅9.64%",
-          "timestamp": 1779033600000,
-          "reason": "市场传闻元件行业需求增长及公司技术突破",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-559ed8fe-8111-4d64-b5ab-abea15c20674&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "江海股份2026-05-19收盘价58.69元，涨幅10.01%",
-          "timestamp": 1779120000000,
-          "reason": "AI服务器需求推动铝电解电容行业景气度提升，江海股份产品确认应用于国产AI服务器",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-620818f8-494d-4fe7-bf3c-703157a3f928&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH600183",
-      "name": "生益科技",
-      "death_date": "2026-06-25",
-      "peak_pct": 264.61,
-      "last_pct": 264.61,
-      "last_days": 84,
-      "appearances": 5,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "生益科技2026-05-13收盘价94.18元，涨幅10.00%",
-          "timestamp": 1778601600000,
-          "reason": "英伟达下一代AI芯片Vera Rubin量产方案敲定，带动PCB用量倍增，生益科技作为高端覆铜板龙头受益",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-71d91736-2c20-4aff-8a99-a62b2fd6dd21&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-05-18收盘价98.95元，涨幅10.01%",
-          "timestamp": 1779033600000,
-          "reason": "AI服务器高端覆铜板供需紧张及行业涨价潮驱动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dadd6e92-5107-419a-84e7-93b7f10f34af&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-05-22收盘价108.01元，涨幅10.00%",
-          "timestamp": 1779379200000,
-          "reason": "PCB板块整体走强及生益科技主导制定PTFE覆铜板国际标准",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-537788e9-a2e9-4213-8f93-f5d3312be8f0&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-05-26收盘价128.17元，涨幅10.00%",
-          "timestamp": 1779724800000,
-          "reason": "PCB板块整体走强及AI服务器高端覆铜板需求激增驱动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0f7479e4-fb22-4d85-98c1-29b7d448f558&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-06-09收盘价147.47元，涨幅10.00%",
-          "timestamp": 1780934400000,
-          "reason": "覆铜板行业涨价及AI算力需求爆发推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2c787169-00a1-4897-bd81-10a50e1fdb63&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-06-15收盘价166.41元，涨幅10.00%",
-          "timestamp": 1781452800000,
-          "reason": "花旗与高盛大幅上调目标价，预测AI覆铜板业务将推动毛利率突破历史峰值",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c7345a2b-b547-43f4-bdc7-fed94b8858aa&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-06-23收盘价167.87元，跌幅9.01%",
-          "timestamp": 1782144000000,
-          "reason": "市场担忧英伟达正交背板方案推迟导致高端覆铜板需求预期下调",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-29c65192-6d53-45c9-bf23-08afaae70bf7&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -304,115 +94,301 @@
       ]
     },
     {
-      "ticker": "SH688143",
-      "name": "长盈通",
-      "death_date": "2026-06-25",
-      "peak_pct": 249.41,
-      "last_pct": 34.47,
-      "last_days": 13,
-      "appearances": 4,
+      "ticker": "SH688082",
+      "name": "盛美上海",
+      "death_date": "2026-06-29",
+      "peak_pct": 220.56,
+      "last_pct": 220.56,
+      "last_days": 87,
+      "appearances": 7,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "盛美上海2026-04-28收盘价146.60元，跌幅11.74%",
+          "timestamp": 1777305600000,
+          "reason": "一季度净利润同比下滑57.66%及半导体设备板块整体走弱",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cd96ab50-c57d-4e07-bfa4-5c3888f7fdf7&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "盛美上海2026-05-25收盘价251.00元，涨幅17.75%",
+          "timestamp": 1779638400000,
+          "reason": "半导体设备板块整体走强及公司高温SPM清洗技术突破双重驱动",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b544375a-9301-470d-be8c-e01e0bdc4c13&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "盛美上海2026-06-03收盘价252.94元，涨幅12.39%",
+          "timestamp": 1780416000000,
+          "reason": "公司同日公布多项半导体设备专利技术申请，市场预期技术突破将增强竞争力",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c1f64f67-07ce-4f83-9451-ce94cef800a8&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "盛美上海2026-06-17收盘价361.20元，涨幅20.00%",
+          "timestamp": 1781625600000,
+          "reason": "半导体设备板块整体走强及公司技术突破与订单增长",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-76c443f0-34f7-4adb-bfad-33e8a0a2b401&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH600367",
+      "name": "红星发展",
+      "death_date": "2026-07-01",
+      "peak_pct": 215.45,
+      "last_pct": 215.45,
+      "last_days": 77,
+      "appearances": 3,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "红星发展2026-04-29收盘价23.22元，涨幅10.00%",
+          "timestamp": 1777392000000,
+          "reason": "硫磺及碳酸锶价格上涨叠加AI算力材料预期驱动股价涨停",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d14dc0a6-122b-41da-95bd-1604a394297c&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "红星发展2026-05-26收盘价29.78元，涨幅10.01%",
+          "timestamp": 1779724800000,
+          "reason": "玻璃基板概念逆势拉升，市场看好红星发展在该领域的潜力",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-aa9becfc-c791-4af9-a0ca-e269453cc8b5&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "红星发展2026-06-01收盘价35.31元，涨幅10.00%",
+          "timestamp": 1780243200000,
+          "reason": "2026-06-01到2026-06-02股价连续上涨，全球5N级高纯碳酸锶供给紧缺及玻璃基板产业链需求爆发驱动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-ddb11ae0-7e4d-442e-8800-9c8dd18ea930&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "红星发展2026-06-23收盘价56.00元，跌幅10.00%",
+          "timestamp": 1782144000000,
+          "reason": "市场传闻清华技术突破未达预期，引发高纯碳酸钡需求疑虑",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0b6c2d55-00b1-493c-ae77-60f75a30afee&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "红星发展2026-06-24收盘价51.00元，跌幅8.93%",
+          "timestamp": 1782230400000,
+          "reason": "市场对化学原料行业需求预期转弱及技术路线替代担忧加剧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-ae33d9d5-bd7d-4df2-9d79-655d8d70e5a6&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH600707",
+      "name": "彩虹股份",
+      "death_date": "2026-07-01",
+      "peak_pct": 209.82,
+      "last_pct": 81.7,
+      "last_days": 33,
+      "appearances": 7,
+      "pattern": "利空+下跌",
+      "events": [
+        {
+          "description": "彩虹股份2026-05-29收盘价9.77元，跌幅10.04%",
+          "timestamp": 1779984000000,
+          "reason": "股东减持叠加行业板块走弱导致股价异动下跌",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-63272132-aed3-4559-b2dc-e85e51ccc464&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "彩虹股份2026-06-10收盘价11.33元，跌幅9.00%",
+          "timestamp": 1781020800000,
+          "reason": "全球半导体板块普跌拖累光学光电子行业",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4112f602-23e9-487a-9e47-d4ff5a7dcc8a&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "death_date": "2026-07-01",
+      "peak_pct": 204.96,
+      "last_pct": 69.15,
+      "last_days": 14,
+      "appearances": 10,
       "pattern": "自然退潮",
       "events": []
     },
     {
-      "ticker": "SZ301013",
-      "name": "利和兴",
-      "death_date": "2026-06-25",
-      "peak_pct": 241.36,
-      "last_pct": 66.92,
-      "last_days": 13,
-      "appearances": 5,
+      "ticker": "SH600552",
+      "name": "凯盛科技",
+      "death_date": "2026-06-30",
+      "peak_pct": 181.36,
+      "last_pct": 181.36,
+      "last_days": 99,
+      "appearances": 6,
       "pattern": "高位回落",
       "events": [
         {
-          "description": "利和兴2026-06-12收盘价50.87元，跌幅12.68%",
+          "description": "凯盛科技2026-04-17收盘价15.02元，涨幅10.04%",
+          "timestamp": 1776355200000,
+          "reason": "玻璃基板概念延续强势，市场传闻公司TGV技术研发进展推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3e974f2e-15b0-4d12-ba47-9283b588e777&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "凯盛科技2026-05-25收盘价20.03元，涨幅7.98%",
+          "timestamp": 1779638400000,
+          "reason": "玻纤概念板块整体走强带动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f375925f-fdb1-47a7-87ee-78ade0bfcad6&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "凯盛科技2026-06-05收盘价21.71元，涨幅9.98%",
+          "timestamp": 1780588800000,
+          "reason": "玻璃基板概念板块集体走强，市场看好公司在半导体封装及MLCC材料领域的国产替代前景",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3468f817-5aa6-4326-b58d-730a759013f5&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "凯盛科技2026-06-10收盘价20.68元，跌幅9.06%",
+          "timestamp": 1781020800000,
+          "reason": "市场担忧TGV技术产业化进程不及预期及专利侵权风险",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2ec541a3-293b-452f-ae43-c1ceafe263b9&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "凯盛科技2026-06-12收盘价19.00元，跌幅7.72%",
           "timestamp": 1781193600000,
-          "reason": "MLCC概念板块整体下挫导致个股大幅回调",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-969a8b5c-062a-4557-92d1-176bcadbca4e&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH603986",
-      "name": "兆易创新",
-      "death_date": "2026-06-25",
-      "peak_pct": 226.06,
-      "last_pct": 226.06,
-      "last_days": 86,
-      "appearances": 5,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "兆易创新2026-05-06收盘价344.29元，涨幅10.00%",
-          "timestamp": 1777996800000,
-          "reason": "全球存储芯片市场持续涨价及行业逻辑转向成长驱动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1c0f7c7c-f9c4-447c-a2c5-18cc24a21635&navBarTransparent=1&navBarTheme=dark"
+          "reason": "MLCC概念板块整体下挫拖累个股表现",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f9da56fb-8e2d-4212-9ce4-119ec596b934&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "兆易创新2026-05-25收盘价515.60元，涨幅10.00%",
-          "timestamp": 1779638400000,
-          "reason": "存储芯片板块集体走强，叠加MobileDRAM合约价大幅上涨预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dabefa3c-71b1-4d94-b7b0-722ba6f69e0c&navBarTransparent=1&navBarTheme=dark"
+          "description": "凯盛科技2026-06-17收盘价24.13元，涨幅9.98%",
+          "timestamp": 1781625600000,
+          "reason": "玻璃基板概念板块走强，凯盛科技作为材料龙头受市场关注",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-42292829-9aa2-4a4f-b30f-a209a2096e25&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
     {
-      "ticker": "SH688507",
-      "name": "索辰科技",
-      "death_date": "2026-06-26",
-      "peak_pct": 221.1,
-      "last_pct": 221.1,
-      "last_days": 57,
-      "appearances": 5,
+      "ticker": "SH600378",
+      "name": "昊华科技",
+      "death_date": "2026-07-02",
+      "peak_pct": 176.79,
+      "last_pct": 176.79,
+      "last_days": 101,
+      "appearances": 6,
       "pattern": "高位回落",
       "events": [
         {
-          "description": "索辰科技2026-05-15收盘价107.52元，涨幅15.70%",
-          "timestamp": 1778774400000,
-          "reason": "机器人概念板块走强及市场对物理AI技术应用的乐观预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c6e8fa7e-f2bf-40e1-ae14-27f993c68022&navBarTransparent=1&navBarTheme=dark"
+          "description": "昊华科技2026-05-13收盘价35.24元，涨幅5.83%",
+          "timestamp": 1778601600000,
+          "reason": "半导体材料行业整体走强带动个股上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-5d44d5d8-1d99-4b67-a2ab-034d51b36b30&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "索辰科技2026-05-18收盘价129.02元，涨幅20.00%",
-          "timestamp": 1779033600000,
-          "reason": "2026-05-18到2026-05-19股价连续上涨，公司两项关键专利授权及物理AI概念成为市场热点",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dd7ad5cb-962f-40d9-ba9a-db4f92e606ae&navBarTransparent=1&navBarTheme=dark"
+          "description": "昊华科技2026-05-26收盘价39.25元，涨幅10.01%",
+          "timestamp": 1779724800000,
+          "reason": "市场传闻昊华科技子公司中昊晨光成为英伟达M10新材料PTFE核心供应商",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-04a645df-380e-4462-b6b0-059a9f51c174&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "索辰科技2026-05-22收盘价162.91元，涨幅14.01%",
-          "timestamp": 1779379200000,
-          "reason": "国家发改委加快具身智能训练基础设施建设政策利好，叠加公司与海光信息合作推进的传闻催化",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4357fea7-5422-4478-bc76-b20614582daf&navBarTransparent=1&navBarTheme=dark"
+          "description": "昊华科技2026-06-05收盘价46.60元，涨幅6.98%",
+          "timestamp": 1780588800000,
+          "reason": "AI服务器高频PCB材料PTFE需求爆发及六氟化钨供应短缺预期推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b33a3694-7665-4751-8ede-2738aee00fd5&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "索辰科技2026-05-25收盘价186.60元，涨幅14.54%",
-          "timestamp": 1779638400000,
-          "reason": "工业软件板块受政策与物理AI概念驱动，索辰科技作为CAE仿真与物理AI龙头获资金聚焦",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-08c117ad-f99a-464d-a803-728f131abb2f&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "索辰科技2026-05-29收盘价160.00元，跌幅18.10%",
-          "timestamp": 1779984000000,
-          "reason": "市场担忧物理AI业务研发及商业化前景",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-854cd3b5-19b4-4fc6-afc9-e2458466d97b&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "索辰科技2026-06-08收盘价225.11元，涨幅17.58%",
+          "description": "昊华科技2026-06-08收盘价50.22元，涨幅7.77%",
           "timestamp": 1780848000000,
-          "reason": "物理AI概念成为市场新主线，索辰科技作为CAE仿真龙头获资金追捧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-32fc7162-5959-4485-902d-1e9572589e9e&navBarTransparent=1&navBarTheme=dark"
+          "reason": "六氟化钨供需紧张导致产品价格上涨，叠加工业气体概念板块整体走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0856dcbb-c9fe-4dfd-b1ca-b062004dd390&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "索辰科技2026-06-11收盘价206.50元，跌幅15.37%",
-          "timestamp": 1781107200000,
-          "reason": "物理AI概念板块集体下挫及公司高估值风险释放",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d2d492c7-6fa1-41fd-a858-441c1d1c3f09&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "索辰科技2026-06-12收盘价247.70元，涨幅19.95%",
+          "description": "XD昊华科2026-06-12收盘价57.15元，跌幅10.00%",
           "timestamp": 1781193600000,
-          "reason": "物理AI概念板块整体走强及英伟达合作消息催化",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2cdb9420-93aa-41ba-92a6-fa2b287064e1&navBarTransparent=1&navBarTheme=dark"
+          "reason": "电子特气板块整体调整叠加公司公告六氟化钨业务占比极低引发市场担忧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-182611fb-98b8-42cc-a525-3a0027dc3ef5&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "昊华科技2026-06-17收盘价63.80元，涨幅10.00%",
+          "timestamp": 1781625600000,
+          "reason": "电子特气板块集体走强及六氟化钨涨价预期驱动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-e0abe068-c296-44db-a595-3dae4ae09f25&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH603678",
+      "name": "火炬电子",
+      "death_date": "2026-07-01",
+      "peak_pct": 172.67,
+      "last_pct": 172.67,
+      "last_days": 47,
+      "appearances": 7,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "火炬电子2026-05-19收盘价34.92元，涨幅6.69%",
+          "timestamp": 1779120000000,
+          "reason": "专利技术突破叠加MLCC行业需求增长预期",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-06b382cc-8f78-4449-8206-5b0eed4afae2&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "火炬电子2026-05-22收盘价37.68元，涨幅10.01%",
+          "timestamp": 1779379200000,
+          "reason": "MLCC概念板块活跃带动个股上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-e8d3c2f9-3ad2-44f2-a3a8-6eef544c487b&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "火炬电子2026-06-01收盘价53.28元，涨幅9.99%",
+          "timestamp": 1780243200000,
+          "reason": "2026-06-01到2026-06-03股价连续上涨，MLCC概念股持续活跃，行业需求增长预期推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-777e5778-7d15-4d3d-a565-d3b025593bbd&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "火炬电子2026-06-08收盘价56.68元，跌幅10.00%",
+          "timestamp": 1780848000000,
+          "reason": "ESG评级下调及市场对军工电子板块担忧引发抛售",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-ff44f39f-e8e8-4907-a0f7-65e4ef7a6f7d&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "火炬电子2026-06-11收盘价61.91元，涨幅10.00%",
+          "timestamp": 1781107200000,
+          "reason": "半导体材料板块整体走强带动军工电子板块上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-333d27dc-0c1d-42be-82bf-b3a621451e5a&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH603078",
+      "name": "江化微",
+      "death_date": "2026-07-06",
+      "peak_pct": 172,
+      "last_pct": 172,
+      "last_days": 105,
+      "appearances": 7,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "江化微2026-05-06收盘价26.25元，涨幅5.80%",
+          "timestamp": 1777996800000,
+          "reason": "电子化学品板块受半导体产业链需求增长带动",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cdf89691-a533-4c0f-ae94-bec52654864c&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "江化微2026-05-15收盘价30.25元，涨幅10.00%",
+          "timestamp": 1778774400000,
+          "reason": "半导体设备板块整体走强及公司控股股东股份转让事项推进预期",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0616639b-cf73-4fb7-9e07-ada86b29044f&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "江化微2026-05-18收盘价32.30元，涨幅6.78%",
+          "timestamp": 1779033600000,
+          "reason": "电子化学品行业受科技基金调仓及光通信需求增长带动",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-8605037c-7b5a-455c-a42e-90278a4b3389&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "江化微2026-05-19收盘价35.08元，涨幅8.61%",
+          "timestamp": 1779120000000,
+          "reason": "半导体产业链集体走强带动电子化学品板块上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-975eaf50-600f-48da-9d3c-e1c818df9450&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "江化微2026-06-05收盘价41.56元，涨幅10.01%",
+          "timestamp": 1780588800000,
+          "reason": "光刻机概念延续强势带动电子化学品板块上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-ede8e795-abfd-49d4-b6a2-d1e028906fda&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "江化微2026-06-12收盘价41.72元，跌幅10.01%",
+          "timestamp": 1781193600000,
+          "reason": "电子特气概念板块整体调整拖累个股表现",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-89b8f8dd-b23d-4628-93fc-caa4640d8df2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }

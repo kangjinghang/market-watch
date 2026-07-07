@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-03-daily",
+  "date": "2026-07-07",
   "min_streak": 3,
   "entries": [
     {
@@ -107,6 +107,22 @@
       "total_pct": 172.67
     },
     {
+      "ticker": "SZ300671",
+      "name": "富满微",
+      "streak": 5,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-06",
+      "total_pct": 121.47
+    },
+    {
+      "ticker": "SZ001331",
+      "name": "胜通能源",
+      "streak": 5,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-06",
+      "total_pct": 115.41
+    },
+    {
       "ticker": "SZ300346",
       "name": "南大光电",
       "streak": 5,
@@ -209,22 +225,6 @@
       "first_date": "2026-06-22",
       "last_date": "2026-06-25",
       "total_pct": 106.95
-    },
-    {
-      "ticker": "SZ001331",
-      "name": "胜通能源",
-      "streak": 4,
-      "first_date": "2026-06-29",
-      "last_date": "2026-07-03",
-      "total_pct": 106.68
-    },
-    {
-      "ticker": "SZ300671",
-      "name": "富满微",
-      "streak": 4,
-      "first_date": "2026-06-30",
-      "last_date": "2026-07-03",
-      "total_pct": 104.22
     },
     {
       "ticker": "SZ300873",
