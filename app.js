@@ -653,6 +653,8 @@ function renderFitness(data) {
       <span class="fit-stat">20日胜率 <b>${fmtPct(r.win_rate_20d)}</b> 均涨 ${fmtRet(r.avg_ret_20d)}</span>
     </div>`).join("");
 
+  const comboHtml = renderComboAnalysis(data);
+
   return `
     <section>
       <h2>选股验证 · ${data.total_entries} 条跟踪</h2>
@@ -660,6 +662,7 @@ function renderFitness(data) {
       ${kindRows}
       <div class="fit-section">区间天数分档</div>
       ${dayRows}
+      ${comboHtml}
     </section>`;
 }
 
@@ -704,6 +707,48 @@ function renderExcludedTracker(data) {
     </section>`;
 }
 
+/** 渲染羊群扩散 */
+function renderHerdDiffusion(data) {
+  if (!data || !data.sectors || data.sectors.length === 0) return "";
+  const rows = data.sectors.slice(0, 10).map(s => {
+    const stageClass = s.stage === "爆发" ? "herd-hot" : s.stage === "退潮" ? "herd-cold" : "herd-warm";
+    // 简易迷你折线
+    const counts = s.daily_counts;
+    const max = Math.max(...counts, 1);
+    const sparkW = 80;
+    const sparkH = 16;
+    const pts = counts.map((c, i) => `${(i / (counts.length - 1)) * sparkW},${sparkH - (c / max) * sparkH}`).join(" ");
+    return `
+      <div class="herd-row">
+        <span class="herd-sector">${s.sector}</span>
+        <svg class="herd-spark" viewBox="0 0 ${sparkW} ${sparkH}"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.6"/></svg>
+        <span class="herd-stage ${stageClass}">${s.stage}</span>
+        <span class="herd-stat">峰值${s.peak} → ${s.current}</span>
+        <span class="herd-stat">扩散+${s.max_surge}</span>
+      </div>`;
+  }).join("");
+  return `
+    <section>
+      <h2>羊群扩散 · ${data.date_range}</h2>
+      <div class="herd-summary">板块入选数扩散速度，越快越接近末期</div>
+      ${rows}
+    </section>`;
+}
+
+/** 渲染选股验证组合分析（在 renderFitness 内追加） */
+function renderComboAnalysis(data) {
+  if (!data || !data.combo_analysis || data.combo_analysis.length === 0) return "";
+  const fmtRet = (n) => n > 0 ? `+${n}%` : `${n}%`;
+  const rows = data.combo_analysis.map(c => `
+    <div class="fit-row">
+      <span class="fit-label">${c.combo}</span>
+      <span class="fit-count">${c.count}只</span>
+      <span class="fit-stat">5日胜率 <b>${c.win_rate_5d}%</b> 均涨 ${fmtRet(c.avg_ret_5d)}</span>
+      <span class="fit-stat">20日胜率 <b>${c.win_rate_20d}%</b> 均涨 ${fmtRet(c.avg_ret_20d)}</span>
+    </div>`).join("");
+  return `<div class="fit-section">涨停+区间组合</div>${rows}`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -720,6 +765,7 @@ async function main() {
     const anomaly = await fetchJson("anomaly.json").catch(() => null);
     const fitness = await fetchJson("fitness-report.json").catch(() => null);
     const excluded = await fetchJson("excluded-report.json").catch(() => null);
+    const herdDiffusion = await fetchJson("herd-diffusion.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -743,6 +789,7 @@ async function main() {
       renderAnomaly(anomaly) +
       renderFitness(fitness) +
       renderExcludedTracker(excluded) +
+      renderHerdDiffusion(herdDiffusion) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;

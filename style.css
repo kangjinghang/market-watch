@@ -1047,6 +1047,47 @@ section > h2 {
   color: #34d399;
 }
 
+/* ── 羊群扩散 ── */
+.herd-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.herd-row {
+  display: grid;
+  grid-template-columns: 70px 80px 50px 1fr 60px;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+}
+.herd-row:last-child { border-bottom: none; }
+.herd-sector {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.78rem;
+}
+.herd-spark {
+  width: 80px;
+  height: 16px;
+}
+.herd-stage {
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-align: center;
+}
+.herd-hot { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+.herd-warm { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+.herd-cold { background: rgba(107, 114, 128, 0.12); color: #6b7280; }
+.herd-stat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+
 /* ── 选股验证 ── */
 .fit-section {
   font-size: 0.6rem;
