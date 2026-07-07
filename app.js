@@ -852,24 +852,32 @@ function renderGroup(id, title, cardsHtml) {
 
 async function main() {
   try {
+    // meta 优先：targetDate 依赖它，daily 又依赖 targetDate
     const meta = await fetchJson("meta.json");
-    const series = await fetchJson("series/density.json");
-    const deathPatterns = await fetchJson("death-patterns.json").catch(() => null);
-    const silenceVolcano = await fetchJson("silence-volcano.json").catch(() => null);
-    const conceptCooccur = await fetchJson("concept-cooccurrence.json").catch(() => null);
-    const catchUpBand = await fetchJson("catch-up-band.json").catch(() => null);
-    const narrativeWeekly = await fetchJson("narrative-weekly.json").catch(() => null);
-    const conceptLifecycle = await fetchJson("concept-lifecycle.json").catch(() => null);
-    const streak = await fetchJson("streak.json").catch(() => null);
-    const sectorFlow = await fetchJson("sector-flow.json").catch(() => null);
-    const earlyBird = await fetchJson("early-bird.json").catch(() => null);
-    const anomaly = await fetchJson("anomaly.json").catch(() => null);
-    const fitness = await fetchJson("fitness-report.json").catch(() => null);
-    const excluded = await fetchJson("excluded-report.json").catch(() => null);
-    const herdDiffusion = await fetchJson("herd-diffusion.json").catch(() => null);
     const targetDate = getTargetDate(meta);
-    // [SHELVED 5.3] const capitalProfile = await fetchJson(`capital-profile-${targetDate}.json`).catch(() => null);
-    const daily = await fetchJson(`daily/${targetDate}.json`);
+    // 其余请求并行拉取（此前为串行 await，17 个请求形成瀑布，首屏明显变慢）
+    const [
+      series, daily,
+      deathPatterns, silenceVolcano, conceptCooccur, catchUpBand,
+      narrativeWeekly, conceptLifecycle, streak, sectorFlow,
+      earlyBird, anomaly, fitness, excluded, herdDiffusion,
+    ] = await Promise.all([
+      fetchJson("series/density.json"),
+      fetchJson(`daily/${targetDate}.json`),
+      fetchJson("death-patterns.json").catch(() => null),
+      fetchJson("silence-volcano.json").catch(() => null),
+      fetchJson("concept-cooccurrence.json").catch(() => null),
+      fetchJson("catch-up-band.json").catch(() => null),
+      fetchJson("narrative-weekly.json").catch(() => null),
+      fetchJson("concept-lifecycle.json").catch(() => null),
+      fetchJson("streak.json").catch(() => null),
+      fetchJson("sector-flow.json").catch(() => null),
+      fetchJson("early-bird.json").catch(() => null),
+      fetchJson("anomaly.json").catch(() => null),
+      fetchJson("fitness-report.json").catch(() => null),
+      fetchJson("excluded-report.json").catch(() => null),
+      fetchJson("herd-diffusion.json").catch(() => null),
+    ]);
 
     $("#title").textContent = `市场体检 · ${targetDate}`;
     $("#subtitle").textContent = `数据 ${meta.total_days} 天 · ${meta.earliest_date.slice(5)} ~ ${meta.latest_date.slice(5)}`;
