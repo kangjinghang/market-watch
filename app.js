@@ -509,6 +509,124 @@ function renderConceptLifecycle(data) {
     </script>`;
 }
 
+/** 渲染连续多日入选榜 */
+function renderStreak(data) {
+  if (!data || !data.entries || data.entries.length === 0) return "";
+  const rows = data.entries.slice(0, 15).map((e, i) => {
+    const pct = e.total_pct > 0 ? `+${e.total_pct.toFixed(1)}%` : `${e.total_pct.toFixed(1)}%`;
+    const barW = Math.min(e.streak * 15, 100);
+    return `
+      <div class="streak-row">
+        <span class="streak-rank">${i + 1}</span>
+        <div class="streak-info">
+          <span class="streak-name">${e.name}</span>
+          <span class="streak-ticker">${e.ticker}</span>
+        </div>
+        <div class="streak-bar-wrap">
+          <div class="streak-bar" style="width:${barW}%"></div>
+          <span class="streak-days">${e.streak}天</span>
+        </div>
+        <span class="streak-pct">${pct}</span>
+      </div>`;
+  }).join("");
+  return `
+    <section>
+      <h2>连续多日入选榜 · ${data.date}</h2>
+      <div class="streak-summary">连续 ≥${data.min_streak} 天入选区间异动榜</div>
+      ${rows}
+    </section>`;
+}
+
+/** 渲染板块资金流向曲线 */
+function renderSectorFlow(data) {
+  if (!data || !data.points || data.points.length < 2) return "";
+  const { points, top_sectors } = data;
+  const w = 620, h = 200, pad = { t: 20, r: 10, b: 40, l: 50 };
+  const chartW = w - pad.l - pad.r;
+  const chartH = h - pad.t - pad.b;
+  const sectors = top_sectors.slice(0, 6);
+  const colors = ["#38bdf8", "#f472b6", "#a78bfa", "#34d399", "#f97316", "#6b7280"];
+  let maxVal = 0;
+  for (const p of points) for (const s of sectors) maxVal = Math.max(maxVal, p.sectors[s] ?? 0);
+  if (maxVal === 0) maxVal = 1;
+  const stepX = chartW / (points.length - 1);
+  let svg = `<svg class="sector-flow-chart" viewBox="0 0 ${w} ${h}">`;
+  for (let i = 0; i <= 4; i++) {
+    const y = pad.t + (i / 4) * chartH;
+    svg += `<line x1="${pad.l}" y1="${y}" x2="${w - pad.r}" y2="${y}" stroke="rgba(255,255,255,0.04)"/>`;
+    svg += `<text x="${pad.l - 4}" y="${y + 3}" text-anchor="end" class="sf-axis">${Math.round(maxVal * (1 - i / 4))}</text>`;
+  }
+  const li = Math.max(1, Math.floor(points.length / 6));
+  for (let i = 0; i < points.length; i += li) {
+    svg += `<text x="${(pad.l + i * stepX).toFixed(1)}" y="${h - 8}" text-anchor="middle" class="sf-axis">${points[i].date.slice(5)}</text>`;
+  }
+  sectors.forEach((sector, si) => {
+    const pts = points.map((p, i) => {
+      const x = pad.l + i * stepX;
+      const y = pad.t + (1 - (p.sectors[sector] ?? 0) / maxVal) * chartH;
+      return `${x.toFixed(1)},${y.toFixed(1)}`;
+    });
+    svg += `<polyline points="${pts.join(" ")}" fill="none" stroke="${colors[si]}" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>`;
+  });
+  sectors.forEach((sector, si) => {
+    svg += `<rect x="${pad.l + si * 100}" y="2" width="8" height="8" rx="2" fill="${colors[si]}"/>`;
+    svg += `<text x="${pad.l + si * 100 + 12}" y="10" class="sf-legend">${sector}</text>`;
+  });
+  svg += `</svg>`;
+  return `<section><h2>板块资金流向</h2>${svg}</section>`;
+}
+
+/** 渲染早鸟指数 */
+function renderEarlyBird(data) {
+  if (!data || data.total_stocks === 0) return "";
+  const rows = data.entries.slice(0, 10).map((e, i) => {
+    const firstPct = e.first_day_pct > 0 ? `+${e.first_day_pct.toFixed(1)}%` : `${e.first_day_pct.toFixed(1)}%`;
+    const peakPct = `+${e.peak_pct.toFixed(1)}%`;
+    return `
+      <div class="eb-row">
+        <span class="eb-rank">${i + 1}</span>
+        <div class="eb-info">
+          <span class="eb-name">${e.ticker}</span>
+          <span class="eb-meta">首日 ${e.first_date.slice(5)} → 峰值 ${e.days_to_peak}天</span>
+        </div>
+        <div class="eb-pcts">
+          <span class="eb-first">首日 ${firstPct}</span>
+          <span class="eb-arrow">→</span>
+          <span class="eb-peak">峰值 ${peakPct}</span>
+        </div>
+      </div>`;
+  }).join("");
+  return `
+    <section>
+      <h2>早鸟指数 · ${data.date}</h2>
+      <div class="eb-summary">${data.total_stocks} 只 · 首日均涨 ${data.avg_first_day_pct}% · 峰值均涨 ${data.avg_peak_pct}%</div>
+      ${rows}
+    </section>`;
+}
+
+/** 渲染异常看板 */
+function renderAnomaly(data) {
+  if (!data || !data.anomalies || data.anomalies.length === 0) return "";
+  const rows = data.anomalies.map(a => {
+    const icon = a.deviation > 0 ? "↑" : "↓";
+    const typeLabel = a.type === "density_shift" ? "密度" : a.type === "sector_surge" ? "板块爆发" : a.type === "sector_drop" ? "板块退潮" : "概念突变";
+    const sevClass = a.severity === "high" ? "anomaly-high" : "anomaly-medium";
+    return `
+      <div class="anomaly-row">
+        <span class="anomaly-type ${sevClass}">${typeLabel}</span>
+        <span class="anomaly-label">${a.label}</span>
+        <span class="anomaly-val">${a.today} <span class="anomaly-arrow">${icon}</span> 均值 ${a.avg}</span>
+        <span class="anomaly-dev">${a.deviation > 0 ? "+" : ""}${(a.deviation * 100).toFixed(0)}%</span>
+      </div>`;
+  }).join("");
+  return `
+    <section>
+      <h2>异常看板 · ${data.date}</h2>
+      <div class="anomaly-summary">对比过去 ${data.lookback_days} 天均值</div>
+      ${rows}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -519,6 +637,10 @@ async function main() {
     const catchUpBand = await fetchJson("catch-up-band.json").catch(() => null);
     const narrativeWeekly = await fetchJson("narrative-weekly.json").catch(() => null);
     const conceptLifecycle = await fetchJson("concept-lifecycle.json").catch(() => null);
+    const streak = await fetchJson("streak.json").catch(() => null);
+    const sectorFlow = await fetchJson("sector-flow.json").catch(() => null);
+    const earlyBird = await fetchJson("early-bird.json").catch(() => null);
+    const anomaly = await fetchJson("anomaly.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -536,6 +658,10 @@ async function main() {
       renderCatchUpBand(catchUpBand) +
       renderNarrativeWeekly(narrativeWeekly) +
       renderConceptLifecycle(conceptLifecycle) +
+      renderStreak(streak) +
+      renderSectorFlow(sectorFlow) +
+      renderEarlyBird(earlyBird) +
+      renderAnomaly(anomaly) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;

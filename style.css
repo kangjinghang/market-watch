@@ -803,6 +803,179 @@ section > h2 {
   pointer-events: none;
 }
 
+/* ── 连续多日入选榜 ── */
+.streak-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.streak-row {
+  display: grid;
+  grid-template-columns: 24px 1fr 120px 60px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+}
+.streak-row:last-child { border-bottom: none; }
+.streak-rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+.streak-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.streak-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+.streak-ticker {
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.streak-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.streak-bar {
+  height: 6px;
+  background: linear-gradient(90deg, #38bdf8, #a78bfa);
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+.streak-days {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--accent);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.streak-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--up);
+  font-weight: 700;
+  text-align: right;
+}
+
+/* ── 板块资金流向 ── */
+.sector-flow-chart {
+  width: 100%;
+  display: block;
+}
+.sf-axis {
+  font-size: 9px;
+  fill: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+.sf-legend {
+  font-size: 9px;
+  fill: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── 早鸟指数 ── */
+.eb-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.eb-row {
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+.eb-row:last-child { border-bottom: none; }
+.eb-rank {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+.eb-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.eb-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+.eb-meta {
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.eb-pcts {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+}
+.eb-first { color: var(--text-dim); }
+.eb-arrow { color: var(--text-muted); font-size: 0.6rem; }
+.eb-peak { color: var(--up); font-weight: 700; }
+
+/* ── 异常看板 ── */
+.anomaly-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.anomaly-row {
+  display: grid;
+  grid-template-columns: 60px 1fr auto 50px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+}
+.anomaly-row:last-child { border-bottom: none; }
+.anomaly-type {
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-align: center;
+}
+.anomaly-high { background: rgba(239, 68, 68, 0.12); color: #ef4444; }
+.anomaly-medium { background: rgba(249, 115, 22, 0.12); color: #f97316; }
+.anomaly-label {
+  font-weight: 600;
+  color: var(--text);
+}
+.anomaly-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+.anomaly-arrow {
+  color: var(--text-muted);
+}
+.anomaly-dev {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: right;
+}
+.anomaly-row:has(.anomaly-dev) .anomaly-dev {
+  color: var(--up);
+}
+
 /* ── 历史 ── */
 .history {
   display: flex;
