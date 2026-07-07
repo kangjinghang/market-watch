@@ -736,7 +736,7 @@ function renderHerdDiffusion(data) {
     </section>`;
 }
 
-/** 渲染资金属性画像 */
+/** [SHELVED 5.3] 渲染资金属性画像
 function renderCapitalProfile(data) {
   if (!data || !data.profiles || data.profiles.length === 0) return "";
   const typeLabel = { institution: "机构", hot_money: "游资", mixed: "混合", unknown: "未知" };
@@ -768,6 +768,7 @@ function renderCapitalProfile(data) {
       ${rows}
     </section>`;
 }
+*/
 
 /** 渲染选股验证组合分析（在 renderFitness 内追加） */
 function renderComboAnalysis(data) {
@@ -801,7 +802,7 @@ async function main() {
     const excluded = await fetchJson("excluded-report.json").catch(() => null);
     const herdDiffusion = await fetchJson("herd-diffusion.json").catch(() => null);
     const targetDate = getTargetDate(meta);
-    const capitalProfile = await fetchJson(`capital-profile-${targetDate}.json`).catch(() => null);
+    // [SHELVED 5.3] const capitalProfile = await fetchJson(`capital-profile-${targetDate}.json`).catch(() => null);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
     $("#title").textContent = `市场体检 · ${targetDate}`;
@@ -826,7 +827,7 @@ async function main() {
       renderFitness(fitness) +
       renderExcludedTracker(excluded) +
       renderHerdDiffusion(herdDiffusion) +
-      renderCapitalProfile(capitalProfile) +
+      // [SHELVED 5.3] renderCapitalProfile(capitalProfile) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
