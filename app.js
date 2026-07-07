@@ -815,7 +815,12 @@ function renderHero(daily, anomaly, series) {
       <span class="hero-label">${s.label}</span>
     </div>`).join('<span class="hero-sep">·</span>');
 
-  return `<div class="hero"><div class="hero-label-top">今日要点</div><div class="hero-stats">${statsHtml}</div></div>`;
+  // 密度折线趋势：sparkline 挂在 hero 下方，renderSparkline(series) 找 #sparkline 填充
+  const spark = series?.points?.length >= 2
+    ? `<div class="hero-spark-wrap"><span class="hero-spark-label">近 ${series.points.length} 日密度趋势</span><svg class="sparkline" id="sparkline"></svg></div>`
+    : "";
+
+  return `<div class="hero"><div class="hero-label-top">今日要点</div><div class="hero-stats">${statsHtml}</div>${spark}</div>`;
 }
 
 /**
