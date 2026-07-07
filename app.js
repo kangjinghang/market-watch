@@ -786,6 +786,70 @@ function renderComboAnalysis(data) {
   return `<div class="fit-section">涨停+区间组合</div>${rows}`;
 }
 
+/** 今日要点 hero：4 个指标卡横排，纯数据拼接，回答"今天值不值得细看" */
+function renderHero(daily, anomaly, series) {
+  const densityPct = (daily.density.candidates / daily.density.universe * 100).toFixed(1);
+  // 与昨日密度对比（series 末两点 ratio）
+  const pts = series.points;
+  const todayRatio = pts[pts.length - 1]?.ratio;
+  const yestRatio = pts[pts.length - 2]?.ratio;
+  const diff = (todayRatio != null && yestRatio != null) ? todayRatio - yestRatio : null;
+  const trendIcon = diff == null ? "" : diff > 0
+    ? '<span class="hero-trend hero-trend-up">↑</span>'
+    : diff < 0 ? '<span class="hero-trend hero-trend-down">↓</span>' : "";
+
+  const hotSector = daily.sectors?.[0]?.name ?? "—";
+  const anomalyCount = anomaly?.anomalies?.length ?? 0;
+  // 连续涨停数取 streak（需 main 传入，此处用 daily 兜底：若无则显示单日异动数）
+  const streakCount = daily._streakCount ?? daily.density.daily_candidates ?? 0;
+
+  const stats = [
+    { value: `+${densityPct}%`, label: "异动密度", cls: "hero-val-up", extra: trendIcon },
+    { value: streakCount, label: "连续涨停", cls: "hero-val-up" },
+    { value: hotSector, label: "最热板块", cls: "hero-val-accent" },
+    { value: anomalyCount, label: "异常告警", cls: anomalyCount > 0 ? "hero-val-warn" : "hero-val-dim" },
+  ];
+  const statsHtml = stats.map(s => `
+    <div class="hero-stat">
+      <span class="hero-val ${s.cls}">${s.value}</span>${s.extra || ""}
+      <span class="hero-label">${s.label}</span>
+    </div>`).join('<span class="hero-sep">·</span>');
+
+  return `<div class="hero"><div class="hero-label-top">今日要点</div><div class="hero-stats">${statsHtml}</div></div>`;
+}
+
+/**
+ * 手风琴分组：顶层函数（innerHTML 注入的 <script> 浏览器不执行，故必须放此处）。
+ * 点击某组 → 展开它、收起其他所有组（手风琴）。
+ */
+function toggleGroup(id) {
+  document.querySelectorAll('.group').forEach(g => {
+    const isOpen = g.dataset.group === id;
+    g.classList.toggle('open', isOpen);
+    const body = g.querySelector('.group-body');
+    const arrow = g.querySelector('.group-arrow');
+    if (body) body.style.display = isOpen ? '' : 'none';
+    if (arrow) arrow.textContent = isOpen ? '▼' : '▶';
+  });
+}
+
+/** 渲染一个手风琴分组。cardsHtml 为组内各 section 拼接；全空则返回 ""（整组不渲染） */
+function renderGroup(id, title, cardsHtml) {
+  if (!cardsHtml || cardsHtml.trim() === "") return "";
+  // 统计组内 section 数
+  const count = (cardsHtml.match(/<section/g) || []).length;
+  return `
+    <div class="group" data-group="${id}">
+      <div class="group-head" onclick="toggleGroup('${id}')" role="button" tabindex="0"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleGroup('${id}')}">
+        <span class="group-arrow">▶</span>
+        <span class="group-title">${title}</span>
+        <span class="group-count">${count} 卡</span>
+      </div>
+      <div class="group-body" style="display:none">${cardsHtml}</div>
+    </div>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -810,32 +874,47 @@ async function main() {
     $("#title").textContent = `市场体检 · ${targetDate}`;
     $("#subtitle").textContent = `数据 ${meta.total_days} 天 · ${meta.earliest_date.slice(5)} ~ ${meta.latest_date.slice(5)}`;
 
+    // 连续涨停数供 hero 使用
+    daily._streakCount = streak?.entries?.length ?? 0;
+
+    // 今日要点 hero（始终置顶）+ 5 个概念簇手风琴分组
     const html =
-      renderDensity(daily.density) +
-      renderSectors(daily.sectors) +
-      renderCandidates(daily.top_candidates, "区间异动 Top 20") +
-      renderCandidates(daily.down_candidates, "衰退信号 Top 20", true) +
-      renderCandidates(daily.daily_top, "单日异动 Top 20") +
-      renderDeathPatterns(deathPatterns) +
-      renderSilenceVolcano(silenceVolcano) +
-      renderConceptCooccurrence(conceptCooccur) +
-      renderCatchUpBand(catchUpBand) +
-      renderNarrativeWeekly(narrativeWeekly) +
-      renderConceptLifecycle(conceptLifecycle) +
-      renderStreak(streak) +
-      renderSectorFlow(sectorFlow) +
-      renderEarlyBird(earlyBird) +
-      renderAnomaly(anomaly) +
-      renderFitness(fitness) +
-      renderExcludedTracker(excluded) +
-      renderHerdDiffusion(herdDiffusion) +
-      // [SHELVED 5.3] renderCapitalProfile(capitalProfile) +
-      renderHistory(series.points.map((p) => p.date), targetDate);
+      renderHero(daily, anomaly, series) +
+      renderGroup("up", "上涨 / 趋势",
+        renderCandidates(daily.top_candidates, "区间异动 Top 20") +
+        renderCandidates(daily.daily_top, "单日异动 Top 20") +
+        renderStreak(streak) +
+        renderCatchUpBand(catchUpBand)
+      ) +
+      renderGroup("down", "下跌 / 退潮",
+        renderCandidates(daily.down_candidates, "衰退信号 Top 20", true) +
+        renderDeathPatterns(deathPatterns) +
+        renderExcludedTracker(excluded)
+      ) +
+      renderGroup("sector", "板块 / 资金",
+        renderSectors(daily.sectors) +
+        renderSectorFlow(sectorFlow) +
+        renderHerdDiffusion(herdDiffusion)
+      ) +
+      renderGroup("concept", "概念 / 叙事",
+        renderConceptCooccurrence(conceptCooccur) +
+        renderConceptLifecycle(conceptLifecycle) +
+        renderNarrativeWeekly(narrativeWeekly) +
+        renderSilenceVolcano(silenceVolcano)
+      ) +
+      renderGroup("meta", "异常 / 验证",
+        renderAnomaly(anomaly) +
+        renderEarlyBird(earlyBird) +
+        renderFitness(fitness) +
+        // [SHELVED 5.3] renderCapitalProfile(capitalProfile) +
+        renderHistory(series.points.map((p) => p.date), targetDate)
+      );
 
     $("#app").innerHTML = html;
     $("#app").className = "";
 
-    // sparkline 需要在 DOM 渲染后画
+    // 默认展开第一组（上涨 / 趋势），sparkline 需在 DOM 渲染后画
+    toggleGroup("up");
     renderSparkline(series);
   } catch (e) {
     $("#app").className = "error";

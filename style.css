@@ -74,6 +74,143 @@ h1::before {
   letter-spacing: 0.01em;
 }
 
+/* ── 今日要点 hero ── */
+.hero {
+  background: var(--card);
+  border: 1px solid rgba(239, 68, 68, 0.22);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--up-soft) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-label-top {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  margin-bottom: 12px;
+  position: relative;
+}
+.hero-stats {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  flex-wrap: wrap;
+  position: relative;
+}
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.hero-val {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.hero-val-up { color: var(--up); }
+.hero-val-accent { color: var(--accent); font-size: 1.15rem; }
+.hero-val-warn { color: var(--warn); }
+.hero-val-dim { color: var(--text-dim); }
+.hero-trend {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+.hero-trend-up { color: var(--up); }
+.hero-trend-down { color: var(--down); }
+.hero-label {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+.hero-sep {
+  color: var(--border);
+  align-self: center;
+  margin: 0 6px;
+  font-size: 1rem;
+}
+@media (max-width: 480px) {
+  .hero-stats { gap: 2px; }
+  .hero-sep { margin: 0 3px; }
+  .hero-val { font-size: 1.25rem; }
+  .hero-val-accent { font-size: 1rem; }
+}
+
+/* ── 手风琴分组 ── */
+.group {
+  margin-bottom: 10px;
+}
+.group-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.group-head:hover {
+  background: #131c26;
+  border-color: var(--border);
+}
+.group.open > .group-head {
+  border-color: rgba(56, 189, 248, 0.25);
+  background: linear-gradient(90deg, var(--accent-dim), transparent);
+}
+.group-arrow {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  width: 12px;
+  flex-shrink: 0;
+  transition: color 0.15s ease;
+}
+.group.open > .group-head .group-arrow {
+  color: var(--accent);
+}
+.group-title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.group-count {
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: auto;
+}
+/* 组 body 透明：各 section 保留自己的卡片样式，head 仅作分组标签 */
+.group-body {
+  padding-top: 10px;
+}
+/* 组内 section 收紧间距 */
+.group-body > section {
+  margin-bottom: 10px;
+}
+.group-body > section:last-child {
+  margin-bottom: 4px;
+}
+@media (max-width: 480px) {
+  .group-head { padding: 10px 12px; }
+}
+
 /* ── Cards ── */
 section {
   background: var(--card);
