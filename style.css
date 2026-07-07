@@ -976,6 +976,77 @@ section > h2 {
   color: var(--up);
 }
 
+/* ── 被排除股追踪 ── */
+.excl-summary {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  margin-bottom: 14px;
+}
+.excl-summary b {
+  color: var(--accent);
+}
+.excl-section {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 14px 0 6px;
+  font-weight: 600;
+}
+.excl-row {
+  display: grid;
+  grid-template-columns: 80px 50px 1fr 60px;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+}
+.excl-row:last-child { border-bottom: none; }
+.excl-label {
+  font-weight: 600;
+  color: var(--text);
+}
+.excl-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.excl-stat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.excl-stat b {
+  color: var(--accent);
+  font-weight: 700;
+}
+.excl-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.excl-ticker {
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+.excl-reason {
+  color: var(--text-dim);
+  font-size: 0.68rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.excl-ret {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: right;
+}
+.excl-escapee {
+  color: #34d399;
+}
+
 /* ── 选股验证 ── */
 .fit-section {
   font-size: 0.6rem;

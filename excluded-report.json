@@ -1,0 +1,283 @@
+{
+  "date_range": "2026-06-17 ~ 2026-07-02",
+  "total_excluded": 204,
+  "total_with_return": 204,
+  "win_rate_5d": 39,
+  "avg_ret_5d": -3.11,
+  "win_rate_20d": 36,
+  "avg_ret_20d": -6.21,
+  "top_gainers": [
+    {
+      "ticker": "SH603650",
+      "name": "彤程新材",
+      "reason": "事件链末端因H股发行稀释股权担忧大跌近8%，涨幅仅37%且缺乏个股业绩强力支撑。",
+      "exclude_date": "2026-06-23",
+      "range_kind": "continued",
+      "range_days": 22,
+      "range_pct": 37.94,
+      "last_update": "2026-07-03",
+      "ret_5d": 34.49,
+      "ret_10d": 26.89
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "reason": "业绩订单担忧趋势减缓，缺乏持续性催化。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "continued",
+      "range_days": 53,
+      "range_pct": 135.35,
+      "last_update": "2026-07-03",
+      "ret_5d": 28.49,
+      "ret_10d": 28
+    },
+    {
+      "ticker": "SH600707",
+      "name": "彩虹股份",
+      "reason": "区间84天，一季度净利润同比大幅下降98%，且出现股东咸阳城投减持等负面风险事件。",
+      "exclude_date": "2026-06-26",
+      "range_kind": "continued",
+      "range_days": 84,
+      "range_pct": 156.07,
+      "last_update": "2026-07-03",
+      "ret_5d": 26.5,
+      "ret_10d": -3.15
+    },
+    {
+      "ticker": "SZ300223",
+      "name": "北京君正",
+      "reason": "区间异动事件仅3条且夹杂回调，事件链密度较低，趋势确立度弱于同类半导体标的。",
+      "exclude_date": "2026-06-23",
+      "range_kind": "new",
+      "range_days": 84,
+      "range_pct": 86.2,
+      "last_update": "2026-07-03",
+      "ret_5d": 24.77,
+      "ret_10d": 33.79
+    },
+    {
+      "ticker": "SH600707",
+      "name": "彩虹股份",
+      "reason": "Q1净利润同比下降98%，股东咸阳城投减持，基本面无法支撑。",
+      "exclude_date": "2026-06-25",
+      "range_kind": "continued",
+      "range_days": 83,
+      "range_pct": 150.02,
+      "last_update": "2026-07-03",
+      "ret_5d": 23.92,
+      "ret_10d": -0.81
+    },
+    {
+      "ticker": "SZ300223",
+      "name": "北京君正",
+      "reason": "存储板块波动剧烈，期间单日跌幅近9%，趋势健康度受损，缺乏中长期资金沉淀。",
+      "exclude_date": "2026-06-24",
+      "range_kind": "continued",
+      "range_days": 85,
+      "range_pct": 89.85,
+      "last_update": "2026-07-03",
+      "ret_5d": 22.37,
+      "ret_10d": 27.91
+    },
+    {
+      "ticker": "SH603986",
+      "name": "兆易创新",
+      "reason": "受大盘整体调整拖累，短期催化剂偏弱，动能减弱。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "new",
+      "range_days": 83,
+      "range_pct": 190.09,
+      "last_update": "2026-07-03",
+      "ret_5d": 21.79,
+      "ret_10d": 0.74
+    },
+    {
+      "ticker": "SH600176",
+      "name": "中国巨石",
+      "reason": "扩产引发竞争担忧，涨幅已达141%出现高位滞胀。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "new",
+      "range_days": 83,
+      "range_pct": 141.25,
+      "last_update": "2026-07-03",
+      "ret_5d": 21.58,
+      "ret_10d": 16.17
+    },
+    {
+      "ticker": "SH603283",
+      "name": "赛腾股份",
+      "reason": "涨幅108%但近期出现回落调整，资金分歧加大，不如其他加速期标的。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "new",
+      "range_days": 91,
+      "range_pct": 108.23,
+      "last_update": "2026-07-03",
+      "ret_5d": 21.14,
+      "ret_10d": 12.09
+    },
+    {
+      "ticker": "SZ300671",
+      "name": "富满微",
+      "reason": "半年度扭亏为盈环比大增，但主要由LED驱动产品涨价30%传导成本压力驱动，长期成长逻辑偏弱。",
+      "exclude_date": "2026-06-30",
+      "range_kind": "new",
+      "range_days": 21,
+      "range_pct": 86.49,
+      "last_update": "2026-07-03",
+      "ret_5d": 18.76
+    }
+  ],
+  "top_losers": [
+    {
+      "ticker": "SZ301196",
+      "name": "唯科科技",
+      "reason": "涨幅偏小趋势未完全确立。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "new",
+      "range_days": 21,
+      "range_pct": 76.61,
+      "last_update": "2026-07-03",
+      "ret_5d": -42.66,
+      "ret_10d": -45.28
+    },
+    {
+      "ticker": "SZ002768",
+      "name": "国恩股份",
+      "reason": "区间事件极少，且事件链主要由控股股东股份质押变动引发投资者关注及市场流动性担忧构成，驱动力弱。",
+      "exclude_date": "2026-06-17",
+      "range_kind": "continued",
+      "range_days": 75,
+      "range_pct": 73.75,
+      "last_update": "2026-07-03",
+      "ret_5d": -32.43,
+      "ret_10d": -34.38,
+      "ret_20d": -28.41
+    },
+    {
+      "ticker": "SZ000636",
+      "name": "风华高科",
+      "reason": "83天内涨幅高达332%严重透支预期，6月12日大跌8.06%显现筹码松动及高位抛压风险。",
+      "exclude_date": "2026-06-29",
+      "range_kind": "continued",
+      "range_days": 83,
+      "range_pct": 332.72,
+      "last_update": "2026-07-03",
+      "ret_5d": -27.12
+    },
+    {
+      "ticker": "SH600367",
+      "name": "红星发展",
+      "reason": "末端出现连续跌停（-10%、-8.9%）且伴随技术路线替代担忧，典型的见顶信号。",
+      "exclude_date": "2026-07-01",
+      "range_kind": "continued",
+      "range_days": 77,
+      "range_pct": 215.45,
+      "last_update": "2026-07-03",
+      "ret_5d": -25.27
+    },
+    {
+      "ticker": "SH600552",
+      "name": "凯盛科技",
+      "reason": "区间涨幅超171%且持续天数达98天，近期出现专利侵权风险担忧及连续放量跌停，见顶风险大。",
+      "exclude_date": "2026-06-29",
+      "range_kind": "continued",
+      "range_days": 98,
+      "range_pct": 171.86,
+      "last_update": "2026-07-03",
+      "ret_5d": -25.19
+    },
+    {
+      "ticker": "SZ300706",
+      "name": "阿石创",
+      "reason": "21天暴涨88%，事件链仅靠两次涨停异动及政府补助支撑，未见核心产品出货的强业绩兑现。",
+      "exclude_date": "2026-06-29",
+      "range_kind": "continued",
+      "range_days": 21,
+      "range_pct": 88.24,
+      "last_update": "2026-07-03",
+      "ret_5d": -24.43
+    },
+    {
+      "ticker": "SH600397",
+      "name": "江钨装备",
+      "reason": "涨幅134%主要由连续涨停情绪推升，缺乏实质业务落地，末端逻辑散乱（从玻璃基板到六氟化钨），投机味重。",
+      "exclude_date": "2026-07-01",
+      "range_kind": "new",
+      "range_days": 41,
+      "range_pct": 134.53,
+      "last_update": "2026-07-03",
+      "ret_5d": -22.9
+    },
+    {
+      "ticker": "SZ300398",
+      "name": "飞凯材料",
+      "reason": "核心依赖于康宁光纤涂覆树脂传闻，尚未有具体的订单数据支撑，涨幅主要受概念炒作推动。",
+      "exclude_date": "2026-06-29",
+      "range_kind": "new",
+      "range_days": 21,
+      "range_pct": 61.66,
+      "last_update": "2026-07-03",
+      "ret_5d": -22.49
+    },
+    {
+      "ticker": "SZ000920",
+      "name": "沃顿科技",
+      "reason": "涨幅仅47%，且事件多由电子特气及锂矿等外围概念带动，缺乏公司核心业务订单验证。",
+      "exclude_date": "2026-06-29",
+      "range_kind": "continued",
+      "range_days": 39,
+      "range_pct": 47.6,
+      "last_update": "2026-07-03",
+      "ret_5d": -22.23
+    },
+    {
+      "ticker": "SH605376",
+      "name": "博迁新材",
+      "reason": "短期涨幅高达136%，6月23日大跌暴露出市场对港股IPO稀释股权及短期偿债压力的担忧。",
+      "exclude_date": "2026-06-29",
+      "range_kind": "new",
+      "range_days": 42,
+      "range_pct": 136.99,
+      "last_update": "2026-07-03",
+      "ret_5d": -21.74
+    }
+  ],
+  "by_reason": [
+    {
+      "pattern": "其他",
+      "count": 95,
+      "win_rate_5d": 39,
+      "avg_ret_5d": -2.2
+    },
+    {
+      "pattern": "涨幅透支",
+      "count": 68,
+      "win_rate_5d": 43,
+      "avg_ret_5d": -3.64
+    },
+    {
+      "pattern": "减持/质押",
+      "count": 17,
+      "win_rate_5d": 35,
+      "avg_ret_5d": -3.01
+    },
+    {
+      "pattern": "趋势过久",
+      "count": 8,
+      "win_rate_5d": 25,
+      "avg_ret_5d": -8.71
+    },
+    {
+      "pattern": "跌停/大跌",
+      "count": 8,
+      "win_rate_5d": 38,
+      "avg_ret_5d": -5.9
+    },
+    {
+      "pattern": "利空事件",
+      "count": 8,
+      "win_rate_5d": 38,
+      "avg_ret_5d": -1.21
+    }
+  ]
+}

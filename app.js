@@ -663,6 +663,47 @@ function renderFitness(data) {
     </section>`;
 }
 
+/** 渲染被排除股追踪 */
+function renderExcludedTracker(data) {
+  if (!data || data.total_excluded === 0) return "";
+  const fmtRet = (n) => n > 0 ? `+${n}%` : `${n}%`;
+
+  const summary = `
+    <div class="excl-summary">
+      排除 ${data.total_excluded} 只 · 有收益 ${data.total_with_return} 只 ·
+      5日胜率 <b>${data.win_rate_5d}%</b> 均涨 ${fmtRet(data.avg_ret_5d)} ·
+      20日胜率 <b>${data.win_rate_20d}%</b> 均涨 ${fmtRet(data.avg_ret_20d)}
+    </div>`;
+
+  // 按原因分类
+  const reasonRows = data.by_reason.map(r => `
+    <div class="excl-row">
+      <span class="excl-label">${r.pattern}</span>
+      <span class="excl-count">${r.count}只</span>
+      <span class="excl-stat">5日胜率 <b>${r.win_rate_5d}%</b></span>
+      <span class="excl-stat">均涨 ${fmtRet(r.avg_ret_5d)}</span>
+    </div>`).join("");
+
+  // 漏网之鱼（被排除但大涨）
+  const escapees = data.top_gainers.filter(e => e.ret_5d > 10).slice(0, 5);
+  const escapeeRows = escapees.map(e => `
+    <div class="excl-row">
+      <span class="excl-name">${e.name}</span>
+      <span class="excl-ticker">${e.ticker}</span>
+      <span class="excl-reason">${e.reason.slice(0, 30)}…</span>
+      <span class="excl-ret excl-escapee">${fmtRet(e.ret_5d)}</span>
+    </div>`).join("");
+
+  return `
+    <section>
+      <h2>被排除股追踪 · ${data.date_range}</h2>
+      ${summary}
+      <div class="excl-section">按排除原因</div>
+      ${reasonRows}
+      ${escapeeRows ? `<div class="excl-section">漏网之鱼（排除后大涨）</div>${escapeeRows}` : ""}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -678,6 +719,7 @@ async function main() {
     const earlyBird = await fetchJson("early-bird.json").catch(() => null);
     const anomaly = await fetchJson("anomaly.json").catch(() => null);
     const fitness = await fetchJson("fitness-report.json").catch(() => null);
+    const excluded = await fetchJson("excluded-report.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -700,6 +742,7 @@ async function main() {
       renderEarlyBird(earlyBird) +
       renderAnomaly(anomaly) +
       renderFitness(fitness) +
+      renderExcludedTracker(excluded) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;
