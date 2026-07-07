@@ -627,6 +627,42 @@ function renderAnomaly(data) {
     </section>`;
 }
 
+/** 渲染选股验证 */
+function renderFitness(data) {
+  if (!data || data.total_entries === 0) return "";
+  const k = data.by_kind;
+  const fmtPct = (n) => `${n}%`;
+  const fmtRet = (n) => n > 0 ? `+${n}%` : `${n}%`;
+
+  const kindRows = [
+    { label: "B1 延续型", ...k.continued },
+    { label: "B2 新成型", ...k.new },
+  ].filter(r => r.count > 0).map(r => `
+    <div class="fit-row">
+      <span class="fit-label">${r.label}</span>
+      <span class="fit-count">${r.count}只</span>
+      <span class="fit-stat">5日胜率 <b>${fmtPct(r.win_rate_5d)}</b> 均涨 ${fmtRet(r.avg_ret_5d)}</span>
+      <span class="fit-stat">20日胜率 <b>${fmtPct(r.win_rate_20d)}</b> 均涨 ${fmtRet(r.avg_ret_20d)}</span>
+    </div>`).join("");
+
+  const dayRows = data.by_days_bucket.map(r => `
+    <div class="fit-row">
+      <span class="fit-label">${r.bucket}</span>
+      <span class="fit-count">${r.count}只</span>
+      <span class="fit-stat">5日胜率 <b>${fmtPct(r.win_rate_5d)}</b> 均涨 ${fmtRet(r.avg_ret_5d)}</span>
+      <span class="fit-stat">20日胜率 <b>${fmtPct(r.win_rate_20d)}</b> 均涨 ${fmtRet(r.avg_ret_20d)}</span>
+    </div>`).join("");
+
+  return `
+    <section>
+      <h2>选股验证 · ${data.total_entries} 条跟踪</h2>
+      <div class="fit-section">B1延续 vs B2新出</div>
+      ${kindRows}
+      <div class="fit-section">区间天数分档</div>
+      ${dayRows}
+    </section>`;
+}
+
 async function main() {
   try {
     const meta = await fetchJson("meta.json");
@@ -641,6 +677,7 @@ async function main() {
     const sectorFlow = await fetchJson("sector-flow.json").catch(() => null);
     const earlyBird = await fetchJson("early-bird.json").catch(() => null);
     const anomaly = await fetchJson("anomaly.json").catch(() => null);
+    const fitness = await fetchJson("fitness-report.json").catch(() => null);
     const targetDate = getTargetDate(meta);
     const daily = await fetchJson(`daily/${targetDate}.json`);
 
@@ -662,6 +699,7 @@ async function main() {
       renderSectorFlow(sectorFlow) +
       renderEarlyBird(earlyBird) +
       renderAnomaly(anomaly) +
+      renderFitness(fitness) +
       renderHistory(series.points.map((p) => p.date), targetDate);
 
     $("#app").innerHTML = html;

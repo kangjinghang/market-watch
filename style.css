@@ -976,6 +976,44 @@ section > h2 {
   color: var(--up);
 }
 
+/* ── 选股验证 ── */
+.fit-section {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 14px 0 6px;
+  font-weight: 600;
+}
+.fit-row {
+  display: grid;
+  grid-template-columns: 80px 50px 1fr 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.75rem;
+}
+.fit-row:last-child { border-bottom: none; }
+.fit-label {
+  font-weight: 600;
+  color: var(--text);
+}
+.fit-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.fit-stat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+.fit-stat b {
+  color: var(--accent);
+  font-weight: 700;
+}
+
 /* ── 历史 ── */
 .history {
   display: flex;
