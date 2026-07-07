@@ -105,13 +105,14 @@ function renderSectors(sectors) {
 }
 
 /** 渲染候选榜 */
-function renderCandidates(candidates, title) {
+function renderCandidates(candidates, title, isDown) {
   if (!candidates || candidates.length === 0) return "";
   const rows = candidates.map((c) => {
     const tag = c.kind === "continued"
       ? '<span class="tag tag-continued">延续</span>'
       : '<span class="tag tag-new">新出</span>';
     const pct = c.pct > 0 ? `+${c.pct}%` : `${c.pct}%`;
+    const pctClass = isDown ? "cand-pct-down" : "";
     const meta = c.days != null ? `${c.days}天` : "";
     const summary = c.summary ? `<div class="cand-summary">${c.summary}</div>` : "";
     const reason = c.reason ? `<div class="cand-summary">${c.reason}</div>` : "";
@@ -125,7 +126,7 @@ function renderCandidates(candidates, title) {
           <div class="cand-ticker">${c.ticker}</div>
         </div>
         <div>
-          <div class="cand-pct">${pct}</div>
+          <div class="cand-pct ${pctClass}">${pct}</div>
           <div class="cand-meta">${meta}</div>
         </div>
         ${summary}${reason}
@@ -776,6 +777,7 @@ async function main() {
       renderDensity(daily.density) +
       renderSectors(daily.sectors) +
       renderCandidates(daily.top_candidates, "区间异动 Top 20") +
+      renderCandidates(daily.down_candidates, "衰退信号 Top 20", true) +
       renderCandidates(daily.daily_top, "单日异动 Top 20") +
       renderDeathPatterns(deathPatterns) +
       renderSilenceVolcano(silenceVolcano) +
