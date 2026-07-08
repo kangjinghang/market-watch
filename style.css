@@ -124,7 +124,7 @@ h1::before {
 .hero-val {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1;
   letter-spacing: -0.5px;
 }
@@ -212,6 +212,7 @@ h1::before {
 .section-tab.active {
   background: var(--accent);
   color: white;
+  box-shadow: 0 2px 8px rgba(94, 106, 210, 0.4);
 }
 .section-tab .tab-count {
   font-size: 0.625rem;
@@ -229,7 +230,15 @@ h1::before {
 }
 .tab-panel.active {
   display: block;
-  animation: fadeIn 0.25s ease;
+  animation: fadeIn 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Tab 内卡片 hover 增强 */
+.tab-panel > section {
+  transition: all 0.2s ease;
+}
+.tab-panel > section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
 /* Tab 内 section 间距 */
 .tab-panel > section {
@@ -805,7 +814,7 @@ section > h2 {
 .cub-heat-bar {
   height: 100%;
   border-radius: 2px;
-  background: linear-gradient(90deg, #f97316, #fb923c);
+  background: linear-gradient(90deg, var(--accent), var(--accent-interactive));
   transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 /* 补涨候选 */
@@ -1014,7 +1023,11 @@ section > h2 {
   font-size: 0.75rem;
   color: var(--text-quaternary);
   text-align: center;
+  font-weight: 600;
 }
+.streak-row:nth-child(1) .streak-rank { color: #ffd700; }
+.streak-row:nth-child(2) .streak-rank { color: #c0c0c0; }
+.streak-row:nth-child(3) .streak-rank { color: #cd7f32; }
 .streak-info {
   display: flex;
   flex-direction: column;
@@ -1453,4 +1466,9 @@ a:focus-visible, button:focus-visible {
   .density-pct { font-size: 2.6rem; }
   .sector-row { grid-template-columns: 60px 1fr 44px; gap: 8px; }
   section { padding: 18px; }
+  .hero-val { font-size: 1.5rem; }
+  .hero-stats { gap: 8px; }
+  .hero-sep { margin: 0 4px; }
+  .section-tabs { overflow-x: auto; }
+  .section-tab { min-width: 100px; flex: none; }
 }
