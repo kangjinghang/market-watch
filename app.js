@@ -10,6 +10,11 @@
 
 const $ = (sel) => document.querySelector(sel);
 
+/** 问号 tooltip HTML */
+function tip(text) {
+  return `<span class="info-tip">?<span class="tooltip">${text}</span></span>`;
+}
+
 /** 从 URL 拿 date 参数，没有则用 meta 里的 latest_date */
 function getTargetDate(meta) {
   const params = new URLSearchParams(location.search);
@@ -28,7 +33,7 @@ function renderDensity(density) {
   const ratioPct = (density.candidates / density.universe * 100).toFixed(1);
   return `
     <section>
-      <h2>异动密度</h2>
+      <h2>异动密度${tip('当日入选候选股占全市场比例。数值越高说明市场活跃度越强，异动股越多。')}</h2>
       <div class="density-main">
         <span class="density-pct">${ratioPct}%</span>
         <span class="density-detail">${density.candidates} / ${density.universe} 只入选</span>
@@ -101,7 +106,7 @@ function renderSectors(sectors) {
         <span class="sector-meta">${s.count}只<br>${s.avg_pct > 0 ? "+" : ""}${s.avg_pct}%</span>
       </div>`;
   }).join("");
-  return `<section><h2>板块温度（区间异动 Top 12）</h2>${rows}</section>`;
+  return `<section><h2>板块温度（区间异动 Top 12）${tip('按申万一级行业聚合的区间异动股数排行。股数越多、均涨越高说明该板块趋势越强。')}</h2>${rows}</section>`;
 }
 
 /** 渲染候选榜 */
@@ -132,7 +137,7 @@ function renderCandidates(candidates, title, isDown) {
         ${summary}${reason}
       </div>`;
   }).join("");
-  return `<section><h2>${title}</h2>${rows}</section>`;
+  return `<section><h2>${title}${tip('正在进行中的上涨趋势股票。"延续"表示持续多日入选，"新出"表示首次入选。涨幅为区间累计涨幅。')}</h2>${rows}</section>`;
 }
 
 /** 渲染历史日期导航 */
@@ -186,7 +191,7 @@ function renderDeathPatterns(data) {
 
   return `
     <section>
-      <h2>趋势死亡模式 · ${data.date_range}</h2>
+      <h2>趋势死亡模式 · ${data.date_range}${tip('分析趋势终止的原因分类：高位回落（涨幅过大后回调）、利空+下跌（负面事件驱动）、闪崩（短期暴跌）、自然退潮（热度消退）。')}</h2>
       <div class="death-summary">共 ${total} 次趋势终止</div>
       ${barHtml}
       ${recentHtml ? `<div class="death-recent-title">近期退场</div>${recentHtml}` : ""}
@@ -222,7 +227,7 @@ function renderSilenceVolcano(data) {
 
   return `
     <section>
-      <h2>沉默 · 火山爆发</h2>
+      <h2>沉默 · 火山爆发${tip('扫描前期有强势表现但近期沉默的股票，寻找即将再次爆发的机会。关注量比和斐波那契支撑位。')}</h2>
       <div class="sv-summary">扫描 ${data.total_silent} 个沉默 ticker → ${data.total_candidates} 个通过全部筛选</div>
       ${rows}
     </section>`;
@@ -335,7 +340,7 @@ function renderConceptCooccurrence(data) {
 
   return `
     <section>
-      <h2>概念共现网络 · ${data.date_range}</h2>
+      <h2>概念共现网络 · ${data.date_range}${tip('从归因文本中提取概念，分析概念间的共现关系。共现次数越多说明概念关联越强，可发现潜在的联动机会。')}</h2>
       <div class="cc-summary">从 ${data.total_reasons} 条归因文本提取 ${data.total_concepts} 个概念，${data.total_pairs} 个共现对</div>
       <div class="cc-tabs">
         <button class="cc-tab cc-tab-active" onclick="document.getElementById('cc-matrix').style.display='block';document.getElementById('cc-graph').style.display='none';this.classList.add('cc-tab-active');this.nextElementSibling.classList.remove('cc-tab-active')">热力矩阵</button>
@@ -389,7 +394,7 @@ function renderCatchUpBand(data) {
 
   return `
     <section>
-      <h2>排头兵 · 补涨梯队 · ${data.date}</h2>
+      <h2>排头兵 · 补涨梯队 · ${data.date}${tip('排头兵：近期涨停密度最高的概念。补涨梯队：同概念中涨幅较小但趋势向上的股票，可能有补涨机会。')}</h2>
       <div class="cub-summary">近 ${data.lookback_days} 天 ${data.leaders.length} 个排头兵，${data.hot_concepts.length} 个热门概念</div>
       <div class="cub-section-title">热门概念（涨停密度 × 持续天数）</div>
       ${heatRows}
@@ -437,7 +442,7 @@ function renderNarrativeWeekly(data) {
 
   return `
     <section>
-      <h2>市场叙事周报</h2>
+      <h2>市场叙事周报${tip('每周概念热度变化追踪：主线（最热概念）、新兴热点（快速升温）、退潮（热度消退）。帮助把握市场轮动节奏。')}</h2>
       ${cards}
     </section>`;
 }
@@ -504,7 +509,7 @@ function renderConceptLifecycle(data) {
 
   return `
     <section>
-      <h2>概念热度生命周期 · ${data.date_range}</h2>
+      <h2>概念热度生命周期 · ${data.date_range}${tip('追踪概念热度阶段：高峰（当前最热）、升温（快速上升）、降温（热度下降）、退潮（已冷却）。帮助判断概念所处阶段。')}</h2>
       <div class="cl-summary">${data.concepts.length} 个概念，追踪 ${data.total_weeks} 周频次变化</div>
       <div class="cl-tabs" id="cl-tabs">${tabsHtml}</div>
       <div id="cl-list">${rows}</div>
@@ -533,7 +538,7 @@ function renderStreak(data) {
   }).join("");
   return `
     <section>
-      <h2>连续多日入选榜 · ${data.date}</h2>
+      <h2>连续多日入选榜 · ${data.date}${tip('连续多天入选区间异动榜的股票。连续天数越长说明趋势越稳定，是强势股的信号。')}</h2>
       <div class="streak-summary">连续 ≥${data.min_streak} 天入选区间异动榜</div>
       ${rows}
     </section>`;
@@ -576,7 +581,7 @@ function renderSectorFlow(data) {
   const legend = sectors.map((sector, si) =>
     `<span class="sf-legend-item"><span class="sf-legend-dot" style="background:${colors[si]}"></span>${sector}</span>`
   ).join("");
-  return `<section><h2>板块资金流向</h2>${svg}<div class="sf-legend">${legend}</div></section>`;
+  return `<section><h2>板块资金流向${tip('追踪近N天各板块异动股数变化趋势。曲线向上表示该板块异动增多，向下表示退潮。')}</h2>${svg}<div class="sf-legend">${legend}</div></section>`;
 }
 
 /** 渲染早鸟指数 */
@@ -601,7 +606,7 @@ function renderEarlyBird(data) {
   }).join("");
   return `
     <section>
-      <h2>早鸟指数 · ${data.date}</h2>
+      <h2>早鸟指数 · ${data.date}${tip('分析首次入选后的涨幅表现。首日涨幅反映初始动能，峰值涨幅反映后续爆发力，天数反映达到峰值的速度。')}</h2>
       <div class="eb-summary">${data.total_stocks} 只 · 首日均涨 ${data.avg_first_day_pct}% · 峰值均涨 ${data.avg_peak_pct}%</div>
       ${rows}
     </section>`;
@@ -624,7 +629,7 @@ function renderAnomaly(data) {
   }).join("");
   return `
     <section>
-      <h2>异常看板 · ${data.date}</h2>
+      <h2>异常看板 · ${data.date}${tip('对比过去N天均值检测异常波动。偏离越大说明当日市场变化越剧烈，可能预示趋势转折。')}</h2>
       <div class="anomaly-summary">对比过去 ${data.lookback_days} 天均值</div>
       ${rows}
     </section>`;
@@ -660,7 +665,7 @@ function renderFitness(data) {
 
   return `
     <section>
-      <h2>选股验证 · ${data.total_entries} 条跟踪</h2>
+      <h2>选股验证 · ${data.total_entries} 条跟踪${tip('跟踪候选股的实际表现：B1延续型（持续上涨）vs B2新成型（首次入选），5日/20日胜率反映选股准确度。')}</h2>
       <div class="fit-section">B1延续 vs B2新出</div>
       ${kindRows}
       <div class="fit-section">区间天数分档</div>
@@ -702,7 +707,7 @@ function renderExcludedTracker(data) {
 
   return `
     <section>
-      <h2>被排除股追踪 · ${data.date_range}</h2>
+      <h2>被排除股追踪 · ${data.date_range}${tip('分析被排除股票的实际表现。"漏网之鱼"指被排除但后续大涨的股票，用于优化排除规则。')}</h2>
       ${summary}
       <div class="excl-section">按排除原因</div>
       ${reasonRows}
@@ -732,7 +737,7 @@ function renderHerdDiffusion(data) {
   }).join("");
   return `
     <section>
-      <h2>羊群扩散 · ${data.date_range}</h2>
+      <h2>羊群扩散 · ${data.date_range}${tip('板块入选数扩散速度。扩散越快说明资金涌入越猛，但越快越接近末期。爆发→升温→退潮是完整周期。')}</h2>
       <div class="herd-summary">板块入选数扩散速度，越快越接近末期</div>
       ${rows}
     </section>`;
