@@ -186,6 +186,8 @@ h1::before {
   border-radius: 10px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  position: relative;
+  z-index: 50;
 }
 .section-tab {
   flex: 1;
