@@ -186,8 +186,6 @@ h1::before {
   border-radius: 10px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  position: relative;
-  z-index: 50;
 }
 .section-tab {
   flex: 1;
@@ -311,9 +309,9 @@ section > h2 {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  bottom: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-4px);
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) translateX(8px);
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -334,24 +332,24 @@ section > h2 {
   visibility: visible;
   opacity: 1;
 }
-/* tooltip 箭头（在下方，指向问号） */
+/* tooltip 箭头（在左侧，指向问号） */
 .info-tip .tooltip::before {
   content: '';
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
   border: 5px solid transparent;
-  border-top-color: var(--border);
+  border-right-color: var(--border);
 }
 .info-tip .tooltip::after {
   content: '';
   position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
   border: 4px solid transparent;
-  border-top-color: var(--bg-elevated);
+  border-right-color: var(--bg-elevated);
 }
 
 /* ── 密度 ── */
