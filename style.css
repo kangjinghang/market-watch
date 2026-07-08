@@ -1473,6 +1473,42 @@ section > h2 {
   font-size: 0.85rem;
 }
 
+/* ── 展开/收起按钮 ── */
+.show-more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: transparent;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.show-more-btn:hover {
+  background: rgba(255,255,255,0.02);
+  border-color: var(--accent);
+  color: var(--accent-interactive);
+}
+.show-more-btn .arrow {
+  font-size: 0.625rem;
+  transition: transform 0.15s ease;
+}
+.show-more-btn.expanded .arrow {
+  transform: rotate(180deg);
+}
+/* 折叠隐藏的项目 */
+.collapsible-item.hidden {
+  display: none;
+}
+
 /* ── 动画 ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(16px); }

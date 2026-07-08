@@ -15,6 +15,59 @@ function tip(text) {
   return `<span class="info-tip">?<span class="tooltip">${text}</span></span>`;
 }
 
+/** 默认显示数量 */
+const DEFAULT_SHOW = 5;
+
+/** 包装可折叠列表：itemsHtml 为完整列表，wrapClass 为容器类名 */
+function collapsibleList(itemsHtml, wrapClass = '') {
+  if (!itemsHtml || itemsHtml.trim() === '') return '';
+  // 给每个 item 添加 collapsible-item 类
+  const wrapped = itemsHtml.replace(/<div class="cand-row/g, '<div class="cand-row collapsible-item')
+    .replace(/<div class="streak-row/g, '<div class="streak-row collapsible-item')
+    .replace(/<div class="cub-catchup-row/g, '<div class="cub-catchup-row collapsible-item');
+  return `<div class="${wrapClass}">${wrapped}
+    <button class="show-more-btn" onclick="toggleShowMore(this)">
+      <span>展开全部</span><span class="arrow">▼</span>
+    </button></div>`;
+}
+
+/** 展开/收起列表 */
+function toggleShowMore(btn) {
+  const container = btn.parentElement;
+  const items = container.querySelectorAll('.collapsible-item');
+  const isExpanded = btn.classList.contains('expanded');
+  
+  if (isExpanded) {
+    // 收起：隐藏 DEFAULT_SHOW 之后的项
+    items.forEach((item, i) => {
+      if (i >= DEFAULT_SHOW) item.classList.add('hidden');
+    });
+    btn.classList.remove('expanded');
+    btn.querySelector('span:first-child').textContent = '展开全部';
+  } else {
+    // 展开：显示所有项
+    items.forEach(item => item.classList.remove('hidden'));
+    btn.classList.add('expanded');
+    btn.querySelector('span:first-child').textContent = '收起';
+  }
+}
+
+/** 初始化：隐藏超过 DEFAULT_SHOW 的项 */
+function initCollapsible() {
+  document.querySelectorAll('.show-more-btn').forEach(btn => {
+    const container = btn.parentElement;
+    const items = container.querySelectorAll('.collapsible-item');
+    // 隐藏超过 DEFAULT_SHOW 的项
+    items.forEach((item, i) => {
+      if (i >= DEFAULT_SHOW) item.classList.add('hidden');
+    });
+    // 如果总数 <= DEFAULT_SHOW，隐藏按钮
+    if (items.length <= DEFAULT_SHOW) {
+      btn.style.display = 'none';
+    }
+  });
+}
+
 /** 从 URL 拿 date 参数，没有则用 meta 里的 latest_date */
 function getTargetDate(meta) {
   const params = new URLSearchParams(location.search);
@@ -137,7 +190,8 @@ function renderCandidates(candidates, title, isDown) {
         ${summary}${reason}
       </div>`;
   }).join("");
-  return `<section><h2>${title}${tip('正在进行中的上涨趋势股票。"延续"表示持续多日入选，"新出"表示首次入选。涨幅为区间累计涨幅。')}</h2>${rows}</section>`;
+  const listHtml = collapsibleList(rows);
+  return `<section><h2>${title}${tip('正在进行中的上涨趋势股票。"延续"表示持续多日入选，"新出"表示首次入选。涨幅为区间累计涨幅。')}</h2>${listHtml}</section>`;
 }
 
 /** 渲染历史日期导航 */
@@ -391,6 +445,7 @@ function renderCatchUpBand(data) {
         </div>
       </div>`;
   }).join("");
+  const listHtml = collapsibleList(catchupRows);
 
   return `
     <section>
@@ -399,7 +454,7 @@ function renderCatchUpBand(data) {
       <div class="cub-section-title">热门概念（涨停密度 × 持续天数）</div>
       ${heatRows}
       <div class="cub-section-title">补涨梯队（同概念 + 趋势中 + 今日未涨停）</div>
-      ${catchupRows}
+      ${listHtml}
     </section>`;
 }
 
@@ -536,11 +591,12 @@ function renderStreak(data) {
         <span class="streak-pct">${pct}</span>
       </div>`;
   }).join("");
+  const listHtml = collapsibleList(rows);
   return `
     <section>
       <h2>连续多日入选榜 · ${data.date}${tip('连续多天入选区间异动榜的股票。连续天数越长说明趋势越稳定，是强势股的信号。')}</h2>
       <div class="streak-summary">连续 ≥${data.min_streak} 天入选区间异动榜</div>
-      ${rows}
+      ${listHtml}
     </section>`;
 }
 
@@ -941,6 +997,9 @@ async function main() {
 
     // sparkline 需在 DOM 渲染后画
     renderSparkline(series);
+
+    // 初始化可折叠列表
+    initCollapsible();
   } catch (e) {
     $("#app").className = "error";
     $("#app").textContent = `加载失败: ${e.message}`;
