@@ -175,65 +175,71 @@ h1::before {
   .hero-val-accent { font-size: 1rem; }
 }
 
-/* ── 手风琴分组 ── */
-.group {
-  margin-bottom: 12px;
-}
-.group-head {
+/* ── Tab 导航 ── */
+.section-tabs {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 18px;
+  gap: 4px;
+  margin-bottom: 16px;
+  padding: 4px;
   background: var(--card);
   border: 1px solid var(--card-border);
   border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.section-tab {
+  flex: 1;
+  padding: 10px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-dim);
   cursor: pointer;
-  user-select: none;
   transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  white-space: nowrap;
+  font-family: inherit;
 }
-.group-head:hover {
+.section-tab:hover {
   background: rgba(255,255,255,0.03);
-  border-color: var(--border);
-}
-.group.open > .group-head {
-  border-color: rgba(94, 106, 210, 0.3);
-  background: var(--accent-dim);
-}
-.group-arrow {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  width: 14px;
-  flex-shrink: 0;
-  transition: color 0.15s ease;
-}
-.group.open > .group-head .group-arrow {
-  color: var(--accent-interactive);
-}
-.group-title {
-  font-size: 0.875rem;
-  font-weight: 600;
   color: var(--text);
-  letter-spacing: 0.01em;
 }
-.group-count {
-  font-size: 0.6875rem;
-  color: var(--text-muted);
+.section-tab.active {
+  background: var(--accent);
+  color: white;
+}
+.section-tab .tab-count {
+  font-size: 0.625rem;
+  padding: 2px 6px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 8px;
   font-family: 'JetBrains Mono', monospace;
-  margin-left: auto;
 }
-/* 组 body 透明：各 section 保留自己的卡片样式，head 仅作分组标签 */
-.group-body {
-  padding-top: 12px;
+.section-tab.active .tab-count {
+  background: rgba(255,255,255,0.2);
 }
-/* 组内 section 收紧间距 */
-.group-body > section {
-  margin-bottom: 12px;
+/* Tab 内容面板 */
+.tab-panel {
+  display: none;
 }
-.group-body > section:last-child {
+.tab-panel.active {
+  display: block;
+  animation: fadeIn 0.25s ease;
+}
+/* Tab 内 section 间距 */
+.tab-panel > section {
+  margin-bottom: 16px;
+}
+.tab-panel > section:last-child {
   margin-bottom: 4px;
 }
 @media (max-width: 480px) {
-  .group-head { padding: 12px 14px; }
+  .section-tab { padding: 8px 10px; font-size: 0.75rem; }
 }
 
 /* ── Cards ── */
@@ -1388,6 +1394,10 @@ section > h2 {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 @keyframes pulse {
   0%, 100% { opacity: 0.6; }
   50% { opacity: 1; }
@@ -1412,14 +1422,10 @@ section > h2 {
 a:focus-visible, button:focus-visible {
   outline-offset: 1px;
 }
-section, .history {
+.history {
   animation: fadeUp 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-section:nth-child(1) { animation-delay: 0.02s; }
-section:nth-child(2) { animation-delay: 0.08s; }
-section:nth-child(3) { animation-delay: 0.14s; }
-section:nth-child(4) { animation-delay: 0.20s; }
-.history { animation-delay: 0.26s; }
+.history { animation-delay: 0.1s; }
 
 /* ── 资金属性画像 ── */
 .cp-summary { display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }

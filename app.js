@@ -823,36 +823,14 @@ function renderHero(daily, anomaly, series) {
   return `<div class="hero"><div class="hero-label-top">今日要点</div><div class="hero-stats">${statsHtml}</div>${spark}</div>`;
 }
 
-/**
- * 手风琴分组：顶层函数（innerHTML 注入的 <script> 浏览器不执行，故必须放此处）。
- * 点击某组 → 展开它、收起其他所有组（手风琴）。
- */
-function toggleGroup(id) {
-  document.querySelectorAll('.group').forEach(g => {
-    const isOpen = g.dataset.group === id;
-    g.classList.toggle('open', isOpen);
-    const body = g.querySelector('.group-body');
-    const arrow = g.querySelector('.group-arrow');
-    if (body) body.style.display = isOpen ? '' : 'none';
-    if (arrow) arrow.textContent = isOpen ? '▼' : '▶';
+/** Tab 切换：顶层函数（innerHTML 注入的 <script> 浏览器不执行，故必须放此处） */
+function switchTab(tabId) {
+  document.querySelectorAll('.section-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.tab === tabId);
   });
-}
-
-/** 渲染一个手风琴分组。cardsHtml 为组内各 section 拼接；全空则返回 ""（整组不渲染） */
-function renderGroup(id, title, cardsHtml) {
-  if (!cardsHtml || cardsHtml.trim() === "") return "";
-  // 统计组内 section 数
-  const count = (cardsHtml.match(/<section/g) || []).length;
-  return `
-    <div class="group" data-group="${id}">
-      <div class="group-head" onclick="toggleGroup('${id}')" role="button" tabindex="0"
-           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleGroup('${id}')}">
-        <span class="group-arrow">▶</span>
-        <span class="group-title">${title}</span>
-        <span class="group-count">${count} 卡</span>
-      </div>
-      <div class="group-body" style="display:none">${cardsHtml}</div>
-    </div>`;
+  document.querySelectorAll('.tab-panel').forEach(p => {
+    p.classList.toggle('active', p.id === 'tab-' + tabId);
+  });
 }
 
 async function main() {
@@ -890,44 +868,73 @@ async function main() {
     // 连续涨停数供 hero 使用
     daily._streakCount = streak?.entries?.length ?? 0;
 
-    // 今日要点 hero（始终置顶）+ 5 个概念簇手风琴分组
+    // Tab 内容面板：每个 tab 的 section 拼接
+    const tabUp =
+      renderCandidates(daily.top_candidates, "区间异动 Top 20") +
+      renderCandidates(daily.daily_top, "单日异动 Top 20") +
+      renderStreak(streak) +
+      renderCatchUpBand(catchUpBand);
+
+    const tabDown =
+      renderCandidates(daily.down_candidates, "衰退信号 Top 20", true) +
+      renderDeathPatterns(deathPatterns) +
+      renderExcludedTracker(excluded);
+
+    const tabSector =
+      renderSectors(daily.sectors) +
+      renderSectorFlow(sectorFlow) +
+      renderHerdDiffusion(herdDiffusion);
+
+    const tabConcept =
+      renderConceptCooccurrence(conceptCooccur) +
+      renderConceptLifecycle(conceptLifecycle) +
+      renderNarrativeWeekly(narrativeWeekly) +
+      renderSilenceVolcano(silenceVolcano);
+
+    const tabMeta =
+      renderAnomaly(anomaly) +
+      renderEarlyBird(earlyBird) +
+      renderFitness(fitness) +
+      renderHistory(series.points.map((p) => p.date), targetDate);
+
+    // 统计每个 tab 的 section 数
+    const countSections = (html) => (html.match(/<section/g) || []).length;
+
+    // 今日要点 hero + Tab 导航 + Tab 内容面板
     const html =
       renderHero(daily, anomaly, series) +
-      renderGroup("up", "上涨 / 趋势",
-        renderCandidates(daily.top_candidates, "区间异动 Top 20") +
-        renderCandidates(daily.daily_top, "单日异动 Top 20") +
-        renderStreak(streak) +
-        renderCatchUpBand(catchUpBand)
-      ) +
-      renderGroup("down", "下跌 / 退潮",
-        renderCandidates(daily.down_candidates, "衰退信号 Top 20", true) +
-        renderDeathPatterns(deathPatterns) +
-        renderExcludedTracker(excluded)
-      ) +
-      renderGroup("sector", "板块 / 资金",
-        renderSectors(daily.sectors) +
-        renderSectorFlow(sectorFlow) +
-        renderHerdDiffusion(herdDiffusion)
-      ) +
-      renderGroup("concept", "概念 / 叙事",
-        renderConceptCooccurrence(conceptCooccur) +
-        renderConceptLifecycle(conceptLifecycle) +
-        renderNarrativeWeekly(narrativeWeekly) +
-        renderSilenceVolcano(silenceVolcano)
-      ) +
-      renderGroup("meta", "异常 / 验证",
-        renderAnomaly(anomaly) +
-        renderEarlyBird(earlyBird) +
-        renderFitness(fitness) +
-        // [SHELVED 5.3] renderCapitalProfile(capitalProfile) +
-        renderHistory(series.points.map((p) => p.date), targetDate)
-      );
+      `<nav class="section-tabs">
+        <button class="section-tab active" data-tab="up" onclick="switchTab('up')">
+          <span>上涨 / 趋势</span>
+          <span class="tab-count">${countSections(tabUp)}</span>
+        </button>
+        <button class="section-tab" data-tab="down" onclick="switchTab('down')">
+          <span>下跌 / 退潮</span>
+          <span class="tab-count">${countSections(tabDown)}</span>
+        </button>
+        <button class="section-tab" data-tab="sector" onclick="switchTab('sector')">
+          <span>板块 / 资金</span>
+          <span class="tab-count">${countSections(tabSector)}</span>
+        </button>
+        <button class="section-tab" data-tab="concept" onclick="switchTab('concept')">
+          <span>概念 / 叙事</span>
+          <span class="tab-count">${countSections(tabConcept)}</span>
+        </button>
+        <button class="section-tab" data-tab="meta" onclick="switchTab('meta')">
+          <span>异常 / 验证</span>
+          <span class="tab-count">${countSections(tabMeta)}</span>
+        </button>
+      </nav>` +
+      `<div class="tab-panel active" id="tab-up">${tabUp}</div>` +
+      `<div class="tab-panel" id="tab-down">${tabDown}</div>` +
+      `<div class="tab-panel" id="tab-sector">${tabSector}</div>` +
+      `<div class="tab-panel" id="tab-concept">${tabConcept}</div>` +
+      `<div class="tab-panel" id="tab-meta">${tabMeta}</div>`;
 
     $("#app").innerHTML = html;
     $("#app").className = "";
 
-    // 默认展开第一组（上涨 / 趋势），sparkline 需在 DOM 渲染后画
-    toggleGroup("up");
+    // sparkline 需在 DOM 渲染后画
     renderSparkline(series);
   } catch (e) {
     $("#app").className = "error";
