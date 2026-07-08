@@ -577,12 +577,13 @@ function renderStreak(data) {
   const rows = data.entries.slice(0, 15).map((e, i) => {
     const pct = e.total_pct > 0 ? `+${e.total_pct.toFixed(1)}%` : `${e.total_pct.toFixed(1)}%`;
     const barW = Math.min(e.streak * 15, 100);
+    const lastDate = e.last_date ? e.last_date.slice(5) : '';
     return `
       <div class="streak-row">
         <span class="streak-rank">${i + 1}</span>
         <div class="streak-info">
           <span class="streak-name">${e.name}</span>
-          <span class="streak-ticker">${e.ticker}</span>
+          <span class="streak-ticker">${e.ticker} · 末次 ${lastDate}</span>
         </div>
         <div class="streak-bar-wrap">
           <div class="streak-bar" style="width:${barW}%"></div>
@@ -594,7 +595,7 @@ function renderStreak(data) {
   const listHtml = collapsibleList(rows);
   return `
     <section>
-      <h2>连续多日入选榜 · ${data.date}${tip('连续多天入选区间异动榜的股票。连续天数越长说明趋势越稳定，是强势股的信号。')}</h2>
+      <h2>连续多日入选榜 · ${data.date}${tip('统计周期内连续多天入选区间异动榜的股票。"末次"是最后一次入选日期，可能早于当前日期。连续天数越长说明趋势越稳定。')}</h2>
       <div class="streak-summary">连续 ≥${data.min_streak} 天入选区间异动榜</div>
       ${listHtml}
     </section>`;
