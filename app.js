@@ -956,15 +956,15 @@ async function main() {
     const tabMeta =
       renderAnomaly(anomaly) +
       renderEarlyBird(earlyBird) +
-      renderFitness(fitness) +
-      renderHistory(series.points.map((p) => p.date), targetDate);
+      renderFitness(fitness);
 
     // 统计每个 tab 的 section 数
     const countSections = (html) => (html.match(/<section/g) || []).length;
 
-    // 今日要点 hero + Tab 导航 + Tab 内容面板
+    // 今日要点 hero + 历史数据导航 + Tab 导航 + Tab 内容面板
     const html =
       renderHero(daily, anomaly, series) +
+      renderHistory(series.points.map((p) => p.date), targetDate) +
       `<nav class="section-tabs">
         <button class="section-tab active" data-tab="up" onclick="switchTab('up')">
           <span>上涨 / 趋势</span>
