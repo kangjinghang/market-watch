@@ -958,70 +958,35 @@ async function main() {
     // meta 优先：targetDate 依赖它，daily 又依赖 targetDate
     const meta = await fetchJson("meta.json");
     const targetDate = getTargetDate(meta);
-    // 其余请求并行拉取（此前为串行 await，17 个请求形成瀑布，首屏明显变慢）
-    const [
-      series, daily,
-      deathPatterns, silenceVolcano, conceptCooccur, catchUpBand,
-      narrativeWeekly, conceptLifecycle, streak, sectorFlow,
-      earlyBird, anomaly, fitness, excluded, herdDiffusion,
-    ] = await Promise.all([
-      fetchJson("series/density.json"),
-      fetchJson(`daily/${targetDate}.json`),
-      fetchJson("death-patterns.json").catch(() => null),
-      fetchJson("silence-volcano.json").catch(() => null),
-      fetchJson("concept-cooccurrence.json").catch(() => null),
-      fetchJson(`catch-up-band-${targetDate}.json`).catch(() => null),
-      fetchJson("narrative-weekly.json").catch(() => null),
-      fetchJson("concept-lifecycle.json").catch(() => null),
-      fetchJson(`streak-${targetDate}.json`).catch(() => null),
-      fetchJson("sector-flow.json").catch(() => null),
-      fetchJson("early-bird.json").catch(() => null),
-      fetchJson("anomaly.json").catch(() => null),
-      fetchJson("fitness-report.json").catch(() => null),
-      fetchJson("excluded-report.json").catch(() => null),
-      fetchJson("herd-diffusion.json").catch(() => null),
-    ]);
-
     $("#title").textContent = `市场体检 · ${targetDate}`;
     $("#subtitle").textContent = `数据 ${meta.total_days} 天 · ${meta.earliest_date.slice(5)} ~ ${meta.latest_date.slice(5)}`;
+
+    // 第一阶段：只加载首屏必需数据（3 个请求）
+    const [series, daily, streak] = await Promise.all([
+      fetchJson("series/density.json"),
+      fetchJson(`daily/${targetDate}.json`),
+      fetchJson(`streak-${targetDate}.json`).catch(() => null),
+    ]);
 
     // 连续涨停数供 hero 使用
     daily._streakCount = streak?.entries?.length ?? 0;
 
-    // Tab 内容面板：每个 tab 的 section 拼接
+    // 立即渲染首屏 hero + tab 框架
     const tabUp =
       renderCandidates(daily.top_candidates, "区间异动 Top 20") +
       renderCandidates(daily.daily_top, "单日异动 Top 20") +
-      renderStreak(streak) +
-      renderCatchUpBand(catchUpBand);
+      renderStreak(streak);
 
     const tabDown =
-      renderCandidates(daily.down_candidates, "衰退信号 Top 20", true) +
-      renderDeathPatterns(deathPatterns) +
-      renderExcludedTracker(excluded);
+      renderCandidates(daily.down_candidates, "衰退信号 Top 20", true);
 
-    const tabSector =
-      renderSectors(daily.sectors) +
-      renderSectorFlow(sectorFlow) +
-      renderHerdDiffusion(herdDiffusion);
+    const tabSector = renderSectors(daily.sectors);
+    const tabConcept = "";
+    const tabMeta = "";
 
-    const tabConcept =
-      renderConceptCooccurrence(conceptCooccur) +
-      renderConceptLifecycle(conceptLifecycle) +
-      renderNarrativeWeekly(narrativeWeekly) +
-      renderSilenceVolcano(silenceVolcano);
-
-    const tabMeta =
-      renderAnomaly(anomaly) +
-      renderEarlyBird(earlyBird) +
-      renderFitness(fitness);
-
-    // 统计每个 tab 的 section 数
     const countSections = (html) => (html.match(/<section/g) || []).length;
-
-    // 今日要点 hero + 历史数据导航 + Tab 导航 + Tab 内容面板
     const html =
-      renderHero(daily, anomaly, series) +
+      renderHero(daily, null, series) +
       renderHistory(series.points.map((p) => p.date), targetDate) +
       `<nav class="section-tabs">
         <button class="section-tab active" data-tab="up" onclick="switchTab('up')">
@@ -1038,27 +1003,75 @@ async function main() {
         </button>
         <button class="section-tab" data-tab="concept" onclick="switchTab('concept')">
           <span>概念 / 叙事</span>
-          <span class="tab-count">${countSections(tabConcept)}</span>
+          <span class="tab-count">…</span>
         </button>
         <button class="section-tab" data-tab="meta" onclick="switchTab('meta')">
           <span>异常 / 验证</span>
-          <span class="tab-count">${countSections(tabMeta)}</span>
+          <span class="tab-count">…</span>
         </button>
       </nav>` +
       `<div class="tab-panel active" id="tab-up">${tabUp}</div>` +
       `<div class="tab-panel" id="tab-down">${tabDown}</div>` +
       `<div class="tab-panel" id="tab-sector">${tabSector}</div>` +
-      `<div class="tab-panel" id="tab-concept">${tabConcept}</div>` +
-      `<div class="tab-panel" id="tab-meta">${tabMeta}</div>`;
+      `<div class="tab-panel" id="tab-concept"></div>` +
+      `<div class="tab-panel" id="tab-meta"></div>`;
 
     $("#app").innerHTML = html;
     $("#app").className = "";
-
-    // sparkline 需在 DOM 渲染后画
     renderSparkline(series);
-
-    // 初始化可折叠列表
     initCollapsible();
+
+    // 第二阶段：后台加载其余数据，逐步填充
+    const [
+      deathPatterns, silenceVolcano, conceptCooccur, catchUpBand,
+      narrativeWeekly, conceptLifecycle, sectorFlow,
+      earlyBird, anomaly, fitness, excluded, herdDiffusion,
+    ] = await Promise.all([
+      fetchJson("death-patterns.json").catch(() => null),
+      fetchJson("silence-volcano.json").catch(() => null),
+      fetchJson("concept-cooccurrence.json").catch(() => null),
+      fetchJson(`catch-up-band-${targetDate}.json`).catch(() => null),
+      fetchJson("narrative-weekly.json").catch(() => null),
+      fetchJson("concept-lifecycle.json").catch(() => null),
+      fetchJson("sector-flow.json").catch(() => null),
+      fetchJson("early-bird.json").catch(() => null),
+      fetchJson("anomaly.json").catch(() => null),
+      fetchJson("fitness-report.json").catch(() => null),
+      fetchJson("excluded-report.json").catch(() => null),
+      fetchJson("herd-diffusion.json").catch(() => null),
+    ]);
+
+    // 填充各 tab 内容
+    $("#tab-up").innerHTML += renderCatchUpBand(catchUpBand);
+
+    $("#tab-down").innerHTML +=
+      renderDeathPatterns(deathPatterns) +
+      renderExcludedTracker(excluded);
+
+    $("#tab-sector").innerHTML +=
+      renderSectorFlow(sectorFlow) +
+      renderHerdDiffusion(herdDiffusion);
+
+    $("#tab-concept").innerHTML =
+      renderConceptCooccurrence(conceptCooccur) +
+      renderConceptLifecycle(conceptLifecycle) +
+      renderNarrativeWeekly(narrativeWeekly) +
+      renderSilenceVolcano(silenceVolcano);
+
+    $("#tab-meta").innerHTML =
+      renderAnomaly(anomaly) +
+      renderEarlyBird(earlyBird) +
+      renderFitness(fitness);
+
+    // 更新 tab 计数
+    document.querySelectorAll('.section-tab').forEach(btn => {
+      const tabId = btn.dataset.tab;
+      const panel = document.getElementById('tab-' + tabId);
+      if (panel) {
+        const count = (panel.innerHTML.match(/<section/g) || []).length;
+        btn.querySelector('.tab-count').textContent = count;
+      }
+    });
 
     // 板块资金流向：绑定 checkbox 事件 + 初次绘制
     if (sectorFlow && sectorFlow.points?.length >= 2) {
@@ -1074,6 +1087,8 @@ async function main() {
         drawSectorFlowChart();
       }
     }
+
+    initCollapsible();
   } catch (e) {
     $("#app").className = "error";
     $("#app").textContent = `加载失败: ${e.message}`;
