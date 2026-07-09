@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-07",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH600793",
+      "name": "宜宾纸业",
+      "streak": 4,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-07",
+      "total_pct": 64.85
+    },
+    {
+      "ticker": "SZ000078",
+      "name": "ST海王",
+      "streak": 3,
+      "first_date": "2026-07-03",
+      "last_date": "2026-07-07",
+      "total_pct": 39.53
+    }
+  ]
+}

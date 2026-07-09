@@ -915,7 +915,7 @@ async function main() {
       fetchJson(`catch-up-band-${targetDate}.json`).catch(() => null),
       fetchJson("narrative-weekly.json").catch(() => null),
       fetchJson("concept-lifecycle.json").catch(() => null),
-      fetchJson("streak.json?v=20260708").catch(() => null),
+      fetchJson(`streak-${targetDate}.json`).catch(() => null),
       fetchJson("sector-flow.json").catch(() => null),
       fetchJson("early-bird.json").catch(() => null),
       fetchJson("anomaly.json").catch(() => null),

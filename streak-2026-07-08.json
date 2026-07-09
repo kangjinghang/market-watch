@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-08",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002396",
+      "name": "星网锐捷",
+      "streak": 4,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-08",
+      "total_pct": 66.95
+    },
+    {
+      "ticker": "SZ000078",
+      "name": "ST海王",
+      "streak": 4,
+      "first_date": "2026-07-03",
+      "last_date": "2026-07-08",
+      "total_pct": 53.49
+    },
+    {
+      "ticker": "SZ003033",
+      "name": "征和工业",
+      "streak": 3,
+      "first_date": "2026-07-06",
+      "last_date": "2026-07-08",
+      "total_pct": 30.89
+    },
+    {
+      "ticker": "SH600285",
+      "name": "羚锐制药",
+      "streak": 3,
+      "first_date": "2026-07-03",
+      "last_date": "2026-07-08",
+      "total_pct": 13.06
+    }
+  ]
+}
