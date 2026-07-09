@@ -617,40 +617,79 @@ function renderStreak(data) {
 function renderSectorFlow(data) {
   if (!data || !data.points || data.points.length < 2) return "";
   const { points, top_sectors } = data;
+  const allSectors = top_sectors;
+  const colors = ["#38bdf8", "#c084fc", "#a78bfa", "#2dd4bf", "#eab308", "#94a3b8", "#f472b6", "#fb923c", "#34d399", "#a3e635"];
   const w = 620, h = 200, pad = { t: 20, r: 10, b: 40, l: 50 };
   const chartW = w - pad.l - pad.r;
   const chartH = h - pad.t - pad.b;
-  const sectors = top_sectors.slice(0, 6);
-  // 板块类别色（非涨跌）：避开纯红/纯绿，防止与涨跌色混淆
-  const colors = ["#38bdf8", "#c084fc", "#a78bfa", "#2dd4bf", "#eab308", "#94a3b8"];
+
+  const checkboxes = allSectors.map((s, i) =>
+    `<label class="sf-check"><input type="checkbox" value="${s}" ${i < 6 ? 'checked' : ''}><span class="sf-check-dot" style="background:${colors[i % colors.length]}"></span>${s}</label>`
+  ).join("");
+
+  let svg = `<svg class="sector-flow-chart" viewBox="0 0 ${w} ${h}" data-sectors='${JSON.stringify(allSectors)}' data-colors='${JSON.stringify(colors)}'>`;
+  svg += `<g class="sf-grid"></g><g class="sf-lines"></g><g class="sf-axis-g"></g>`;
+  svg += `</svg>`;
+
+  return `<section>
+    <h2>板块资金流向${tip('追踪近N天各板块异动股数变化趋势。曲线向上表示该板块异动增多，向下表示退潮。可勾选板块只看选中曲线。')}</h2>
+    <div class="sf-filter">${checkboxes}</div>
+    ${svg}
+  </section>`;
+}
+
+function drawSectorFlowChart() {
+  const svg = document.querySelector('.sector-flow-chart');
+  if (!svg || !window._sfData) return;
+  const { points, top_sectors } = window._sfData;
+  const allSectors = JSON.parse(svg.dataset.sectors);
+  const colors = JSON.parse(svg.dataset.colors);
+  const checked = [...svg.closest('section').querySelectorAll('.sf-check input:checked')].map(cb => cb.value);
+  const sectors = checked.length > 0 ? checked : allSectors.slice(0, 6);
+
+  const w = 620, h = 200, pad = { t: 20, r: 10, b: 40, l: 50 };
+  const chartW = w - pad.l - pad.r;
+  const chartH = h - pad.t - pad.b;
   let maxVal = 0;
   for (const p of points) for (const s of sectors) maxVal = Math.max(maxVal, p.sectors[s] ?? 0);
   if (maxVal === 0) maxVal = 1;
   const stepX = chartW / (points.length - 1);
-  let svg = `<svg class="sector-flow-chart" viewBox="0 0 ${w} ${h}">`;
+
+  const gridG = svg.querySelector('.sf-grid');
+  const linesG = svg.querySelector('.sf-lines');
+  const axisG = svg.querySelector('.sf-axis-g');
+  gridG.innerHTML = '';
+  linesG.innerHTML = '';
+  axisG.innerHTML = '';
+
   for (let i = 0; i <= 4; i++) {
     const y = pad.t + (i / 4) * chartH;
-    svg += `<line x1="${pad.l}" y1="${y}" x2="${w - pad.r}" y2="${y}" stroke="rgba(255,255,255,0.04)"/>`;
-    svg += `<text x="${pad.l - 4}" y="${y + 3}" text-anchor="end" class="sf-axis">${Math.round(maxVal * (1 - i / 4))}</text>`;
+    gridG.innerHTML += `<line x1="${pad.l}" y1="${y}" x2="${w - pad.r}" y2="${y}" stroke="rgba(255,255,255,0.04)"/>`;
+    axisG.innerHTML += `<text x="${pad.l - 4}" y="${y + 3}" text-anchor="end" class="sf-axis">${Math.round(maxVal * (1 - i / 4))}</text>`;
   }
   const li = Math.max(1, Math.floor(points.length / 6));
   for (let i = 0; i < points.length; i += li) {
-    svg += `<text x="${(pad.l + i * stepX).toFixed(1)}" y="${h - 8}" text-anchor="middle" class="sf-axis">${points[i].date.slice(5)}</text>`;
+    axisG.innerHTML += `<text x="${(pad.l + i * stepX).toFixed(1)}" y="${h - 8}" text-anchor="middle" class="sf-axis">${points[i].date.slice(5)}</text>`;
   }
-  sectors.forEach((sector, si) => {
+
+  sectors.forEach((sector) => {
+    const si = allSectors.indexOf(sector);
+    const color = colors[si % colors.length];
     const pts = points.map((p, i) => {
       const x = pad.l + i * stepX;
       const y = pad.t + (1 - (p.sectors[sector] ?? 0) / maxVal) * chartH;
       return `${x.toFixed(1)},${y.toFixed(1)}`;
     });
-    svg += `<polyline points="${pts.join(" ")}" fill="none" stroke="${colors[si]}" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>`;
+    linesG.innerHTML += `<polyline points="${pts.join(" ")}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>`;
   });
-  svg += `</svg>`;
-  // 图例用 HTML 而非 SVG，flexbox 自动换行，避免长板块名超出 viewBox 被裁
-  const legend = sectors.map((sector, si) =>
-    `<span class="sf-legend-item"><span class="sf-legend-dot" style="background:${colors[si]}"></span>${sector}</span>`
-  ).join("");
-  return `<section><h2>板块资金流向${tip('追踪近N天各板块异动股数变化趋势。曲线向上表示该板块异动增多，向下表示退潮。')}</h2>${svg}<div class="sf-legend">${legend}</div></section>`;
+
+  const legendDiv = svg.closest('section').querySelector('.sf-legend');
+  if (legendDiv) {
+    legendDiv.innerHTML = sectors.map((s) => {
+      const si = allSectors.indexOf(s);
+      return `<span class="sf-legend-item"><span class="sf-legend-dot" style="background:${colors[si % colors.length]}"></span>${s}</span>`;
+    }).join("");
+  }
 }
 
 /** 渲染早鸟指数 */
@@ -1020,6 +1059,21 @@ async function main() {
 
     // 初始化可折叠列表
     initCollapsible();
+
+    // 板块资金流向：绑定 checkbox 事件 + 初次绘制
+    if (sectorFlow && sectorFlow.points?.length >= 2) {
+      window._sfData = sectorFlow;
+      const sfSection = document.querySelector('#tab-sector .sector-flow-chart')?.closest('section');
+      if (sfSection) {
+        const legend = document.createElement('div');
+        legend.className = 'sf-legend';
+        sfSection.appendChild(legend);
+        sfSection.querySelectorAll('.sf-check input').forEach(cb => {
+          cb.addEventListener('change', drawSectorFlowChart);
+        });
+        drawSectorFlowChart();
+      }
+    }
   } catch (e) {
     $("#app").className = "error";
     $("#app").textContent = `加载失败: ${e.message}`;

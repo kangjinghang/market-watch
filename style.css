@@ -1169,6 +1169,38 @@ section > h2 {
   border-radius: 2px;
   display: inline-block;
 }
+.sf-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin-bottom: 10px;
+}
+.sf-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  user-select: none;
+}
+.sf-check input {
+  display: none;
+}
+.sf-check-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  opacity: 0.3;
+  transition: opacity 0.15s;
+}
+.sf-check input:checked + .sf-check-dot {
+  opacity: 1;
+}
+.sf-check:has(input:checked) {
+  color: var(--text);
+}
 
 /* ── 早鸟指数 ── */
 .eb-summary {
