@@ -764,7 +764,8 @@ function renderExcludedTracker(data) {
 
   return `
     <section>
-      <h2>被排除股追踪 · ${data.date_range}${tip('分析被排除股票的实际表现。"漏网之鱼"指被排除但后续大涨的股票，用于优化排除规则。')}</h2>
+      <h2>被排除股追踪 · 全周期统计${tip('分析被排除股票的实际表现。"漏网之鱼"指被排除但后续大涨的股票，用于优化排除规则。此统计覆盖整个观测期（' + data.date_range + '），非当日快照。')}</h2>
+      <div class="excl-date-range" style="font-size:0.85em;color:var(--muted);margin-top:-8px;">${data.date_range}</div>
       ${summary}
       <div class="excl-section">按排除原因</div>
       ${reasonRows}
