@@ -245,8 +245,8 @@ function renderDeathPatterns(data) {
 
   return `
     <section>
-      <h2>趋势死亡模式 · ${data.date_range}${tip('分析趋势终止的原因分类：高位回落（涨幅过大后回调）、利空+下跌（负面事件驱动）、闪崩（短期暴跌）、自然退潮（热度消退）。')}</h2>
-      <div class="death-summary">共 ${total} 次趋势终止</div>
+      <h2>趋势死亡模式 · 全周期统计${tip('分析趋势终止的原因分类：高位回落（涨幅过大后回调）、利空+下跌（负面事件驱动）、闪崩（短期暴跌）、自然退潮（热度消退）。此统计覆盖整个观测期（' + data.date_range + '），非当日快照。')}</h2>
+      <div class="death-summary">共 ${total} 次趋势终止（${data.date_range}）</div>
       ${barHtml}
       ${recentHtml ? `<div class="death-recent-title">近期退场</div>${recentHtml}` : ""}
     </section>`;
