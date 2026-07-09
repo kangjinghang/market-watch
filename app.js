@@ -57,14 +57,28 @@ function initCollapsible() {
   document.querySelectorAll('.show-more-btn').forEach(btn => {
     const container = btn.parentElement;
     const items = container.querySelectorAll('.collapsible-item');
-    // 隐藏超过 DEFAULT_SHOW 的项
-    items.forEach((item, i) => {
-      if (i >= DEFAULT_SHOW) item.classList.add('hidden');
-    });
-    // 如果总数 <= DEFAULT_SHOW，隐藏按钮
-    if (items.length <= DEFAULT_SHOW) {
+    if (items.length > DEFAULT_SHOW) {
+      items.forEach((item, i) => {
+        if (i >= DEFAULT_SHOW) item.classList.add('hidden');
+      });
+    } else {
       btn.style.display = 'none';
     }
+  });
+}
+
+/** 展开/收起被排除原因文本 */
+function toggleExclReason(el) {
+  const full = el.dataset.full;
+  const isExpanded = el.classList.contains('expanded');
+  if (isExpanded) {
+    el.textContent = full.slice(0, 40) + '…';
+    el.classList.remove('expanded');
+  } else {
+    el.textContent = full;
+    el.classList.add('expanded');
+  }
+}
   });
 }
 
@@ -754,13 +768,17 @@ function renderExcludedTracker(data) {
 
   // 漏网之鱼（被排除但大涨）
   const escapees = data.top_gainers.filter(e => e.ret_5d > 10).slice(0, 5);
-  const escapeeRows = escapees.map(e => `
+  const escapeeRows = escapees.map(e => {
+    const truncated = e.reason.length > 40;
+    const displayText = truncated ? e.reason.slice(0, 40) + '…' : e.reason;
+    return `
     <div class="excl-row">
       <span class="excl-name">${e.name}</span>
       <span class="excl-ticker">${e.ticker}</span>
-      <span class="excl-reason">${e.reason.slice(0, 60)}${e.reason.length > 60 ? '…' : ''}</span>
+      <span class="excl-reason ${truncated ? 'excl-expandable' : ''}" ${truncated ? `data-full="${e.reason.replace(/"/g, '&quot;')}" onclick="toggleExclReason(this)"` : ''}>${displayText}</span>
       <span class="excl-ret excl-escapee">${fmtRet(e.ret_5d)}</span>
-    </div>`).join("");
+    </div>`;
+  }).join("");
 
   return `
     <section>

@@ -1327,6 +1327,19 @@ section > h2 {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.excl-reason.excl-expandable {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: normal;
+  word-break: break-word;
+}
+.excl-reason.excl-expandable:hover {
+  color: var(--accent);
+}
+.excl-reason.excl-expandable.expanded {
+  white-space: normal;
+  max-width: 400px;
+}
 .excl-ret {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
