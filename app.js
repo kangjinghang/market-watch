@@ -758,7 +758,7 @@ function renderExcludedTracker(data) {
     <div class="excl-row">
       <span class="excl-name">${e.name}</span>
       <span class="excl-ticker">${e.ticker}</span>
-      <span class="excl-reason">${e.reason.slice(0, 30)}…</span>
+      <span class="excl-reason">${e.reason.slice(0, 60)}${e.reason.length > 60 ? '…' : ''}</span>
       <span class="excl-ret excl-escapee">${fmtRet(e.ret_5d)}</span>
     </div>`).join("");
 
