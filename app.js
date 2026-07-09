@@ -764,6 +764,8 @@ function renderExcludedTracker(data) {
       <span class="excl-count">${r.count}只</span>
       <span class="excl-stat">5日胜率 <b>${r.win_rate_5d}%</b></span>
       <span class="excl-stat">均涨 ${fmtRet(r.avg_ret_5d)}</span>
+      <span class="excl-stat">20日胜率 <b>${r.win_rate_20d}%</b></span>
+      <span class="excl-stat">均涨 ${fmtRet(r.avg_ret_20d)}</span>
     </div>`).join("");
 
   // 漏网之鱼（被排除但大涨）
