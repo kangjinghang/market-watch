@@ -912,7 +912,7 @@ async function main() {
       fetchJson("death-patterns.json").catch(() => null),
       fetchJson("silence-volcano.json").catch(() => null),
       fetchJson("concept-cooccurrence.json").catch(() => null),
-      fetchJson("catch-up-band.json").catch(() => null),
+      fetchJson(`catch-up-band-${targetDate}.json`).catch(() => null),
       fetchJson("narrative-weekly.json").catch(() => null),
       fetchJson("concept-lifecycle.json").catch(() => null),
       fetchJson("streak.json?v=20260708").catch(() => null),
