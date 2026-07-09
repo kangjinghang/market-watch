@@ -79,8 +79,6 @@ function toggleExclReason(el) {
     el.classList.add('expanded');
   }
 }
-  });
-}
 
 /** 从 URL 拿 date 参数，没有则用 meta 里的 latest_date */
 function getTargetDate(meta) {
