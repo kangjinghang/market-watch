@@ -1,0 +1,1207 @@
+{
+  "date": "2026-06-18",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300166",
+      "name": "东方国信",
+      "pct": 20.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300319",
+      "name": "麦捷科技",
+      "pct": 20.02,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300943",
+      "name": "春晖智控",
+      "pct": 20,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH688333",
+      "name": "铂力特",
+      "pct": 20,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH688515",
+      "name": "裕太微",
+      "pct": 20,
+      "concepts": [
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ300522",
+      "name": "世名科技",
+      "pct": 19.99,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH688729",
+      "name": "屹唐股份",
+      "pct": 19.99,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688131",
+      "name": "皓元医药",
+      "pct": 15.08,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688300",
+      "name": "联瑞新材",
+      "pct": 14.98,
+      "concepts": [
+        "先进封装",
+        "HBM",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH688256",
+      "name": "寒武纪",
+      "pct": 14.2,
+      "concepts": [
+        "半导体",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688535",
+      "name": "华海诚科",
+      "pct": 14.13,
+      "concepts": [
+        "HBM"
+      ]
+    },
+    {
+      "ticker": "SH688400",
+      "name": "凌云光",
+      "pct": 14.1,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ300285",
+      "name": "国瓷材料",
+      "pct": 14.05,
+      "concepts": [
+        "MLCC",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ301630",
+      "name": "同宇新材",
+      "pct": 13.69,
+      "concepts": [
+        "电子化学品",
+        "PCB",
+        "电子",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300435",
+      "name": "中泰股份",
+      "pct": 12.97,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300730",
+      "name": "科创信息",
+      "pct": 12.96,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300100",
+      "name": "双林股份",
+      "pct": 11.86,
+      "concepts": [
+        "汽车零部件",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH688306",
+      "name": "均普智能",
+      "pct": 11.67,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ300671",
+      "name": "富满微",
+      "pct": 11.06,
+      "concepts": [
+        "半导体",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300418",
+      "name": "昆仑万维",
+      "pct": 10.97,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ301213",
+      "name": "观想科技",
+      "pct": 10.59,
+      "concepts": [
+        "军工",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SZ300491",
+      "name": "通合科技",
+      "pct": 10.14,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603313",
+      "name": "梦百合",
+      "pct": 10.1,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600399",
+      "name": "抚顺特钢",
+      "pct": 10.09,
+      "concepts": [
+        "钢铁"
+      ]
+    },
+    {
+      "ticker": "SH603616",
+      "name": "韩建河山",
+      "pct": 10.05,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002159",
+      "name": "三特索道",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002167",
+      "name": "东方锆业",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600397",
+      "name": "江钨装备",
+      "pct": 10.02,
+      "concepts": [
+        "专用设备"
+      ]
+    },
+    {
+      "ticker": "SH600835",
+      "name": "上海机电",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002747",
+      "name": "埃斯顿",
+      "pct": 10.01,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ002907",
+      "name": "华森制药",
+      "pct": 10.01,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH600362",
+      "name": "江西铜业",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600392",
+      "name": "盛和资源",
+      "pct": 10.01,
+      "concepts": [
+        "小金属",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ001339",
+      "name": "智微智能",
+      "pct": 10,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ002068",
+      "name": "黑猫股份",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600259",
+      "name": "中稀有色",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603124",
+      "name": "江南新材",
+      "pct": 10,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH603380",
+      "name": "易德龙",
+      "pct": 10,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH603496",
+      "name": "XD恒为科",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603991",
+      "name": "领先股份",
+      "pct": 10,
+      "concepts": [
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ000534",
+      "name": "万泽股份",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ001216",
+      "name": "华瓷股份",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002158",
+      "name": "汉钟精机",
+      "pct": 9.99,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ002317",
+      "name": "众生药业",
+      "pct": 9.99,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH603001",
+      "name": "奥康国际",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603127",
+      "name": "昭衍新药",
+      "pct": 9.99,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH603211",
+      "name": "晋拓股份",
+      "pct": 9.99,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH600671",
+      "name": "天目药业",
+      "pct": 9.98,
+      "concepts": [
+        "中药"
+      ]
+    },
+    {
+      "ticker": "SZ002354",
+      "name": "天娱数科",
+      "pct": 9.96,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002734",
+      "name": "利民股份",
+      "pct": 9.9,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 22,
+      "active_days": 3,
+      "heat_score": 66,
+      "leaders": [
+        {
+          "ticker": "SZ300319",
+          "name": "麦捷科技",
+          "pct": 20.02,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 14.98,
+          "concepts": [
+            "先进封装",
+            "HBM",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688256",
+          "name": "寒武纪",
+          "pct": 14.2,
+          "concepts": [
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300285",
+          "name": "国瓷材料",
+          "pct": 14.05,
+          "concepts": [
+            "MLCC",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301630",
+          "name": "同宇新材",
+          "pct": 13.69,
+          "concepts": [
+            "电子化学品",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300671",
+          "name": "富满微",
+          "pct": 11.06,
+          "concepts": [
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300418",
+          "name": "昆仑万维",
+          "pct": 10.97,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH600392",
+          "name": "盛和资源",
+          "pct": 10.01,
+          "concepts": [
+            "小金属",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ001339",
+          "name": "智微智能",
+          "pct": 10,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 21,
+      "active_days": 3,
+      "heat_score": 63,
+      "leaders": [
+        {
+          "ticker": "SH688515",
+          "name": "裕太微",
+          "pct": 20,
+          "concepts": [
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688729",
+          "name": "屹唐股份",
+          "pct": 19.99,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688256",
+          "name": "寒武纪",
+          "pct": 14.2,
+          "concepts": [
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300671",
+          "name": "富满微",
+          "pct": 11.06,
+          "concepts": [
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH603991",
+          "name": "领先股份",
+          "pct": 10,
+          "concepts": [
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 12,
+      "active_days": 3,
+      "heat_score": 36,
+      "leaders": [
+        {
+          "ticker": "SZ300522",
+          "name": "世名科技",
+          "pct": 19.99,
+          "concepts": [
+            "PCB"
+          ]
+        },
+        {
+          "ticker": "SZ301630",
+          "name": "同宇新材",
+          "pct": 13.69,
+          "concepts": [
+            "电子化学品",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH603124",
+          "name": "江南新材",
+          "pct": 10,
+          "concepts": [
+            "PCB"
+          ]
+        },
+        {
+          "ticker": "SH603380",
+          "name": "易德龙",
+          "pct": 10,
+          "concepts": [
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": [
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 14.98,
+          "concepts": [
+            "先进封装",
+            "HBM",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH600392",
+          "name": "盛和资源",
+          "pct": 10.01,
+          "concepts": [
+            "小金属",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": [
+        {
+          "ticker": "SZ301630",
+          "name": "同宇新材",
+          "pct": 13.69,
+          "concepts": [
+            "电子化学品",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301213",
+          "name": "观想科技",
+          "pct": 10.59,
+          "concepts": [
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "专用设备",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": [
+        {
+          "ticker": "SH600397",
+          "name": "江钨装备",
+          "pct": 10.02,
+          "concepts": [
+            "专用设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 8,
+      "active_days": 2,
+      "heat_score": 16,
+      "leaders": [
+        {
+          "ticker": "SH688729",
+          "name": "屹唐股份",
+          "pct": 19.99,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 5,
+      "active_days": 3,
+      "heat_score": 15,
+      "leaders": [
+        {
+          "ticker": "SZ300285",
+          "name": "国瓷材料",
+          "pct": 14.05,
+          "concepts": [
+            "MLCC",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "通信",
+      "leader_count": 7,
+      "active_days": 2,
+      "heat_score": 14,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 8,
+      "active_days": 1,
+      "heat_score": 8,
+      "leaders": [
+        {
+          "ticker": "SZ300943",
+          "name": "春晖智控",
+          "pct": 20,
+          "concepts": [
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SH688333",
+          "name": "铂力特",
+          "pct": 20,
+          "concepts": [
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SH688400",
+          "name": "凌云光",
+          "pct": 14.1,
+          "concepts": [
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ300100",
+          "name": "双林股份",
+          "pct": 11.86,
+          "concepts": [
+            "汽车零部件",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SH688306",
+          "name": "均普智能",
+          "pct": 11.67,
+          "concepts": [
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ002747",
+          "name": "埃斯顿",
+          "pct": 10.01,
+          "concepts": [
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ002158",
+          "name": "汉钟精机",
+          "pct": 9.99,
+          "concepts": [
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SH603211",
+          "name": "晋拓股份",
+          "pct": 9.99,
+          "concepts": [
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "玻璃基板",
+      "leader_count": 6,
+      "active_days": 1,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "锂电池",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ300100",
+          "name": "双林股份",
+          "pct": 11.86,
+          "concepts": [
+            "汽车零部件",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "证券",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH688131",
+          "name": "皓元医药",
+          "pct": 15.08,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ002907",
+          "name": "华森制药",
+          "pct": 10.01,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ002317",
+          "name": "众生药业",
+          "pct": 9.99,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH603127",
+          "name": "昭衍新药",
+          "pct": 9.99,
+          "concepts": [
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "有色金属",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "HBM",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": [
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 14.98,
+          "concepts": [
+            "先进封装",
+            "HBM",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688535",
+          "name": "华海诚科",
+          "pct": 14.13,
+          "concepts": [
+            "HBM"
+          ]
+        }
+      ]
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH688146",
+      "name": "中船特气",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "电子"
+      ],
+      "trend_pct": 792.04,
+      "trend_days": 84
+    },
+    {
+      "ticker": "SZ002484",
+      "name": "江海股份",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "PCB"
+      ],
+      "trend_pct": 311.2,
+      "trend_days": 87
+    },
+    {
+      "ticker": "SH688507",
+      "name": "索辰科技",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "机器人"
+      ],
+      "trend_pct": 177.85,
+      "trend_days": 49
+    },
+    {
+      "ticker": "SZ300814",
+      "name": "中富电路",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "PCB"
+      ],
+      "trend_pct": 130.45,
+      "trend_days": 77
+    },
+    {
+      "ticker": "SH603663",
+      "name": "三祥新材",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "电子"
+      ],
+      "trend_pct": 110.46,
+      "trend_days": 30
+    },
+    {
+      "ticker": "SH603688",
+      "name": "石英股份",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "半导体",
+        "PCB",
+        "算力"
+      ],
+      "trend_pct": 91,
+      "trend_days": 76
+    },
+    {
+      "ticker": "SH605589",
+      "name": "圣泉集团",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "PCB",
+        "电子"
+      ],
+      "trend_pct": 86.45,
+      "trend_days": 51
+    },
+    {
+      "ticker": "SZ301217",
+      "name": "铜冠铜箔",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 79.76,
+      "trend_days": 13
+    },
+    {
+      "ticker": "SH600888",
+      "name": "新疆众和",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "半导体"
+      ],
+      "trend_pct": 61.15,
+      "trend_days": 34
+    },
+    {
+      "ticker": "SH600206",
+      "name": "有研新材",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "电子"
+      ],
+      "trend_pct": 53.72,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SZ300976",
+      "name": "达瑞电子",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "半导体",
+        "电子"
+      ],
+      "trend_pct": 51.94,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SH688661",
+      "name": "和林微纳",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体"
+      ],
+      "trend_pct": 42.52,
+      "trend_days": 8
+    },
+    {
+      "ticker": "SZ301306",
+      "name": "西测测试",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体"
+      ],
+      "trend_pct": 40.66,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ002057",
+      "name": "中钢天源",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "电子",
+        "AI"
+      ],
+      "trend_pct": 34.14,
+      "trend_days": 20
+    },
+    {
+      "ticker": "SZ301392",
+      "name": "汇成真空",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "半导体设备",
+        "专用设备"
+      ],
+      "trend_pct": 33.67,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SZ300373",
+      "name": "扬杰科技",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "半导体"
+      ],
+      "trend_pct": 30.35,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SZ000733",
+      "name": "振华科技",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "算力",
+        "MLCC"
+      ],
+      "trend_pct": 26.78,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SH688102",
+      "name": "斯瑞新材",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体"
+      ],
+      "trend_pct": 26.63,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SZ000955",
+      "name": "欣龙控股",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "算力"
+      ],
+      "trend_pct": 24.56,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ002584",
+      "name": "西陇科学",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "电子化学品",
+        "电子"
+      ],
+      "trend_pct": 23.74,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SZ300031",
+      "name": "宝通科技",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "机器人"
+      ],
+      "trend_pct": 22.87,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SH603267",
+      "name": "鸿远电子",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "MLCC"
+      ],
+      "trend_pct": 22.78,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SH688591",
+      "name": "泰凌微",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI",
+        "半导体"
+      ],
+      "trend_pct": 20.74,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SH688193",
+      "name": "仁度生物",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "电子"
+      ],
+      "trend_pct": 17.79,
+      "trend_days": 13
+    },
+    {
+      "ticker": "SH603068",
+      "name": "博通集成",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "半导体设备"
+      ],
+      "trend_pct": 17.14,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SH600366",
+      "name": "宁波韵升",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体"
+      ],
+      "trend_pct": 17.12,
+      "trend_days": 13
+    },
+    {
+      "ticker": "SZ000878",
+      "name": "云南铜业",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 16.92,
+      "trend_days": 8
+    },
+    {
+      "ticker": "SZ002044",
+      "name": "美年健康",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 15.23,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ002318",
+      "name": "久立特材",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "钢铁"
+      ],
+      "trend_pct": 14.03,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ300354",
+      "name": "东华测试",
+      "last_seen": "2026-06-18",
+      "shared_concepts": [
+        "半导体",
+        "半导体设备"
+      ],
+      "trend_pct": 13.93,
+      "trend_days": 7
+    }
+  ]
+}

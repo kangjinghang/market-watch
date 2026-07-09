@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-02",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH605178",
+      "name": "时空科技",
+      "streak": 6,
+      "first_date": "2026-06-24",
+      "last_date": "2026-07-02",
+      "total_pct": 73.16
+    },
+    {
+      "ticker": "SZ300655",
+      "name": "晶瑞电材",
+      "streak": 5,
+      "first_date": "2026-06-24",
+      "last_date": "2026-07-02",
+      "total_pct": 58.94
+    },
+    {
+      "ticker": "SH600378",
+      "name": "昊华科技",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 176.79
+    },
+    {
+      "ticker": "SZ300671",
+      "name": "富满微",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 99.65
+    },
+    {
+      "ticker": "SH600641",
+      "name": "先导基电",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 96.34
+    },
+    {
+      "ticker": "SZ300873",
+      "name": "海晨股份",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 65.49
+    },
+    {
+      "ticker": "SZ002653",
+      "name": "海思科",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 60.72
+    },
+    {
+      "ticker": "SH688266",
+      "name": "泽璟制药",
+      "streak": 3,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-02",
+      "total_pct": 54.49
+    },
+    {
+      "ticker": "SH688578",
+      "name": "艾力斯",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 53.96
+    },
+    {
+      "ticker": "SH688221",
+      "name": "前沿生物",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 50
+    },
+    {
+      "ticker": "SH603607",
+      "name": "京华激光",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 35.03
+    },
+    {
+      "ticker": "SH603078",
+      "name": "XD江化微",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 28.44
+    },
+    {
+      "ticker": "SZ002468",
+      "name": "申通快递",
+      "streak": 3,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-02",
+      "total_pct": 26.89
+    }
+  ]
+}
