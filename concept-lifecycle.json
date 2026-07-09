@@ -51,7 +51,7 @@
     {
       "concept": "ESG",
       "stage": "升温",
-      "current_freq": 9,
+      "current_freq": 10,
       "peak_freq": 23,
       "peak_week": "2026-W24",
       "weeks_active": 6,
@@ -72,7 +72,7 @@
         1,
         11,
         4,
-        9
+        10
       ],
       "weeks": [
         "2026-W10",
@@ -97,8 +97,8 @@
     {
       "concept": "半导体",
       "stage": "降温",
-      "current_freq": 1,
-      "peak_freq": 179,
+      "current_freq": 2,
+      "peak_freq": 180,
       "peak_week": "2026-W24",
       "weeks_active": 15,
       "freq_series": [
@@ -114,11 +114,11 @@
         35,
         24,
         53,
-        179,
+        180,
         121,
         83,
-        61,
-        1
+        63,
+        2
       ],
       "weeks": [
         "2026-W10",
@@ -144,7 +144,7 @@
       "concept": "创新药",
       "stage": "降温",
       "current_freq": 11,
-      "peak_freq": 165,
+      "peak_freq": 167,
       "peak_week": "2026-W27",
       "weeks_active": 4,
       "freq_series": [
@@ -163,7 +163,7 @@
         0,
         14,
         28,
-        165,
+        167,
         11
       ],
       "weeks": [
@@ -189,7 +189,7 @@
     {
       "concept": "电子",
       "stage": "降温",
-      "current_freq": 1,
+      "current_freq": 3,
       "peak_freq": 116,
       "peak_week": "2026-W24",
       "weeks_active": 16,
@@ -208,9 +208,9 @@
         17,
         116,
         20,
-        42,
-        22,
-        1
+        43,
+        24,
+        3
       ],
       "weeks": [
         "2026-W10",
@@ -282,7 +282,7 @@
       "concept": "机器人",
       "stage": "降温",
       "current_freq": 1,
-      "peak_freq": 63,
+      "peak_freq": 64,
       "peak_week": "2026-W27",
       "weeks_active": 7,
       "freq_series": [
@@ -301,7 +301,7 @@
         4,
         9,
         0,
-        63,
+        64,
         1
       ],
       "weeks": [
@@ -327,7 +327,7 @@
     {
       "concept": "AI",
       "stage": "降温",
-      "current_freq": 2,
+      "current_freq": 4,
       "peak_freq": 55,
       "peak_week": "2026-W24",
       "weeks_active": 14,
@@ -346,9 +346,9 @@
         33,
         55,
         48,
-        36,
-        15,
-        2
+        37,
+        18,
+        4
       ],
       "weeks": [
         "2026-W10",
@@ -439,7 +439,7 @@
         6,
         41,
         33,
-        37,
+        39,
         0
       ],
       "weeks": [
@@ -466,7 +466,7 @@
       "concept": "PCB",
       "stage": "降温",
       "current_freq": 0,
-      "peak_freq": 33,
+      "peak_freq": 34,
       "peak_week": "2026-W25",
       "weeks_active": 13,
       "freq_series": [
@@ -483,9 +483,9 @@
         14,
         26,
         20,
-        33,
+        34,
         15,
-        7,
+        8,
         0
       ],
       "weeks": [
@@ -695,10 +695,10 @@
     {
       "concept": "存储芯片",
       "stage": "降温",
-      "current_freq": 0,
+      "current_freq": 1,
       "peak_freq": 17,
       "peak_week": "2026-W26",
-      "weeks_active": 9,
+      "weeks_active": 10,
       "freq_series": [
         0,
         6,
@@ -716,7 +716,7 @@
         12,
         17,
         3,
-        0
+        1
       ],
       "weeks": [
         "2026-W10",
@@ -741,10 +741,10 @@
     {
       "concept": "汽车零部件",
       "stage": "降温",
-      "current_freq": 0,
+      "current_freq": 1,
       "peak_freq": 17,
       "peak_week": "2026-W27",
-      "weeks_active": 4,
+      "weeks_active": 5,
       "freq_series": [
         0,
         0,
@@ -762,7 +762,53 @@
         2,
         2,
         17,
-        0
+        1
+      ],
+      "weeks": [
+        "2026-W10",
+        "2026-W13",
+        "2026-W14",
+        "2026-W15",
+        "2026-W16",
+        "2026-W17",
+        "2026-W18",
+        "2026-W19",
+        "2026-W20",
+        "2026-W21",
+        "2026-W22",
+        "2026-W23",
+        "2026-W24",
+        "2026-W25",
+        "2026-W26",
+        "2026-W27",
+        "2026-W28"
+      ]
+    },
+    {
+      "concept": "算力",
+      "stage": "降温",
+      "current_freq": 4,
+      "peak_freq": 16,
+      "peak_week": "2026-W26",
+      "weeks_active": 11,
+      "freq_series": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        14,
+        3,
+        9,
+        5,
+        11,
+        14,
+        16,
+        6,
+        4
       ],
       "weeks": [
         "2026-W10",
@@ -831,12 +877,12 @@
       ]
     },
     {
-      "concept": "算力",
+      "concept": "军工",
       "stage": "降温",
       "current_freq": 1,
       "peak_freq": 15,
-      "peak_week": "2026-W26",
-      "weeks_active": 11,
+      "peak_week": "2026-W24",
+      "weeks_active": 5,
       "freq_series": [
         0,
         0,
@@ -844,16 +890,16 @@
         0,
         0,
         0,
-        2,
-        4,
-        14,
-        3,
-        9,
-        5,
-        11,
-        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         15,
+        1,
         4,
+        5,
         1
       ],
       "weeks": [
@@ -877,12 +923,12 @@
       ]
     },
     {
-      "concept": "军工",
+      "concept": "中药",
       "stage": "降温",
       "current_freq": 0,
       "peak_freq": 15,
-      "peak_week": "2026-W24",
-      "weeks_active": 4,
+      "peak_week": "2026-W27",
+      "weeks_active": 2,
       "freq_series": [
         0,
         0,
@@ -896,10 +942,10 @@
         0,
         0,
         0,
-        15,
+        0,
+        0,
         1,
-        4,
-        5,
+        15,
         0
       ],
       "weeks": [
@@ -992,52 +1038,6 @@
         0,
         14,
         3,
-        0
-      ],
-      "weeks": [
-        "2026-W10",
-        "2026-W13",
-        "2026-W14",
-        "2026-W15",
-        "2026-W16",
-        "2026-W17",
-        "2026-W18",
-        "2026-W19",
-        "2026-W20",
-        "2026-W21",
-        "2026-W22",
-        "2026-W23",
-        "2026-W24",
-        "2026-W25",
-        "2026-W26",
-        "2026-W27",
-        "2026-W28"
-      ]
-    },
-    {
-      "concept": "中药",
-      "stage": "降温",
-      "current_freq": 0,
-      "peak_freq": 14,
-      "peak_week": "2026-W27",
-      "weeks_active": 2,
-      "freq_series": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        1,
-        14,
         0
       ],
       "weeks": [
@@ -1431,10 +1431,10 @@
     {
       "concept": "消费电子",
       "stage": "降温",
-      "current_freq": 0,
+      "current_freq": 1,
       "peak_freq": 6,
       "peak_week": "2026-W24",
-      "weeks_active": 6,
+      "weeks_active": 7,
       "freq_series": [
         0,
         0,
@@ -1450,9 +1450,9 @@
         1,
         6,
         2,
-        2,
-        4,
-        0
+        3,
+        6,
+        1
       ],
       "weeks": [
         "2026-W10",

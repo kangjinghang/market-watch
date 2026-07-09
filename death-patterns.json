@@ -1,134 +1,14 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-07",
-  "total_deaths": 411,
+  "date_range": "2026-06-16 ~ 2026-07-08",
+  "total_deaths": 415,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 69,
+    "高位回落": 68,
     "利空事件": 2,
     "利空+下跌": 8,
-    "自然退潮": 331
+    "自然退潮": 336
   },
   "recent_deaths": [
-    {
-      "ticker": "SZ000636",
-      "name": "风华高科",
-      "death_date": "2026-06-29",
-      "peak_pct": 332.72,
-      "last_pct": 332.72,
-      "last_days": 83,
-      "appearances": 5,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "风华高科2026-05-18收盘价29.43元，涨幅9.00%",
-          "timestamp": 1779033600000,
-          "reason": "元件行业受科技基金调仓及光通信需求增长带动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d90c4e26-8aef-4e56-a337-da3a52dc3d7c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "风华高科2026-05-19收盘价32.37元，涨幅9.99%",
-          "timestamp": 1779120000000,
-          "reason": "MLCC概念走强及AI服务器需求增长预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-223de068-f5ba-4305-9939-c5f1004fa37c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "风华高科2026-05-22收盘价37.62元，涨幅10.00%",
-          "timestamp": 1779379200000,
-          "reason": "2026-05-22到2026-05-25股价连续上涨，MLCC行业供需紧张及国产替代加速推动板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-98b3d979-bf14-4cdf-9acf-7aa2a1689e2f&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "风华高科2026-06-12收盘价59.12元，跌幅8.06%",
-          "timestamp": 1781193600000,
-          "reason": "MLCC概念板块整体调整，市场担忧高端MLCC产能扩张受限及短期涨幅过大",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7e32ac20-2b07-4c17-b6e5-1cff60f50b81&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300285",
-      "name": "国瓷材料",
-      "death_date": "2026-06-29",
-      "peak_pct": 250.87,
-      "last_pct": 250.87,
-      "last_days": 88,
-      "appearances": 5,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "国瓷材料2026-05-19收盘价43.89元，涨幅12.83%",
-          "timestamp": 1779120000000,
-          "reason": "MLCC概念板块走强及AI算力上游材料国产替代预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c7aa9082-57e5-4141-81fd-31bf0765c906&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "国瓷材料2026-06-02收盘价58.45元，涨幅13.50%",
-          "timestamp": 1780329600000,
-          "reason": "AI服务器及车规级MLCC需求爆发推动高端钛酸钡粉体涨价预期，叠加稀土出口管制强化国产替代逻辑",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-716c334a-3e70-4db5-a634-e28f40ffc86b&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "国瓷材料2026-06-08收盘价57.61元，跌幅11.61%",
-          "timestamp": 1780848000000,
-          "reason": "全球MLCC产业链调整及市场情绪波动导致股价下跌",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-be57a7e9-db1f-4976-b7a8-dd1f4e1f381a&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "国瓷材料2026-06-09收盘价66.40元，涨幅15.26%",
-          "timestamp": 1780934400000,
-          "reason": "市场预期MLCC高端粉体供需紧张及AI服务器需求增长将推动国瓷材料业绩提升",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-929ab185-5a3b-411b-a39c-444ce814ea15&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "国瓷材料2026-06-17收盘价78.50元，涨幅16.42%",
-          "timestamp": 1781625600000,
-          "reason": "MLCC概念板块活跃及公司多项专利发布推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0f95dd6f-03dc-48c8-9d70-0f92b943f673&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "国瓷材料2026-06-18收盘价89.53元，涨幅14.05%",
-          "timestamp": 1781712000000,
-          "reason": "日本东曹断供氧化锆粉体引发国产替代预期，叠加公司多项专利技术发布及AI服务器MLCC粉体需求增长预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3e6d007-6e30-4d98-adff-15f6771982f2&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH688082",
-      "name": "盛美上海",
-      "death_date": "2026-06-29",
-      "peak_pct": 220.56,
-      "last_pct": 220.56,
-      "last_days": 87,
-      "appearances": 7,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "盛美上海2026-04-28收盘价146.60元，跌幅11.74%",
-          "timestamp": 1777305600000,
-          "reason": "一季度净利润同比下滑57.66%及半导体设备板块整体走弱",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cd96ab50-c57d-4e07-bfa4-5c3888f7fdf7&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "盛美上海2026-05-25收盘价251.00元，涨幅17.75%",
-          "timestamp": 1779638400000,
-          "reason": "半导体设备板块整体走强及公司高温SPM清洗技术突破双重驱动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b544375a-9301-470d-be8c-e01e0bdc4c13&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "盛美上海2026-06-03收盘价252.94元，涨幅12.39%",
-          "timestamp": 1780416000000,
-          "reason": "公司同日公布多项半导体设备专利技术申请，市场预期技术突破将增强竞争力",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c1f64f67-07ce-4f83-9451-ce94cef800a8&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "盛美上海2026-06-17收盘价361.20元，涨幅20.00%",
-          "timestamp": 1781625600000,
-          "reason": "半导体设备板块整体走强及公司技术突破与订单增长",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-76c443f0-34f7-4adb-bfad-33e8a0a2b401&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
     {
       "ticker": "SH600367",
       "name": "红星发展",
@@ -389,6 +269,108 @@
           "timestamp": 1781193600000,
           "reason": "电子特气概念板块整体调整拖累个股表现",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-89b8f8dd-b23d-4628-93fc-caa4640d8df2&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH603283",
+      "name": "赛腾股份",
+      "death_date": "2026-06-30",
+      "peak_pct": 159.42,
+      "last_pct": 159.42,
+      "last_days": 99,
+      "appearances": 8,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "赛腾股份2026-04-13收盘价50.50元，涨幅10.00%",
+          "timestamp": 1776009600000,
+          "reason": "行业利好传闻及AI加速器需求激增预期推动股价涨停",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-47d1262b-8a32-4c40-8e9d-92225c71fced&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "赛腾股份2026-04-28收盘价54.67元，涨幅10.00%",
+          "timestamp": 1777305600000,
+          "reason": "半导体业务增长超预期及HBM检测设备稀缺性推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f8400d4e-c199-4d01-af64-557c0e3a70d0&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "赛腾股份2026-05-19收盘价69.76元，涨幅8.95%",
+          "timestamp": 1779120000000,
+          "reason": "半导体设备板块走强及公司HBM检测技术优势驱动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-60f4040e-901d-4131-ba68-40aebad981fa&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "赛腾股份2026-06-15收盘价55.25元，涨幅8.55%",
+          "timestamp": 1781452800000,
+          "reason": "国家知识产权局公布赛腾股份晶圆检测专利技术突破",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-9134b151-21c9-45d2-9bf0-3da65adc1cf1&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "赛腾股份2026-06-17收盘价63.06元，涨幅9.99%",
+          "timestamp": 1781625600000,
+          "reason": "半导体设备板块整体走强及公司新专利公布推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-956153b4-b542-4b42-818a-60b7281d2226&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "赛腾股份2026-06-29收盘价78.74元，涨幅10.00%",
+          "timestamp": 1782662400000,
+          "reason": "半导体设备行业景气度提升，赛腾股份作为HBM检测设备核心供应商受益于存储大厂扩产预期",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-da96732a-d9ec-4eb2-b2bb-a530f0476ae7&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ300223",
+      "name": "北京君正",
+      "death_date": "2026-07-03",
+      "peak_pct": 149.13,
+      "last_pct": 149.13,
+      "last_days": 94,
+      "appearances": 10,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "北京君正2026-05-06收盘价136.69元，涨幅10.07%",
+          "timestamp": 1777996800000,
+          "reason": "半导体板块整体走强及GPU概念活跃带动个股上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1994caec-96fa-4297-875e-ee209baaf946&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "北京君正2026-06-01收盘价144.11元，跌幅8.48%",
+          "timestamp": 1780243200000,
+          "reason": "半导体板块整体走弱叠加市场对存储行业价格波动担忧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-69091b0e-92ab-4847-99f3-12966fb5637a&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "北京君正2026-06-15收盘价164.30元，涨幅12.84%",
+          "timestamp": 1781452800000,
+          "reason": "存储芯片行业整体走强及长鑫科技IPO提速带动板块估值提升",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d180add5-f1f1-4fcc-b69a-632785b48dee&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "北京君正2026-06-25收盘价237.36元，涨幅20.00%",
+          "timestamp": 1782316800000,
+          "reason": "存储芯片行业景气度持续提升，公司车规存储产品需求旺盛且价格上调",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7ad5f390-e43f-4b1d-8c16-5ce354a44c54&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ300489",
+      "name": "光智科技",
+      "death_date": "2026-06-30",
+      "peak_pct": 148.86,
+      "last_pct": 148.86,
+      "last_days": 25,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "光智科技2026-06-11收盘价176.00元，涨幅16.46%",
+          "timestamp": 1781107200000,
+          "reason": "半导体材料板块持续走高，电子特气概念表现强势",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-68068b18-0d10-4819-817f-afa11440718f&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
