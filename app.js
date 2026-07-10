@@ -1095,7 +1095,7 @@ async function main() {
       fetchJson("narrative-weekly.json").catch(() => null),
       fetchJson("concept-lifecycle.json").catch(() => null),
       fetchJson("sector-flow.json").catch(() => null),
-      fetchJson("early-bird.json").catch(() => null),
+      fetchJson(`early-bird-${targetDate}.json`).catch(() => null),
       fetchJson("anomaly.json").catch(() => null),
       fetchJson("fitness-report.json").catch(() => null),
       fetchJson("excluded-report.json").catch(() => null),
