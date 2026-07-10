@@ -732,29 +732,38 @@ function drawSectorFlowChart() {
 /** 渲染早鸟指数 */
 function renderEarlyBird(data) {
   if (!data || data.total_stocks === 0) return "";
-  const rows = data.entries.slice(0, 10).map((e, i) => {
+
+  const statusConfig = {
+    fresh: { icon: "🟢", label: "新鲜入选", cls: "eb-status-fresh" },
+    running: { icon: "🔵", label: "趋势中", cls: "eb-status-running" },
+    peaked: { icon: "⚪", label: "已到顶", cls: "eb-status-peaked" },
+    faded: { icon: "🔴", label: "已回落", cls: "eb-status-faded" },
+  };
+
+  const rows = data.entries.slice(0, 15).map((e, i) => {
     const firstPct = e.first_day_pct > 0 ? `+${e.first_day_pct.toFixed(1)}%` : `${e.first_day_pct.toFixed(1)}%`;
-    const peakPct = `+${e.peak_pct.toFixed(1)}%`;
-    const space = e.peak_pct - e.first_day_pct;
-    const spacePct = space > 0 ? `+${space.toFixed(1)}%` : `${space.toFixed(1)}%`;
+    const lastPct = e.last_pct > 0 ? `+${e.last_pct.toFixed(1)}%` : `${e.last_pct.toFixed(1)}%`;
+    const refSpace = e.peer_avg_peak - e.first_day_pct;
+    const refSpacePct = refSpace > 0 ? `+${refSpace.toFixed(1)}%` : `${refSpace.toFixed(1)}%`;
+    const st = statusConfig[e.trend_status] || statusConfig.peaked;
     return `
       <div class="eb-row">
         <span class="eb-rank">${i + 1}</span>
         <div class="eb-info">
-          <span class="eb-name">${e.name}</span>
-          <span class="eb-meta">${e.ticker} · 首日 ${e.first_date.slice(5)} → 峰值 ${e.days_to_peak}天</span>
+          <span class="eb-name">${e.name} <span class="eb-status ${st.cls}">${st.icon} ${st.label}</span></span>
+          <span class="eb-meta">${e.ticker} · 首日 ${e.first_date.slice(5)} · ${e.days_to_peak}天到峰值</span>
         </div>
         <div class="eb-pcts">
           <span class="eb-first">首日 ${firstPct}</span>
           <span class="eb-arrow">→</span>
-          <span class="eb-peak">峰值 ${peakPct}</span>
-          <span class="eb-space">空间 ${spacePct}</span>
+          <span class="eb-last">当前 ${lastPct}</span>
+          <span class="eb-ref">参考空间 ${refSpacePct}</span>
         </div>
       </div>`;
   }).join("");
   return `
     <section>
-      <h2>早鸟指数 · ${data.date}${badge('daily')}${tip('按"后续空间"排序：后续空间 = 峰值涨幅 - 首日涨幅。空间越大说明早发现的价值越高。')}</h2>
+      <h2>早鸟指数 · ${data.date}${badge('daily')}${tip('🟢新鲜入选=刚进入候选榜，最有未来空间。🔵趋势中=仍在上涨。⚪已到顶=当前在峰值。🔴已回落=从高点回落。参考空间=同类首日涨幅股票的历史平均峰值 - 首日涨幅。')}</h2>
       <div class="eb-summary">${data.total_stocks} 只 · 首日均涨 ${data.avg_first_day_pct}% · 峰值均涨 ${data.avg_peak_pct}%</div>
       ${rows}
     </section>`;
