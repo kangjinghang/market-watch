@@ -1288,6 +1288,7 @@ section > h2 {
 .eb-first { color: var(--text-dim); }
 .eb-arrow { color: var(--text-muted); font-size: 0.6rem; }
 .eb-peak { color: var(--up); font-weight: 700; }
+.eb-space { color: var(--accent); font-weight: 600; margin-left: 4px; }
 
 /* ── 异常看板 ── */
 .anomaly-summary {

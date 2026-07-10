@@ -735,6 +735,8 @@ function renderEarlyBird(data) {
   const rows = data.entries.slice(0, 10).map((e, i) => {
     const firstPct = e.first_day_pct > 0 ? `+${e.first_day_pct.toFixed(1)}%` : `${e.first_day_pct.toFixed(1)}%`;
     const peakPct = `+${e.peak_pct.toFixed(1)}%`;
+    const space = e.peak_pct - e.first_day_pct;
+    const spacePct = space > 0 ? `+${space.toFixed(1)}%` : `${space.toFixed(1)}%`;
     return `
       <div class="eb-row">
         <span class="eb-rank">${i + 1}</span>
@@ -746,12 +748,13 @@ function renderEarlyBird(data) {
           <span class="eb-first">首日 ${firstPct}</span>
           <span class="eb-arrow">→</span>
           <span class="eb-peak">峰值 ${peakPct}</span>
+          <span class="eb-space">空间 ${spacePct}</span>
         </div>
       </div>`;
   }).join("");
   return `
     <section>
-      <h2>早鸟指数 · ${data.date}${badge('daily')}${tip('分析首次入选后的涨幅表现。首日涨幅反映初始动能，峰值涨幅反映后续爆发力，天数反映达到峰值的速度。')}</h2>
+      <h2>早鸟指数 · ${data.date}${badge('daily')}${tip('按"后续空间"排序：后续空间 = 峰值涨幅 - 首日涨幅。空间越大说明早发现的价值越高。')}</h2>
       <div class="eb-summary">${data.total_stocks} 只 · 首日均涨 ${data.avg_first_day_pct}% · 峰值均涨 ${data.avg_peak_pct}%</div>
       ${rows}
     </section>`;
