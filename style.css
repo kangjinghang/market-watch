@@ -1036,29 +1036,30 @@ section > h2 {
 .cc-label-horiz {
   font-size: 9px;
   fill: var(--text-dim);
-  text-anchor: end;
   font-family: 'JetBrains Mono', monospace;
+  text-anchor: end;
 }
 .cc-cell {
-  fill: var(--accent);
+  fill: #38bdf8;
   stroke: var(--bg);
   stroke-width: 1;
-  rx: 2;
+  rx: 3;
   cursor: pointer;
-  transition: opacity 0.15s ease;
+  transition: all 0.15s ease;
 }
 .cc-cell:hover {
-  stroke: var(--text);
+  stroke: #fff;
   stroke-width: 1.5;
+  filter: brightness(1.2);
 }
 .cc-cell-diag {
-  fill: rgba(255, 255, 255, 0.04);
+  fill: rgba(56, 189, 248, 0.08);
   stroke: var(--bg);
   stroke-width: 1;
 }
 .cc-cell-empty {
-  fill: rgba(255, 255, 255, 0.015);
-  stroke: var(--bg);
+  fill: rgba(255, 255, 255, 0.03);
+  stroke: rgba(255, 255, 255, 0.06);
   stroke-width: 1;
 }
 /* 力导向图 */
@@ -1069,7 +1070,7 @@ section > h2 {
   margin: 0 auto;
 }
 .cc-edge {
-  stroke: var(--accent);
+  stroke: #38bdf8;
   stroke-linecap: round;
 }
 .cc-node {
@@ -1081,12 +1082,12 @@ section > h2 {
 .cc-node:hover {
   filter: brightness(1.3);
 }
-.cc-node-sector { fill: var(--accent); }
-.cc-node-tech { fill: #a78bfa; }
-.cc-node-event { fill: #f97316; }
+.cc-node-sector { fill: #38bdf8; }
+.cc-node-tech { fill: #c084fc; }
+.cc-node-event { fill: #fb923c; }
 .cc-node-label {
   font-size: 8px;
-  fill: var(--text-dim);
+  fill: var(--text);
   text-anchor: middle;
   font-family: 'JetBrains Mono', monospace;
   pointer-events: none;
