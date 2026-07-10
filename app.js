@@ -526,28 +526,34 @@ function filterLifecycle(stage, btn) {
   document.querySelectorAll('.cl-tab').forEach(t => t.classList.remove('cl-tab-active'));
   btn.classList.add('cl-tab-active');
   const rows = document.querySelectorAll('.cl-row');
+  // 先移除旧的 overflow 标记和按钮
+  document.querySelectorAll('.cl-overflow').forEach(r => r.classList.remove('cl-overflow'));
+  const oldBtn = document.querySelector('.cl-show-more');
+  if (oldBtn) oldBtn.remove();
+  
   let shown = 0;
   rows.forEach(r => {
     const match = stage === 'all' || r.dataset.stage === stage;
-    // "全部"时默认只显示前 20 个
-    if (stage === 'all' && shown >= 20) {
-      r.style.display = 'none';
-      r.classList.add('cl-overflow');
-    } else {
-      r.style.display = match ? '' : 'none';
-      if (match) shown++;
-    }
+    r.style.display = match ? '' : 'none';
+    if (match) shown++;
   });
-  // 移除旧的"展开更多"按钮
-  const oldBtn = document.querySelector('.cl-show-more');
-  if (oldBtn) oldBtn.remove();
-  // 如果有被隐藏的行，添加"展开更多"按钮
-  const overflow = document.querySelectorAll('.cl-overflow');
-  if (overflow.length > 0) {
+  
+  // "全部"时超过 20 个则折叠
+  if (stage === 'all' && shown > 20) {
+    let count = 0;
+    rows.forEach(r => {
+      if (r.style.display !== 'none') {
+        count++;
+        if (count > 20) {
+          r.classList.add('cl-overflow');
+          r.style.display = 'none';
+        }
+      }
+    });
     const listEl = document.getElementById('cl-list');
     const moreBtn = document.createElement('button');
     moreBtn.className = 'cl-show-more';
-    moreBtn.textContent = `展开全部 ${rows.length} 个概念`;
+    moreBtn.textContent = `展开全部 ${shown} 个概念`;
     moreBtn.onclick = function() {
       document.querySelectorAll('.cl-overflow').forEach(r => {
         r.style.display = '';
