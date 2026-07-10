@@ -1,0 +1,54 @@
+{
+  "date": "2026-07-09",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ003033",
+      "name": "征和工业",
+      "streak": 4,
+      "first_date": "2026-07-06",
+      "last_date": "2026-07-09",
+      "total_pct": 27.5
+    },
+    {
+      "ticker": "SZ300821",
+      "name": "东岳硅材",
+      "streak": 3,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-09",
+      "total_pct": 103.83
+    },
+    {
+      "ticker": "SH688605",
+      "name": "先锋精科",
+      "streak": 3,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-09",
+      "total_pct": 67.19
+    },
+    {
+      "ticker": "SZ002841",
+      "name": "视源股份",
+      "streak": 3,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-09",
+      "total_pct": 61.49
+    },
+    {
+      "ticker": "SH688629",
+      "name": "华丰科技",
+      "streak": 3,
+      "first_date": "2026-07-06",
+      "last_date": "2026-07-09",
+      "total_pct": 49.13
+    },
+    {
+      "ticker": "SZ000938",
+      "name": "紫光股份",
+      "streak": 3,
+      "first_date": "2026-07-06",
+      "last_date": "2026-07-09",
+      "total_pct": 41.87
+    }
+  ]
+}

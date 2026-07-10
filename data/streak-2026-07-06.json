@@ -1,0 +1,118 @@
+{
+  "date": "2026-07-06",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ300671",
+      "name": "富满微",
+      "streak": 5,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-06",
+      "total_pct": 121.47
+    },
+    {
+      "ticker": "SZ001331",
+      "name": "胜通能源",
+      "streak": 5,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-06",
+      "total_pct": 115.41
+    },
+    {
+      "ticker": "SZ300765",
+      "name": "石药创新",
+      "streak": 4,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-06",
+      "total_pct": 58.11
+    },
+    {
+      "ticker": "SZ002175",
+      "name": "*ST东智",
+      "streak": 4,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-06",
+      "total_pct": 40
+    },
+    {
+      "ticker": "SH688068",
+      "name": "热景生物",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 79.76
+    },
+    {
+      "ticker": "SH600793",
+      "name": "宜宾纸业",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 49.87
+    },
+    {
+      "ticker": "SZ002396",
+      "name": "星网锐捷",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 47.68
+    },
+    {
+      "ticker": "SH688117",
+      "name": "圣诺生物",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 43.19
+    },
+    {
+      "ticker": "SZ002979",
+      "name": "雷赛智能",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 41.86
+    },
+    {
+      "ticker": "SZ002403",
+      "name": "爱仕达",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 39.41
+    },
+    {
+      "ticker": "SZ000908",
+      "name": "石药景峰",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 37.88
+    },
+    {
+      "ticker": "SH603789",
+      "name": "ST星农",
+      "streak": 3,
+      "first_date": "2026-07-02",
+      "last_date": "2026-07-06",
+      "total_pct": 33.65
+    },
+    {
+      "ticker": "SZ301047",
+      "name": "义翘神州",
+      "streak": 3,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-06",
+      "total_pct": 15.57
+    },
+    {
+      "ticker": "SH601211",
+      "name": "国泰海通",
+      "streak": 3,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-06",
+      "total_pct": 14.96
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "date": "2026-06-30",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH600206",
+      "name": "有研新材",
+      "streak": 7,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 145.07
+    },
+    {
+      "ticker": "SH603650",
+      "name": "彤程新材",
+      "streak": 7,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 53.12
+    },
+    {
+      "ticker": "SZ002371",
+      "name": "北方华创",
+      "streak": 7,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 31.59
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "streak": 6,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 204.96
+    },
+    {
+      "ticker": "SH688361",
+      "name": "中科飞测",
+      "streak": 6,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 78.42
+    },
+    {
+      "ticker": "SZ000021",
+      "name": "深科技",
+      "streak": 6,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 57.64
+    },
+    {
+      "ticker": "SH600707",
+      "name": "彩虹股份",
+      "streak": 5,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-30",
+      "total_pct": 209.82
+    },
+    {
+      "ticker": "SH600552",
+      "name": "凯盛科技",
+      "streak": 5,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 181.36
+    },
+    {
+      "ticker": "SZ300346",
+      "name": "南大光电",
+      "streak": 5,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-30",
+      "total_pct": 110.66
+    },
+    {
+      "ticker": "SH688627",
+      "name": "XD精智达",
+      "streak": 5,
+      "first_date": "2026-06-24",
+      "last_date": "2026-06-30",
+      "total_pct": 101.22
+    },
+    {
+      "ticker": "SH688120",
+      "name": "华海清科",
+      "streak": 5,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-30",
+      "total_pct": 60.15
+    },
+    {
+      "ticker": "SH603678",
+      "name": "火炬电子",
+      "streak": 4,
+      "first_date": "2026-06-25",
+      "last_date": "2026-06-30",
+      "total_pct": 158.65
+    },
+    {
+      "ticker": "SZ301611",
+      "name": "珂玛科技",
+      "streak": 4,
+      "first_date": "2026-06-24",
+      "last_date": "2026-06-30",
+      "total_pct": 101.71
+    },
+    {
+      "ticker": "SH688037",
+      "name": "芯源微",
+      "streak": 4,
+      "first_date": "2026-06-25",
+      "last_date": "2026-06-30",
+      "total_pct": 61.42
+    },
+    {
+      "ticker": "SZ300567",
+      "name": "精测电子",
+      "streak": 4,
+      "first_date": "2026-06-25",
+      "last_date": "2026-06-30",
+      "total_pct": 55.06
+    },
+    {
+      "ticker": "SZ002822",
+      "name": "ST中装",
+      "streak": 4,
+      "first_date": "2026-06-25",
+      "last_date": "2026-06-30",
+      "total_pct": 34.45
+    },
+    {
+      "ticker": "SZ300655",
+      "name": "晶瑞电材",
+      "streak": 4,
+      "first_date": "2026-06-24",
+      "last_date": "2026-06-30",
+      "total_pct": 32.55
+    },
+    {
+      "ticker": "SZ301392",
+      "name": "汇成真空",
+      "streak": 3,
+      "first_date": "2026-06-26",
+      "last_date": "2026-06-30",
+      "total_pct": 65.31
+    },
+    {
+      "ticker": "SH603977",
+      "name": "国泰集团",
+      "streak": 3,
+      "first_date": "2026-06-26",
+      "last_date": "2026-06-30",
+      "total_pct": 24.51
+    }
+  ]
+}

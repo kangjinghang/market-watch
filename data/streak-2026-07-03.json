@@ -1,0 +1,110 @@
+{
+  "date": "2026-07-03",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH605178",
+      "name": "时空科技",
+      "streak": 7,
+      "first_date": "2026-06-24",
+      "last_date": "2026-07-03",
+      "total_pct": 103.15
+    },
+    {
+      "ticker": "SZ001331",
+      "name": "胜通能源",
+      "streak": 4,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-03",
+      "total_pct": 106.68
+    },
+    {
+      "ticker": "SZ300671",
+      "name": "富满微",
+      "streak": 4,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-03",
+      "total_pct": 104.22
+    },
+    {
+      "ticker": "SZ300873",
+      "name": "海晨股份",
+      "streak": 4,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-03",
+      "total_pct": 97.76
+    },
+    {
+      "ticker": "SH688578",
+      "name": "艾力斯",
+      "streak": 4,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-03",
+      "total_pct": 63.56
+    },
+    {
+      "ticker": "SH688266",
+      "name": "泽璟制药",
+      "streak": 4,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-03",
+      "total_pct": 62.08
+    },
+    {
+      "ticker": "SH688221",
+      "name": "前沿生物",
+      "streak": 4,
+      "first_date": "2026-06-30",
+      "last_date": "2026-07-03",
+      "total_pct": 57.2
+    },
+    {
+      "ticker": "SZ300558",
+      "name": "贝达药业",
+      "streak": 4,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-03",
+      "total_pct": 25.95
+    },
+    {
+      "ticker": "SH688506",
+      "name": "百利天恒",
+      "streak": 3,
+      "first_date": "2026-06-29",
+      "last_date": "2026-07-03",
+      "total_pct": 66.19
+    },
+    {
+      "ticker": "SZ300765",
+      "name": "石药创新",
+      "streak": 3,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-03",
+      "total_pct": 51.69
+    },
+    {
+      "ticker": "SH603669",
+      "name": "灵康药业",
+      "streak": 3,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-03",
+      "total_pct": 50.37
+    },
+    {
+      "ticker": "SZ000970",
+      "name": "中科三环",
+      "streak": 3,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-03",
+      "total_pct": 49.8
+    },
+    {
+      "ticker": "SZ002175",
+      "name": "*ST东智",
+      "streak": 3,
+      "first_date": "2026-07-01",
+      "last_date": "2026-07-03",
+      "total_pct": 27.32
+    }
+  ]
+}

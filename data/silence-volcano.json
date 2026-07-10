@@ -1,0 +1,33 @@
+{
+  "scan_date": "2026-07-09",
+  "total_silent": 447,
+  "total_candidates": 2,
+  "candidates": [
+    {
+      "ticker": "SZ003036",
+      "name": "泰坦股份",
+      "peak_pct": 570.01,
+      "peak_date": "2026-06-17",
+      "silence_days": 8,
+      "last_seen": "2026-06-17",
+      "fib_0382": 70.73,
+      "recent_low": 75.19,
+      "volume_ratio": 0.42,
+      "current_price": 80.27,
+      "status": "缩量横盘未破位"
+    },
+    {
+      "ticker": "SH603115",
+      "name": "海星股份",
+      "peak_pct": 441.74,
+      "peak_date": "2026-05-25",
+      "silence_days": 8,
+      "last_seen": "2026-06-17",
+      "fib_0382": 84,
+      "recent_low": 94.57,
+      "volume_ratio": 0.49,
+      "current_price": 100.79,
+      "status": "缩量横盘未破位"
+    }
+  ]
+}

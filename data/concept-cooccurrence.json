@@ -1,0 +1,1195 @@
+{
+  "date_range": "2026-03-05 ~ 2026-07-07",
+  "total_reasons": 2899,
+  "total_concepts": 71,
+  "total_pairs": 166,
+  "nodes": [
+    {
+      "id": "半导体",
+      "count": 651,
+      "type": "sector"
+    },
+    {
+      "id": "电子",
+      "count": 303,
+      "type": "sector"
+    },
+    {
+      "id": "AI",
+      "count": 302,
+      "type": "technology"
+    },
+    {
+      "id": "创新药",
+      "count": 220,
+      "type": "sector"
+    },
+    {
+      "id": "PCB",
+      "count": 191,
+      "type": "technology"
+    },
+    {
+      "id": "半导体设备",
+      "count": 174,
+      "type": "sector"
+    },
+    {
+      "id": "半导体材料",
+      "count": 131,
+      "type": "sector"
+    },
+    {
+      "id": "机器人",
+      "count": 98,
+      "type": "sector"
+    },
+    {
+      "id": "MLCC",
+      "count": 98,
+      "type": "technology"
+    },
+    {
+      "id": "算力",
+      "count": 88,
+      "type": "sector"
+    },
+    {
+      "id": "电子化学品",
+      "count": 80,
+      "type": "sector"
+    },
+    {
+      "id": "玻璃基板",
+      "count": 70,
+      "type": "sector"
+    },
+    {
+      "id": "电子特气",
+      "count": 67,
+      "type": "sector"
+    },
+    {
+      "id": "存储芯片",
+      "count": 66,
+      "type": "sector"
+    },
+    {
+      "id": "ESG",
+      "count": 54,
+      "type": "technology"
+    },
+    {
+      "id": "覆铜板",
+      "count": 44,
+      "type": "sector"
+    },
+    {
+      "id": "光模块",
+      "count": 43,
+      "type": "sector"
+    },
+    {
+      "id": "专用设备",
+      "count": 43,
+      "type": "sector"
+    },
+    {
+      "id": "先进封装",
+      "count": 42,
+      "type": "sector"
+    },
+    {
+      "id": "金属新材料",
+      "count": 40,
+      "type": "sector"
+    },
+    {
+      "id": "光学光电子",
+      "count": 38,
+      "type": "sector"
+    },
+    {
+      "id": "元件",
+      "count": 36,
+      "type": "sector"
+    },
+    {
+      "id": "证券",
+      "count": 33,
+      "type": "sector"
+    },
+    {
+      "id": "人形机器人",
+      "count": 31,
+      "type": "sector"
+    },
+    {
+      "id": "氟化工",
+      "count": 28,
+      "type": "sector"
+    },
+    {
+      "id": "通信",
+      "count": 27,
+      "type": "sector"
+    },
+    {
+      "id": "HBM",
+      "count": 27,
+      "type": "technology"
+    },
+    {
+      "id": "军工",
+      "count": 26,
+      "type": "sector"
+    },
+    {
+      "id": "医疗器械",
+      "count": 26,
+      "type": "sector"
+    },
+    {
+      "id": "汽车零部件",
+      "count": 25,
+      "type": "sector"
+    },
+    {
+      "id": "电子布",
+      "count": 24,
+      "type": "sector"
+    },
+    {
+      "id": "电子树脂",
+      "count": 22,
+      "type": "sector"
+    },
+    {
+      "id": "消费电子",
+      "count": 21,
+      "type": "sector"
+    },
+    {
+      "id": "PTFE",
+      "count": 20,
+      "type": "technology"
+    },
+    {
+      "id": "半导体硅片",
+      "count": 19,
+      "type": "sector"
+    },
+    {
+      "id": "小金属",
+      "count": 19,
+      "type": "sector"
+    },
+    {
+      "id": "液冷",
+      "count": 17,
+      "type": "sector"
+    },
+    {
+      "id": "功率半导体",
+      "count": 17,
+      "type": "sector"
+    },
+    {
+      "id": "CPO",
+      "count": 17,
+      "type": "technology"
+    },
+    {
+      "id": "TGV",
+      "count": 16,
+      "type": "technology"
+    },
+    {
+      "id": "有色金属",
+      "count": 16,
+      "type": "sector"
+    },
+    {
+      "id": "服装家纺",
+      "count": 16,
+      "type": "sector"
+    },
+    {
+      "id": "中药",
+      "count": 16,
+      "type": "sector"
+    },
+    {
+      "id": "新能源",
+      "count": 14,
+      "type": "sector"
+    },
+    {
+      "id": "IPO",
+      "count": 13,
+      "type": "technology"
+    },
+    {
+      "id": "工业金属",
+      "count": 13,
+      "type": "sector"
+    },
+    {
+      "id": "自动化设备",
+      "count": 12,
+      "type": "sector"
+    },
+    {
+      "id": "PFA",
+      "count": 12,
+      "type": "technology"
+    },
+    {
+      "id": "医疗服务",
+      "count": 12,
+      "type": "sector"
+    },
+    {
+      "id": "港股医药",
+      "count": 12,
+      "type": "sector"
+    },
+    {
+      "id": "CAE",
+      "count": 10,
+      "type": "technology"
+    },
+    {
+      "id": "房地产",
+      "count": 10,
+      "type": "sector"
+    },
+    {
+      "id": "大金融",
+      "count": 10,
+      "type": "sector"
+    },
+    {
+      "id": "PSPI",
+      "count": 10,
+      "type": "technology"
+    },
+    {
+      "id": "化学制药",
+      "count": 9,
+      "type": "sector"
+    },
+    {
+      "id": "半导体靶材",
+      "count": 8,
+      "type": "sector"
+    },
+    {
+      "id": "GPU",
+      "count": 7,
+      "type": "technology"
+    },
+    {
+      "id": "电网设备",
+      "count": 7,
+      "type": "sector"
+    },
+    {
+      "id": "钙钛矿",
+      "count": 6,
+      "type": "sector"
+    },
+    {
+      "id": "商业航天",
+      "count": 6,
+      "type": "sector"
+    },
+    {
+      "id": "白酒",
+      "count": 6,
+      "type": "sector"
+    },
+    {
+      "id": "光伏",
+      "count": 5,
+      "type": "sector"
+    },
+    {
+      "id": "锂电池",
+      "count": 5,
+      "type": "sector"
+    },
+    {
+      "id": "银行",
+      "count": 5,
+      "type": "sector"
+    },
+    {
+      "id": "汽车整车",
+      "count": 3,
+      "type": "sector"
+    },
+    {
+      "id": "计算机",
+      "count": 2,
+      "type": "sector"
+    },
+    {
+      "id": "OLED",
+      "count": 2,
+      "type": "technology"
+    },
+    {
+      "id": "LED",
+      "count": 2,
+      "type": "technology"
+    },
+    {
+      "id": "钢铁",
+      "count": 2,
+      "type": "sector"
+    },
+    {
+      "id": "ASIC",
+      "count": 2,
+      "type": "technology"
+    },
+    {
+      "id": "煤炭",
+      "count": 2,
+      "type": "sector"
+    }
+  ],
+  "edges": [
+    {
+      "source": "半导体",
+      "target": "半导体设备",
+      "weight": 174
+    },
+    {
+      "source": "半导体",
+      "target": "半导体材料",
+      "weight": 131
+    },
+    {
+      "source": "半导体",
+      "target": "电子",
+      "weight": 94
+    },
+    {
+      "source": "电子",
+      "target": "电子化学品",
+      "weight": 80
+    },
+    {
+      "source": "电子",
+      "target": "电子特气",
+      "weight": 67
+    },
+    {
+      "source": "AI",
+      "target": "算力",
+      "weight": 63
+    },
+    {
+      "source": "AI",
+      "target": "PCB",
+      "weight": 40
+    },
+    {
+      "source": "光学光电子",
+      "target": "电子",
+      "weight": 38
+    },
+    {
+      "source": "人形机器人",
+      "target": "机器人",
+      "weight": 31
+    },
+    {
+      "source": "半导体",
+      "target": "电子化学品",
+      "weight": 27
+    },
+    {
+      "source": "半导体材料",
+      "target": "电子",
+      "weight": 27
+    },
+    {
+      "source": "半导体",
+      "target": "电子特气",
+      "weight": 27
+    },
+    {
+      "source": "AI",
+      "target": "半导体",
+      "weight": 27
+    },
+    {
+      "source": "PCB",
+      "target": "电子",
+      "weight": 24
+    },
+    {
+      "source": "电子",
+      "target": "电子布",
+      "weight": 24
+    },
+    {
+      "source": "军工",
+      "target": "电子",
+      "weight": 23
+    },
+    {
+      "source": "PCB",
+      "target": "覆铜板",
+      "weight": 22
+    },
+    {
+      "source": "AI",
+      "target": "覆铜板",
+      "weight": 22
+    },
+    {
+      "source": "电子",
+      "target": "电子树脂",
+      "weight": 22
+    },
+    {
+      "source": "消费电子",
+      "target": "电子",
+      "weight": 21
+    },
+    {
+      "source": "半导体",
+      "target": "存储芯片",
+      "weight": 20
+    },
+    {
+      "source": "半导体",
+      "target": "半导体硅片",
+      "weight": 19
+    },
+    {
+      "source": "HBM",
+      "target": "半导体",
+      "weight": 19
+    },
+    {
+      "source": "半导体材料",
+      "target": "电子特气",
+      "weight": 18
+    },
+    {
+      "source": "先进封装",
+      "target": "半导体",
+      "weight": 17
+    },
+    {
+      "source": "AI",
+      "target": "电子",
+      "weight": 17
+    },
+    {
+      "source": "功率半导体",
+      "target": "半导体",
+      "weight": 17
+    },
+    {
+      "source": "PCB",
+      "target": "电子化学品",
+      "weight": 16
+    },
+    {
+      "source": "电子",
+      "target": "算力",
+      "weight": 15
+    },
+    {
+      "source": "光学光电子",
+      "target": "半导体",
+      "weight": 14
+    },
+    {
+      "source": "半导体",
+      "target": "氟化工",
+      "weight": 14
+    },
+    {
+      "source": "半导体",
+      "target": "金属新材料",
+      "weight": 14
+    },
+    {
+      "source": "PCB",
+      "target": "半导体",
+      "weight": 12
+    },
+    {
+      "source": "AI",
+      "target": "玻璃基板",
+      "weight": 12
+    },
+    {
+      "source": "PCB",
+      "target": "算力",
+      "weight": 12
+    },
+    {
+      "source": "军工",
+      "target": "半导体",
+      "weight": 12
+    },
+    {
+      "source": "PFA",
+      "target": "半导体",
+      "weight": 12
+    },
+    {
+      "source": "AI",
+      "target": "MLCC",
+      "weight": 12
+    },
+    {
+      "source": "PFA",
+      "target": "氟化工",
+      "weight": 11
+    },
+    {
+      "source": "HBM",
+      "target": "半导体设备",
+      "weight": 11
+    },
+    {
+      "source": "中药",
+      "target": "创新药",
+      "weight": 11
+    },
+    {
+      "source": "IPO",
+      "target": "存储芯片",
+      "weight": 10
+    },
+    {
+      "source": "AI",
+      "target": "CAE",
+      "weight": 10
+    },
+    {
+      "source": "PCB",
+      "target": "PTFE",
+      "weight": 9
+    },
+    {
+      "source": "MLCC",
+      "target": "元件",
+      "weight": 9
+    },
+    {
+      "source": "AI",
+      "target": "元件",
+      "weight": 9
+    },
+    {
+      "source": "存储芯片",
+      "target": "电子",
+      "weight": 8
+    },
+    {
+      "source": "存储芯片",
+      "target": "电子化学品",
+      "weight": 8
+    },
+    {
+      "source": "MLCC",
+      "target": "半导体",
+      "weight": 8
+    },
+    {
+      "source": "机器人",
+      "target": "自动化设备",
+      "weight": 8
+    },
+    {
+      "source": "ESG",
+      "target": "电子",
+      "weight": 8
+    },
+    {
+      "source": "AI",
+      "target": "光模块",
+      "weight": 8
+    },
+    {
+      "source": "半导体材料",
+      "target": "金属新材料",
+      "weight": 8
+    },
+    {
+      "source": "半导体",
+      "target": "半导体靶材",
+      "weight": 8
+    },
+    {
+      "source": "电子",
+      "target": "通信",
+      "weight": 7
+    },
+    {
+      "source": "AI",
+      "target": "PTFE",
+      "weight": 7
+    },
+    {
+      "source": "TGV",
+      "target": "玻璃基板",
+      "weight": 7
+    },
+    {
+      "source": "GPU",
+      "target": "半导体",
+      "weight": 7
+    },
+    {
+      "source": "半导体设备",
+      "target": "存储芯片",
+      "weight": 7
+    },
+    {
+      "source": "AI",
+      "target": "通信",
+      "weight": 7
+    },
+    {
+      "source": "AI",
+      "target": "新能源",
+      "weight": 7
+    },
+    {
+      "source": "电子布",
+      "target": "算力",
+      "weight": 7
+    },
+    {
+      "source": "半导体材料",
+      "target": "氟化工",
+      "weight": 7
+    },
+    {
+      "source": "机器人",
+      "target": "汽车零部件",
+      "weight": 7
+    },
+    {
+      "source": "先进封装",
+      "target": "光模块",
+      "weight": 6
+    },
+    {
+      "source": "人形机器人",
+      "target": "元件",
+      "weight": 6
+    },
+    {
+      "source": "元件",
+      "target": "机器人",
+      "weight": 6
+    },
+    {
+      "source": "MLCC",
+      "target": "玻璃基板",
+      "weight": 6
+    },
+    {
+      "source": "半导体",
+      "target": "玻璃基板",
+      "weight": 6
+    },
+    {
+      "source": "AI",
+      "target": "先进封装",
+      "weight": 6
+    },
+    {
+      "source": "先进封装",
+      "target": "算力",
+      "weight": 6
+    },
+    {
+      "source": "光学光电子",
+      "target": "算力",
+      "weight": 6
+    },
+    {
+      "source": "PCB",
+      "target": "玻璃基板",
+      "weight": 6
+    },
+    {
+      "source": "ESG",
+      "target": "军工",
+      "weight": 6
+    },
+    {
+      "source": "军工",
+      "target": "半导体材料",
+      "weight": 6
+    },
+    {
+      "source": "半导体硅片",
+      "target": "电子",
+      "weight": 6
+    },
+    {
+      "source": "专用设备",
+      "target": "玻璃基板",
+      "weight": 6
+    },
+    {
+      "source": "AI",
+      "target": "机器人",
+      "weight": 6
+    },
+    {
+      "source": "AI",
+      "target": "CPO",
+      "weight": 6
+    },
+    {
+      "source": "CPO",
+      "target": "算力",
+      "weight": 6
+    },
+    {
+      "source": "CPO",
+      "target": "半导体",
+      "weight": 6
+    },
+    {
+      "source": "氟化工",
+      "target": "电子",
+      "weight": 6
+    },
+    {
+      "source": "专用设备",
+      "target": "机器人",
+      "weight": 5
+    },
+    {
+      "source": "电子化学品",
+      "target": "通信",
+      "weight": 5
+    },
+    {
+      "source": "AI",
+      "target": "存储芯片",
+      "weight": 5
+    },
+    {
+      "source": "AI",
+      "target": "电子特气",
+      "weight": 5
+    },
+    {
+      "source": "新能源",
+      "target": "电子",
+      "weight": 5
+    },
+    {
+      "source": "新能源",
+      "target": "电子特气",
+      "weight": 5
+    },
+    {
+      "source": "AI",
+      "target": "服装家纺",
+      "weight": 5
+    },
+    {
+      "source": "PFA",
+      "target": "半导体材料",
+      "weight": 5
+    },
+    {
+      "source": "PCB",
+      "target": "电子布",
+      "weight": 5
+    },
+    {
+      "source": "半导体设备",
+      "target": "电子",
+      "weight": 5
+    },
+    {
+      "source": "创新药",
+      "target": "医疗器械",
+      "weight": 5
+    },
+    {
+      "source": "PTFE",
+      "target": "覆铜板",
+      "weight": 4
+    },
+    {
+      "source": "算力",
+      "target": "覆铜板",
+      "weight": 4
+    },
+    {
+      "source": "PCB",
+      "target": "机器人",
+      "weight": 4
+    },
+    {
+      "source": "PCB",
+      "target": "自动化设备",
+      "weight": 4
+    },
+    {
+      "source": "AI",
+      "target": "电子布",
+      "weight": 4
+    },
+    {
+      "source": "半导体硅片",
+      "target": "电子化学品",
+      "weight": 4
+    },
+    {
+      "source": "AI",
+      "target": "有色金属",
+      "weight": 4
+    },
+    {
+      "source": "元件",
+      "target": "存储芯片",
+      "weight": 4
+    },
+    {
+      "source": "半导体",
+      "target": "算力",
+      "weight": 4
+    },
+    {
+      "source": "半导体",
+      "target": "电子树脂",
+      "weight": 4
+    },
+    {
+      "source": "半导体",
+      "target": "消费电子",
+      "weight": 4
+    },
+    {
+      "source": "专用设备",
+      "target": "半导体",
+      "weight": 4
+    },
+    {
+      "source": "专用设备",
+      "target": "半导体设备",
+      "weight": 4
+    },
+    {
+      "source": "ESG",
+      "target": "半导体",
+      "weight": 4
+    },
+    {
+      "source": "AI",
+      "target": "功率半导体",
+      "weight": 4
+    },
+    {
+      "source": "光模块",
+      "target": "算力",
+      "weight": 4
+    },
+    {
+      "source": "存储芯片",
+      "target": "算力",
+      "weight": 4
+    },
+    {
+      "source": "半导体",
+      "target": "液冷",
+      "weight": 4
+    },
+    {
+      "source": "半导体设备",
+      "target": "金属新材料",
+      "weight": 4
+    },
+    {
+      "source": "机器人",
+      "target": "电子",
+      "weight": 4
+    },
+    {
+      "source": "PCB",
+      "target": "元件",
+      "weight": 3
+    },
+    {
+      "source": "液冷",
+      "target": "电子",
+      "weight": 3
+    },
+    {
+      "source": "MLCC",
+      "target": "电子",
+      "weight": 3
+    },
+    {
+      "source": "电子",
+      "target": "覆铜板",
+      "weight": 3
+    },
+    {
+      "source": "电子树脂",
+      "target": "覆铜板",
+      "weight": 3
+    },
+    {
+      "source": "电子",
+      "target": "钙钛矿",
+      "weight": 3
+    },
+    {
+      "source": "电子化学品",
+      "target": "钙钛矿",
+      "weight": 3
+    },
+    {
+      "source": "有色金属",
+      "target": "算力",
+      "weight": 3
+    },
+    {
+      "source": "元件",
+      "target": "通信",
+      "weight": 3
+    },
+    {
+      "source": "军工",
+      "target": "半导体设备",
+      "weight": 3
+    },
+    {
+      "source": "CPO",
+      "target": "通信",
+      "weight": 3
+    },
+    {
+      "source": "HBM",
+      "target": "半导体材料",
+      "weight": 3
+    },
+    {
+      "source": "半导体",
+      "target": "小金属",
+      "weight": 3
+    },
+    {
+      "source": "大金融",
+      "target": "证券",
+      "weight": 3
+    },
+    {
+      "source": "工业金属",
+      "target": "有色金属",
+      "weight": 3
+    },
+    {
+      "source": "PSPI",
+      "target": "半导体",
+      "weight": 3
+    },
+    {
+      "source": "PSPI",
+      "target": "半导体材料",
+      "weight": 3
+    },
+    {
+      "source": "半导体",
+      "target": "汽车零部件",
+      "weight": 3
+    },
+    {
+      "source": "算力",
+      "target": "通信",
+      "weight": 3
+    },
+    {
+      "source": "半导体硅片",
+      "target": "半导体设备",
+      "weight": 3
+    },
+    {
+      "source": "机器人",
+      "target": "消费电子",
+      "weight": 3
+    },
+    {
+      "source": "消费电子",
+      "target": "液冷",
+      "weight": 2
+    },
+    {
+      "source": "ESG",
+      "target": "消费电子",
+      "weight": 2
+    },
+    {
+      "source": "专用设备",
+      "target": "存储芯片",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "专用设备",
+      "weight": 2
+    },
+    {
+      "source": "专用设备",
+      "target": "算力",
+      "weight": 2
+    },
+    {
+      "source": "ESG",
+      "target": "专用设备",
+      "weight": 2
+    },
+    {
+      "source": "光伏",
+      "target": "半导体",
+      "weight": 2
+    },
+    {
+      "source": "光伏",
+      "target": "半导体硅片",
+      "weight": 2
+    },
+    {
+      "source": "LED",
+      "target": "OLED",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "HBM",
+      "weight": 2
+    },
+    {
+      "source": "HBM",
+      "target": "先进封装",
+      "weight": 2
+    },
+    {
+      "source": "HBM",
+      "target": "算力",
+      "weight": 2
+    },
+    {
+      "source": "有色金属",
+      "target": "金属新材料",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "消费电子",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "小金属",
+      "weight": 2
+    },
+    {
+      "source": "小金属",
+      "target": "算力",
+      "weight": 2
+    },
+    {
+      "source": "MLCC",
+      "target": "算力",
+      "weight": 2
+    },
+    {
+      "source": "CPO",
+      "target": "光模块",
+      "weight": 2
+    },
+    {
+      "source": "元件",
+      "target": "半导体",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "光学光电子",
+      "weight": 2
+    },
+    {
+      "source": "PCB",
+      "target": "光模块",
+      "weight": 2
+    },
+    {
+      "source": "IPO",
+      "target": "证券",
+      "weight": 2
+    },
+    {
+      "source": "ASIC",
+      "target": "算力",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "半导体硅片",
+      "weight": 2
+    },
+    {
+      "source": "HBM",
+      "target": "存储芯片",
+      "weight": 2
+    },
+    {
+      "source": "半导体材料",
+      "target": "存储芯片",
+      "weight": 2
+    },
+    {
+      "source": "人形机器人",
+      "target": "汽车零部件",
+      "weight": 2
+    },
+    {
+      "source": "氟化工",
+      "target": "电子特气",
+      "weight": 2
+    },
+    {
+      "source": "ESG",
+      "target": "创新药",
+      "weight": 2
+    },
+    {
+      "source": "创新药",
+      "target": "化学制药",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "创新药",
+      "weight": 2
+    },
+    {
+      "source": "创新药",
+      "target": "证券",
+      "weight": 2
+    }
+  ]
+}

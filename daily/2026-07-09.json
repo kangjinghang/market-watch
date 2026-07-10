@@ -1,0 +1,652 @@
+{
+  "date": "2026-07-09",
+  "density": {
+    "candidates": 40,
+    "down_candidates": 228,
+    "daily_candidates": 47,
+    "universe": 5203
+  },
+  "sectors": [
+    {
+      "name": "电子",
+      "count": 21,
+      "avg_pct": 58.71,
+      "tickers": [
+        "SH688361",
+        "SH688362",
+        "SH688120",
+        "SZ300604",
+        "SH688012",
+        "SH688605",
+        "SH688019",
+        "SH603991",
+        "SH688372",
+        "SH688802",
+        "SH688123",
+        "SH688036",
+        "SH688249",
+        "SH688981",
+        "SZ300458",
+        "SH688103",
+        "SZ002841",
+        "SH603296",
+        "SH688347",
+        "SZ002185",
+        "SH603893"
+      ]
+    },
+    {
+      "name": "计算机",
+      "count": 6,
+      "avg_pct": 27.06,
+      "tickers": [
+        "SZ000938",
+        "SH688343",
+        "SH600845",
+        "SH688111",
+        "SZ301316",
+        "SZ000977"
+      ]
+    },
+    {
+      "name": "基础化工",
+      "count": 3,
+      "avg_pct": 46.68,
+      "tickers": [
+        "SZ300821",
+        "SZ300041",
+        "SZ000731"
+      ]
+    },
+    {
+      "name": "医药生物",
+      "count": 3,
+      "avg_pct": 32.32,
+      "tickers": [
+        "SH603669",
+        "SH600129",
+        "SZ301015"
+      ]
+    },
+    {
+      "name": "国防军工",
+      "count": 1,
+      "avg_pct": 49.13,
+      "tickers": [
+        "SH688629"
+      ]
+    },
+    {
+      "name": "房地产",
+      "count": 1,
+      "avg_pct": 35.26,
+      "tickers": [
+        "SH600246"
+      ]
+    },
+    {
+      "name": "传媒",
+      "count": 1,
+      "avg_pct": 30.12,
+      "tickers": [
+        "SZ300418"
+      ]
+    },
+    {
+      "name": "汽车",
+      "count": 1,
+      "avg_pct": 27.5,
+      "tickers": [
+        "SZ003033"
+      ]
+    },
+    {
+      "name": "通信",
+      "count": 1,
+      "avg_pct": 20.81,
+      "tickers": [
+        "SZ002123"
+      ]
+    },
+    {
+      "name": "交通运输",
+      "count": 1,
+      "avg_pct": 11.99,
+      "tickers": [
+        "SH600755"
+      ]
+    },
+    {
+      "name": "农林牧渔",
+      "count": 1,
+      "avg_pct": 10.57,
+      "tickers": [
+        "SH600598"
+      ]
+    }
+  ],
+  "top_candidates": [
+    {
+      "ticker": "SZ300821",
+      "name": "东岳硅材",
+      "pct": 103.83,
+      "days": 37,
+      "kind": "continued",
+      "summary": "有机硅行业供需格局改善叠加原材料价格下降，推动业绩大幅增长",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH603669",
+      "name": "灵康药业",
+      "pct": 51.35,
+      "days": 35,
+      "kind": "continued",
+      "summary": "市场对灵康药业业绩减亏预期及医药板块轮动推动股价上涨",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688361",
+      "name": "中科飞测",
+      "pct": 132.55,
+      "days": 31,
+      "kind": "continued",
+      "summary": "核心技术突破与国产替代加速驱动量检测设备龙头高增长",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH688362",
+      "name": "甬矽电子",
+      "pct": 118.33,
+      "days": 31,
+      "kind": "continued",
+      "summary": "先进封装行业需求爆发叠加公司103亿扩产计划驱动股价大幅上涨",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688120",
+      "name": "华海清科",
+      "pct": 100.57,
+      "days": 31,
+      "kind": "continued",
+      "summary": "国产半导体设备国产化加速叠加订单高增长推动业绩预期提升",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SZ300604",
+      "name": "长川科技",
+      "pct": 86.63,
+      "days": 31,
+      "kind": "continued",
+      "summary": "半导体测试设备国产替代加速叠加AI芯片测试需求爆发，驱动业绩超预期增长",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688012",
+      "name": "中微公司",
+      "pct": 77.64,
+      "days": 31,
+      "kind": "continued",
+      "summary": "半导体设备国产替代加速叠加全球存储扩产周期共振",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH688605",
+      "name": "先锋精科",
+      "pct": 67.19,
+      "days": 31,
+      "kind": "continued",
+      "summary": "半导体设备零部件国产化加速叠加产能扩张驱动业绩高增长预期",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688019",
+      "name": "安集科技",
+      "pct": 60.38,
+      "days": 30,
+      "kind": "continued",
+      "summary": "半导体材料国产替代加速叠加CMP抛光液需求爆发推动业绩增长",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH603991",
+      "name": "领先股份",
+      "pct": 58.8,
+      "days": 30,
+      "kind": "continued",
+      "summary": "半导体引线框架行业持续涨价及公司产品结构优化驱动股价上涨。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688372",
+      "name": "伟测科技",
+      "pct": 30.36,
+      "days": 30,
+      "kind": "continued",
+      "summary": "AI芯片测试需求爆发与高端测试设备稀缺性推动业绩高增长",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688802",
+      "name": "沐曦股份",
+      "pct": 41.48,
+      "days": 29,
+      "kind": "new",
+      "summary": "市场对国产GPU高增长预期及H股上市计划推动股价上涨",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688123",
+      "name": "聚辰股份",
+      "pct": 79.44,
+      "days": 28,
+      "kind": "new",
+      "summary": "AI服务器需求爆发推动DDR5 SPD芯片及VPD芯片放量，成为核心增长引擎。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688036",
+      "name": "传音控股",
+      "pct": 24.83,
+      "days": 28,
+      "kind": "new",
+      "summary": "传音控股股价上涨主要受益于AI技术研发突破及新业务布局预期",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH688249",
+      "name": "晶合集成",
+      "pct": 61.01,
+      "days": 27,
+      "kind": "continued",
+      "summary": "晶合集成H股发行获市场高度认可，叠加半导体行业景气度回升推动股价大幅上涨",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH688629",
+      "name": "华丰科技",
+      "pct": 49.13,
+      "days": 27,
+      "kind": "continued",
+      "summary": "华丰科技作为昇腾950超节点核心供应商，受益于高速线模组订单暴增及光互联技术突破。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ000938",
+      "name": "紫光股份",
+      "pct": 41.87,
+      "days": 27,
+      "kind": "continued",
+      "summary": "新华三全资控股完成及AI算力需求爆发推动紫光股份估值重估",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH688981",
+      "name": "中芯国际",
+      "pct": 38.53,
+      "days": 27,
+      "kind": "new",
+      "summary": "国产存储芯片产业系统性认可与全球存储芯片周期上行共振",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ300458",
+      "name": "全志科技",
+      "pct": 23.68,
+      "days": 24,
+      "kind": "new",
+      "summary": "端侧AI技术应用拓展及机器人芯片业务放量驱动业绩增长预期。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ300041",
+      "name": "回天新材",
+      "pct": 22.5,
+      "days": 24,
+      "kind": "new",
+      "summary": "高端电子胶国产替代加速推进，半导体封装与光模块用胶业务突破带动业绩预期提升。",
+      "risk_flags": [
+        "跌幅"
+      ]
+    }
+  ],
+  "down_candidates": [
+    {
+      "ticker": "SZ002104",
+      "name": "恒宝股份",
+      "pct": -49.02,
+      "days": 132,
+      "kind": "continued",
+      "summary": "业绩大幅下滑叠加实控人减持引发市场信心崩溃",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SZ002075",
+      "name": "沙钢股份",
+      "pct": -43.41,
+      "days": 132,
+      "kind": "continued",
+      "summary": "钢铁行业需求疲软叠加融资盘压力导致股价持续下跌。",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH600320",
+      "name": "振华重工",
+      "pct": -28.44,
+      "days": 129,
+      "kind": "continued",
+      "summary": "行业需求疲软叠加市场风格切换，导致振华重工股价承压。",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH603801",
+      "name": "志邦家居",
+      "pct": -42.05,
+      "days": 115,
+      "kind": "continued",
+      "summary": "房地产下行周期导致定制家居行业需求萎缩，叠加公司业绩不及预期引发市场担忧。",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH600250",
+      "name": "南京商旅",
+      "pct": -45.48,
+      "days": 100,
+      "kind": "continued",
+      "summary": "市场对南京商旅资产注入预期落空及业绩下滑导致股价持续下跌。",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH600754",
+      "name": "锦江酒店",
+      "pct": -37.64,
+      "days": 99,
+      "kind": "continued",
+      "summary": "境外业务持续亏损及市场对消费板块信心不足是股价下跌的核心因素。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ000858",
+      "name": "五 粮 液",
+      "pct": -32.48,
+      "days": 98,
+      "kind": "continued",
+      "summary": "行业深度调整叠加公司战略调整导致业绩与估值双杀",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SZ000590",
+      "name": "古汉医药",
+      "pct": -32.57,
+      "days": 92,
+      "kind": "continued",
+      "summary": "大股东质押与增持不及预期引发市场对公司资金链的担忧",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH600808",
+      "name": "马钢股份",
+      "pct": -41.18,
+      "days": 90,
+      "kind": "continued",
+      "summary": "钢铁行业周期下行叠加参股公司破产清算拖累业绩",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH600212",
+      "name": "绿能慧充",
+      "pct": -40.39,
+      "days": 84,
+      "kind": "continued",
+      "summary": "控股股东高比例质押及业绩亏损导致市场信心不足",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SZ000923",
+      "name": "河钢资源",
+      "pct": -33.61,
+      "days": 84,
+      "kind": "continued",
+      "summary": "铜产品销量大幅下滑及南非洪水灾害导致业绩暴雷，叠加市场对铜二期项目延期担忧。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH605388",
+      "name": "均瑶健康",
+      "pct": -45.66,
+      "days": 83,
+      "kind": "continued",
+      "summary": "战略转型期业绩持续承压叠加子公司财务不规范问题引发市场担忧",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH603300",
+      "name": "海南华铁",
+      "pct": -38.49,
+      "days": 83,
+      "kind": "continued",
+      "summary": "基建投资放缓叠加行业竞争加剧导致工程设备租赁业务毛利率持续下滑，拖累公司整体业绩表现。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ301073",
+      "name": "君亭酒店",
+      "pct": -37.05,
+      "days": 83,
+      "kind": "continued",
+      "summary": "国资收购终止导致市场信心崩塌，叠加业绩承压与行业竞争加剧。",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SH603612",
+      "name": "索通发展",
+      "pct": -41.76,
+      "days": 80,
+      "kind": "continued",
+      "summary": "并购标的业绩暴雷引发4.2亿元补偿纠纷及股东减持压力共振",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SH600072",
+      "name": "中船科技",
+      "pct": -42.14,
+      "days": 79,
+      "kind": "continued",
+      "summary": "业绩巨亏叠加大规模风电项目投资引发市场对资金链的担忧",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ003002",
+      "name": "壶化股份",
+      "pct": -43.16,
+      "days": 78,
+      "kind": "continued",
+      "summary": "业绩下滑与行业需求萎缩导致股价承压",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SZ002209",
+      "name": "达 意 隆",
+      "pct": -41.91,
+      "days": 78,
+      "kind": "continued",
+      "summary": "业绩大幅不及预期叠加市场风格转向导致股价深度调整。",
+      "risk_flags": [
+        "跌幅"
+      ]
+    },
+    {
+      "ticker": "SZ002846",
+      "name": "英联股份",
+      "pct": -40.26,
+      "days": 78,
+      "kind": "continued",
+      "summary": "控股股东频繁质押及高管减持引发市场对公司治理和资金链的担忧",
+      "risk_flags": []
+    },
+    {
+      "ticker": "SZ000819",
+      "name": "岳阳兴长",
+      "pct": -36.8,
+      "days": 78,
+      "kind": "continued",
+      "summary": "业绩大幅下滑及市场对惠州立拓项目前景担忧是股价下跌的核心原因",
+      "risk_flags": []
+    }
+  ],
+  "daily_top": [
+    {
+      "ticker": "SZ300469",
+      "name": "信息发展",
+      "pct": 20,
+      "reason": "半导体产业链集体爆发带动软件开发板块走强"
+    },
+    {
+      "ticker": "SH688328",
+      "name": "深科达",
+      "pct": 20,
+      "reason": "半导体产业链集体爆发带动专用设备板块上涨"
+    },
+    {
+      "ticker": "SH688333",
+      "name": "铂力特",
+      "pct": 20,
+      "reason": "半导体产业链集体爆发带动通用设备板块走强"
+    },
+    {
+      "ticker": "SH688584",
+      "name": "上海合晶",
+      "pct": 19.99,
+      "reason": "半导体材料板块整体走强及AI算力需求驱动硅片国产替代加速"
+    },
+    {
+      "ticker": "SZ300236",
+      "name": "上海新阳",
+      "pct": 18.76,
+      "reason": "半导体材料板块整体走强及子公司新增危险化学品经营资质"
+    },
+    {
+      "ticker": "SZ300604",
+      "name": "长川科技",
+      "pct": 17.9,
+      "reason": "市场传闻公司拿下昇腾系列最新一代测试设备全部份额，叠加半导体设备板块整体走强"
+    },
+    {
+      "ticker": "SH688120",
+      "name": "华海清科",
+      "pct": 16.61,
+      "reason": "半导体设备行业政策利好及公司技术突破驱动股价上涨"
+    },
+    {
+      "ticker": "SZ300922",
+      "name": "天秦装备",
+      "pct": 14.63,
+      "reason": "军工装备板块整体走强带动个股上涨"
+    },
+    {
+      "ticker": "SZ301323",
+      "name": "新莱福",
+      "pct": 14.12,
+      "reason": "半导体材料板块整体走强带动金属新材料行业上涨"
+    },
+    {
+      "ticker": "SH688981",
+      "name": "中芯国际",
+      "pct": 13.74,
+      "reason": "半导体行业整体走强及台积电涨价预期推动中芯国际股价创新高"
+    },
+    {
+      "ticker": "SZ300071",
+      "name": "福石控股",
+      "pct": 13.5,
+      "reason": "AI应用端板块异动拉升带动个股上涨"
+    },
+    {
+      "ticker": "SZ301285",
+      "name": "鸿日达",
+      "pct": 10.94,
+      "reason": "半导体产业链集体爆发带动消费电子板块上涨"
+    },
+    {
+      "ticker": "SZ300654",
+      "name": "世纪天鸿",
+      "pct": 10.71,
+      "reason": "AI应用端异动拉升带动文化传媒板块走强"
+    },
+    {
+      "ticker": "SZ000892",
+      "name": "欢瑞世纪",
+      "pct": 10.09,
+      "reason": "AI应用端异动拉升，欢瑞世纪6天3板"
+    },
+    {
+      "ticker": "SZ002067",
+      "name": "景兴纸业",
+      "pct": 10.05,
+      "reason": "公司发布2026年半年度业绩预增公告，净利润同比增长136.22%~190.73%"
+    },
+    {
+      "ticker": "SZ002907",
+      "name": "华森制药",
+      "pct": 10.04,
+      "reason": "创新药概念震荡回升带动中药板块走强"
+    },
+    {
+      "ticker": "SZ000417",
+      "name": "合百集团",
+      "pct": 10.01,
+      "reason": "公司公告办公地址搬迁引发市场对其经营发展的积极预期"
+    },
+    {
+      "ticker": "SZ000887",
+      "name": "中鼎股份",
+      "pct": 10.01,
+      "reason": "半导体产业链集体爆发带动汽车零部件板块走强"
+    },
+    {
+      "ticker": "SZ003020",
+      "name": "立方制药",
+      "pct": 10.01,
+      "reason": "创新药概念震荡回升带动化学制药板块走强"
+    },
+    {
+      "ticker": "SZ002414",
+      "name": "高德红外",
+      "pct": 10,
+      "reason": "公司发布2026年半年度业绩预告，净利润同比增长601.93%-701.41%，超市场预期"
+    }
+  ]
+}

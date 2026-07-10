@@ -1,13 +1,21 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "lookback_days": 10,
   "anomalies": [
     {
+      "type": "sector_surge",
+      "label": "计算机",
+      "today": 6,
+      "avg": 2.9,
+      "deviation": 1.07,
+      "severity": "medium"
+    },
+    {
       "type": "density_shift",
       "label": "异动密度",
-      "today": 37,
-      "avg": 112,
-      "deviation": -0.67,
+      "today": 40,
+      "avg": 103,
+      "deviation": -0.61,
       "severity": "high"
     }
   ]

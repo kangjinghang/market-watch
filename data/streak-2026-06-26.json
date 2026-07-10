@@ -1,0 +1,246 @@
+{
+  "date": "2026-06-26",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002371",
+      "name": "北方华创",
+      "streak": 5,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 91.8
+    },
+    {
+      "ticker": "SH600206",
+      "name": "有研新材",
+      "streak": 5,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 84.18
+    },
+    {
+      "ticker": "SH600176",
+      "name": "中国巨石",
+      "streak": 5,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 78.13
+    },
+    {
+      "ticker": "SH603650",
+      "name": "彤程新材",
+      "streak": 5,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 44.42
+    },
+    {
+      "ticker": "SZ301319",
+      "name": "唯特偶",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 678.49
+    },
+    {
+      "ticker": "SH688507",
+      "name": "索辰科技",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 221.1
+    },
+    {
+      "ticker": "SH688082",
+      "name": "盛美上海",
+      "streak": 4,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 196.26
+    },
+    {
+      "ticker": "SZ301526",
+      "name": "国际复材",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 144.71
+    },
+    {
+      "ticker": "SH688072",
+      "name": "拓荆科技",
+      "streak": 4,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 119.04
+    },
+    {
+      "ticker": "SZ000021",
+      "name": "深科技",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 109.81
+    },
+    {
+      "ticker": "SZ001359",
+      "name": "平安电工",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 85.7
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 63.7
+    },
+    {
+      "ticker": "SH688361",
+      "name": "中科飞测",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 56.77
+    },
+    {
+      "ticker": "SZ000962",
+      "name": "东方钽业",
+      "streak": 4,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 52.23
+    },
+    {
+      "ticker": "SH688110",
+      "name": "东芯股份",
+      "streak": 4,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 51.58
+    },
+    {
+      "ticker": "SH603690",
+      "name": "至纯科技",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 33.02
+    },
+    {
+      "ticker": "SH603005",
+      "name": "晶方科技",
+      "streak": 4,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 27.52
+    },
+    {
+      "ticker": "SZ300759",
+      "name": "康龙化成",
+      "streak": 4,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 19.69
+    },
+    {
+      "ticker": "SH603773",
+      "name": "沃格光电",
+      "streak": 3,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 163.74
+    },
+    {
+      "ticker": "SH600707",
+      "name": "彩虹股份",
+      "streak": 3,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 156.07
+    },
+    {
+      "ticker": "SH600552",
+      "name": "凯盛科技",
+      "streak": 3,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 155.63
+    },
+    {
+      "ticker": "SZ300346",
+      "name": "南大光电",
+      "streak": 3,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 77.62
+    },
+    {
+      "ticker": "SH600160",
+      "name": "巨化股份",
+      "streak": 3,
+      "first_date": "2026-06-24",
+      "last_date": "2026-06-26",
+      "total_pct": 58.45
+    },
+    {
+      "ticker": "SZ000823",
+      "name": "超声电子",
+      "streak": 3,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 55.86
+    },
+    {
+      "ticker": "SZ001309",
+      "name": "德明利",
+      "streak": 3,
+      "first_date": "2026-06-24",
+      "last_date": "2026-06-26",
+      "total_pct": 54.03
+    },
+    {
+      "ticker": "SH688525",
+      "name": "佰维存储",
+      "streak": 3,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 52.9
+    },
+    {
+      "ticker": "SH605178",
+      "name": "时空科技",
+      "streak": 3,
+      "first_date": "2026-06-24",
+      "last_date": "2026-06-26",
+      "total_pct": 49.75
+    },
+    {
+      "ticker": "SH600596",
+      "name": "新安股份",
+      "streak": 3,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 48.71
+    },
+    {
+      "ticker": "SH688120",
+      "name": "华海清科",
+      "streak": 3,
+      "first_date": "2026-06-22",
+      "last_date": "2026-06-26",
+      "total_pct": 43.26
+    },
+    {
+      "ticker": "SH600630",
+      "name": "龙头股份",
+      "streak": 3,
+      "first_date": "2026-06-23",
+      "last_date": "2026-06-26",
+      "total_pct": 27.82
+    }
+  ]
+}
