@@ -215,11 +215,21 @@ function renderCandidates(candidates, title, isDown) {
 
 /** 渲染历史日期导航 */
 function renderHistory(allDates, currentDate) {
-  const links = allDates.map((d) => {
-    const cls = d === currentDate ? "active" : "";
-    return `<a href="?date=${d}" class="${cls}">${d.slice(5)}</a>`;
+  const idx = allDates.indexOf(currentDate);
+  const prev = idx > 0 ? allDates[idx - 1] : null;
+  const next = idx < allDates.length - 1 ? allDates[idx + 1] : null;
+
+  const options = allDates.map(d => {
+    const selected = d === currentDate ? " selected" : "";
+    return `<option value="${d}"${selected}>${d}</option>`;
   }).join("");
-  return `<div class="history"><span class="history-label">历史数据</span>${links}</div>`;
+
+  return `
+    <div class="date-nav">
+      <a href="?date=${prev || currentDate}" class="date-arrow ${prev ? '' : 'date-arrow-disabled'}">‹</a>
+      <select class="date-select" onchange="location.href='?date='+this.value">${options}</select>
+      <a href="?date=${next || currentDate}" class="date-arrow ${next ? '' : 'date-arrow-disabled'}">›</a>
+    </div>`;
 }
 
 /** 渲染趋势死亡模式 */
