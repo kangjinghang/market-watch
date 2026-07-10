@@ -1,0 +1,173 @@
+{
+  "date": "2026-06-18",
+  "total_stocks": 127,
+  "avg_first_day_pct": 53.6,
+  "avg_peak_pct": 75.91,
+  "entries": [
+    {
+      "ticker": "SH600933",
+      "name": "爱柯迪",
+      "first_date": "2026-06-17",
+      "days_to_peak": 1,
+      "peak_pct": 12.22,
+      "first_day_pct": 10.15,
+      "last_pct": 12.22,
+      "trend_status": "fresh",
+      "peer_avg_peak": 41.64
+    },
+    {
+      "ticker": "SH603579",
+      "name": "荣泰健康",
+      "first_date": "2026-06-17",
+      "days_to_peak": 1,
+      "peak_pct": 14.45,
+      "first_day_pct": 10.17,
+      "last_pct": 14.45,
+      "trend_status": "fresh",
+      "peer_avg_peak": 41.64
+    },
+    {
+      "ticker": "SH603776",
+      "name": "永安行",
+      "first_date": "2026-06-17",
+      "days_to_peak": 1,
+      "peak_pct": 14.42,
+      "first_day_pct": 11.14,
+      "last_pct": 14.42,
+      "trend_status": "fresh",
+      "peer_avg_peak": 41.64
+    },
+    {
+      "ticker": "SH603985",
+      "name": "恒润股份",
+      "first_date": "2026-06-16",
+      "days_to_peak": 1,
+      "peak_pct": 14.46,
+      "first_day_pct": 11.56,
+      "last_pct": 14.46,
+      "trend_status": "fresh",
+      "peer_avg_peak": 41.64
+    },
+    {
+      "ticker": "SH688116",
+      "name": "天奈科技",
+      "first_date": "2026-06-16",
+      "days_to_peak": 1,
+      "peak_pct": 14.1,
+      "first_day_pct": 11.56,
+      "last_pct": 14.1,
+      "trend_status": "fresh",
+      "peer_avg_peak": 41.64
+    },
+    {
+      "ticker": "SZ002916",
+      "name": "深南电路",
+      "first_date": "2026-06-17",
+      "days_to_peak": 1,
+      "peak_pct": 114.56,
+      "first_day_pct": 110.06,
+      "last_pct": 114.56,
+      "trend_status": "running",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SZ301568",
+      "name": "思泰克",
+      "first_date": "2026-06-16",
+      "days_to_peak": 2,
+      "peak_pct": 120.75,
+      "first_day_pct": 110.3,
+      "last_pct": 120.75,
+      "trend_status": "running",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SH600378",
+      "name": "昊华科技",
+      "first_date": "2026-06-17",
+      "days_to_peak": 1,
+      "peak_pct": 119.49,
+      "first_day_pct": 114.91,
+      "last_pct": 119.49,
+      "trend_status": "running",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SH603078",
+      "name": "XD江化微",
+      "first_date": "2026-06-16",
+      "days_to_peak": 1,
+      "peak_pct": 122.88,
+      "first_day_pct": 121.47,
+      "last_pct": 122.88,
+      "trend_status": "running",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SH603800",
+      "name": "洪田股份",
+      "first_date": "2026-06-16",
+      "days_to_peak": 1,
+      "peak_pct": 135.06,
+      "first_day_pct": 132.95,
+      "last_pct": 135.06,
+      "trend_status": "running",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SH603986",
+      "name": "兆易创新",
+      "first_date": "2026-06-16",
+      "days_to_peak": 0,
+      "peak_pct": 124.08,
+      "first_day_pct": 124.08,
+      "last_pct": 32.7,
+      "trend_status": "faded",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SZ300285",
+      "name": "国瓷材料",
+      "first_date": "2026-06-16",
+      "days_to_peak": 0,
+      "peak_pct": 124.15,
+      "first_day_pct": 124.15,
+      "last_pct": 58.94,
+      "trend_status": "faded",
+      "peer_avg_peak": 192.44
+    },
+    {
+      "ticker": "SH688700",
+      "name": "东威科技",
+      "first_date": "2026-06-17",
+      "days_to_peak": 0,
+      "peak_pct": 60.92,
+      "first_day_pct": 60.92,
+      "last_pct": 25.05,
+      "trend_status": "faded",
+      "peer_avg_peak": 93.65
+    },
+    {
+      "ticker": "SZ300223",
+      "name": "北京君正",
+      "first_date": "2026-06-17",
+      "days_to_peak": 0,
+      "peak_pct": 64.8,
+      "first_day_pct": 64.8,
+      "last_pct": 33.5,
+      "trend_status": "faded",
+      "peer_avg_peak": 93.65
+    },
+    {
+      "ticker": "SZ301123",
+      "name": "奕东电子",
+      "first_date": "2026-06-16",
+      "days_to_peak": 1,
+      "peak_pct": 82.33,
+      "first_day_pct": 77.43,
+      "last_pct": 33.86,
+      "trend_status": "faded",
+      "peer_avg_peak": 93.65
+    }
+  ]
+}
