@@ -683,13 +683,6 @@ function drawSectorFlowChart() {
     linesG.innerHTML += `<polyline points="${pts.join(" ")}" fill="none" stroke="${color}" stroke-width="1.5" stroke-linejoin="round" opacity="0.8"/>`;
   });
 
-  const legendDiv = svg.closest('section').querySelector('.sf-legend');
-  if (legendDiv) {
-    legendDiv.innerHTML = sectors.map((s) => {
-      const si = allSectors.indexOf(s);
-      return `<span class="sf-legend-item"><span class="sf-legend-dot" style="background:${colors[si % colors.length]}"></span>${s}</span>`;
-    }).join("");
-  }
 }
 
 /** 渲染早鸟指数 */
@@ -1078,9 +1071,6 @@ async function main() {
       window._sfData = sectorFlow;
       const sfSection = document.querySelector('#tab-sector .sector-flow-chart')?.closest('section');
       if (sfSection) {
-        const legend = document.createElement('div');
-        legend.className = 'sf-legend';
-        sfSection.appendChild(legend);
         sfSection.querySelectorAll('.sf-check input').forEach(cb => {
           cb.addEventListener('change', drawSectorFlowChart);
         });
