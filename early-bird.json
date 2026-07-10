@@ -5,24 +5,6 @@
   "avg_peak_pct": 65.85,
   "entries": [
     {
-      "ticker": "SH688146",
-      "name": "中船特气",
-      "first_date": "2026-06-18",
-      "days_to_peak": 4,
-      "peak_pct": 855.74,
-      "first_day_pct": 792.04,
-      "last_pct": 855.74
-    },
-    {
-      "ticker": "SZ301319",
-      "name": "唯特偶",
-      "first_date": "2026-06-17",
-      "days_to_peak": 9,
-      "peak_pct": 678.49,
-      "first_day_pct": 518.65,
-      "last_pct": 678.49
-    },
-    {
       "ticker": "SZ002552",
       "name": "宝鼎科技",
       "first_date": "2026-06-16",
@@ -30,15 +12,6 @@
       "peak_pct": 401.5,
       "first_day_pct": 32.9,
       "last_pct": 401.5
-    },
-    {
-      "ticker": "SH603186",
-      "name": "华正新材",
-      "first_date": "2026-06-16",
-      "days_to_peak": 9,
-      "peak_pct": 354.44,
-      "first_day_pct": 73.88,
-      "last_pct": 354.44
     },
     {
       "ticker": "SZ000636",
@@ -59,13 +32,13 @@
       "last_pct": 322.46
     },
     {
-      "ticker": "SZ003036",
-      "name": "泰坦股份",
+      "ticker": "SH603186",
+      "name": "华正新材",
       "first_date": "2026-06-16",
-      "days_to_peak": 1,
-      "peak_pct": 288.47,
-      "first_day_pct": 264.08,
-      "last_pct": 288.47
+      "days_to_peak": 9,
+      "peak_pct": 354.44,
+      "first_day_pct": 73.88,
+      "last_pct": 354.44
     },
     {
       "ticker": "SH600183",
@@ -86,69 +59,6 @@
       "last_pct": 94.34
     },
     {
-      "ticker": "SZ300285",
-      "name": "国瓷材料",
-      "first_date": "2026-06-16",
-      "days_to_peak": 13,
-      "peak_pct": 250.87,
-      "first_day_pct": 124.15,
-      "last_pct": 250.87
-    },
-    {
-      "ticker": "SH688143",
-      "name": "长盈通",
-      "first_date": "2026-06-16",
-      "days_to_peak": 8,
-      "peak_pct": 249.41,
-      "first_day_pct": 222.49,
-      "last_pct": 34.47
-    },
-    {
-      "ticker": "SZ301013",
-      "name": "利和兴",
-      "first_date": "2026-06-17",
-      "days_to_peak": 6,
-      "peak_pct": 241.36,
-      "first_day_pct": 217.09,
-      "last_pct": 66.92
-    },
-    {
-      "ticker": "SH603986",
-      "name": "兆易创新",
-      "first_date": "2026-06-16",
-      "days_to_peak": 9,
-      "peak_pct": 226.06,
-      "first_day_pct": 124.08,
-      "last_pct": 226.06
-    },
-    {
-      "ticker": "SH688519",
-      "name": "南亚新材",
-      "first_date": "2026-06-16",
-      "days_to_peak": 2,
-      "peak_pct": 222.63,
-      "first_day_pct": 94.78,
-      "last_pct": 222.63
-    },
-    {
-      "ticker": "SH688507",
-      "name": "索辰科技",
-      "first_date": "2026-06-18",
-      "days_to_peak": 8,
-      "peak_pct": 221.1,
-      "first_day_pct": 177.85,
-      "last_pct": 221.1
-    },
-    {
-      "ticker": "SH688456",
-      "name": "有研粉材",
-      "first_date": "2026-06-16",
-      "days_to_peak": 1,
-      "peak_pct": 220.91,
-      "first_day_pct": 210.57,
-      "last_pct": 220.91
-    },
-    {
       "ticker": "SH688082",
       "name": "盛美上海",
       "first_date": "2026-06-17",
@@ -158,85 +68,13 @@
       "last_pct": 220.56
     },
     {
-      "ticker": "SH600367",
-      "name": "红星发展",
-      "first_date": "2026-06-22",
+      "ticker": "SZ301319",
+      "name": "唯特偶",
+      "first_date": "2026-06-17",
       "days_to_peak": 9,
-      "peak_pct": 215.45,
-      "first_day_pct": 207.63,
-      "last_pct": 215.45
-    },
-    {
-      "ticker": "SH600707",
-      "name": "彩虹股份",
-      "first_date": "2026-06-17",
-      "days_to_peak": 13,
-      "peak_pct": 209.82,
-      "first_day_pct": 131.02,
-      "last_pct": 81.7
-    },
-    {
-      "ticker": "SH688630",
-      "name": "芯碁微装",
-      "first_date": "2026-06-16",
-      "days_to_peak": 9,
-      "peak_pct": 209.06,
-      "first_day_pct": 158.04,
-      "last_pct": 209.06
-    },
-    {
-      "ticker": "SH600667",
-      "name": "太极实业",
-      "first_date": "2026-06-16",
-      "days_to_peak": 14,
-      "peak_pct": 204.96,
-      "first_day_pct": 87.59,
-      "last_pct": 69.15
-    },
-    {
-      "ticker": "SZ300408",
-      "name": "三环集团",
-      "first_date": "2026-06-17",
-      "days_to_peak": 1,
-      "peak_pct": 200.31,
-      "first_day_pct": 195.69,
-      "last_pct": 200.31
-    },
-    {
-      "ticker": "SH688300",
-      "name": "联瑞新材",
-      "first_date": "2026-06-16",
-      "days_to_peak": 6,
-      "peak_pct": 199.76,
-      "first_day_pct": 141.98,
-      "last_pct": 199.76
-    },
-    {
-      "ticker": "SZ301377",
-      "name": "鼎泰高科",
-      "first_date": "2026-06-16",
-      "days_to_peak": 6,
-      "peak_pct": 191.86,
-      "first_day_pct": 144.95,
-      "last_pct": 191.86
-    },
-    {
-      "ticker": "SH600552",
-      "name": "凯盛科技",
-      "first_date": "2026-06-17",
-      "days_to_peak": 13,
-      "peak_pct": 181.36,
-      "first_day_pct": 108.39,
-      "last_pct": 181.36
-    },
-    {
-      "ticker": "SH600378",
-      "name": "昊华科技",
-      "first_date": "2026-06-17",
-      "days_to_peak": 15,
-      "peak_pct": 176.79,
-      "first_day_pct": 114.91,
-      "last_pct": 176.79
+      "peak_pct": 678.49,
+      "first_day_pct": 518.65,
+      "last_pct": 678.49
     },
     {
       "ticker": "SH603678",
@@ -248,31 +86,193 @@
       "last_pct": 172.67
     },
     {
-      "ticker": "SZ002636",
-      "name": "金安国纪",
+      "ticker": "SH603283",
+      "name": "赛腾股份",
+      "first_date": "2026-06-16",
+      "days_to_peak": 14,
+      "peak_pct": 159.42,
+      "first_day_pct": 24.04,
+      "last_pct": 159.42
+    },
+    {
+      "ticker": "SH600176",
+      "name": "中国巨石",
       "first_date": "2026-06-16",
       "days_to_peak": 8,
-      "peak_pct": 172.04,
-      "first_day_pct": 96.19,
-      "last_pct": 172.04
+      "peak_pct": 167.86,
+      "first_day_pct": 39.6,
+      "last_pct": 78.13
     },
     {
-      "ticker": "SH603078",
-      "name": "XD江化微",
+      "ticker": "SH688519",
+      "name": "南亚新材",
       "first_date": "2026-06-16",
-      "days_to_peak": 20,
-      "peak_pct": 172,
-      "first_day_pct": 121.47,
-      "last_pct": 172
+      "days_to_peak": 2,
+      "peak_pct": 222.63,
+      "first_day_pct": 94.78,
+      "last_pct": 222.63
     },
     {
-      "ticker": "SZ300319",
-      "name": "麦捷科技",
-      "first_date": "2026-06-18",
-      "days_to_peak": 5,
-      "peak_pct": 170.64,
-      "first_day_pct": 134.56,
-      "last_pct": 170.64
+      "ticker": "SZ300285",
+      "name": "国瓷材料",
+      "first_date": "2026-06-16",
+      "days_to_peak": 13,
+      "peak_pct": 250.87,
+      "first_day_pct": 124.15,
+      "last_pct": 250.87
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "first_date": "2026-06-16",
+      "days_to_peak": 14,
+      "peak_pct": 204.96,
+      "first_day_pct": 87.59,
+      "last_pct": 69.15
+    },
+    {
+      "ticker": "SH605376",
+      "name": "博迁新材",
+      "first_date": "2026-06-16",
+      "days_to_peak": 13,
+      "peak_pct": 136.99,
+      "first_day_pct": 23.12,
+      "last_pct": 136.99
+    },
+    {
+      "ticker": "SZ002741",
+      "name": "光华科技",
+      "first_date": "2026-06-16",
+      "days_to_peak": 6,
+      "peak_pct": 152.83,
+      "first_day_pct": 39.28,
+      "last_pct": 152.83
+    },
+    {
+      "ticker": "SH603663",
+      "name": "三祥新材",
+      "first_date": "2026-06-16",
+      "days_to_peak": 7,
+      "peak_pct": 143.13,
+      "first_day_pct": 30.78,
+      "last_pct": 42.99
+    },
+    {
+      "ticker": "SH600397",
+      "name": "江钨装备",
+      "first_date": "2026-06-16",
+      "days_to_peak": 15,
+      "peak_pct": 134.53,
+      "first_day_pct": 23.63,
+      "last_pct": 134.53
+    },
+    {
+      "ticker": "SH600206",
+      "name": "有研新材",
+      "first_date": "2026-06-16",
+      "days_to_peak": 14,
+      "peak_pct": 145.07,
+      "first_day_pct": 41.43,
+      "last_pct": 145.07
+    },
+    {
+      "ticker": "SH603986",
+      "name": "兆易创新",
+      "first_date": "2026-06-16",
+      "days_to_peak": 9,
+      "peak_pct": 226.06,
+      "first_day_pct": 124.08,
+      "last_pct": 226.06
+    },
+    {
+      "ticker": "SH688361",
+      "name": "中科飞测",
+      "first_date": "2026-06-17",
+      "days_to_peak": 22,
+      "peak_pct": 132.55,
+      "first_day_pct": 31.1,
+      "last_pct": 132.55
+    },
+    {
+      "ticker": "SZ301349",
+      "name": "信德新材",
+      "first_date": "2026-06-16",
+      "days_to_peak": 6,
+      "peak_pct": 114.42,
+      "first_day_pct": 18.47,
+      "last_pct": 114.42
+    },
+    {
+      "ticker": "SH603005",
+      "name": "晶方科技",
+      "first_date": "2026-06-23",
+      "days_to_peak": 7,
+      "peak_pct": 107.39,
+      "first_day_pct": 15.31,
+      "last_pct": 107.39
+    },
+    {
+      "ticker": "SH688072",
+      "name": "拓荆科技",
+      "first_date": "2026-06-17",
+      "days_to_peak": 9,
+      "peak_pct": 119.04,
+      "first_day_pct": 30.17,
+      "last_pct": 119.04
+    },
+    {
+      "ticker": "SZ000021",
+      "name": "深科技",
+      "first_date": "2026-06-17",
+      "days_to_peak": 9,
+      "peak_pct": 109.81,
+      "first_day_pct": 22.01,
+      "last_pct": 57.64
+    },
+    {
+      "ticker": "SZ300223",
+      "name": "北京君正",
+      "first_date": "2026-06-17",
+      "days_to_peak": 16,
+      "peak_pct": 149.13,
+      "first_day_pct": 64.8,
+      "last_pct": 149.13
+    },
+    {
+      "ticker": "SH688120",
+      "name": "华海清科",
+      "first_date": "2026-06-16",
+      "days_to_peak": 23,
+      "peak_pct": 100.57,
+      "first_day_pct": 17.3,
+      "last_pct": 100.57
+    },
+    {
+      "ticker": "SZ301200",
+      "name": "大族数控",
+      "first_date": "2026-06-16",
+      "days_to_peak": 9,
+      "peak_pct": 106.95,
+      "first_day_pct": 23.91,
+      "last_pct": 106.95
+    },
+    {
+      "ticker": "SZ301580",
+      "name": "爱迪特",
+      "first_date": "2026-06-17",
+      "days_to_peak": 6,
+      "peak_pct": 123.13,
+      "first_day_pct": 41.77,
+      "last_pct": 123.13
+    },
+    {
+      "ticker": "SZ001331",
+      "name": "胜通能源",
+      "first_date": "2026-06-29",
+      "days_to_peak": 7,
+      "peak_pct": 115.41,
+      "first_day_pct": 34.69,
+      "last_pct": 115.41
     }
   ]
 }
