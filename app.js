@@ -525,9 +525,38 @@ function renderNarrativeWeekly(data) {
 function filterLifecycle(stage, btn) {
   document.querySelectorAll('.cl-tab').forEach(t => t.classList.remove('cl-tab-active'));
   btn.classList.add('cl-tab-active');
-  document.querySelectorAll('.cl-row').forEach(r => {
-    r.style.display = (stage === 'all' || r.dataset.stage === stage) ? '' : 'none';
+  const rows = document.querySelectorAll('.cl-row');
+  let shown = 0;
+  rows.forEach(r => {
+    const match = stage === 'all' || r.dataset.stage === stage;
+    // "全部"时默认只显示前 20 个
+    if (stage === 'all' && shown >= 20) {
+      r.style.display = 'none';
+      r.classList.add('cl-overflow');
+    } else {
+      r.style.display = match ? '' : 'none';
+      if (match) shown++;
+    }
   });
+  // 移除旧的"展开更多"按钮
+  const oldBtn = document.querySelector('.cl-show-more');
+  if (oldBtn) oldBtn.remove();
+  // 如果有被隐藏的行，添加"展开更多"按钮
+  const overflow = document.querySelectorAll('.cl-overflow');
+  if (overflow.length > 0) {
+    const listEl = document.getElementById('cl-list');
+    const moreBtn = document.createElement('button');
+    moreBtn.className = 'cl-show-more';
+    moreBtn.textContent = `展开全部 ${rows.length} 个概念`;
+    moreBtn.onclick = function() {
+      document.querySelectorAll('.cl-overflow').forEach(r => {
+        r.style.display = '';
+        r.classList.remove('cl-overflow');
+      });
+      this.remove();
+    };
+    listEl.appendChild(moreBtn);
+  }
 }
 
 /** 渲染概念热度生命周期 */
@@ -541,12 +570,13 @@ function renderConceptLifecycle(data) {
     stageCounts[c.stage] = (stageCounts[c.stage] || 0) + 1;
   }
 
-  // 默认显示全部，点击 tab 过滤（默认仅"全部"激活）
+  // 默认显示"高峰"（最活跃），点击 tab 切换
   const tabsHtml = stages.map(s => {
     const count = stageCounts[s] || 0;
     if (count === 0) return "";
-    return `<button class="cl-tab" onclick="filterLifecycle('${s}', this)">${s} (${count})</button>`;
-  }).join("") + `<button class="cl-tab cl-tab-active" onclick="filterLifecycle('all', this)">全部 (${data.concepts.length})</button>`;
+    const active = s === "高峰" && count > 0 ? " cl-tab-active" : "";
+    return `<button class="cl-tab${active}" onclick="filterLifecycle('${s}', this)">${s} (${count})</button>`;
+  }).join("") + `<button class="cl-tab" onclick="filterLifecycle('all', this)">全部 (${data.concepts.length})</button>`;
 
   // 构建每行的 mini sparkline
   function makeSparkline(freqSeries, weeks) {
@@ -566,14 +596,16 @@ function renderConceptLifecycle(data) {
     </svg>`;
   }
 
-  const rows = data.concepts.map(c => {
+  const rows = data.concepts.map((c, i) => {
     const stageClass = c.stage === "高峰" ? "cl-stage-peak"
       : c.stage === "升温" ? "cl-stage-heating"
       : c.stage === "退潮" ? "cl-stage-gone"
       : "cl-stage-cooling";
     const sparkline = makeSparkline(c.freq_series, c.weeks);
+    // 默认隐藏"高峰"以外的行，点击"全部"时显示
+    const hidden = c.stage !== "高峰" ? " style='display:none'" : "";
     return `
-      <div class="cl-row" data-stage="${c.stage}">
+      <div class="cl-row" data-stage="${c.stage}"${hidden}>
         <span class="cl-concept">${c.concept}</span>
         ${sparkline}
         <span class="cl-stage ${stageClass}">${c.stage}</span>
@@ -584,7 +616,6 @@ function renderConceptLifecycle(data) {
   return `
     <section>
       <h2>概念热度生命周期 · ${data.date_range}${badge('global')}${tip('追踪概念热度阶段：高峰（当前最热）、升温（快速上升）、降温（热度下降）、退潮（已冷却）。帮助判断概念所处阶段。')}</h2>
-      <div class="cl-summary">${data.concepts.length} 个概念，追踪 ${data.total_weeks} 周频次变化</div>
       <div class="cl-tabs" id="cl-tabs">${tabsHtml}</div>
       <div id="cl-list">${rows}</div>
     </section>`;
