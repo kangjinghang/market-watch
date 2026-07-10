@@ -1,106 +1,106 @@
 {
-  "generated_at": "2026-07-09T17:11:08.506Z",
-  "total_entries": 426,
+  "generated_at": "2026-07-10T18:03:29.942Z",
+  "total_entries": 2040,
   "by_kind": {
     "continued": {
-      "count": 101,
-      "win_rate_5d": 16,
-      "avg_ret_5d": -5.24,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 669,
+      "win_rate_5d": 43,
+      "avg_ret_5d": -0.86,
+      "win_rate_20d": 23,
+      "avg_ret_20d": -10.09
     },
     "new": {
-      "count": 325,
-      "win_rate_5d": 10,
-      "avg_ret_5d": -6.1,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 1371,
+      "win_rate_5d": 40,
+      "avg_ret_5d": -1.53,
+      "win_rate_20d": 32,
+      "avg_ret_20d": -6.43
     }
   },
   "by_days_bucket": [
     {
       "bucket": "1-7天",
-      "count": 229,
-      "win_rate_5d": 13,
-      "avg_ret_5d": -5.73,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 526,
+      "win_rate_5d": 32,
+      "avg_ret_5d": -2.65,
+      "win_rate_20d": 25,
+      "avg_ret_20d": -8.99
     },
     {
       "bucket": "8-14天",
-      "count": 144,
-      "win_rate_5d": 10,
-      "avg_ret_5d": -5.38,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 1012,
+      "win_rate_5d": 46,
+      "avg_ret_5d": 0,
+      "win_rate_20d": 35,
+      "avg_ret_20d": -5.06
     },
     {
       "bucket": "15-30天",
-      "count": 40,
-      "win_rate_5d": 6,
-      "avg_ret_5d": -8.18,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 237,
+      "win_rate_5d": 30,
+      "avg_ret_5d": -4.83,
+      "win_rate_20d": 14,
+      "avg_ret_20d": -15.96
     },
     {
       "bucket": "30天+",
-      "count": 13,
-      "win_rate_5d": 0,
-      "avg_ret_5d": -10.01,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 265,
+      "win_rate_5d": 47,
+      "avg_ret_5d": -0.6,
+      "win_rate_20d": 20,
+      "avg_ret_20d": -12.32
     }
   ],
   "by_pct_bucket": [
     {
       "bucket": "0-20%",
-      "count": 212,
-      "win_rate_5d": 11,
-      "avg_ret_5d": -4.4,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 508,
+      "win_rate_5d": 31,
+      "avg_ret_5d": -2.13,
+      "win_rate_20d": 38,
+      "avg_ret_20d": -2.73
     },
     {
       "bucket": "20-50%",
-      "count": 175,
-      "win_rate_5d": 13,
-      "avg_ret_5d": -7.66,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 977,
+      "win_rate_5d": 46,
+      "avg_ret_5d": -0.54,
+      "win_rate_20d": 32,
+      "avg_ret_20d": -6.53
     },
     {
       "bucket": "50-100%",
-      "count": 32,
-      "win_rate_5d": 10,
-      "avg_ret_5d": -6.87,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 356,
+      "win_rate_5d": 42,
+      "avg_ret_5d": -1.59,
+      "win_rate_20d": 23,
+      "avg_ret_20d": -10.93
     },
     {
       "bucket": "100%+",
-      "count": 7,
-      "win_rate_5d": 0,
-      "avg_ret_5d": -10.29,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 199,
+      "win_rate_5d": 39,
+      "avg_ret_5d": -2.5,
+      "win_rate_20d": 13,
+      "avg_ret_20d": -15.84
     }
   ],
   "combo_analysis": [
     {
       "combo": "涨停+区间涨",
-      "count": 11,
-      "win_rate_5d": 0,
-      "avg_ret_5d": 0,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 208,
+      "win_rate_5d": 51,
+      "avg_ret_5d": 0.79,
+      "win_rate_20d": 28,
+      "avg_ret_20d": -7.78
     },
     {
       "combo": "非涨停+区间涨",
-      "count": 415,
-      "win_rate_5d": 11,
-      "avg_ret_5d": -5.93,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "count": 1832,
+      "win_rate_5d": 39,
+      "avg_ret_5d": -1.55,
+      "win_rate_20d": 29,
+      "avg_ret_20d": -7.72
     }
   ],
   "recent_exits": []
