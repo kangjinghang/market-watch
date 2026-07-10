@@ -741,8 +741,8 @@ function renderEarlyBird(data) {
       <div class="eb-row">
         <span class="eb-rank">${i + 1}</span>
         <div class="eb-info">
-          <span class="eb-name">${e.ticker}</span>
-          <span class="eb-meta">首日 ${e.first_date.slice(5)} → 峰值 ${e.days_to_peak}天</span>
+          <span class="eb-name">${e.name}</span>
+          <span class="eb-meta">${e.ticker} · 首日 ${e.first_date.slice(5)} → 峰值 ${e.days_to_peak}天</span>
         </div>
         <div class="eb-pcts">
           <span class="eb-first">首日 ${firstPct}</span>
