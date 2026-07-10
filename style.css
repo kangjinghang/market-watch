@@ -1384,45 +1384,75 @@ section > h2 {
 }
 
 /* ── 羊群扩散 ── */
-.herd-summary {
-  color: var(--text-dim);
-  font-size: 0.78rem;
-  margin-bottom: 14px;
-}
-.herd-row {
+/* ── 羊群扩散 ── */
+.herd-grid {
   display: grid;
-  grid-template-columns: 70px 80px 50px 1fr 60px;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--border-subtle);
-  font-size: 0.75rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
 }
-.herd-row:last-child { border-bottom: none; }
+.herd-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 0.2s;
+}
+.herd-card:hover {
+  border-color: var(--accent);
+}
+.herd-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
 .herd-sector {
   font-weight: 600;
+  font-size: 0.82rem;
   color: var(--text);
-  font-size: 0.78rem;
-}
-.herd-spark {
-  width: 80px;
-  height: 16px;
 }
 .herd-stage {
-  font-size: 0.58rem;
+  font-size: 0.62rem;
   font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 3px;
-  text-align: center;
+  padding: 2px 8px;
+  border-radius: 4px;
 }
-/* 板块活跃度（非涨跌）：爆发=烈琥珀，退潮=灰 */
 .herd-hot { background: rgba(249, 115, 22, 0.18); color: #fb923c; }
 .herd-warm { background: var(--warn-soft); color: var(--warn); }
 .herd-cold { background: rgba(107, 114, 128, 0.12); color: #6b7280; }
-.herd-stat {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.68rem;
+.herd-card-body {
+  margin-bottom: 8px;
+}
+.herd-spark {
+  width: 100%;
+  height: 32px;
+  display: block;
+}
+.herd-progress-wrap {
+  height: 3px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.herd-progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+.herd-card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
   color: var(--text-dim);
+}
+.herd-card-footer b {
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+}
+.herd-surge {
+  color: var(--up);
 }
 
 /* ── 选股验证 ── */

@@ -828,26 +828,38 @@ function renderHerdDiffusion(data) {
   if (!data || !data.sectors || data.sectors.length === 0) return "";
   const rows = data.sectors.slice(0, 10).map(s => {
     const stageClass = s.stage === "爆发" ? "herd-hot" : s.stage === "退潮" ? "herd-cold" : "herd-warm";
-    // 简易迷你折线
+    const stageIcon = s.stage === "爆发" ? "🔥" : s.stage === "退潮" ? "❄️" : "🌡️";
+    // 迷你折线
     const counts = s.daily_counts;
     const max = Math.max(...counts, 1);
-    const sparkW = 80;
-    const sparkH = 16;
+    const sparkW = 120;
+    const sparkH = 32;
     const pts = counts.map((c, i) => `${(i / (counts.length - 1)) * sparkW},${sparkH - (c / max) * sparkH}`).join(" ");
+    // 进度条：当前值 / 峰值
+    const pct = s.peak > 0 ? Math.round((s.current / s.peak) * 100) : 0;
     return `
-      <div class="herd-row">
-        <span class="herd-sector">${s.sector}</span>
-        <svg class="herd-spark" viewBox="0 0 ${sparkW} ${sparkH}"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="1" opacity="0.6"/></svg>
-        <span class="herd-stage ${stageClass}">${s.stage}</span>
-        <span class="herd-stat">峰值${s.peak} → ${s.current}</span>
-        <span class="herd-stat">扩散+${s.max_surge}</span>
+      <div class="herd-card">
+        <div class="herd-card-header">
+          <span class="herd-sector">${s.sector}</span>
+          <span class="herd-stage ${stageClass}">${stageIcon} ${s.stage}</span>
+        </div>
+        <div class="herd-card-body">
+          <svg class="herd-spark" viewBox="0 0 ${sparkW} ${sparkH}"><polyline points="${pts}" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <div class="herd-progress-wrap">
+            <div class="herd-progress-bar" style="width:${pct}%"></div>
+          </div>
+        </div>
+        <div class="herd-card-footer">
+          <span class="herd-peak">峰值 <b>${s.peak}</b></span>
+          <span class="herd-current">当前 <b>${s.current}</b></span>
+          <span class="herd-surge">最大单日+<b>${s.max_surge}</b></span>
+        </div>
       </div>`;
   }).join("");
   return `
     <section>
-      <h2>羊群扩散 · ${data.date_range}${tip('板块入选数扩散速度。扩散越快说明资金涌入越猛，但越快越接近末期。爆发→升温→退潮是完整周期。')}</h2>
-      <div class="herd-summary">板块入选数扩散速度，越快越接近末期</div>
-      ${rows}
+      <h2>羊群扩散 · ${data.date_range}${tip('追踪各板块异动股数的扩散速度。扩散越快（单日涌入越多），行情越接近末期。爆发→平台→退潮是完整周期。')}</h2>
+      <div class="herd-grid">${rows}</div>
     </section>`;
 }
 
