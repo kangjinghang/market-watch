@@ -107,10 +107,10 @@
     },
     {
       "date": "2026-07-10",
-      "candidates": 38,
-      "daily_candidates": 131,
+      "candidates": 45,
+      "daily_candidates": 159,
       "universe": 5203,
-      "ratio": 0.007303478762252546
+      "ratio": 0.00864885642898328
     }
   ]
 }
