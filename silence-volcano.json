@@ -1,6 +1,20 @@
 {
   "scan_date": "2026-07-14",
-  "total_silent": 446,
-  "total_candidates": 0,
-  "candidates": []
+  "total_silent": 481,
+  "total_candidates": 1,
+  "candidates": [
+    {
+      "ticker": "SZ003036",
+      "name": "泰坦股份",
+      "peak_pct": 552.08,
+      "peak_date": "2026-06-17",
+      "silence_days": 8,
+      "last_seen": "2026-06-17",
+      "fib_0382": 70.9,
+      "recent_low": 72.16,
+      "volume_ratio": 0.44,
+      "current_price": 75.55,
+      "status": "逼近支撑位（警惕）"
+    }
+  ]
 }

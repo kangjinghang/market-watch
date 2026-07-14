@@ -1,0 +1,1258 @@
+{
+  "date": "2026-07-10",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300065",
+      "name": "海兰信",
+      "pct": 20.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300255",
+      "name": "常山药业",
+      "pct": 20,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300069",
+      "name": "金利华电",
+      "pct": 19.99,
+      "concepts": [
+        "电网设备",
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH688722",
+      "name": "同益中",
+      "pct": 19.99,
+      "concepts": [
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH688238",
+      "name": "和元生物",
+      "pct": 16.7,
+      "concepts": [
+        "创新药",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688328",
+      "name": "深科达",
+      "pct": 15.89,
+      "concepts": [
+        "半导体设备",
+        "先进封装",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ300487",
+      "name": "蓝晓科技",
+      "pct": 13.96,
+      "concepts": [
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688202",
+      "name": "美迪西",
+      "pct": 12.77,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688293",
+      "name": "奥浦迈",
+      "pct": 12.27,
+      "concepts": [
+        "医疗服务",
+        "创新药",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300102",
+      "name": "乾照光电",
+      "pct": 12.18,
+      "concepts": [
+        "光模块"
+      ]
+    },
+    {
+      "ticker": "SZ300244",
+      "name": "迪安诊断",
+      "pct": 11.56,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688319",
+      "name": "欧林生物",
+      "pct": 11.54,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688102",
+      "name": "斯瑞新材",
+      "pct": 11.36,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002121",
+      "name": "科陆电子",
+      "pct": 10.1,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600821",
+      "name": "金开新能",
+      "pct": 10.09,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600192",
+      "name": "长城电工",
+      "pct": 10.08,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SZ002342",
+      "name": "巨力索具",
+      "pct": 10.04,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SZ002606",
+      "name": "大连电瓷",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600428",
+      "name": "中远海特",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SH601608",
+      "name": "中信重工",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002544",
+      "name": "普天科技",
+      "pct": 10.03,
+      "concepts": [
+        "通信",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002623",
+      "name": "亚玛顿",
+      "pct": 10.03,
+      "concepts": [
+        "玻璃基板",
+        "先进封装",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH600410",
+      "name": "华胜天成",
+      "pct": 10.03,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ000933",
+      "name": "神火股份",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002317",
+      "name": "众生药业",
+      "pct": 10.02,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH600992",
+      "name": "贵绳股份",
+      "pct": 10.02,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SZ000920",
+      "name": "沃顿科技",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002865",
+      "name": "钧达股份",
+      "pct": 10.01,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH600513",
+      "name": "联环药业",
+      "pct": 10.01,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH600629",
+      "name": "华建集团",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600879",
+      "name": "航天电子",
+      "pct": 10.01,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH603898",
+      "name": "好莱客",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000887",
+      "name": "中鼎股份",
+      "pct": 10,
+      "concepts": [
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ000901",
+      "name": "航天科技",
+      "pct": 10,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH600343",
+      "name": "航天动力",
+      "pct": 10,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH600685",
+      "name": "中船防务",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH601698",
+      "name": "中国卫通",
+      "pct": 10,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH603127",
+      "name": "昭衍新药",
+      "pct": 10,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH603236",
+      "name": "移远通信",
+      "pct": 10,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH605598",
+      "name": "上海港湾",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002202",
+      "name": "金风科技",
+      "pct": 9.99,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SZ002402",
+      "name": "和而泰",
+      "pct": 9.99,
+      "concepts": [
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ003009",
+      "name": "中天火箭",
+      "pct": 9.99,
+      "concepts": [
+        "商业航天"
+      ]
+    },
+    {
+      "ticker": "SH603322",
+      "name": "超讯科技",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SH605090",
+      "name": "九丰能源",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ003001",
+      "name": "中岩大地",
+      "pct": 9.98,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ003020",
+      "name": "立方制药",
+      "pct": 9.98,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ001208",
+      "name": "华菱线缆",
+      "pct": 9.97,
+      "concepts": [
+        "商业航天",
+        "液冷"
+      ]
+    },
+    {
+      "ticker": "SZ002548",
+      "name": "金新农",
+      "pct": 9.97,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300484",
+      "name": "蓝海华腾",
+      "pct": 9.96,
+      "concepts": [
+        "自动化设备",
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH600376",
+      "name": "首开股份",
+      "pct": 9.91,
+      "concepts": [
+        "房地产"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "半导体",
+      "leader_count": 100,
+      "active_days": 9,
+      "heat_score": 900,
+      "leaders": [
+        {
+          "ticker": "SH688328",
+          "name": "深科达",
+          "pct": 15.89,
+          "concepts": [
+            "半导体设备",
+            "先进封装",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ300487",
+          "name": "蓝晓科技",
+          "pct": 13.96,
+          "concepts": [
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 69,
+      "active_days": 9,
+      "heat_score": 621,
+      "leaders": [
+        {
+          "ticker": "SZ300255",
+          "name": "常山药业",
+          "pct": 20,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688238",
+          "name": "和元生物",
+          "pct": 16.7,
+          "concepts": [
+            "创新药",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688202",
+          "name": "美迪西",
+          "pct": 12.77,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688293",
+          "name": "奥浦迈",
+          "pct": 12.27,
+          "concepts": [
+            "医疗服务",
+            "创新药",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ002317",
+          "name": "众生药业",
+          "pct": 10.02,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH600513",
+          "name": "联环药业",
+          "pct": 10.01,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH603127",
+          "name": "昭衍新药",
+          "pct": 10,
+          "concepts": [
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 59,
+      "active_days": 8,
+      "heat_score": 472,
+      "leaders": [
+        {
+          "ticker": "SH688722",
+          "name": "同益中",
+          "pct": 19.99,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ000887",
+          "name": "中鼎股份",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ002402",
+          "name": "和而泰",
+          "pct": 9.99,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ300484",
+          "name": "蓝海华腾",
+          "pct": 9.96,
+          "concepts": [
+            "自动化设备",
+            "人形机器人",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "AI",
+      "leader_count": 41,
+      "active_days": 11,
+      "heat_score": 451,
+      "leaders": [
+        {
+          "ticker": "SH688238",
+          "name": "和元生物",
+          "pct": 16.7,
+          "concepts": [
+            "创新药",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688293",
+          "name": "奥浦迈",
+          "pct": 12.27,
+          "concepts": [
+            "医疗服务",
+            "创新药",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300244",
+          "name": "迪安诊断",
+          "pct": 11.56,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ002623",
+          "name": "亚玛顿",
+          "pct": 10.03,
+          "concepts": [
+            "玻璃基板",
+            "先进封装",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH600410",
+          "name": "华胜天成",
+          "pct": 10.03,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603236",
+          "name": "移远通信",
+          "pct": 10,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 42,
+      "active_days": 10,
+      "heat_score": 420,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 57,
+      "active_days": 5,
+      "heat_score": 285,
+      "leaders": [
+        {
+          "ticker": "SH688328",
+          "name": "深科达",
+          "pct": 15.89,
+          "concepts": [
+            "半导体设备",
+            "先进封装",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 21,
+      "active_days": 7,
+      "heat_score": 147,
+      "leaders": [
+        {
+          "ticker": "SZ002544",
+          "name": "普天科技",
+          "pct": 10.03,
+          "concepts": [
+            "通信",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH600410",
+          "name": "华胜天成",
+          "pct": 10.03,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603236",
+          "name": "移远通信",
+          "pct": 10,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 17,
+      "active_days": 7,
+      "heat_score": 119,
+      "leaders": [
+        {
+          "ticker": "SH688722",
+          "name": "同益中",
+          "pct": 19.99,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ000887",
+          "name": "中鼎股份",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ002402",
+          "name": "和而泰",
+          "pct": 9.99,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ300484",
+          "name": "蓝海华腾",
+          "pct": 9.96,
+          "concepts": [
+            "自动化设备",
+            "人形机器人",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "军工",
+      "leader_count": 14,
+      "active_days": 8,
+      "heat_score": 112,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 14,
+      "active_days": 5,
+      "heat_score": 70,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 14,
+      "active_days": 5,
+      "heat_score": 70,
+      "leaders": []
+    },
+    {
+      "concept": "商业航天",
+      "leader_count": 17,
+      "active_days": 4,
+      "heat_score": 68,
+      "leaders": [
+        {
+          "ticker": "SZ300069",
+          "name": "金利华电",
+          "pct": 19.99,
+          "concepts": [
+            "电网设备",
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SZ002342",
+          "name": "巨力索具",
+          "pct": 10.04,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SH600992",
+          "name": "贵绳股份",
+          "pct": 10.02,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SZ002865",
+          "name": "钧达股份",
+          "pct": 10.01,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SH600879",
+          "name": "航天电子",
+          "pct": 10.01,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SZ000901",
+          "name": "航天科技",
+          "pct": 10,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SH600343",
+          "name": "航天动力",
+          "pct": 10,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SH601698",
+          "name": "中国卫通",
+          "pct": 10,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SZ002202",
+          "name": "金风科技",
+          "pct": 9.99,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SZ003009",
+          "name": "中天火箭",
+          "pct": 9.99,
+          "concepts": [
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SZ001208",
+          "name": "华菱线缆",
+          "pct": 9.97,
+          "concepts": [
+            "商业航天",
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 15,
+      "active_days": 4,
+      "heat_score": 60,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 8,
+      "active_days": 6,
+      "heat_score": 48,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 9,
+      "active_days": 5,
+      "heat_score": 45,
+      "leaders": [
+        {
+          "ticker": "SH688328",
+          "name": "深科达",
+          "pct": 15.89,
+          "concepts": [
+            "半导体设备",
+            "先进封装",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ002623",
+          "name": "亚玛顿",
+          "pct": 10.03,
+          "concepts": [
+            "玻璃基板",
+            "先进封装",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 9,
+      "active_days": 5,
+      "heat_score": 45,
+      "leaders": []
+    },
+    {
+      "concept": "电子化学品",
+      "leader_count": 6,
+      "active_days": 6,
+      "heat_score": 36,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": [
+        {
+          "ticker": "SZ002544",
+          "name": "普天科技",
+          "pct": 10.03,
+          "concepts": [
+            "通信",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "证券",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 5,
+      "active_days": 5,
+      "heat_score": 25,
+      "leaders": []
+    },
+    {
+      "concept": "ESG",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": [
+        {
+          "ticker": "SZ300069",
+          "name": "金利华电",
+          "pct": 19.99,
+          "concepts": [
+            "电网设备",
+            "商业航天"
+          ]
+        },
+        {
+          "ticker": "SH600192",
+          "name": "长城电工",
+          "pct": 10.08,
+          "concepts": [
+            "电网设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 4,
+      "active_days": 4,
+      "heat_score": 16,
+      "leaders": [
+        {
+          "ticker": "SZ001208",
+          "name": "华菱线缆",
+          "pct": 9.97,
+          "concepts": [
+            "商业航天",
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 5,
+      "active_days": 3,
+      "heat_score": 15,
+      "leaders": []
+    },
+    {
+      "concept": "玻璃基板",
+      "leader_count": 5,
+      "active_days": 3,
+      "heat_score": 15,
+      "leaders": [
+        {
+          "ticker": "SZ002623",
+          "name": "亚玛顿",
+          "pct": 10.03,
+          "concepts": [
+            "玻璃基板",
+            "先进封装",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "HBM",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "服装家纺",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 6,
+      "active_days": 2,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "白酒",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "半导体硅片",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SZ300102",
+          "name": "乾照光电",
+          "pct": 12.18,
+          "concepts": [
+            "光模块"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SH688293",
+          "name": "奥浦迈",
+          "pct": 12.27,
+          "concepts": [
+            "医疗服务",
+            "创新药",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SZ300484",
+          "name": "蓝海华腾",
+          "pct": 9.96,
+          "concepts": [
+            "自动化设备",
+            "人形机器人",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "新能源",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "电子布",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "汽车整车",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "覆铜板",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "TGV",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "ASIC",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "专用设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "中药",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "计算机",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "金属新材料",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "氟化工",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH600376",
+          "name": "首开股份",
+          "pct": 9.91,
+          "concepts": [
+            "房地产"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "锂电池",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "固态电池",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ300071",
+      "name": "福石控股",
+      "last_seen": "2026-07-10",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 44.41,
+      "trend_days": 11
+    },
+    {
+      "ticker": "SH688584",
+      "name": "上海合晶",
+      "last_seen": "2026-07-10",
+      "shared_concepts": [
+        "AI",
+        "半导体",
+        "算力"
+      ],
+      "trend_pct": 40.07,
+      "trend_days": 4
+    },
+    {
+      "ticker": "SZ002185",
+      "name": "华天科技",
+      "last_seen": "2026-07-10",
+      "shared_concepts": [
+        "先进封装"
+      ],
+      "trend_pct": 29.73,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ000892",
+      "name": "欢瑞世纪",
+      "last_seen": "2026-07-10",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 27.66,
+      "trend_days": 11
+    },
+    {
+      "ticker": "SZ002815",
+      "name": "崇达技术",
+      "last_seen": "2026-07-10",
+      "shared_concepts": [
+        "AI",
+        "算力"
+      ],
+      "trend_pct": 21.59,
+      "trend_days": 7
+    }
+  ]
+}

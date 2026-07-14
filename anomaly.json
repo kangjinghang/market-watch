@@ -6,8 +6,8 @@
       "type": "density_shift",
       "label": "异动密度",
       "today": 35,
-      "avg": 112,
-      "deviation": -0.69,
+      "avg": 103,
+      "deviation": -0.66,
       "severity": "high"
     }
   ]
