@@ -1,85 +1,33 @@
 {
-  "scan_date": "2026-07-10",
-  "total_silent": 477,
-  "total_candidates": 6,
+  "scan_date": "2026-07-14",
+  "total_silent": 446,
+  "total_candidates": 2,
   "candidates": [
     {
       "ticker": "SZ003036",
       "name": "泰坦股份",
-      "peak_pct": 570.01,
+      "peak_pct": 552.08,
       "peak_date": "2026-06-17",
       "silence_days": 8,
       "last_seen": "2026-06-17",
-      "fib_0382": 70.73,
-      "recent_low": 75.19,
-      "volume_ratio": 0.34,
-      "current_price": 86.16,
-      "status": "缩量横盘未破位"
-    },
-    {
-      "ticker": "SZ300820",
-      "name": "英杰电气",
-      "peak_pct": 85.85,
-      "peak_date": "2026-05-21",
-      "silence_days": 8,
-      "last_seen": "2026-06-22",
-      "fib_0382": 63.82,
-      "recent_low": 67,
-      "volume_ratio": 0.43,
-      "current_price": 72.49,
-      "status": "缩量横盘未破位"
-    },
-    {
-      "ticker": "SH603115",
-      "name": "海星股份",
-      "peak_pct": 470.16,
-      "peak_date": "2026-06-18",
-      "silence_days": 8,
-      "last_seen": "2026-06-17",
-      "fib_0382": 87.95,
-      "recent_low": 94.57,
-      "volume_ratio": 0.43,
-      "current_price": 101.5,
-      "status": "缩量横盘未破位"
+      "fib_0382": 70.9,
+      "recent_low": 72.16,
+      "volume_ratio": 0.38,
+      "current_price": 73.21,
+      "status": "逼近支撑位（警惕）"
     },
     {
       "ticker": "SZ301626",
       "name": "苏州天脉",
-      "peak_pct": 111.3,
+      "peak_pct": 110.03,
       "peak_date": "2026-06-01",
       "silence_days": 8,
       "last_seen": "2026-06-25",
-      "fib_0382": 284.91,
-      "recent_low": 305.88,
-      "volume_ratio": 0.44,
-      "current_price": 328.88,
-      "status": "缩量横盘未破位"
-    },
-    {
-      "ticker": "SZ300903",
-      "name": "科翔股份",
-      "peak_pct": 298.03,
-      "peak_date": "2026-06-18",
-      "silence_days": 8,
-      "last_seen": "2026-06-22",
-      "fib_0382": 74.97,
-      "recent_low": 82.5,
+      "fib_0382": 285.3,
+      "recent_low": 290,
       "volume_ratio": 0.46,
-      "current_price": 90.84,
-      "status": "缩量横盘未破位"
-    },
-    {
-      "ticker": "SZ002297",
-      "name": "博云新材",
-      "peak_pct": 189.79,
-      "peak_date": "2026-05-25",
-      "silence_days": 8,
-      "last_seen": "2026-06-24",
-      "fib_0382": 21.92,
-      "recent_low": 23.08,
-      "volume_ratio": 0.47,
-      "current_price": 25.09,
-      "status": "缩量横盘未破位"
+      "current_price": 299.22,
+      "status": "逼近支撑位（警惕）"
     }
   ]
 }
