@@ -1032,11 +1032,12 @@ async function main() {
     $("#title").textContent = `市场体检 · ${targetDate}`;
     $("#subtitle").textContent = `数据 ${meta.total_days} 天 · ${meta.earliest_date.slice(5)} ~ ${meta.latest_date.slice(5)}`;
 
-    // 第一阶段：只加载首屏必需数据（3 个请求）
-    const [series, daily, streak] = await Promise.all([
+    // 第一阶段：只加载首屏必需数据（4 个请求）
+    const [series, daily, streak, anomaly] = await Promise.all([
       fetchJson("series/density.json"),
       fetchJson(`daily/${targetDate}.json`),
       fetchJson(`streak-${targetDate}.json`).catch(() => null),
+      fetchJson("anomaly.json").catch(() => null),
     ]);
 
     // 连续涨停数供 hero 使用
@@ -1057,7 +1058,7 @@ async function main() {
 
     const countSections = (html) => (html.match(/<section/g) || []).length;
     const html =
-      renderHero(daily, null, series) +
+      renderHero(daily, anomaly, series) +
       renderHistory(series.points.map((p) => p.date), targetDate) +
       `<nav class="section-tabs">
         <button class="section-tab active" data-tab="up" onclick="switchTab('up')">
@@ -1096,7 +1097,7 @@ async function main() {
     const [
       deathPatterns, silenceVolcano, conceptCooccur, catchUpBand,
       narrativeWeekly, conceptLifecycle, sectorFlow,
-      earlyBird, anomaly, fitness, excluded, herdDiffusion,
+      earlyBird, fitness, excluded, herdDiffusion,
     ] = await Promise.all([
       fetchJson("death-patterns.json").catch(() => null),
       fetchJson("silence-volcano.json").catch(() => null),
@@ -1106,7 +1107,6 @@ async function main() {
       fetchJson("concept-lifecycle.json").catch(() => null),
       fetchJson("sector-flow.json").catch(() => null),
       fetchJson(`early-bird-${targetDate}.json`).catch(() => null),
-      fetchJson("anomaly.json").catch(() => null),
       fetchJson("fitness-report.json").catch(() => null),
       fetchJson("excluded-report.json").catch(() => null),
       fetchJson("herd-diffusion.json").catch(() => null),
