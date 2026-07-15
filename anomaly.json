@@ -1,14 +1,14 @@
 {
-  "date": "2026-07-13",
+  "date": "2026-07-14",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "density_shift",
       "label": "异动密度",
-      "today": 35,
-      "avg": 103,
-      "deviation": -0.66,
-      "severity": "high"
+      "today": 52,
+      "avg": 112,
+      "deviation": -0.53,
+      "severity": "medium"
     }
   ]
 }

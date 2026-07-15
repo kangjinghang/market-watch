@@ -871,7 +871,7 @@
     {
       "week": "2026-W24",
       "date_range": "06-08 ~ 06-14",
-      "total_reasons": 481,
+      "total_reasons": 478,
       "top_concepts": [
         {
           "concept": "半导体",
@@ -899,7 +899,7 @@
         },
         {
           "concept": "ESG",
-          "count": 25
+          "count": 23
         },
         {
           "concept": "电子树脂",
@@ -1027,18 +1027,18 @@
           "count": 16
         },
         {
-          "concept": "创新药",
-          "count": 15
+          "concept": "算力",
+          "count": 14
         },
         {
-          "concept": "算力",
+          "concept": "创新药",
           "count": 14
         }
       ],
       "emerging": [
         {
           "concept": "创新药",
-          "count": 15,
+          "count": 14,
           "prev_count": 0
         },
         {
@@ -1076,7 +1076,7 @@
         {
           "concept": "ESG",
           "count": 1,
-          "prev_count": 25
+          "prev_count": 23
         },
         {
           "concept": "电子树脂",
@@ -1118,11 +1118,11 @@
     {
       "week": "2026-W26",
       "date_range": "06-22 ~ 06-28",
-      "total_reasons": 474,
+      "total_reasons": 468,
       "top_concepts": [
         {
           "concept": "半导体",
-          "count": 84
+          "count": 83
         },
         {
           "concept": "电子",
@@ -1130,7 +1130,7 @@
         },
         {
           "concept": "AI",
-          "count": 37
+          "count": 36
         },
         {
           "concept": "半导体设备",
@@ -1138,7 +1138,7 @@
         },
         {
           "concept": "创新药",
-          "count": 29
+          "count": 30
         },
         {
           "concept": "存储芯片",
@@ -1146,7 +1146,7 @@
         },
         {
           "concept": "算力",
-          "count": 17
+          "count": 15
         },
         {
           "concept": "PCB",
@@ -1173,14 +1173,14 @@
           "prev_count": 0
         },
         {
-          "concept": "医疗服务",
-          "count": 11,
-          "prev_count": 0
-        },
-        {
           "concept": "ESG",
           "count": 11,
           "prev_count": 1
+        },
+        {
+          "concept": "医疗服务",
+          "count": 10,
+          "prev_count": 0
         },
         {
           "concept": "大金融",
@@ -1249,38 +1249,34 @@
     {
       "week": "2026-W27",
       "date_range": "06-29 ~ 07-05",
-      "total_reasons": 573,
+      "total_reasons": 545,
       "top_concepts": [
         {
           "concept": "创新药",
-          "count": 172
+          "count": 168
         },
         {
           "concept": "机器人",
-          "count": 66
+          "count": 63
         },
         {
           "concept": "半导体",
-          "count": 64
+          "count": 62
         },
         {
           "concept": "半导体设备",
-          "count": 39
+          "count": 38
         },
         {
           "concept": "电子",
-          "count": 25
-        },
-        {
-          "concept": "医疗器械",
-          "count": 21
-        },
-        {
-          "concept": "AI",
-          "count": 20
+          "count": 22
         },
         {
           "concept": "人形机器人",
+          "count": 20
+        },
+        {
+          "concept": "医疗器械",
           "count": 20
         },
         {
@@ -1289,19 +1285,18 @@
         },
         {
           "concept": "中药",
+          "count": 17
+        },
+        {
+          "concept": "AI",
           "count": 15
         }
       ],
       "emerging": [
         {
           "concept": "机器人",
-          "count": 66,
+          "count": 63,
           "prev_count": 0
-        },
-        {
-          "concept": "医疗器械",
-          "count": 21,
-          "prev_count": 1
         },
         {
           "concept": "人形机器人",
@@ -1309,8 +1304,13 @@
           "prev_count": 0
         },
         {
+          "concept": "医疗器械",
+          "count": 20,
+          "prev_count": 1
+        },
+        {
           "concept": "中药",
-          "count": 15,
+          "count": 17,
           "prev_count": 1
         },
         {
@@ -1320,11 +1320,6 @@
         },
         {
           "concept": "半导体硅片",
-          "count": 3,
-          "prev_count": 1
-        },
-        {
-          "concept": "通信",
           "count": 3,
           "prev_count": 1
         },
@@ -1356,12 +1351,12 @@
           "prev_count": 10
         },
         {
-          "concept": "功率半导体",
+          "concept": "覆铜板",
           "count": 0,
-          "prev_count": 8
+          "prev_count": 7
         },
         {
-          "concept": "覆铜板",
+          "concept": "功率半导体",
           "count": 0,
           "prev_count": 7
         },
@@ -1380,47 +1375,47 @@
     {
       "week": "2026-W28",
       "date_range": "07-06 ~ 07-12",
-      "total_reasons": 103,
+      "total_reasons": 74,
       "top_concepts": [
         {
           "concept": "创新药",
-          "count": 24
+          "count": 19
         },
         {
           "concept": "ESG",
-          "count": 10
-        },
-        {
-          "concept": "半导体",
-          "count": 10
+          "count": 11
         },
         {
           "concept": "AI",
-          "count": 9
+          "count": 8
         },
         {
           "concept": "算力",
-          "count": 4
-        },
-        {
-          "concept": "半导体材料",
-          "count": 4
+          "count": 3
         },
         {
           "concept": "银行",
           "count": 2
         },
         {
-          "concept": "专用设备",
+          "concept": "半导体",
           "count": 2
         },
         {
-          "concept": "先进封装",
-          "count": 2
+          "concept": "新能源",
+          "count": 1
         },
         {
-          "concept": "化学制药",
-          "count": 2
+          "concept": "人形机器人",
+          "count": 1
+        },
+        {
+          "concept": "机器人",
+          "count": 1
+        },
+        {
+          "concept": "医疗器械",
+          "count": 1
         }
       ],
       "emerging": [],
@@ -1428,25 +1423,25 @@
         {
           "concept": "机器人",
           "count": 1,
-          "prev_count": 66
+          "prev_count": 63
         },
         {
           "concept": "半导体设备",
-          "count": 1,
-          "prev_count": 39
+          "count": 0,
+          "prev_count": 38
         },
         {
           "concept": "电子",
           "count": 1,
-          "prev_count": 25
-        },
-        {
-          "concept": "医疗器械",
-          "count": 1,
-          "prev_count": 21
+          "prev_count": 22
         },
         {
           "concept": "人形机器人",
+          "count": 1,
+          "prev_count": 20
+        },
+        {
+          "concept": "医疗器械",
           "count": 1,
           "prev_count": 20
         },
@@ -1456,65 +1451,64 @@
           "prev_count": 17
         },
         {
-          "concept": "PCB",
-          "count": 1,
-          "prev_count": 7
+          "concept": "中药",
+          "count": 0,
+          "prev_count": 17
         },
         {
-          "concept": "消费电子",
+          "concept": "半导体材料",
           "count": 0,
-          "prev_count": 6
+          "prev_count": 11
         }
       ]
     },
     {
       "week": "2026-W29",
       "date_range": "07-13 ~ 07-19",
-      "total_reasons": 13,
+      "total_reasons": 16,
       "top_concepts": [
         {
           "concept": "中药",
-          "count": 8
+          "count": 6
         },
         {
-          "concept": "AI",
+          "concept": "创新药",
+          "count": 2
+        },
+        {
+          "concept": "化学制药",
+          "count": 2
+        },
+        {
+          "concept": "新能源",
           "count": 1
         }
       ],
-      "emerging": [],
-      "fading": [
+      "emerging": [
         {
-          "concept": "创新药",
-          "count": 0,
-          "prev_count": 24
-        },
+          "concept": "中药",
+          "count": 6,
+          "prev_count": 0
+        }
+      ],
+      "fading": [
         {
           "concept": "ESG",
           "count": 0,
-          "prev_count": 10
-        },
-        {
-          "concept": "半导体",
-          "count": 0,
-          "prev_count": 10
+          "prev_count": 11
         },
         {
           "concept": "AI",
-          "count": 1,
-          "prev_count": 9
+          "count": 0,
+          "prev_count": 8
         },
         {
           "concept": "算力",
           "count": 0,
-          "prev_count": 4
-        },
-        {
-          "concept": "半导体材料",
-          "count": 0,
-          "prev_count": 4
+          "prev_count": 3
         }
       ]
     }
   ],
-  "generated_at": "2026-07-14T18:58:06.781Z"
+  "generated_at": "2026-07-15T11:39:55.698Z"
 }

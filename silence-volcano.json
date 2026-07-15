@@ -1,6 +1,6 @@
 {
-  "scan_date": "2026-07-14",
-  "total_silent": 481,
+  "scan_date": "2026-07-15",
+  "total_silent": 442,
   "total_candidates": 1,
   "candidates": [
     {
@@ -11,9 +11,9 @@
       "silence_days": 8,
       "last_seen": "2026-06-17",
       "fib_0382": 70.9,
-      "recent_low": 72.16,
+      "recent_low": 71,
       "volume_ratio": 0.44,
-      "current_price": 75.55,
+      "current_price": 71.25,
       "status": "逼近支撑位（警惕）"
     }
   ]
