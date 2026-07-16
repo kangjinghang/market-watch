@@ -1,17 +1,17 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-13",
-  "total_reasons": 2905,
+  "date_range": "2026-03-05 ~ 2026-07-14",
+  "total_reasons": 2933,
   "total_concepts": 69,
   "total_pairs": 166,
   "nodes": [
     {
       "id": "半导体",
-      "count": 652,
+      "count": 649,
       "type": "sector"
     },
     {
       "id": "AI",
-      "count": 302,
+      "count": 299,
       "type": "technology"
     },
     {
@@ -21,17 +21,17 @@
     },
     {
       "id": "创新药",
-      "count": 233,
+      "count": 249,
       "type": "sector"
     },
     {
       "id": "PCB",
-      "count": 189,
+      "count": 190,
       "type": "technology"
     },
     {
       "id": "半导体设备",
-      "count": 176,
+      "count": 172,
       "type": "sector"
     },
     {
@@ -40,18 +40,18 @@
       "type": "sector"
     },
     {
+      "id": "机器人",
+      "count": 98,
+      "type": "sector"
+    },
+    {
       "id": "MLCC",
       "count": 98,
       "type": "technology"
     },
     {
-      "id": "机器人",
-      "count": 97,
-      "type": "sector"
-    },
-    {
       "id": "算力",
-      "count": 84,
+      "count": 82,
       "type": "sector"
     },
     {
@@ -76,13 +76,8 @@
     },
     {
       "id": "ESG",
-      "count": 55,
+      "count": 53,
       "type": "technology"
-    },
-    {
-      "id": "先进封装",
-      "count": 44,
-      "type": "sector"
     },
     {
       "id": "覆铜板",
@@ -90,13 +85,18 @@
       "type": "sector"
     },
     {
-      "id": "专用设备",
-      "count": 44,
+      "id": "光模块",
+      "count": 43,
       "type": "sector"
     },
     {
-      "id": "光模块",
+      "id": "专用设备",
       "count": 43,
+      "type": "sector"
+    },
+    {
+      "id": "先进封装",
+      "count": 42,
       "type": "sector"
     },
     {
@@ -110,13 +110,13 @@
       "type": "sector"
     },
     {
-      "id": "元件",
-      "count": 36,
+      "id": "证券",
+      "count": 37,
       "type": "sector"
     },
     {
-      "id": "证券",
-      "count": 33,
+      "id": "元件",
+      "count": 36,
       "type": "sector"
     },
     {
@@ -126,6 +126,11 @@
     },
     {
       "id": "氟化工",
+      "count": 28,
+      "type": "sector"
+    },
+    {
+      "id": "医疗器械",
       "count": 28,
       "type": "sector"
     },
@@ -140,12 +145,12 @@
       "type": "technology"
     },
     {
-      "id": "医疗器械",
-      "count": 26,
+      "id": "军工",
+      "count": 25,
       "type": "sector"
     },
     {
-      "id": "军工",
+      "id": "中药",
       "count": 25,
       "type": "sector"
     },
@@ -156,11 +161,6 @@
     },
     {
       "id": "电子布",
-      "count": 24,
-      "type": "sector"
-    },
-    {
-      "id": "中药",
       "count": 24,
       "type": "sector"
     },
@@ -220,22 +220,32 @@
       "type": "sector"
     },
     {
-      "id": "新能源",
+      "id": "医疗服务",
       "count": 15,
       "type": "sector"
     },
     {
       "id": "IPO",
-      "count": 13,
+      "count": 14,
       "type": "technology"
     },
     {
       "id": "工业金属",
+      "count": 14,
+      "type": "sector"
+    },
+    {
+      "id": "新能源",
+      "count": 14,
+      "type": "sector"
+    },
+    {
+      "id": "化学制药",
       "count": 13,
       "type": "sector"
     },
     {
-      "id": "医疗服务",
+      "id": "港股医药",
       "count": 13,
       "type": "sector"
     },
@@ -248,16 +258,6 @@
       "id": "PFA",
       "count": 12,
       "type": "technology"
-    },
-    {
-      "id": "化学制药",
-      "count": 12,
-      "type": "sector"
-    },
-    {
-      "id": "港股医药",
-      "count": 12,
-      "type": "sector"
     },
     {
       "id": "CAE",
@@ -295,12 +295,12 @@
       "type": "sector"
     },
     {
-      "id": "钙钛矿",
-      "count": 6,
+      "id": "商业航天",
+      "count": 7,
       "type": "sector"
     },
     {
-      "id": "商业航天",
+      "id": "钙钛矿",
       "count": 6,
       "type": "sector"
     },
@@ -325,6 +325,11 @@
       "type": "sector"
     },
     {
+      "id": "钢铁",
+      "count": 3,
+      "type": "sector"
+    },
+    {
       "id": "汽车整车",
       "count": 3,
       "type": "sector"
@@ -343,18 +348,13 @@
       "id": "LED",
       "count": 2,
       "type": "technology"
-    },
-    {
-      "id": "钢铁",
-      "count": 2,
-      "type": "sector"
     }
   ],
   "edges": [
     {
       "source": "半导体",
       "target": "半导体设备",
-      "weight": 176
+      "weight": 172
     },
     {
       "source": "半导体",
@@ -379,7 +379,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 60
+      "weight": 58
     },
     {
       "source": "AI",
@@ -512,6 +512,11 @@
       "weight": 14
     },
     {
+      "source": "中药",
+      "target": "创新药",
+      "weight": 13
+    },
+    {
       "source": "PCB",
       "target": "半导体",
       "weight": 12
@@ -549,11 +554,6 @@
     {
       "source": "HBM",
       "target": "半导体设备",
-      "weight": 11
-    },
-    {
-      "source": "中药",
-      "target": "创新药",
       "weight": 11
     },
     {
@@ -1007,6 +1007,11 @@
       "weight": 3
     },
     {
+      "source": "IPO",
+      "target": "证券",
+      "weight": 3
+    },
+    {
       "source": "算力",
       "target": "通信",
       "weight": 3
@@ -1129,11 +1134,6 @@
     {
       "source": "PCB",
       "target": "光模块",
-      "weight": 2
-    },
-    {
-      "source": "IPO",
-      "target": "证券",
       "weight": 2
     },
     {

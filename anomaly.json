@@ -1,14 +1,22 @@
 {
-  "date": "2026-07-14",
+  "date": "2026-07-15",
   "lookback_days": 10,
   "anomalies": [
     {
-      "type": "density_shift",
-      "label": "异动密度",
-      "today": 52,
-      "avg": 112,
-      "deviation": -0.53,
-      "severity": "medium"
+      "type": "sector_surge",
+      "label": "食品饮料",
+      "today": 10,
+      "avg": 2.2,
+      "deviation": 3.62,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "医药生物",
+      "today": 70,
+      "avg": 20.6,
+      "deviation": 2.4,
+      "severity": "high"
     }
   ]
 }
