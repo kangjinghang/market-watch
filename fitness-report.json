@@ -1,80 +1,80 @@
 {
-  "generated_at": "2026-07-16T13:07:13.357Z",
-  "total_entries": 2083,
+  "generated_at": "2026-07-17T12:00:09.166Z",
+  "total_entries": 2107,
   "by_kind": {
     "continued": {
-      "count": 634,
+      "count": 631,
       "win_rate_5d": 39,
       "avg_ret_5d": -1.63,
-      "win_rate_20d": 19,
-      "avg_ret_20d": -14.82
+      "win_rate_20d": 15,
+      "avg_ret_20d": -17.18
     },
     "new": {
-      "count": 1449,
+      "count": 1476,
       "win_rate_5d": 32,
-      "avg_ret_5d": -3.11,
-      "win_rate_20d": 25,
-      "avg_ret_20d": -11.18
+      "avg_ret_5d": -3.1,
+      "win_rate_20d": 19,
+      "avg_ret_20d": -14.2
     }
   },
   "by_days_bucket": [
     {
       "bucket": "1-7天",
-      "count": 588,
+      "count": 602,
       "win_rate_5d": 26,
-      "avg_ret_5d": -4.01,
-      "win_rate_20d": 34,
-      "avg_ret_20d": -7.05
+      "avg_ret_5d": -3.96,
+      "win_rate_20d": 24,
+      "avg_ret_20d": -10.86
     },
     {
       "bucket": "8-14天",
-      "count": 1005,
+      "count": 1018,
       "win_rate_5d": 39,
-      "avg_ret_5d": -1.32,
-      "win_rate_20d": 27,
-      "avg_ret_20d": -10
+      "avg_ret_5d": -1.33,
+      "win_rate_20d": 21,
+      "avg_ret_20d": -12.07
     },
     {
       "bucket": "15-30天",
-      "count": 223,
+      "count": 225,
       "win_rate_5d": 24,
       "avg_ret_5d": -5.94,
-      "win_rate_20d": 10,
-      "avg_ret_20d": -19.48
+      "win_rate_20d": 6,
+      "avg_ret_20d": -24.12
     },
     {
       "bucket": "30天+",
-      "count": 267,
+      "count": 262,
       "win_rate_5d": 41,
       "avg_ret_5d": -1.53,
       "win_rate_20d": 6,
-      "avg_ret_20d": -22.66
+      "avg_ret_20d": -24.56
     }
   ],
   "by_pct_bucket": [
     {
       "bucket": "0-20%",
-      "count": 578,
+      "count": 603,
       "win_rate_5d": 26,
-      "avg_ret_5d": -2.83,
-      "win_rate_20d": 40,
-      "avg_ret_20d": -2.72
+      "avg_ret_5d": -2.87,
+      "win_rate_20d": 33,
+      "avg_ret_20d": -4.95
     },
     {
       "bucket": "20-50%",
-      "count": 962,
+      "count": 966,
       "win_rate_5d": 39,
-      "avg_ret_5d": -1.98,
-      "win_rate_20d": 25,
-      "avg_ret_20d": -11.15
+      "avg_ret_5d": -1.95,
+      "win_rate_20d": 18,
+      "avg_ret_20d": -14.03
     },
     {
       "bucket": "50-100%",
-      "count": 348,
+      "count": 343,
       "win_rate_5d": 34,
       "avg_ret_5d": -3.01,
-      "win_rate_20d": 13,
-      "avg_ret_20d": -18.49
+      "win_rate_20d": 9,
+      "avg_ret_20d": -21.76
     },
     {
       "bucket": "100%+",
@@ -82,25 +82,25 @@
       "win_rate_5d": 33,
       "avg_ret_5d": -4.12,
       "win_rate_20d": 4,
-      "avg_ret_20d": -25.45
+      "avg_ret_20d": -27.88
     }
   ],
   "combo_analysis": [
     {
       "combo": "涨停+区间涨",
-      "count": 205,
+      "count": 203,
       "win_rate_5d": 43,
-      "avg_ret_5d": -1.48,
-      "win_rate_20d": 19,
-      "avg_ret_20d": -14.28
+      "avg_ret_5d": -1.43,
+      "win_rate_20d": 14,
+      "avg_ret_20d": -17.14
     },
     {
       "combo": "非涨停+区间涨",
-      "count": 1878,
+      "count": 1904,
       "win_rate_5d": 33,
       "avg_ret_5d": -2.72,
-      "win_rate_20d": 23,
-      "avg_ret_20d": -12.26
+      "win_rate_20d": 18,
+      "avg_ret_20d": -15.04
     }
   ],
   "recent_exits": [
@@ -114,7 +114,7 @@
       "range_pct": 26.43,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -127,7 +127,7 @@
       "range_pct": 258.12,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -140,7 +140,7 @@
       "range_pct": 53.72,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -153,7 +153,7 @@
       "range_pct": 16.05,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -166,7 +166,7 @@
       "range_pct": 32.51,
       "today_limit_up": true,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -179,7 +179,7 @@
       "range_pct": 71.12,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -192,7 +192,7 @@
       "range_pct": 32.81,
       "today_limit_up": true,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -205,7 +205,7 @@
       "range_pct": 17.12,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -218,7 +218,7 @@
       "range_pct": 119.49,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -231,7 +231,7 @@
       "range_pct": 41.47,
       "today_limit_up": true,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -244,7 +244,7 @@
       "range_pct": 49.63,
       "today_limit_up": true,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -257,7 +257,7 @@
       "range_pct": 67.67,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -270,7 +270,7 @@
       "range_pct": 118.14,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -283,7 +283,7 @@
       "range_pct": 26.01,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -296,7 +296,7 @@
       "range_pct": 12.59,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -309,7 +309,7 @@
       "range_pct": 61.15,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -322,7 +322,7 @@
       "range_pct": 12.22,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -335,7 +335,7 @@
       "range_pct": 24.11,
       "today_limit_up": true,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -348,7 +348,7 @@
       "range_pct": 111.27,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     },
     {
@@ -361,7 +361,7 @@
       "range_pct": 17.14,
       "today_limit_up": false,
       "status": "exited",
-      "exit_date": "2026-07-15",
+      "exit_date": "2026-07-16",
       "last_update": "2026-06-18"
     }
   ]

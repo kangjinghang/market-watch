@@ -1,21 +1,37 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "sector_surge",
       "label": "食品饮料",
-      "today": 10,
+      "today": 13,
       "avg": 2.2,
-      "deviation": 3.62,
+      "deviation": 5,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "商贸零售",
+      "today": 9,
+      "avg": 1.8,
+      "deviation": 3.91,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "传媒",
+      "today": 6,
+      "avg": 1.4,
+      "deviation": 3.15,
       "severity": "high"
     },
     {
       "type": "sector_surge",
       "label": "医药生物",
-      "today": 70,
+      "today": 74,
       "avg": 20.6,
-      "deviation": 2.4,
+      "deviation": 2.59,
       "severity": "high"
     }
   ]
