@@ -3,9 +3,9 @@
   "total_excluded": 204,
   "total_with_return": 204,
   "win_rate_5d": 39,
-  "avg_ret_5d": -3.1,
-  "win_rate_20d": 11,
-  "avg_ret_20d": -20.07,
+  "avg_ret_5d": -3.11,
+  "win_rate_20d": 36,
+  "avg_ret_20d": -6.21,
   "top_gainers": [
     {
       "ticker": "SH603650",
@@ -15,10 +15,9 @@
       "range_kind": "continued",
       "range_days": 22,
       "range_pct": 37.94,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 34.49,
-      "ret_10d": 26.89,
-      "ret_20d": 13.42
+      "ret_10d": 26.89
     },
     {
       "ticker": "SH600667",
@@ -28,10 +27,9 @@
       "range_kind": "continued",
       "range_days": 53,
       "range_pct": 135.35,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 28.49,
-      "ret_10d": 28,
-      "ret_20d": 0.71
+      "ret_10d": 28
     },
     {
       "ticker": "SH600707",
@@ -41,10 +39,9 @@
       "range_kind": "continued",
       "range_days": 84,
       "range_pct": 156.07,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 26.5,
-      "ret_10d": -3.15,
-      "ret_20d": -28.51
+      "ret_10d": -3.15
     },
     {
       "ticker": "SZ300223",
@@ -54,10 +51,9 @@
       "range_kind": "new",
       "range_days": 84,
       "range_pct": 86.2,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 24.77,
-      "ret_10d": 33.79,
-      "ret_20d": -1.97
+      "ret_10d": 33.79
     },
     {
       "ticker": "SH600707",
@@ -67,10 +63,9 @@
       "range_kind": "continued",
       "range_days": 83,
       "range_pct": 150.02,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 23.92,
-      "ret_10d": -0.81,
-      "ret_20d": -22.08
+      "ret_10d": -0.81
     },
     {
       "ticker": "SZ300223",
@@ -80,10 +75,9 @@
       "range_kind": "continued",
       "range_days": 85,
       "range_pct": 89.85,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 22.37,
-      "ret_10d": 27.91,
-      "ret_20d": 5
+      "ret_10d": 27.91
     },
     {
       "ticker": "SH603986",
@@ -93,10 +87,9 @@
       "range_kind": "new",
       "range_days": 83,
       "range_pct": 190.09,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 21.79,
-      "ret_10d": 0.74,
-      "ret_20d": -20.14
+      "ret_10d": 0.74
     },
     {
       "ticker": "SH600176",
@@ -106,10 +99,9 @@
       "range_kind": "new",
       "range_days": 83,
       "range_pct": 141.25,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 21.58,
-      "ret_10d": 16.17,
-      "ret_20d": -14.13
+      "ret_10d": 16.17
     },
     {
       "ticker": "SH603283",
@@ -119,10 +111,9 @@
       "range_kind": "new",
       "range_days": 91,
       "range_pct": 108.23,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": 21.14,
-      "ret_10d": 12.09,
-      "ret_20d": -4.35
+      "ret_10d": 12.09
     },
     {
       "ticker": "SZ300671",
@@ -132,9 +123,8 @@
       "range_kind": "new",
       "range_days": 21,
       "range_pct": 86.49,
-      "last_update": "2026-07-16",
-      "ret_5d": 18.76,
-      "ret_10d": 2.14
+      "last_update": "2026-07-06",
+      "ret_5d": 18.76
     }
   ],
   "top_losers": [
@@ -146,10 +136,9 @@
       "range_kind": "new",
       "range_days": 21,
       "range_pct": 76.61,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": -42.66,
-      "ret_10d": -45.28,
-      "ret_20d": -50.86
+      "ret_10d": -45.28
     },
     {
       "ticker": "SZ002768",
@@ -159,10 +148,10 @@
       "range_kind": "continued",
       "range_days": 75,
       "range_pct": 73.75,
-      "last_update": "2026-07-16",
+      "last_update": "2026-07-06",
       "ret_5d": -32.43,
       "ret_10d": -34.38,
-      "ret_20d": -25.98
+      "ret_20d": -28.41
     },
     {
       "ticker": "SZ000636",
@@ -172,9 +161,8 @@
       "range_kind": "continued",
       "range_days": 83,
       "range_pct": 332.72,
-      "last_update": "2026-07-16",
-      "ret_5d": -27.12,
-      "ret_10d": -19.58
+      "last_update": "2026-07-06",
+      "ret_5d": -27.12
     },
     {
       "ticker": "SH600367",
@@ -184,9 +172,8 @@
       "range_kind": "continued",
       "range_days": 77,
       "range_pct": 215.45,
-      "last_update": "2026-07-16",
-      "ret_5d": -25.27,
-      "ret_10d": -40.91
+      "last_update": "2026-07-06",
+      "ret_5d": -25.27
     },
     {
       "ticker": "SH600552",
@@ -196,9 +183,8 @@
       "range_kind": "continued",
       "range_days": 98,
       "range_pct": 171.86,
-      "last_update": "2026-07-16",
-      "ret_5d": -25.19,
-      "ret_10d": -25.89
+      "last_update": "2026-07-06",
+      "ret_5d": -25.19
     },
     {
       "ticker": "SZ300706",
@@ -208,9 +194,8 @@
       "range_kind": "continued",
       "range_days": 21,
       "range_pct": 88.24,
-      "last_update": "2026-07-16",
-      "ret_5d": -24.43,
-      "ret_10d": -20.39
+      "last_update": "2026-07-06",
+      "ret_5d": -24.43
     },
     {
       "ticker": "SH600397",
@@ -220,9 +205,8 @@
       "range_kind": "new",
       "range_days": 41,
       "range_pct": 134.53,
-      "last_update": "2026-07-16",
-      "ret_5d": -22.9,
-      "ret_10d": -41.57
+      "last_update": "2026-07-06",
+      "ret_5d": -22.9
     },
     {
       "ticker": "SZ300398",
@@ -232,9 +216,8 @@
       "range_kind": "new",
       "range_days": 21,
       "range_pct": 61.66,
-      "last_update": "2026-07-16",
-      "ret_5d": -22.49,
-      "ret_10d": -22.63
+      "last_update": "2026-07-06",
+      "ret_5d": -22.49
     },
     {
       "ticker": "SZ000920",
@@ -244,9 +227,8 @@
       "range_kind": "continued",
       "range_days": 39,
       "range_pct": 47.6,
-      "last_update": "2026-07-16",
-      "ret_5d": -22.23,
-      "ret_10d": -26.18
+      "last_update": "2026-07-06",
+      "ret_5d": -22.23
     },
     {
       "ticker": "SH605376",
@@ -256,9 +238,8 @@
       "range_kind": "new",
       "range_days": 42,
       "range_pct": 136.99,
-      "last_update": "2026-07-16",
-      "ret_5d": -21.74,
-      "ret_10d": -25.96
+      "last_update": "2026-07-06",
+      "ret_5d": -21.74
     }
   ],
   "by_reason": [
@@ -266,41 +247,41 @@
       "pattern": "其他",
       "count": 95,
       "win_rate_5d": 39,
-      "avg_ret_5d": -2.16,
-      "win_rate_20d": 19,
-      "avg_ret_20d": -17.49
+      "avg_ret_5d": -2.2,
+      "win_rate_20d": 53,
+      "avg_ret_20d": 0.89
     },
     {
       "pattern": "涨幅透支",
       "count": 68,
-      "win_rate_5d": 41,
-      "avg_ret_5d": -3.68,
-      "win_rate_20d": 4,
-      "avg_ret_20d": -21.99
+      "win_rate_5d": 43,
+      "avg_ret_5d": -3.64,
+      "win_rate_20d": 13,
+      "avg_ret_20d": -15.33
     },
     {
       "pattern": "减持/质押",
       "count": 17,
       "win_rate_5d": 35,
       "avg_ret_5d": -3.01,
-      "win_rate_20d": 7,
-      "avg_ret_20d": -24.74
+      "win_rate_20d": 33,
+      "avg_ret_20d": -14.99
     },
     {
       "pattern": "趋势过久",
       "count": 8,
       "win_rate_5d": 25,
-      "avg_ret_5d": -8.55,
+      "avg_ret_5d": -8.71,
       "win_rate_20d": 0,
-      "avg_ret_20d": -20.71
+      "avg_ret_20d": 0
     },
     {
       "pattern": "跌停/大跌",
       "count": 8,
       "win_rate_5d": 38,
       "avg_ret_5d": -5.9,
-      "win_rate_20d": 33,
-      "avg_ret_20d": -27.37
+      "win_rate_20d": 0,
+      "avg_ret_20d": 0
     },
     {
       "pattern": "利空事件",
@@ -308,7 +289,7 @@
       "win_rate_5d": 38,
       "avg_ret_5d": -1.21,
       "win_rate_20d": 0,
-      "avg_ret_20d": -15.49
+      "avg_ret_20d": -9.86
     }
   ]
 }

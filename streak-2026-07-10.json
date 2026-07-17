@@ -5,10 +5,50 @@
     {
       "ticker": "SZ003033",
       "name": "征和工业",
-      "streak": 3,
+      "streak": 5,
       "first_date": "2026-07-06",
       "last_date": "2026-07-10",
       "total_pct": 43.61
+    },
+    {
+      "ticker": "SZ002841",
+      "name": "视源股份",
+      "streak": 4,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-10",
+      "total_pct": 62.23
+    },
+    {
+      "ticker": "SZ000938",
+      "name": "紫光股份",
+      "streak": 4,
+      "first_date": "2026-07-06",
+      "last_date": "2026-07-10",
+      "total_pct": 52.72
+    },
+    {
+      "ticker": "SZ300043",
+      "name": "星辉娱乐",
+      "streak": 3,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-10",
+      "total_pct": 37.77
+    },
+    {
+      "ticker": "SZ002457",
+      "name": "青龙管业",
+      "streak": 3,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-10",
+      "total_pct": 33.9
+    },
+    {
+      "ticker": "SH688036",
+      "name": "传音控股",
+      "streak": 3,
+      "first_date": "2026-07-07",
+      "last_date": "2026-07-10",
+      "total_pct": 28.83
     }
   ]
 }
