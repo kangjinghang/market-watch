@@ -1,46 +1,14 @@
 {
-  "date": "2026-07-16",
+  "date": "2026-07-17",
   "lookback_days": 10,
   "anomalies": [
     {
-      "type": "sector_surge",
-      "label": "食品饮料",
-      "today": 13,
-      "avg": 2.3,
-      "deviation": 4.57,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "商贸零售",
-      "today": 9,
-      "avg": 1.8,
-      "deviation": 4.14,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "医药生物",
-      "today": 74,
-      "avg": 19.5,
-      "deviation": 2.79,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "传媒",
-      "today": 6,
-      "avg": 1.7,
-      "deviation": 2.6,
-      "severity": "high"
-    },
-    {
       "type": "density_shift",
       "label": "异动密度",
-      "today": 144,
-      "avg": 91,
-      "deviation": 0.59,
-      "severity": "medium"
+      "today": 14,
+      "avg": 112,
+      "deviation": -0.87,
+      "severity": "high"
     }
   ]
 }
