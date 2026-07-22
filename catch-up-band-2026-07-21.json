@@ -1,0 +1,702 @@
+{
+  "date": "2026-07-21",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ301012",
+      "name": "扬电科技",
+      "pct": 20.02,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300604",
+      "name": "长川科技",
+      "pct": 20,
+      "concepts": [
+        "半导体设备",
+        "半导体",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688147",
+      "name": "微导纳米",
+      "pct": 20,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688627",
+      "name": "精智达",
+      "pct": 20,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688059",
+      "name": "华锐精密",
+      "pct": 19.12,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688012",
+      "name": "中微公司",
+      "pct": 19.09,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ300757",
+      "name": "罗博特科",
+      "pct": 17.93,
+      "concepts": [
+        "半导体设备",
+        "半导体",
+        "CPO"
+      ]
+    },
+    {
+      "ticker": "SZ300054",
+      "name": "鼎龙股份",
+      "pct": 17.36,
+      "concepts": [
+        "半导体设备",
+        "半导体材料",
+        "存储芯片",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688019",
+      "name": "安集科技",
+      "pct": 16.66,
+      "concepts": [
+        "半导体材料",
+        "存储芯片",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ300308",
+      "name": "中际旭创",
+      "pct": 13.2,
+      "concepts": [
+        "光模块",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH600988",
+      "name": "赤峰黄金",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603306",
+      "name": "华懋科技",
+      "pct": 10,
+      "concepts": [
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH603516",
+      "name": "淳中科技",
+      "pct": 10,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH600884",
+      "name": "杉杉股份",
+      "pct": 9.98,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "半导体",
+      "leader_count": 85,
+      "active_days": 7,
+      "heat_score": 595,
+      "leaders": [
+        {
+          "ticker": "SZ300604",
+          "name": "长川科技",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688147",
+          "name": "微导纳米",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688627",
+          "name": "精智达",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688012",
+          "name": "中微公司",
+          "pct": 19.09,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ300757",
+          "name": "罗博特科",
+          "pct": 17.93,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "CPO"
+          ]
+        },
+        {
+          "ticker": "SZ300054",
+          "name": "鼎龙股份",
+          "pct": 17.36,
+          "concepts": [
+            "半导体设备",
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688019",
+          "name": "安集科技",
+          "pct": 16.66,
+          "concepts": [
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH603306",
+          "name": "华懋科技",
+          "pct": 10,
+          "concepts": [
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 57,
+      "active_days": 7,
+      "heat_score": 399,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 55,
+      "active_days": 7,
+      "heat_score": 385,
+      "leaders": []
+    },
+    {
+      "concept": "AI",
+      "leader_count": 34,
+      "active_days": 11,
+      "heat_score": 374,
+      "leaders": [
+        {
+          "ticker": "SZ300604",
+          "name": "长川科技",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300308",
+          "name": "中际旭创",
+          "pct": 13.2,
+          "concepts": [
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603516",
+          "name": "淳中科技",
+          "pct": 10,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 29,
+      "active_days": 8,
+      "heat_score": 232,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 55,
+      "active_days": 4,
+      "heat_score": 220,
+      "leaders": [
+        {
+          "ticker": "SZ300604",
+          "name": "长川科技",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688147",
+          "name": "微导纳米",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688627",
+          "name": "精智达",
+          "pct": 20,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688012",
+          "name": "中微公司",
+          "pct": 19.09,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ300757",
+          "name": "罗博特科",
+          "pct": 17.93,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "CPO"
+          ]
+        },
+        {
+          "ticker": "SZ300054",
+          "name": "鼎龙股份",
+          "pct": 17.36,
+          "concepts": [
+            "半导体设备",
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 13,
+      "active_days": 7,
+      "heat_score": 91,
+      "leaders": [
+        {
+          "ticker": "SZ301012",
+          "name": "扬电科技",
+          "pct": 20.02,
+          "concepts": [
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300308",
+          "name": "中际旭创",
+          "pct": 13.2,
+          "concepts": [
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603516",
+          "name": "淳中科技",
+          "pct": 10,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 13,
+      "active_days": 6,
+      "heat_score": 78,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 14,
+      "active_days": 4,
+      "heat_score": 56,
+      "leaders": [
+        {
+          "ticker": "SZ300054",
+          "name": "鼎龙股份",
+          "pct": 17.36,
+          "concepts": [
+            "半导体设备",
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688019",
+          "name": "安集科技",
+          "pct": 16.66,
+          "concepts": [
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "军工",
+      "leader_count": 9,
+      "active_days": 6,
+      "heat_score": 54,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 13,
+      "active_days": 4,
+      "heat_score": 52,
+      "leaders": []
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 8,
+      "active_days": 5,
+      "heat_score": 40,
+      "leaders": [
+        {
+          "ticker": "SZ300054",
+          "name": "鼎龙股份",
+          "pct": 17.36,
+          "concepts": [
+            "半导体设备",
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688019",
+          "name": "安集科技",
+          "pct": 16.66,
+          "concepts": [
+            "半导体材料",
+            "存储芯片",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 9,
+      "active_days": 4,
+      "heat_score": 36,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 7,
+      "active_days": 5,
+      "heat_score": 35,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": []
+    },
+    {
+      "concept": "商业航天",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "电子化学品",
+      "leader_count": 4,
+      "active_days": 4,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 4,
+      "active_days": 4,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "半导体硅片",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "ESG",
+      "leader_count": 6,
+      "active_days": 2,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "玻璃基板",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": [
+        {
+          "ticker": "SZ300757",
+          "name": "罗博特科",
+          "pct": 17.93,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "CPO"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "HBM",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "白酒",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "汽车整车",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "中药",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "计算机",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ300308",
+          "name": "中际旭创",
+          "pct": 13.2,
+          "concepts": [
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "金属新材料",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "氟化工",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "服装家纺",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "固态电池",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH688293",
+      "name": "奥浦迈",
+      "last_seen": "2026-07-21",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 63.67,
+      "trend_days": 40
+    }
+  ]
+}
