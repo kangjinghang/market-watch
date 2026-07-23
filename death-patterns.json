@@ -1,62 +1,14 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-21",
-  "total_deaths": 427,
+  "date_range": "2026-06-16 ~ 2026-07-22",
+  "total_deaths": 433,
   "patterns": {
     "闪崩": 1,
     "高位回落": 70,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 345
+    "自然退潮": 351
   },
   "recent_deaths": [
-    {
-      "ticker": "SH600378",
-      "name": "昊华科技",
-      "death_date": "2026-07-02",
-      "peak_pct": 176.79,
-      "last_pct": 176.79,
-      "last_days": 101,
-      "appearances": 6,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "昊华科技2026-05-13收盘价35.24元，涨幅5.83%",
-          "timestamp": 1778601600000,
-          "reason": "半导体材料行业整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-5d44d5d8-1d99-4b67-a2ab-034d51b36b30&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "昊华科技2026-05-26收盘价39.25元，涨幅10.01%",
-          "timestamp": 1779724800000,
-          "reason": "市场传闻昊华科技子公司中昊晨光成为英伟达M10新材料PTFE核心供应商",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-04a645df-380e-4462-b6b0-059a9f51c174&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "昊华科技2026-06-05收盘价46.60元，涨幅6.98%",
-          "timestamp": 1780588800000,
-          "reason": "AI服务器高频PCB材料PTFE需求爆发及六氟化钨供应短缺预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b33a3694-7665-4751-8ede-2738aee00fd5&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "昊华科技2026-06-08收盘价50.22元，涨幅7.77%",
-          "timestamp": 1780848000000,
-          "reason": "六氟化钨供需紧张导致产品价格上涨，叠加工业气体概念板块整体走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0856dcbb-c9fe-4dfd-b1ca-b062004dd390&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "XD昊华科2026-06-12收盘价57.15元，跌幅10.00%",
-          "timestamp": 1781193600000,
-          "reason": "电子特气板块整体调整叠加公司公告六氟化钨业务占比极低引发市场担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-182611fb-98b8-42cc-a525-3a0027dc3ef5&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "昊华科技2026-06-17收盘价63.80元，涨幅10.00%",
-          "timestamp": 1781625600000,
-          "reason": "电子特气板块集体走强及六氟化钨涨价预期驱动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-e0abe068-c296-44db-a595-3dae4ae09f25&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
     {
       "ticker": "SH603078",
       "name": "江化微",
@@ -208,42 +160,6 @@
       ]
     },
     {
-      "ticker": "SZ002167",
-      "name": "东方锆业",
-      "death_date": "2026-07-02",
-      "peak_pct": 104.31,
-      "last_pct": 104.31,
-      "last_days": 24,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "东方锆业2026-06-09收盘价13.90元，涨幅9.02%",
-          "timestamp": 1780934400000,
-          "reason": "半导体产业链集体走强带动小金属板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7c1b6122-d10f-494a-bb19-287b42afab41&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "东方锆业2026-06-18收盘价16.13元，涨幅10.03%",
-          "timestamp": 1781712000000,
-          "reason": "2026-06-18到2026-06-22股价连续上涨，日本东曹氧化锆粉体断供引发行业供给缺口，东方锆业作为国内全产业链龙头受益于国产替代加速",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c14845c9-9005-4c2a-9845-f34bf42fa2a5&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "东方锆业2026-06-23收盘价19.51元，涨幅9.98%",
-          "timestamp": 1782144000000,
-          "reason": "小金属板块集体走强叠加公司产品提价及日本东曹断供催化",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-e0abbdbc-a4f7-4232-a03c-ae7d3400bdf5&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "东方锆业2026-06-24收盘价21.46元，涨幅9.99%",
-          "timestamp": 1782230400000,
-          "reason": "日本东曹氧化锆粉体断供引发国产替代加速，叠加公司新能源电池级氯氧化锆项目开工",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4faf2e76-f87c-4c9a-91a5-04a04ea5cc07&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
       "ticker": "SH605178",
       "name": "时空科技",
       "death_date": "2026-07-03",
@@ -286,30 +202,65 @@
       ]
     },
     {
-      "ticker": "SH600641",
-      "name": "先导基电",
-      "death_date": "2026-07-02",
-      "peak_pct": 96.34,
-      "last_pct": 96.34,
-      "last_days": 24,
-      "appearances": 4,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "先导基电2026-06-09收盘价27.03元，涨幅10.01%",
-          "timestamp": 1780934400000,
-          "reason": "半导体板块整体走强及行业扩产预期驱动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-25b463e8-8861-4dcc-baea-d4a454c75bb4&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
       "ticker": "SH688362",
       "name": "甬矽电子",
       "death_date": "2026-07-07",
       "peak_pct": 95.02,
       "last_pct": 95.02,
       "last_days": 29,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ002768",
+      "name": "国恩股份",
+      "death_date": "2026-07-07",
+      "peak_pct": 90.1,
+      "last_pct": 90.1,
+      "last_days": 95,
+      "appearances": 5,
+      "pattern": "利空+下跌",
+      "events": [
+        {
+          "description": "国恩股份2026-05-28收盘价68.05元，涨幅6.46%",
+          "timestamp": 1779897600000,
+          "reason": "市场传闻国恩股份控股股东股份质押变动引发投资者关注",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-27166cdb-ef10-469e-94b9-b798dd58ddcc&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "国恩股份2026-05-29收盘价63.26元，跌幅7.04%",
+          "timestamp": 1779984000000,
+          "reason": "控股股东股份质押变动引发市场流动性担忧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-85b3a325-3689-4b13-bbdd-3dc8084a30f8&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ300534",
+      "name": "陇神戎发",
+      "death_date": "2026-07-21",
+      "peak_pct": 86.74,
+      "last_pct": 86.74,
+      "last_days": 12,
+      "appearances": 2,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "陇神戎发2026-07-13收盘价9.00元，涨幅20.00%",
+          "timestamp": 1783872000000,
+          "reason": "2026-07-13到2026-07-14股价连续上涨，受国务院原则同意《中医药振兴发展“十五五”规划》利好驱动，中药板块整体走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-443f965e-cdc4-472e-b987-17f0d8ccd502&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ000056",
+      "name": "*ST皇庭",
+      "death_date": "2026-07-06",
+      "peak_pct": 84.92,
+      "last_pct": 84.92,
+      "last_days": 45,
       "appearances": 3,
       "pattern": "自然退潮",
       "events": []

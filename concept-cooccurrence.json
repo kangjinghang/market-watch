@@ -1,8 +1,8 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-19",
-  "total_reasons": 2900,
+  "date_range": "2026-03-05 ~ 2026-07-21",
+  "total_reasons": 2938,
   "total_concepts": 71,
-  "total_pairs": 169,
+  "total_pairs": 170,
   "nodes": [
     {
       "id": "半导体",
@@ -11,7 +11,7 @@
     },
     {
       "id": "AI",
-      "count": 308,
+      "count": 315,
       "type": "technology"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 223,
+      "count": 227,
       "type": "sector"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "id": "算力",
-      "count": 88,
+      "count": 92,
       "type": "sector"
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "id": "存储芯片",
-      "count": 65,
+      "count": 66,
       "type": "sector"
     },
     {
@@ -135,18 +135,18 @@
       "type": "sector"
     },
     {
+      "id": "医疗器械",
+      "count": 27,
+      "type": "sector"
+    },
+    {
       "id": "HBM",
       "count": 27,
       "type": "technology"
     },
     {
-      "id": "医疗器械",
-      "count": 26,
-      "type": "sector"
-    },
-    {
       "id": "军工",
-      "count": 25,
+      "count": 26,
       "type": "sector"
     },
     {
@@ -166,7 +166,7 @@
     },
     {
       "id": "中药",
-      "count": 21,
+      "count": 22,
       "type": "sector"
     },
     {
@@ -225,17 +225,17 @@
       "type": "sector"
     },
     {
+      "id": "医疗服务",
+      "count": 14,
+      "type": "sector"
+    },
+    {
       "id": "IPO",
       "count": 13,
       "type": "technology"
     },
     {
       "id": "工业金属",
-      "count": 13,
-      "type": "sector"
-    },
-    {
-      "id": "医疗服务",
       "count": 13,
       "type": "sector"
     },
@@ -325,18 +325,23 @@
       "type": "sector"
     },
     {
+      "id": "煤炭",
+      "count": 4,
+      "type": "sector"
+    },
+    {
       "id": "量子计算",
       "count": 4,
       "type": "sector"
     },
     {
-      "id": "汽车整车",
+      "id": "计算机",
       "count": 3,
       "type": "sector"
     },
     {
-      "id": "计算机",
-      "count": 2,
+      "id": "汽车整车",
+      "count": 3,
       "type": "sector"
     },
     {
@@ -351,11 +356,6 @@
     },
     {
       "id": "钢铁",
-      "count": 2,
-      "type": "sector"
-    },
-    {
-      "id": "煤炭",
       "count": 2,
       "type": "sector"
     }
@@ -389,7 +389,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 63
+      "weight": 66
     },
     {
       "source": "AI",
@@ -933,6 +933,11 @@
     },
     {
       "source": "AI",
+      "target": "创新药",
+      "weight": 4
+    },
+    {
+      "source": "AI",
       "target": "量子计算",
       "weight": 4
     },
@@ -1027,13 +1032,13 @@
       "weight": 3
     },
     {
-      "source": "AI",
-      "target": "创新药",
+      "source": "机器人",
+      "target": "电子",
       "weight": 3
     },
     {
-      "source": "机器人",
-      "target": "电子",
+      "source": "创新药",
+      "target": "医疗服务",
       "weight": 3
     },
     {
@@ -1197,13 +1202,13 @@
       "weight": 2
     },
     {
-      "source": "创新药",
-      "target": "医疗服务",
+      "source": "算力",
+      "target": "量子计算",
       "weight": 2
     },
     {
-      "source": "算力",
-      "target": "量子计算",
+      "source": "AI",
+      "target": "医疗服务",
       "weight": 2
     }
   ]

@@ -2,10 +2,10 @@
   "date_range": "2026-06-17 ~ 2026-07-02",
   "total_excluded": 204,
   "total_with_return": 204,
-  "win_rate_5d": 39,
-  "avg_ret_5d": -3.11,
-  "win_rate_20d": 36,
-  "avg_ret_20d": -6.21,
+  "win_rate_5d": 40,
+  "avg_ret_5d": -2.66,
+  "win_rate_20d": 8,
+  "avg_ret_20d": -25.23,
   "top_gainers": [
     {
       "ticker": "SH603650",
@@ -15,9 +15,23 @@
       "range_kind": "continued",
       "range_days": 22,
       "range_pct": 37.94,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 34.49,
-      "ret_10d": 26.89
+      "ret_10d": 26.89,
+      "ret_20d": 13.42
+    },
+    {
+      "ticker": "SZ300873",
+      "name": "海晨股份",
+      "reason": "通过收购盟立自动化切入半导体AMHS领域，国产替代逻辑成立，但目前处于业务转型初期。",
+      "exclude_date": "2026-06-30",
+      "range_kind": "new",
+      "range_days": 21,
+      "range_pct": 52.67,
+      "last_update": "2026-07-22",
+      "ret_5d": 29.76,
+      "ret_10d": 24.32,
+      "ret_20d": -27.25
     },
     {
       "ticker": "SH600667",
@@ -27,9 +41,10 @@
       "range_kind": "continued",
       "range_days": 53,
       "range_pct": 135.35,
-      "last_update": "2026-07-06",
-      "ret_5d": 28.49,
-      "ret_10d": 28
+      "last_update": "2026-07-22",
+      "ret_5d": 28.57,
+      "ret_10d": 28.34,
+      "ret_20d": 0.98
     },
     {
       "ticker": "SH600707",
@@ -39,9 +54,10 @@
       "range_kind": "continued",
       "range_days": 84,
       "range_pct": 156.07,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 26.5,
-      "ret_10d": -3.15
+      "ret_10d": -3.15,
+      "ret_20d": -28.51
     },
     {
       "ticker": "SZ300223",
@@ -51,9 +67,10 @@
       "range_kind": "new",
       "range_days": 84,
       "range_pct": 86.2,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 24.77,
-      "ret_10d": 33.79
+      "ret_10d": 33.79,
+      "ret_20d": -1.97
     },
     {
       "ticker": "SH600707",
@@ -63,9 +80,10 @@
       "range_kind": "continued",
       "range_days": 83,
       "range_pct": 150.02,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 23.92,
-      "ret_10d": -0.81
+      "ret_10d": -0.81,
+      "ret_20d": -22.08
     },
     {
       "ticker": "SZ300223",
@@ -75,9 +93,10 @@
       "range_kind": "continued",
       "range_days": 85,
       "range_pct": 89.85,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 22.37,
-      "ret_10d": 27.91
+      "ret_10d": 27.91,
+      "ret_20d": 5
     },
     {
       "ticker": "SH603986",
@@ -87,9 +106,10 @@
       "range_kind": "new",
       "range_days": 83,
       "range_pct": 190.09,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 21.79,
-      "ret_10d": 0.74
+      "ret_10d": 0.74,
+      "ret_20d": -20.14
     },
     {
       "ticker": "SH600176",
@@ -99,9 +119,10 @@
       "range_kind": "new",
       "range_days": 83,
       "range_pct": 141.25,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 21.58,
-      "ret_10d": 16.17
+      "ret_10d": 16.17,
+      "ret_20d": -14.13
     },
     {
       "ticker": "SH603283",
@@ -111,48 +132,13 @@
       "range_kind": "new",
       "range_days": 91,
       "range_pct": 108.23,
-      "last_update": "2026-07-06",
+      "last_update": "2026-07-22",
       "ret_5d": 21.14,
-      "ret_10d": 12.09
-    },
-    {
-      "ticker": "SZ300671",
-      "name": "富满微",
-      "reason": "半年度扭亏为盈环比大增，但主要由LED驱动产品涨价30%传导成本压力驱动，长期成长逻辑偏弱。",
-      "exclude_date": "2026-06-30",
-      "range_kind": "new",
-      "range_days": 21,
-      "range_pct": 86.49,
-      "last_update": "2026-07-06",
-      "ret_5d": 18.76
+      "ret_10d": 12.09,
+      "ret_20d": -4.35
     }
   ],
   "top_losers": [
-    {
-      "ticker": "SZ301196",
-      "name": "唯科科技",
-      "reason": "涨幅偏小趋势未完全确立。",
-      "exclude_date": "2026-06-22",
-      "range_kind": "new",
-      "range_days": 21,
-      "range_pct": 76.61,
-      "last_update": "2026-07-06",
-      "ret_5d": -42.66,
-      "ret_10d": -45.28
-    },
-    {
-      "ticker": "SZ002768",
-      "name": "国恩股份",
-      "reason": "区间事件极少，且事件链主要由控股股东股份质押变动引发投资者关注及市场流动性担忧构成，驱动力弱。",
-      "exclude_date": "2026-06-17",
-      "range_kind": "continued",
-      "range_days": 75,
-      "range_pct": 73.75,
-      "last_update": "2026-07-06",
-      "ret_5d": -32.43,
-      "ret_10d": -34.38,
-      "ret_20d": -28.41
-    },
     {
       "ticker": "SZ000636",
       "name": "风华高科",
@@ -161,8 +147,10 @@
       "range_kind": "continued",
       "range_days": 83,
       "range_pct": 332.72,
-      "last_update": "2026-07-06",
-      "ret_5d": -27.12
+      "last_update": "2026-07-22",
+      "ret_5d": -27.15,
+      "ret_10d": -19.61,
+      "ret_20d": -47.76
     },
     {
       "ticker": "SH600367",
@@ -172,8 +160,23 @@
       "range_kind": "continued",
       "range_days": 77,
       "range_pct": 215.45,
-      "last_update": "2026-07-06",
-      "ret_5d": -25.27
+      "last_update": "2026-07-22",
+      "ret_5d": -25.27,
+      "ret_10d": -40.91,
+      "ret_20d": -50.99
+    },
+    {
+      "ticker": "SZ301196",
+      "name": "唯科科技",
+      "reason": "涨幅偏小趋势未完全确立。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "new",
+      "range_days": 21,
+      "range_pct": 76.61,
+      "last_update": "2026-07-22",
+      "ret_5d": -25.21,
+      "ret_10d": -28.63,
+      "ret_20d": -35.9
     },
     {
       "ticker": "SH600552",
@@ -183,8 +186,10 @@
       "range_kind": "continued",
       "range_days": 98,
       "range_pct": 171.86,
-      "last_update": "2026-07-06",
-      "ret_5d": -25.19
+      "last_update": "2026-07-22",
+      "ret_5d": -25.19,
+      "ret_10d": -25.89,
+      "ret_20d": -53.59
     },
     {
       "ticker": "SZ300706",
@@ -194,8 +199,10 @@
       "range_kind": "continued",
       "range_days": 21,
       "range_pct": 88.24,
-      "last_update": "2026-07-06",
-      "ret_5d": -24.43
+      "last_update": "2026-07-22",
+      "ret_5d": -24.43,
+      "ret_10d": -20.39,
+      "ret_20d": -51.97
     },
     {
       "ticker": "SH600397",
@@ -205,8 +212,10 @@
       "range_kind": "new",
       "range_days": 41,
       "range_pct": 134.53,
-      "last_update": "2026-07-06",
-      "ret_5d": -22.9
+      "last_update": "2026-07-22",
+      "ret_5d": -22.9,
+      "ret_10d": -41.57,
+      "ret_20d": -49.75
     },
     {
       "ticker": "SZ300398",
@@ -216,8 +225,10 @@
       "range_kind": "new",
       "range_days": 21,
       "range_pct": 61.66,
-      "last_update": "2026-07-06",
-      "ret_5d": -22.49
+      "last_update": "2026-07-22",
+      "ret_5d": -22.51,
+      "ret_10d": -22.54,
+      "ret_20d": -50.63
     },
     {
       "ticker": "SZ000920",
@@ -227,8 +238,10 @@
       "range_kind": "continued",
       "range_days": 39,
       "range_pct": 47.6,
-      "last_update": "2026-07-06",
-      "ret_5d": -22.23
+      "last_update": "2026-07-22",
+      "ret_5d": -22.23,
+      "ret_10d": -26.18,
+      "ret_20d": -19.75
     },
     {
       "ticker": "SH605376",
@@ -238,50 +251,65 @@
       "range_kind": "new",
       "range_days": 42,
       "range_pct": 136.99,
-      "last_update": "2026-07-06",
-      "ret_5d": -21.74
+      "last_update": "2026-07-22",
+      "ret_5d": -21.74,
+      "ret_10d": -25.96,
+      "ret_20d": -51.89
+    },
+    {
+      "ticker": "SZ002552",
+      "name": "宝鼎科技",
+      "reason": "涨幅高达401.5%，严重超过安全边际，且近期已澄清合作传闻并伴随连续大跌。",
+      "exclude_date": "2026-06-22",
+      "range_kind": "continued",
+      "range_days": 91,
+      "range_pct": 401.5,
+      "last_update": "2026-07-22",
+      "ret_5d": -21.6,
+      "ret_10d": -20.11,
+      "ret_20d": -29.17
     }
   ],
   "by_reason": [
     {
       "pattern": "其他",
       "count": 95,
-      "win_rate_5d": 39,
-      "avg_ret_5d": -2.2,
-      "win_rate_20d": 53,
-      "avg_ret_20d": 0.89
+      "win_rate_5d": 40,
+      "avg_ret_5d": -1.76,
+      "win_rate_20d": 12,
+      "avg_ret_20d": -23.87
     },
     {
       "pattern": "涨幅透支",
       "count": 68,
-      "win_rate_5d": 43,
-      "avg_ret_5d": -3.64,
-      "win_rate_20d": 13,
-      "avg_ret_20d": -15.33
+      "win_rate_5d": 41,
+      "avg_ret_5d": -3.41,
+      "win_rate_20d": 3,
+      "avg_ret_20d": -25.83
     },
     {
       "pattern": "减持/质押",
       "count": 17,
-      "win_rate_5d": 35,
-      "avg_ret_5d": -3.01,
-      "win_rate_20d": 33,
-      "avg_ret_20d": -14.99
+      "win_rate_5d": 41,
+      "avg_ret_5d": -1.03,
+      "win_rate_20d": 12,
+      "avg_ret_20d": -25.51
     },
     {
       "pattern": "趋势过久",
       "count": 8,
       "win_rate_5d": 25,
-      "avg_ret_5d": -8.71,
+      "avg_ret_5d": -8.55,
       "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "avg_ret_20d": -30.13
     },
     {
       "pattern": "跌停/大跌",
       "count": 8,
       "win_rate_5d": 38,
       "avg_ret_5d": -5.9,
-      "win_rate_20d": 0,
-      "avg_ret_20d": 0
+      "win_rate_20d": 13,
+      "avg_ret_20d": -36.54
     },
     {
       "pattern": "利空事件",
@@ -289,7 +317,7 @@
       "win_rate_5d": 38,
       "avg_ret_5d": -1.21,
       "win_rate_20d": 0,
-      "avg_ret_20d": -9.86
+      "avg_ret_20d": -19.47
     }
   ]
 }
