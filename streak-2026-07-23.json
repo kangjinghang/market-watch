@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-23",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ301165",
+      "name": "锐捷网络",
+      "streak": 3,
+      "first_date": "2026-07-21",
+      "last_date": "2026-07-23",
+      "total_pct": 99.69
+    },
+    {
+      "ticker": "SH600331",
+      "name": "宏达股份",
+      "streak": 3,
+      "first_date": "2026-07-21",
+      "last_date": "2026-07-23",
+      "total_pct": 29.15
+    },
+    {
+      "ticker": "SH600821",
+      "name": "金开新能",
+      "streak": 3,
+      "first_date": "2026-07-21",
+      "last_date": "2026-07-23",
+      "total_pct": 23.81
+    },
+    {
+      "ticker": "SZ301633",
+      "name": "港迪技术",
+      "streak": 3,
+      "first_date": "2026-07-17",
+      "last_date": "2026-07-23",
+      "total_pct": 22.77
+    }
+  ]
+}

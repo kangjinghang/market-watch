@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-22",
-  "total_deaths": 433,
+  "date_range": "2026-06-16 ~ 2026-07-23",
+  "total_deaths": 449,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 70,
+    "高位回落": 71,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 351
+    "自然退潮": 366
   },
   "recent_deaths": [
     {
@@ -54,42 +54,6 @@
           "timestamp": 1781193600000,
           "reason": "电子特气概念板块整体调整拖累个股表现",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-89b8f8dd-b23d-4628-93fc-caa4640d8df2&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300223",
-      "name": "北京君正",
-      "death_date": "2026-07-03",
-      "peak_pct": 149.13,
-      "last_pct": 149.13,
-      "last_days": 94,
-      "appearances": 10,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "北京君正2026-05-06收盘价136.69元，涨幅10.07%",
-          "timestamp": 1777996800000,
-          "reason": "半导体板块整体走强及GPU概念活跃带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1994caec-96fa-4297-875e-ee209baaf946&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "北京君正2026-06-01收盘价144.11元，跌幅8.48%",
-          "timestamp": 1780243200000,
-          "reason": "半导体板块整体走弱叠加市场对存储行业价格波动担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-69091b0e-92ab-4847-99f3-12966fb5637a&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "北京君正2026-06-15收盘价164.30元，涨幅12.84%",
-          "timestamp": 1781452800000,
-          "reason": "存储芯片行业整体走强及长鑫科技IPO提速带动板块估值提升",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d180add5-f1f1-4fcc-b69a-632785b48dee&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "北京君正2026-06-25收盘价237.36元，涨幅20.00%",
-          "timestamp": 1782316800000,
-          "reason": "存储芯片行业景气度持续提升，公司车规存储产品需求旺盛且价格上调",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7ad5f390-e43f-4b1d-8c16-5ce354a44c54&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -160,44 +124,26 @@
       ]
     },
     {
-      "ticker": "SH605178",
-      "name": "时空科技",
-      "death_date": "2026-07-03",
-      "peak_pct": 103.15,
-      "last_pct": 103.15,
-      "last_days": 31,
-      "appearances": 7,
+      "ticker": "SZ002396",
+      "name": "星网锐捷",
+      "death_date": "2026-07-22",
+      "peak_pct": 98.45,
+      "last_pct": 98.45,
+      "last_days": 23,
+      "appearances": 5,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "时空科技2026-06-25收盘价86.37元，涨幅9.84%",
-          "timestamp": 1782316800000,
-          "reason": "公司公告推进重大资产重组及股权激励事项，市场预期改善",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-81983287-600d-41c2-81e6-7f4ad7a71645&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300873",
-      "name": "海晨股份",
-      "death_date": "2026-07-03",
-      "peak_pct": 97.76,
-      "last_pct": 97.76,
-      "last_days": 24,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "海晨股份2026-06-18收盘价26.68元，涨幅7.49%",
-          "timestamp": 1781712000000,
-          "reason": "物流板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-41642195-e271-480c-b9dc-e78e990148e2&navBarTransparent=1&navBarTheme=dark"
+          "description": "星网锐捷2026-07-01收盘价21.09元，涨幅10.02%",
+          "timestamp": 1782835200000,
+          "reason": "工业互联网政策利好及公司回购议案通过推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c49cd83b-ac57-41b7-b8e0-d5a69d4b3523&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "海晨股份2026-06-29收盘价28.14元，涨幅7.24%",
-          "timestamp": 1782662400000,
-          "reason": "2026-06-29到2026-07-01股价连续上涨，物流行业板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d459192c-3071-49e3-b684-8ba1b76606ad&navBarTransparent=1&navBarTheme=dark"
+          "description": "星网锐捷2026-07-03收盘价23.40元，涨幅10.01%",
+          "timestamp": 1783008000000,
+          "reason": "2026-07-03到2026-07-06股价连续上涨，公司发布超预期半年度业绩预告，数据中心交换机业务大幅增长",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cfcc134a-ded1-4ff7-bffb-bd90d59feb8a&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -264,6 +210,60 @@
       "appearances": 3,
       "pattern": "自然退潮",
       "events": []
+    },
+    {
+      "ticker": "SH688068",
+      "name": "热景生物",
+      "death_date": "2026-07-06",
+      "peak_pct": 79.76,
+      "last_pct": 79.76,
+      "last_days": 10,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "热景生物2026-06-29收盘价84.89元，涨幅13.04%",
+          "timestamp": 1782662400000,
+          "reason": "医疗器械行业创新药概念受医保目录初审利好带动板块上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b4184ffa-bf3d-4c25-b233-44c577eb437a&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "热景生物2026-07-02收盘价110.17元，涨幅18.46%",
+          "timestamp": 1782921600000,
+          "reason": "创新药概念板块整体走强及公司股份回购进展公告提振市场信心",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-578aab51-0462-4400-a246-22c4c1b71232&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "热景生物2026-07-03收盘价122.97元，涨幅11.62%",
+          "timestamp": 1783008000000,
+          "reason": "2026-07-03到2026-07-06股价连续上涨，创新药行业政策利好及公司AI药物研发战略落地推动股价上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3388d8db-ab65-4ca7-8920-c883e218c318&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH688293",
+      "name": "奥浦迈",
+      "death_date": "2026-07-22",
+      "peak_pct": 73.04,
+      "last_pct": 73.04,
+      "last_days": 41,
+      "appearances": 2,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "奥浦迈2026-06-29收盘价41.60元，涨幅10.49%",
+          "timestamp": 1782662400000,
+          "reason": "创新药概念板块整体走强带动个股上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-58d8bbd1-2dd5-4220-98b4-5a72b295ff3f&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "XD奥浦迈2026-07-10收盘价48.39元，涨幅12.27%",
+          "timestamp": 1783612800000,
+          "reason": "受创新药BD交易活跃及AI医疗政策利好驱动，医疗服务板块情绪回暖，XD奥浦迈作为行业上游服务商获市场关注。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cf6fae08-5df8-4636-82f5-a5c50a3325e2&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
     }
   ],
   "peak_deaths": [
