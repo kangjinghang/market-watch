@@ -1,38 +1,14 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "lookback_days": 10,
   "anomalies": [
     {
-      "type": "sector_surge",
-      "label": "有色金属",
-      "today": 11,
-      "avg": 3,
-      "deviation": 2.67,
+      "type": "density_shift",
+      "label": "异动密度",
+      "today": 24,
+      "avg": 78,
+      "deviation": -0.69,
       "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "电力设备",
-      "today": 9,
-      "avg": 2.7,
-      "deviation": 2.38,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "基础化工",
-      "today": 11,
-      "avg": 5.1,
-      "deviation": 1.16,
-      "severity": "medium"
-    },
-    {
-      "type": "sector_surge",
-      "label": "公用事业",
-      "today": 6,
-      "avg": 2.9,
-      "deviation": 1.09,
-      "severity": "medium"
     }
   ]
 }

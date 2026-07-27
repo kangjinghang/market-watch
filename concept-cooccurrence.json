@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-22",
-  "total_reasons": 2967,
+  "date_range": "2026-03-05 ~ 2026-07-23",
+  "total_reasons": 2979,
   "total_concepts": 71,
   "total_pairs": 170,
   "nodes": [
@@ -11,12 +11,12 @@
     },
     {
       "id": "AI",
-      "count": 318,
+      "count": 320,
       "type": "technology"
     },
     {
       "id": "电子",
-      "count": 299,
+      "count": 300,
       "type": "sector"
     },
     {
@@ -51,7 +51,7 @@
     },
     {
       "id": "算力",
-      "count": 95,
+      "count": 97,
       "type": "sector"
     },
     {
@@ -66,12 +66,12 @@
     },
     {
       "id": "存储芯片",
-      "count": 67,
+      "count": 68,
       "type": "sector"
     },
     {
       "id": "电子特气",
-      "count": 67,
+      "count": 68,
       "type": "sector"
     },
     {
@@ -126,17 +126,17 @@
     },
     {
       "id": "通信",
-      "count": 30,
+      "count": 31,
+      "type": "sector"
+    },
+    {
+      "id": "军工",
+      "count": 29,
       "type": "sector"
     },
     {
       "id": "氟化工",
       "count": 28,
-      "type": "sector"
-    },
-    {
-      "id": "军工",
-      "count": 27,
       "type": "sector"
     },
     {
@@ -170,6 +170,11 @@
       "type": "sector"
     },
     {
+      "id": "CPO",
+      "count": 21,
+      "type": "technology"
+    },
+    {
       "id": "PTFE",
       "count": 20,
       "type": "technology"
@@ -183,11 +188,6 @@
       "id": "小金属",
       "count": 19,
       "type": "sector"
-    },
-    {
-      "id": "CPO",
-      "count": 19,
-      "type": "technology"
     },
     {
       "id": "消费电子",
@@ -225,6 +225,11 @@
       "type": "sector"
     },
     {
+      "id": "自动化设备",
+      "count": 14,
+      "type": "sector"
+    },
+    {
       "id": "工业金属",
       "count": 14,
       "type": "sector"
@@ -240,11 +245,6 @@
       "type": "technology"
     },
     {
-      "id": "自动化设备",
-      "count": 13,
-      "type": "sector"
-    },
-    {
       "id": "PFA",
       "count": 12,
       "type": "technology"
@@ -252,6 +252,11 @@
     {
       "id": "港股医药",
       "count": 12,
+      "type": "sector"
+    },
+    {
+      "id": "电网设备",
+      "count": 10,
       "type": "sector"
     },
     {
@@ -277,11 +282,6 @@
     {
       "id": "化学制药",
       "count": 9,
-      "type": "sector"
-    },
-    {
-      "id": "电网设备",
-      "count": 8,
       "type": "sector"
     },
     {
@@ -384,12 +384,12 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 69
+      "weight": 71
     },
     {
       "source": "电子",
       "target": "电子特气",
-      "weight": 67
+      "weight": 68
     },
     {
       "source": "AI",
@@ -573,6 +573,11 @@
     },
     {
       "source": "AI",
+      "target": "通信",
+      "weight": 10
+    },
+    {
+      "source": "AI",
       "target": "CAE",
       "weight": 10
     },
@@ -588,12 +593,17 @@
     },
     {
       "source": "AI",
-      "target": "通信",
+      "target": "元件",
       "weight": 9
     },
     {
       "source": "AI",
-      "target": "元件",
+      "target": "CPO",
+      "weight": 9
+    },
+    {
+      "source": "CPO",
+      "target": "算力",
       "weight": 9
     },
     {
@@ -634,16 +644,6 @@
     {
       "source": "半导体",
       "target": "半导体靶材",
-      "weight": 8
-    },
-    {
-      "source": "AI",
-      "target": "CPO",
-      "weight": 8
-    },
-    {
-      "source": "CPO",
-      "target": "算力",
       "weight": 8
     },
     {
@@ -763,7 +763,17 @@
     },
     {
       "source": "CPO",
+      "target": "通信",
+      "weight": 6
+    },
+    {
+      "source": "CPO",
       "target": "半导体",
+      "weight": 6
+    },
+    {
+      "source": "算力",
+      "target": "通信",
       "weight": 6
     },
     {
@@ -778,11 +788,6 @@
     },
     {
       "source": "电子化学品",
-      "target": "通信",
-      "weight": 5
-    },
-    {
-      "source": "CPO",
       "target": "通信",
       "weight": 5
     },
@@ -819,11 +824,6 @@
     {
       "source": "PCB",
       "target": "电子布",
-      "weight": 5
-    },
-    {
-      "source": "算力",
-      "target": "通信",
       "weight": 5
     },
     {

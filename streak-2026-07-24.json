@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-24",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ301165",
+      "name": "锐捷网络",
+      "streak": 4,
+      "first_date": "2026-07-21",
+      "last_date": "2026-07-24",
+      "total_pct": 107.87
+    },
+    {
+      "ticker": "SZ301633",
+      "name": "港迪技术",
+      "streak": 4,
+      "first_date": "2026-07-17",
+      "last_date": "2026-07-24",
+      "total_pct": 25.95
+    },
+    {
+      "ticker": "SH603383",
+      "name": "顶点软件",
+      "streak": 3,
+      "first_date": "2026-07-22",
+      "last_date": "2026-07-24",
+      "total_pct": 12.16
+    }
+  ]
+}

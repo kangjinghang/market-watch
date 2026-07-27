@@ -1249,7 +1249,7 @@
     {
       "week": "2026-W27",
       "date_range": "06-29 ~ 07-05",
-      "total_reasons": 555,
+      "total_reasons": 556,
       "top_concepts": [
         {
           "concept": "创新药",
@@ -1281,7 +1281,7 @@
         },
         {
           "concept": "AI",
-          "count": 18
+          "count": 19
         },
         {
           "concept": "中药",
@@ -1320,7 +1320,7 @@
         },
         {
           "concept": "通信",
-          "count": 4,
+          "count": 5,
           "prev_count": 1
         },
         {
@@ -1470,7 +1470,7 @@
     {
       "week": "2026-W29",
       "date_range": "07-13 ~ 07-19",
-      "total_reasons": 49,
+      "total_reasons": 50,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1505,11 +1505,11 @@
           "count": 2
         },
         {
-          "concept": "消费电子",
-          "count": 1
+          "concept": "存储芯片",
+          "count": 2
         },
         {
-          "concept": "电子",
+          "concept": "消费电子",
           "count": 1
         }
       ],
@@ -1546,22 +1546,30 @@
     {
       "week": "2026-W30",
       "date_range": "07-20 ~ 07-26",
-      "total_reasons": 38,
+      "total_reasons": 48,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 6
+          "count": 7
         },
         {
           "concept": "算力",
-          "count": 5
+          "count": 6
+        },
+        {
+          "concept": "军工",
+          "count": 4
         },
         {
           "concept": "煤炭",
           "count": 2
         },
         {
-          "concept": "军工",
+          "concept": "电网设备",
+          "count": 2
+        },
+        {
+          "concept": "自动化设备",
           "count": 2
         },
         {
@@ -1573,14 +1581,6 @@
           "count": 1
         },
         {
-          "concept": "电网设备",
-          "count": 1
-        },
-        {
-          "concept": "自动化设备",
-          "count": 1
-        },
-        {
           "concept": "光伏",
           "count": 1
         },
@@ -1589,7 +1589,13 @@
           "count": 1
         }
       ],
-      "emerging": [],
+      "emerging": [
+        {
+          "concept": "军工",
+          "count": 4,
+          "prev_count": 0
+        }
+      ],
       "fading": [
         {
           "concept": "量子计算",
@@ -1604,5 +1610,5 @@
       ]
     }
   ],
-  "generated_at": "2026-07-24T10:15:44.191Z"
+  "generated_at": "2026-07-27T11:21:10.181Z"
 }

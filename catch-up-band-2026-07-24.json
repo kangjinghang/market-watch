@@ -1,0 +1,439 @@
+{
+  "date": "2026-07-24",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300414",
+      "name": "中光防雷",
+      "pct": 20.02,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SZ000670",
+      "name": "盈方微",
+      "pct": 10.07,
+      "concepts": [
+        "先进封装",
+        "半导体",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SZ002189",
+      "name": "中光学",
+      "pct": 10.02,
+      "concepts": [
+        "先进封装",
+        "军工",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH603690",
+      "name": "至纯科技",
+      "pct": 10.02,
+      "concepts": [
+        "半导体设备",
+        "电子特气",
+        "半导体",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SZ000011",
+      "name": "深物业A",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002012",
+      "name": "凯恩股份",
+      "pct": 9.98,
+      "concepts": [
+        "锂电池"
+      ]
+    },
+    {
+      "ticker": "SZ002218",
+      "name": "拓日新能",
+      "pct": 9.95,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 33,
+      "active_days": 10,
+      "heat_score": 330,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 43,
+      "active_days": 5,
+      "heat_score": 215,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 21,
+      "active_days": 6,
+      "heat_score": 126,
+      "leaders": [
+        {
+          "ticker": "SZ000670",
+          "name": "盈方微",
+          "pct": 10.07,
+          "concepts": [
+            "先进封装",
+            "半导体",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SH603690",
+          "name": "至纯科技",
+          "pct": 10.02,
+          "concepts": [
+            "半导体设备",
+            "电子特气",
+            "半导体",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 18,
+      "active_days": 7,
+      "heat_score": 126,
+      "leaders": [
+        {
+          "ticker": "SZ000670",
+          "name": "盈方微",
+          "pct": 10.07,
+          "concepts": [
+            "先进封装",
+            "半导体",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ002189",
+          "name": "中光学",
+          "pct": 10.02,
+          "concepts": [
+            "先进封装",
+            "军工",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SH603690",
+          "name": "至纯科技",
+          "pct": 10.02,
+          "concepts": [
+            "半导体设备",
+            "电子特气",
+            "半导体",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 16,
+      "active_days": 7,
+      "heat_score": 112,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 11,
+      "active_days": 7,
+      "heat_score": 77,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 15,
+      "active_days": 5,
+      "heat_score": 75,
+      "leaders": [
+        {
+          "ticker": "SZ300414",
+          "name": "中光防雷",
+          "pct": 20.02,
+          "concepts": [
+            "电网设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 12,
+      "active_days": 5,
+      "heat_score": 60,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 8,
+      "active_days": 6,
+      "heat_score": 48,
+      "leaders": [
+        {
+          "ticker": "SZ002189",
+          "name": "中光学",
+          "pct": 10.02,
+          "concepts": [
+            "先进封装",
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 12,
+      "active_days": 3,
+      "heat_score": 36,
+      "leaders": []
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 4,
+      "active_days": 4,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 7,
+      "active_days": 2,
+      "heat_score": 14,
+      "leaders": [
+        {
+          "ticker": "SH603690",
+          "name": "至纯科技",
+          "pct": 10.02,
+          "concepts": [
+            "半导体设备",
+            "电子特气",
+            "半导体",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "ESG",
+      "leader_count": 6,
+      "active_days": 2,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SZ000670",
+          "name": "盈方微",
+          "pct": 10.07,
+          "concepts": [
+            "先进封装",
+            "半导体",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ002189",
+          "name": "中光学",
+          "pct": 10.02,
+          "concepts": [
+            "先进封装",
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "汽车整车",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "氟化工",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "服装家纺",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH603690",
+          "name": "至纯科技",
+          "pct": 10.02,
+          "concepts": [
+            "半导体设备",
+            "电子特气",
+            "半导体",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子化学品",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "白酒",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "商业航天",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH601606",
+      "name": "长城军工",
+      "last_seen": "2026-07-24",
+      "shared_concepts": [
+        "军工"
+      ],
+      "trend_pct": 27.13,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ002298",
+      "name": "中电鑫龙",
+      "last_seen": "2026-07-24",
+      "shared_concepts": [
+        "电网设备"
+      ],
+      "trend_pct": 21.8,
+      "trend_days": 11
+    },
+    {
+      "ticker": "SZ002265",
+      "name": "建设工业",
+      "last_seen": "2026-07-24",
+      "shared_concepts": [
+        "军工"
+      ],
+      "trend_pct": 20.8,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ300847",
+      "name": "中船汉光",
+      "last_seen": "2026-07-24",
+      "shared_concepts": [
+        "电子",
+        "电子特气"
+      ],
+      "trend_pct": 10.91,
+      "trend_days": 11
+    }
+  ]
+}
