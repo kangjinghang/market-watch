@@ -1,14 +1,38 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-24",
-  "total_deaths": 476,
+  "date_range": "2026-06-16 ~ 2026-07-27",
+  "total_deaths": 475,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 71,
+    "高位回落": 70,
     "利空事件": 2,
     "利空+下跌": 9,
     "自然退潮": 393
   },
   "recent_deaths": [
+    {
+      "ticker": "SZ301165",
+      "name": "锐捷网络",
+      "death_date": "2026-07-23",
+      "peak_pct": 99.69,
+      "last_pct": 99.69,
+      "last_days": 27,
+      "appearances": 5,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "锐捷网络2026-06-30收盘价80.45元，涨幅20.00%",
+          "timestamp": 1782748800000,
+          "reason": "AI算力交换机需求爆发及CPO技术商用预期推动通信设备板块走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4075b410-6195-40e5-8438-eb5d13560a4a&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "锐捷网络2026-07-22收盘价126.00元，涨幅13.66%",
+          "timestamp": 1784649600000,
+          "reason": "AI算力超节点概念成为市场主线，锐捷网络作为高速交换机核心供应商，业绩预期及技术卡位获市场追捧。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f1661835-fae0-4cad-8152-c38faca9b886&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
     {
       "ticker": "SZ002396",
       "name": "星网锐捷",
@@ -210,87 +234,9 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c72cd080-66cc-4d05-afd0-ef1cf502599f&navBarTransparent=1&navBarTheme=dark"
         }
       ]
-    },
-    {
-      "ticker": "SH603713",
-      "name": "密尔克卫",
-      "death_date": "2026-07-07",
-      "peak_pct": 60.71,
-      "last_pct": 60.71,
-      "last_days": 29,
-      "appearances": 4,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "密尔克卫2026-06-08收盘价49.48元，跌幅5.77%",
-          "timestamp": 1780848000000,
-          "reason": "全球股市遭遇'黑色星期五'，半导体板块重挫拖累科技及物流相关板块",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-5fb34127-fe34-471c-bce9-c7e50fd0c8b7&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "密尔克卫2026-06-09收盘价53.18元，涨幅7.48%",
-          "timestamp": 1780934400000,
-          "reason": "公司发布2026年股票期权激励计划提振市场信心",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7d186404-65f7-49da-9f13-ef40d1c1c74d&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "密尔克卫2026-06-24收盘价68.77元，涨幅10.00%",
-          "timestamp": 1782230400000,
-          "reason": "航运板块异动拉升带动物流行业整体走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a8c82836-6767-4b90-8184-9fb34ec67a4c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "密尔克卫2026-06-25收盘价75.65元，涨幅10.00%",
-          "timestamp": 1782316800000,
-          "reason": "物流板块受市场情绪带动及行业利好预期影响",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7f994417-69f8-4a1d-a3a7-41231dd6b4f4&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "密尔克卫2026-07-01收盘价76.65元，涨幅7.70%",
-          "timestamp": 1782835200000,
-          "reason": "市场预期公司切入氢氧化锂交割库业务将带来新增量",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-fd2e1197-19b9-4bb8-8658-763e6ad310bd&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
     }
   ],
   "peak_deaths": [
-    {
-      "ticker": "SH688146",
-      "name": "中船特气",
-      "death_date": "2026-06-22",
-      "peak_pct": 855.74,
-      "last_pct": 855.74,
-      "last_days": 88,
-      "appearances": 2,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "中船特气2026-04-03收盘价51.22元，涨幅20.01%",
-          "timestamp": 1775145600000,
-          "reason": "日本六氟化钨供应中断传闻引发市场对国产替代的预期，电子气体板块集体走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-06ff3d48-feb8-4dd4-b030-22b88211e680&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中船特气2026-05-13收盘价117.60元，涨幅20.00%",
-          "timestamp": 1778601600000,
-          "reason": "2026-05-13到2026-05-14股价连续上涨，半导体材料板块走强及六氟化钨产品供需紧张预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7f2c32d2-e2e5-427f-9744-9c482e50b64c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中船特气2026-06-04收盘价219.19元，涨幅20.00%",
-          "timestamp": 1780502400000,
-          "reason": "六氟化钨出口价格大幅上涨及行业供需紧张推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a9ef90a4-05e5-4497-8d2f-ab1a7b2b393d&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中船特气2026-06-12收盘价302.00元，跌幅13.66%",
-          "timestamp": 1781193600000,
-          "reason": "电子特气板块整体调整叠加公司澄清未公开六氟化钨价格信息引发获利回吐",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cbf303cf-f7c4-4546-8eb2-0dc511ef845d&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
     {
       "ticker": "SZ301319",
       "name": "唯特偶",
@@ -668,6 +614,17 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3e6d007-6e30-4d98-adff-15f6771982f2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
+    },
+    {
+      "ticker": "SH688143",
+      "name": "长盈通",
+      "death_date": "2026-06-25",
+      "peak_pct": 249.41,
+      "last_pct": 34.47,
+      "last_days": 13,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
     }
   ]
 }

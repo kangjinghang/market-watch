@@ -1,14 +1,22 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-27",
   "lookback_days": 10,
   "anomalies": [
     {
+      "type": "sector_surge",
+      "label": "国防军工",
+      "today": 8,
+      "avg": 2.3,
+      "deviation": 2.5,
+      "severity": "high"
+    },
+    {
       "type": "density_shift",
       "label": "异动密度",
-      "today": 24,
+      "today": 48,
       "avg": 78,
-      "deviation": -0.69,
-      "severity": "high"
+      "deviation": -0.38,
+      "severity": "medium"
     }
   ]
 }
