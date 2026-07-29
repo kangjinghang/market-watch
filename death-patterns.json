@@ -1,14 +1,25 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-27",
-  "total_deaths": 475,
+  "date_range": "2026-06-16 ~ 2026-07-28",
+  "total_deaths": 479,
   "patterns": {
     "闪崩": 1,
     "高位回落": 70,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 393
+    "自然退潮": 397
   },
   "recent_deaths": [
+    {
+      "ticker": "SH688146",
+      "name": "中船特气",
+      "death_date": "2026-07-27",
+      "peak_pct": 855.74,
+      "last_pct": 41.9,
+      "last_days": 7,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
     {
       "ticker": "SZ301165",
       "name": "锐捷网络",
@@ -54,59 +65,6 @@
           "timestamp": 1783008000000,
           "reason": "2026-07-03到2026-07-06股价连续上涨，公司发布超预期半年度业绩预告，数据中心交换机业务大幅增长",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cfcc134a-ded1-4ff7-bffb-bd90d59feb8a&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH688362",
-      "name": "甬矽电子",
-      "death_date": "2026-07-07",
-      "peak_pct": 95.02,
-      "last_pct": 95.02,
-      "last_days": 29,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ002768",
-      "name": "国恩股份",
-      "death_date": "2026-07-07",
-      "peak_pct": 90.1,
-      "last_pct": 90.1,
-      "last_days": 95,
-      "appearances": 5,
-      "pattern": "利空+下跌",
-      "events": [
-        {
-          "description": "国恩股份2026-05-28收盘价68.05元，涨幅6.46%",
-          "timestamp": 1779897600000,
-          "reason": "市场传闻国恩股份控股股东股份质押变动引发投资者关注",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-27166cdb-ef10-469e-94b9-b798dd58ddcc&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "国恩股份2026-05-29收盘价63.26元，跌幅7.04%",
-          "timestamp": 1779984000000,
-          "reason": "控股股东股份质押变动引发市场流动性担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-85b3a325-3689-4b13-bbdd-3dc8084a30f8&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300534",
-      "name": "陇神戎发",
-      "death_date": "2026-07-21",
-      "peak_pct": 86.74,
-      "last_pct": 86.74,
-      "last_days": 12,
-      "appearances": 2,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "陇神戎发2026-07-13收盘价9.00元，涨幅20.00%",
-          "timestamp": 1783872000000,
-          "reason": "2026-07-13到2026-07-14股价连续上涨，受国务院原则同意《中医药振兴发展“十五五”规划》利好驱动，中药板块整体走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-443f965e-cdc4-472e-b987-17f0d8ccd502&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -176,67 +134,76 @@
       "events": []
     },
     {
-      "ticker": "SH600793",
-      "name": "宜宾纸业",
-      "death_date": "2026-07-07",
-      "peak_pct": 64.85,
-      "last_pct": 64.85,
-      "last_days": 11,
-      "appearances": 4,
+      "ticker": "SH603629",
+      "name": "利通电子",
+      "death_date": "2026-07-23",
+      "peak_pct": 57.21,
+      "last_pct": 32.92,
+      "last_days": 6,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH600744",
+      "name": "华银电力",
+      "death_date": "2026-07-22",
+      "peak_pct": 48.69,
+      "last_pct": 48.69,
+      "last_days": 9,
+      "appearances": 2,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "宜宾纸业2026-07-01收盘价13.23元，涨幅9.98%",
-          "timestamp": 1782835200000,
-          "reason": "行业板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1c3e1dc0-4033-4155-a63f-c173867df8dc&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "宜宾纸业2026-07-02收盘价14.55元，涨幅9.98%",
-          "timestamp": 1782921600000,
-          "reason": "公司发布可回收利用物资出售公告引发市场关注",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2bed2ce6-2396-4f16-8b66-e14c79bc2403&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "宜宾纸业2026-07-03收盘价16.01元，涨幅10.03%",
-          "timestamp": 1783008000000,
-          "reason": "2026-07-03到2026-07-06股价连续上涨，行业板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7f7b9a70-6b23-4bf4-b658-d07b62c5aed4&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "宜宾纸业2026-07-07收盘价19.37元，涨幅9.99%",
-          "timestamp": 1783353600000,
-          "reason": "市场传闻控股子公司四川普什醋酸纤维素有限责任公司与TAC膜相关客户业务合作进展",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4c2cee45-3837-47f6-a305-abd07f7ce63f&navBarTransparent=1&navBarTheme=dark"
+          "description": "华银电力2026-07-17收盘价5.96元，涨幅9.96%",
+          "timestamp": 1784217600000,
+          "reason": "受全国多地用电负荷创历史新高及电力保供政策驱动，电力板块集体走强。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4e0bc6d7-4657-438c-b2a4-f67c2f80fdb8&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
     {
-      "ticker": "SH688605",
-      "name": "先锋精科",
-      "death_date": "2026-07-07",
-      "peak_pct": 61.68,
-      "last_pct": 61.68,
-      "last_days": 29,
-      "appearances": 3,
+      "ticker": "SZ300688",
+      "name": "创业黑马",
+      "death_date": "2026-07-27",
+      "peak_pct": 46.46,
+      "last_pct": 46.46,
+      "last_days": 7,
+      "appearances": 2,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ000815",
+      "name": "美利云",
+      "death_date": "2026-07-23",
+      "peak_pct": 46.37,
+      "last_pct": 46.37,
+      "last_days": 6,
+      "appearances": 2,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "先锋精科2026-06-09收盘价77.84元，涨幅11.33%",
-          "timestamp": 1780934400000,
-          "reason": "半导体板块整体走强，行业扩产预期及材料涨价传导推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-e2bebe3a-0520-438d-9a01-158395070816&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "先锋精科2026-07-07收盘价113.05元，涨幅15.22%",
-          "timestamp": 1783353600000,
-          "reason": "半导体行业供需格局结构性重塑及电子纱/布价格持续上行预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c72cd080-66cc-4d05-afd0-ef1cf502599f&navBarTransparent=1&navBarTheme=dark"
+          "description": "美利云2026-07-20收盘价13.33元，涨幅9.98%",
+          "timestamp": 1784476800000,
+          "reason": "AI服务器概念板块集体走强，市场对公司作为AI算力相关公司的关注度提升。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6e932c80-3eab-4eea-bae2-7c9d0be3dfc8&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
   ],
   "peak_deaths": [
+    {
+      "ticker": "SH688146",
+      "name": "中船特气",
+      "death_date": "2026-07-27",
+      "peak_pct": 855.74,
+      "last_pct": 41.9,
+      "last_days": 7,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
     {
       "ticker": "SZ301319",
       "name": "唯特偶",
@@ -614,17 +581,6 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3e6d007-6e30-4d98-adff-15f6771982f2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
-    },
-    {
-      "ticker": "SH688143",
-      "name": "长盈通",
-      "death_date": "2026-06-25",
-      "peak_pct": 249.41,
-      "last_pct": 34.47,
-      "last_days": 13,
-      "appearances": 4,
-      "pattern": "自然退潮",
-      "events": []
     }
   ]
 }

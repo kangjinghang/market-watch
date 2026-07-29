@@ -1,0 +1,295 @@
+{
+  "date": "2026-07-28",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300637",
+      "name": "扬帆新材",
+      "pct": 13.7,
+      "concepts": [
+        "半导体材料",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH600303",
+      "name": "曙光股份",
+      "pct": 10.16,
+      "concepts": [
+        "汽车整车"
+      ]
+    },
+    {
+      "ticker": "SZ000859",
+      "name": "国风新材",
+      "pct": 10.04,
+      "concepts": [
+        "MLCC",
+        "PSPI"
+      ]
+    },
+    {
+      "ticker": "SH603232",
+      "name": "格尔软件",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000948",
+      "name": "南天信息",
+      "pct": 10.01,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ002338",
+      "name": "奥普光电",
+      "pct": 10,
+      "concepts": [
+        "军工",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH600775",
+      "name": "南京熊猫",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600895",
+      "name": "张江高科",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002869",
+      "name": "金溢科技",
+      "pct": 9.97,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 33,
+      "active_days": 11,
+      "heat_score": 363,
+      "leaders": [
+        {
+          "ticker": "SZ000948",
+          "name": "南天信息",
+          "pct": 10.01,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 41,
+      "active_days": 4,
+      "heat_score": 164,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 14,
+      "active_days": 8,
+      "heat_score": 112,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 14,
+      "active_days": 7,
+      "heat_score": 98,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 18,
+      "active_days": 5,
+      "heat_score": 90,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 17,
+      "active_days": 5,
+      "heat_score": 85,
+      "leaders": [
+        {
+          "ticker": "SZ300637",
+          "name": "扬帆新材",
+          "pct": 13.7,
+          "concepts": [
+            "半导体材料",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 11,
+      "active_days": 6,
+      "heat_score": 66,
+      "leaders": [
+        {
+          "ticker": "SZ002338",
+          "name": "奥普光电",
+          "pct": 10,
+          "concepts": [
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 11,
+      "active_days": 4,
+      "heat_score": 44,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 7,
+      "active_days": 5,
+      "heat_score": 35,
+      "leaders": [
+        {
+          "ticker": "SZ002338",
+          "name": "奥普光电",
+          "pct": 10,
+          "concepts": [
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 10,
+      "active_days": 2,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "汽车整车",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SH600303",
+          "name": "曙光股份",
+          "pct": 10.16,
+          "concepts": [
+            "汽车整车"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "ESG",
+      "leader_count": 6,
+      "active_days": 2,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 6,
+      "active_days": 1,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ300637",
+          "name": "扬帆新材",
+          "pct": 13.7,
+          "concepts": [
+            "半导体材料",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "证券",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "商业航天",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}

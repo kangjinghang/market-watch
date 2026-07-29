@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-26",
-  "total_reasons": 2987,
+  "date_range": "2026-03-05 ~ 2026-07-27",
+  "total_reasons": 3013,
   "total_concepts": 71,
   "total_pairs": 171,
   "nodes": [
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 230,
+      "count": 235,
       "type": "sector"
     },
     {
@@ -40,18 +40,18 @@
       "type": "sector"
     },
     {
+      "id": "MLCC",
+      "count": 99,
+      "type": "technology"
+    },
+    {
       "id": "机器人",
       "count": 98,
       "type": "sector"
     },
     {
-      "id": "MLCC",
-      "count": 98,
-      "type": "technology"
-    },
-    {
       "id": "算力",
-      "count": 96,
+      "count": 97,
       "type": "sector"
     },
     {
@@ -150,6 +150,11 @@
       "type": "technology"
     },
     {
+      "id": "中药",
+      "count": 25,
+      "type": "sector"
+    },
+    {
       "id": "汽车零部件",
       "count": 24,
       "type": "sector"
@@ -165,12 +170,12 @@
       "type": "sector"
     },
     {
-      "id": "中药",
-      "count": 22,
-      "type": "sector"
+      "id": "PTFE",
+      "count": 20,
+      "type": "technology"
     },
     {
-      "id": "PTFE",
+      "id": "CPO",
       "count": 20,
       "type": "technology"
     },
@@ -183,11 +188,6 @@
       "id": "小金属",
       "count": 19,
       "type": "sector"
-    },
-    {
-      "id": "CPO",
-      "count": 19,
-      "type": "technology"
     },
     {
       "id": "消费电子",
@@ -210,14 +210,14 @@
       "type": "sector"
     },
     {
+      "id": "新能源",
+      "count": 17,
+      "type": "sector"
+    },
+    {
       "id": "TGV",
       "count": 16,
       "type": "technology"
-    },
-    {
-      "id": "新能源",
-      "count": 16,
-      "type": "sector"
     },
     {
       "id": "服装家纺",
@@ -250,14 +250,24 @@
       "type": "technology"
     },
     {
+      "id": "电网设备",
+      "count": 12,
+      "type": "sector"
+    },
+    {
       "id": "港股医药",
       "count": 12,
       "type": "sector"
     },
     {
-      "id": "电网设备",
+      "id": "化学制药",
       "count": 11,
       "type": "sector"
+    },
+    {
+      "id": "PSPI",
+      "count": 11,
+      "type": "technology"
     },
     {
       "id": "CAE",
@@ -270,19 +280,9 @@
       "type": "sector"
     },
     {
-      "id": "化学制药",
-      "count": 10,
-      "type": "sector"
-    },
-    {
       "id": "大金融",
       "count": 10,
       "type": "sector"
-    },
-    {
-      "id": "PSPI",
-      "count": 10,
-      "type": "technology"
     },
     {
       "id": "半导体靶材",
@@ -310,6 +310,11 @@
       "type": "sector"
     },
     {
+      "id": "锂电池",
+      "count": 6,
+      "type": "sector"
+    },
+    {
       "id": "商业航天",
       "count": 6,
       "type": "sector"
@@ -317,11 +322,6 @@
     {
       "id": "煤炭",
       "count": 6,
-      "type": "sector"
-    },
-    {
-      "id": "锂电池",
-      "count": 5,
       "type": "sector"
     },
     {
@@ -552,6 +552,11 @@
       "weight": 12
     },
     {
+      "source": "中药",
+      "target": "创新药",
+      "weight": 12
+    },
+    {
       "source": "PFA",
       "target": "氟化工",
       "weight": 11
@@ -559,11 +564,6 @@
     {
       "source": "HBM",
       "target": "半导体设备",
-      "weight": 11
-    },
-    {
-      "source": "中药",
-      "target": "创新药",
       "weight": 11
     },
     {
@@ -932,6 +932,11 @@
       "weight": 4
     },
     {
+      "source": "创新药",
+      "target": "化学制药",
+      "weight": 4
+    },
+    {
       "source": "AI",
       "target": "创新药",
       "weight": 4
@@ -1029,11 +1034,6 @@
     {
       "source": "半导体硅片",
       "target": "半导体设备",
-      "weight": 3
-    },
-    {
-      "source": "创新药",
-      "target": "化学制药",
       "weight": 3
     },
     {
