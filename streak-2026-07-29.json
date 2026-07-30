@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-29",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ000533",
+      "name": "顺钠股份",
+      "streak": 3,
+      "first_date": "2026-07-27",
+      "last_date": "2026-07-29",
+      "total_pct": 54.92
+    },
+    {
+      "ticker": "SH603129",
+      "name": "春风动力",
+      "streak": 3,
+      "first_date": "2026-07-27",
+      "last_date": "2026-07-29",
+      "total_pct": 37.09
+    },
+    {
+      "ticker": "SZ002003",
+      "name": "伟星股份",
+      "streak": 3,
+      "first_date": "2026-07-27",
+      "last_date": "2026-07-29",
+      "total_pct": 30.01
+    }
+  ]
+}

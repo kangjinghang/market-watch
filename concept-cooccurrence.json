@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-27",
-  "total_reasons": 3013,
+  "date_range": "2026-03-05 ~ 2026-07-28",
+  "total_reasons": 3053,
   "total_concepts": 71,
   "total_pairs": 171,
   "nodes": [
@@ -11,12 +11,12 @@
     },
     {
       "id": "AI",
-      "count": 319,
+      "count": 324,
       "type": "technology"
     },
     {
       "id": "电子",
-      "count": 302,
+      "count": 303,
       "type": "sector"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "id": "PCB",
-      "count": 192,
+      "count": 193,
       "type": "technology"
     },
     {
@@ -41,17 +41,17 @@
     },
     {
       "id": "MLCC",
-      "count": 99,
+      "count": 100,
       "type": "technology"
     },
     {
       "id": "机器人",
-      "count": 98,
+      "count": 99,
       "type": "sector"
     },
     {
       "id": "算力",
-      "count": 97,
+      "count": 99,
       "type": "sector"
     },
     {
@@ -90,12 +90,12 @@
       "type": "sector"
     },
     {
-      "id": "光模块",
-      "count": 43,
+      "id": "专用设备",
+      "count": 44,
       "type": "sector"
     },
     {
-      "id": "专用设备",
+      "id": "光模块",
       "count": 43,
       "type": "sector"
     },
@@ -120,17 +120,17 @@
       "type": "sector"
     },
     {
+      "id": "军工",
+      "count": 32,
+      "type": "sector"
+    },
+    {
       "id": "人形机器人",
       "count": 31,
       "type": "sector"
     },
     {
       "id": "通信",
-      "count": 30,
-      "type": "sector"
-    },
-    {
-      "id": "军工",
       "count": 30,
       "type": "sector"
     },
@@ -151,12 +151,12 @@
     },
     {
       "id": "中药",
-      "count": 25,
+      "count": 27,
       "type": "sector"
     },
     {
       "id": "汽车零部件",
-      "count": 24,
+      "count": 25,
       "type": "sector"
     },
     {
@@ -170,17 +170,22 @@
       "type": "sector"
     },
     {
+      "id": "CPO",
+      "count": 22,
+      "type": "technology"
+    },
+    {
       "id": "PTFE",
       "count": 20,
       "type": "technology"
     },
     {
-      "id": "CPO",
-      "count": 20,
-      "type": "technology"
+      "id": "半导体硅片",
+      "count": 19,
+      "type": "sector"
     },
     {
-      "id": "半导体硅片",
+      "id": "新能源",
       "count": 19,
       "type": "sector"
     },
@@ -206,11 +211,6 @@
     },
     {
       "id": "功率半导体",
-      "count": 17,
-      "type": "sector"
-    },
-    {
-      "id": "新能源",
       "count": 17,
       "type": "sector"
     },
@@ -245,14 +245,14 @@
       "type": "sector"
     },
     {
+      "id": "电网设备",
+      "count": 13,
+      "type": "sector"
+    },
+    {
       "id": "PFA",
       "count": 12,
       "type": "technology"
-    },
-    {
-      "id": "电网设备",
-      "count": 12,
-      "type": "sector"
     },
     {
       "id": "港股医药",
@@ -384,7 +384,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 70
+      "weight": 72
     },
     {
       "source": "电子",
@@ -394,7 +394,7 @@
     {
       "source": "AI",
       "target": "PCB",
-      "weight": 41
+      "weight": 42
     },
     {
       "source": "光学光电子",
@@ -512,6 +512,11 @@
       "weight": 14
     },
     {
+      "source": "PCB",
+      "target": "算力",
+      "weight": 14
+    },
+    {
       "source": "半导体",
       "target": "氟化工",
       "weight": 14
@@ -522,8 +527,8 @@
       "weight": 14
     },
     {
-      "source": "PCB",
-      "target": "算力",
+      "source": "AI",
+      "target": "MLCC",
       "weight": 13
     },
     {
@@ -544,11 +549,6 @@
     {
       "source": "PFA",
       "target": "半导体",
-      "weight": 12
-    },
-    {
-      "source": "AI",
-      "target": "MLCC",
       "weight": 12
     },
     {
@@ -597,6 +597,16 @@
       "weight": 9
     },
     {
+      "source": "AI",
+      "target": "CPO",
+      "weight": 9
+    },
+    {
+      "source": "CPO",
+      "target": "算力",
+      "weight": 9
+    },
+    {
       "source": "存储芯片",
       "target": "电子",
       "weight": 8
@@ -634,16 +644,6 @@
     {
       "source": "半导体",
       "target": "半导体靶材",
-      "weight": 8
-    },
-    {
-      "source": "AI",
-      "target": "CPO",
-      "weight": 8
-    },
-    {
-      "source": "CPO",
-      "target": "算力",
       "weight": 8
     },
     {

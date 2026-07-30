@@ -4,155 +4,162 @@
       "date": "2026-06-16",
       "candidates": 183,
       "daily_candidates": 79,
-      "universe": 5202,
-      "ratio": 0.03517877739331027
+      "universe": 5203,
+      "ratio": 0.035172016144532
     },
     {
       "date": "2026-06-17",
       "candidates": 178,
       "daily_candidates": 73,
-      "universe": 5202,
-      "ratio": 0.03421760861207228
+      "universe": 5203,
+      "ratio": 0.03421103209686719
     },
     {
       "date": "2026-06-18",
       "candidates": 184,
       "daily_candidates": 85,
-      "universe": 5202,
-      "ratio": 0.03537101114955786
+      "universe": 5203,
+      "ratio": 0.035364212954064965
     },
     {
       "date": "2026-06-22",
       "candidates": 194,
       "daily_candidates": 184,
-      "universe": 5202,
-      "ratio": 0.03729334871203383
+      "universe": 5203,
+      "ratio": 0.03728618104939458
     },
     {
       "date": "2026-06-23",
       "candidates": 106,
       "daily_candidates": 110,
-      "universe": 5202,
-      "ratio": 0.020376778162245292
+      "universe": 5203,
+      "ratio": 0.020372861810493945
     },
     {
       "date": "2026-06-24",
       "candidates": 125,
       "daily_candidates": 91,
-      "universe": 5202,
-      "ratio": 0.024029219530949636
+      "universe": 5203,
+      "ratio": 0.02402460119162022
     },
     {
       "date": "2026-06-25",
       "candidates": 135,
       "daily_candidates": 76,
-      "universe": 5202,
-      "ratio": 0.025951557093425604
+      "universe": 5203,
+      "ratio": 0.025946569286949838
     },
     {
       "date": "2026-06-26",
       "candidates": 67,
       "daily_candidates": 43,
-      "universe": 5202,
-      "ratio": 0.012879661668589004
+      "universe": 5203,
+      "ratio": 0.012877186238708437
     },
     {
       "date": "2026-06-29",
       "candidates": 100,
       "daily_candidates": 277,
-      "universe": 5202,
-      "ratio": 0.019223375624759707
+      "universe": 5203,
+      "ratio": 0.019219680953296174
     },
     {
       "date": "2026-06-30",
       "candidates": 107,
       "daily_candidates": 153,
-      "universe": 5202,
-      "ratio": 0.020569011918492888
+      "universe": 5203,
+      "ratio": 0.02056505862002691
     },
     {
       "date": "2026-07-01",
       "candidates": 116,
       "daily_candidates": 277,
-      "universe": 5202,
-      "ratio": 0.02229911572472126
+      "universe": 5203,
+      "ratio": 0.022294829905823564
     },
     {
       "date": "2026-07-02",
       "candidates": 79,
       "daily_candidates": 75,
-      "universe": 5202,
-      "ratio": 0.01518646674356017
+      "universe": 5203,
+      "ratio": 0.015183547953103978
     },
     {
       "date": "2026-07-03",
       "candidates": 187,
       "daily_candidates": 201,
-      "universe": 5202,
-      "ratio": 0.03594771241830065
+      "universe": 5203,
+      "ratio": 0.035940803382663845
     },
     {
       "date": "2026-07-06",
       "candidates": 172,
       "daily_candidates": 86,
-      "universe": 5202,
-      "ratio": 0.0330642060745867
+      "universe": 5203,
+      "ratio": 0.03305785123966942
     },
     {
       "date": "2026-07-07",
       "candidates": 30,
       "daily_candidates": 26,
-      "universe": 5202,
-      "ratio": 0.0057670126874279125
+      "universe": 5203,
+      "ratio": 0.005765904285988853
     },
     {
       "date": "2026-07-17",
       "candidates": 14,
       "daily_candidates": 15,
-      "universe": 5202,
-      "ratio": 0.002691272587466359
+      "universe": 5203,
+      "ratio": 0.0026907553334614646
     },
     {
       "date": "2026-07-20",
       "candidates": 19,
       "daily_candidates": 50,
-      "universe": 5202,
-      "ratio": 0.0036524413687043446
+      "universe": 5203,
+      "ratio": 0.003651739381126273
     },
     {
       "date": "2026-07-21",
       "candidates": 31,
       "daily_candidates": 17,
-      "universe": 5202,
-      "ratio": 0.005959246443675509
+      "universe": 5203,
+      "ratio": 0.005958101095521814
     },
     {
       "date": "2026-07-22",
       "candidates": 62,
       "daily_candidates": 20,
-      "universe": 5202,
-      "ratio": 0.011918492887351018
+      "universe": 5203,
+      "ratio": 0.011916202191043628
     },
     {
       "date": "2026-07-23",
       "candidates": 69,
       "daily_candidates": 70,
-      "universe": 5202,
-      "ratio": 0.0132641291810842
+      "universe": 5203,
+      "ratio": 0.013261579857774361
     },
     {
       "date": "2026-07-27",
       "candidates": 48,
       "daily_candidates": 51,
-      "universe": 5202,
-      "ratio": 0.00922722029988466
+      "universe": 5203,
+      "ratio": 0.009225446857582165
     },
     {
       "date": "2026-07-28",
       "candidates": 37,
       "daily_candidates": 17,
-      "universe": 5202,
-      "ratio": 0.007112648981161092
+      "universe": 5203,
+      "ratio": 0.007111281952719585
+    },
+    {
+      "date": "2026-07-29",
+      "candidates": 111,
+      "daily_candidates": 53,
+      "universe": 5203,
+      "ratio": 0.021333845858158753
     }
   ]
 }

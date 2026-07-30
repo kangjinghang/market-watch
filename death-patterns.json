@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-28",
-  "total_deaths": 479,
+  "date_range": "2026-06-16 ~ 2026-07-29",
+  "total_deaths": 485,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 70,
+    "高位回落": 71,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 397
+    "自然退潮": 402
   },
   "recent_deaths": [
     {
@@ -19,6 +19,42 @@
       "appearances": 3,
       "pattern": "自然退潮",
       "events": []
+    },
+    {
+      "ticker": "SZ300534",
+      "name": "陇神戎发",
+      "death_date": "2026-07-28",
+      "peak_pct": 105.04,
+      "last_pct": 105.04,
+      "last_days": 32,
+      "appearances": 3,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "陇神戎发2026-06-29收盘价7.24元，涨幅4.17%",
+          "timestamp": 1782662400000,
+          "reason": "创新药概念板块整体走强带动中药股上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-fc5b44bc-fcd2-4605-8cf8-8c58c9c30a11&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "陇神戎发2026-07-01收盘价7.41元，涨幅4.66%",
+          "timestamp": 1782835200000,
+          "reason": "中药板块整体表现活跃带动个股上涨",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-de02f2f4-a66a-4997-9a18-2bcaaa00bfd0&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "陇神戎发2026-07-13收盘价9.00元，涨幅20.00%",
+          "timestamp": 1783872000000,
+          "reason": "2026-07-13到2026-07-14股价连续上涨，受国务院原则同意《中医药振兴发展“十五五”规划》利好驱动，中药板块整体走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-443f965e-cdc4-472e-b987-17f0d8ccd502&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "陇神戎发2026-07-24收盘价11.18元，跌幅13.00%",
+          "timestamp": 1784822400000,
+          "reason": "市场传闻创新药板块走弱及公司短期涨幅过大后资金获利了结",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-70eb1e8a-366e-46ad-aca6-d6855d980a67&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
     },
     {
       "ticker": "SZ301165",
@@ -134,6 +170,17 @@
       "events": []
     },
     {
+      "ticker": "SZ000566",
+      "name": "海南海药",
+      "death_date": "2026-07-28",
+      "peak_pct": 62.8,
+      "last_pct": 23,
+      "last_days": 7,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
       "ticker": "SH603629",
       "name": "利通电子",
       "death_date": "2026-07-23",
@@ -159,35 +206,6 @@
           "timestamp": 1784217600000,
           "reason": "受全国多地用电负荷创历史新高及电力保供政策驱动，电力板块集体走强。",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4e0bc6d7-4657-438c-b2a4-f67c2f80fdb8&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300688",
-      "name": "创业黑马",
-      "death_date": "2026-07-27",
-      "peak_pct": 46.46,
-      "last_pct": 46.46,
-      "last_days": 7,
-      "appearances": 2,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ000815",
-      "name": "美利云",
-      "death_date": "2026-07-23",
-      "peak_pct": 46.37,
-      "last_pct": 46.37,
-      "last_days": 6,
-      "appearances": 2,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "美利云2026-07-20收盘价13.33元，涨幅9.98%",
-          "timestamp": 1784476800000,
-          "reason": "AI服务器概念板块集体走强，市场对公司作为AI算力相关公司的关注度提升。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6e932c80-3eab-4eea-bae2-7c9d0be3dfc8&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
