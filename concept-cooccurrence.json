@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-28",
-  "total_reasons": 3053,
+  "date_range": "2026-03-05 ~ 2026-07-29",
+  "total_reasons": 3081,
   "total_concepts": 71,
   "total_pairs": 171,
   "nodes": [
@@ -11,12 +11,12 @@
     },
     {
       "id": "AI",
-      "count": 324,
+      "count": 329,
       "type": "technology"
     },
     {
       "id": "电子",
-      "count": 303,
+      "count": 304,
       "type": "sector"
     },
     {
@@ -45,12 +45,12 @@
       "type": "technology"
     },
     {
-      "id": "机器人",
-      "count": 99,
+      "id": "算力",
+      "count": 100,
       "type": "sector"
     },
     {
-      "id": "算力",
+      "id": "机器人",
       "count": 99,
       "type": "sector"
     },
@@ -116,12 +116,12 @@
     },
     {
       "id": "证券",
-      "count": 33,
+      "count": 34,
       "type": "sector"
     },
     {
       "id": "军工",
-      "count": 32,
+      "count": 33,
       "type": "sector"
     },
     {
@@ -230,6 +230,11 @@
       "type": "sector"
     },
     {
+      "id": "电网设备",
+      "count": 14,
+      "type": "sector"
+    },
+    {
       "id": "医疗服务",
       "count": 14,
       "type": "sector"
@@ -245,11 +250,6 @@
       "type": "sector"
     },
     {
-      "id": "电网设备",
-      "count": 13,
-      "type": "sector"
-    },
-    {
       "id": "PFA",
       "count": 12,
       "type": "technology"
@@ -257,6 +257,11 @@
     {
       "id": "港股医药",
       "count": 12,
+      "type": "sector"
+    },
+    {
+      "id": "房地产",
+      "count": 11,
       "type": "sector"
     },
     {
@@ -273,11 +278,6 @@
       "id": "CAE",
       "count": 10,
       "type": "technology"
-    },
-    {
-      "id": "房地产",
-      "count": 10,
-      "type": "sector"
     },
     {
       "id": "大金融",
@@ -320,13 +320,13 @@
       "type": "sector"
     },
     {
-      "id": "煤炭",
+      "id": "银行",
       "count": 6,
       "type": "sector"
     },
     {
-      "id": "银行",
-      "count": 5,
+      "id": "煤炭",
+      "count": 6,
       "type": "sector"
     },
     {
@@ -384,7 +384,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 72
+      "weight": 73
     },
     {
       "source": "电子",

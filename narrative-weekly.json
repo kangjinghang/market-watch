@@ -1249,7 +1249,7 @@
     {
       "week": "2026-W27",
       "date_range": "06-29 ~ 07-05",
-      "total_reasons": 567,
+      "total_reasons": 568,
       "top_concepts": [
         {
           "concept": "创新药",
@@ -1380,7 +1380,7 @@
     {
       "week": "2026-W28",
       "date_range": "07-06 ~ 07-12",
-      "total_reasons": 68,
+      "total_reasons": 69,
       "top_concepts": [
         {
           "concept": "创新药",
@@ -1470,7 +1470,7 @@
     {
       "week": "2026-W29",
       "date_range": "07-13 ~ 07-19",
-      "total_reasons": 65,
+      "total_reasons": 67,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1546,15 +1546,15 @@
     {
       "week": "2026-W30",
       "date_range": "07-20 ~ 07-26",
-      "total_reasons": 60,
+      "total_reasons": 66,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 8
+          "count": 9
         },
         {
           "concept": "军工",
-          "count": 7
+          "count": 8
         },
         {
           "concept": "算力",
@@ -1562,11 +1562,11 @@
         },
         {
           "concept": "电子",
-          "count": 4
+          "count": 5
         },
         {
           "concept": "电网设备",
-          "count": 3
+          "count": 4
         },
         {
           "concept": "CPO",
@@ -1592,17 +1592,17 @@
       "emerging": [
         {
           "concept": "军工",
-          "count": 7,
+          "count": 8,
           "prev_count": 0
         },
         {
           "concept": "电子",
-          "count": 4,
+          "count": 5,
           "prev_count": 1
         },
         {
           "concept": "电网设备",
-          "count": 3,
+          "count": 4,
           "prev_count": 0
         },
         {
@@ -1632,15 +1632,15 @@
     {
       "week": "2026-W31",
       "date_range": "07-27 ~ 08-02",
-      "total_reasons": 27,
+      "total_reasons": 45,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 4
+          "count": 8
         },
         {
           "concept": "算力",
-          "count": 3
+          "count": 4
         },
         {
           "concept": "电网设备",
@@ -1680,12 +1680,12 @@
         {
           "concept": "军工",
           "count": 0,
-          "prev_count": 7
+          "prev_count": 8
         },
         {
           "concept": "电子",
           "count": 0,
-          "prev_count": 4
+          "prev_count": 5
         },
         {
           "concept": "CPO",
@@ -1695,5 +1695,5 @@
       ]
     }
   ],
-  "generated_at": "2026-07-30T16:03:20.720Z"
+  "generated_at": "2026-07-31T15:06:08.190Z"
 }

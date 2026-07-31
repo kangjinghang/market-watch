@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-30",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002003",
+      "name": "伟星股份",
+      "streak": 4,
+      "first_date": "2026-07-27",
+      "last_date": "2026-07-30",
+      "total_pct": 30.49
+    },
+    {
+      "ticker": "SZ000333",
+      "name": "美的集团",
+      "streak": 3,
+      "first_date": "2026-07-28",
+      "last_date": "2026-07-30",
+      "total_pct": 17.77
+    },
+    {
+      "ticker": "SZ002749",
+      "name": "国光股份",
+      "streak": 3,
+      "first_date": "2026-07-27",
+      "last_date": "2026-07-30",
+      "total_pct": 15.68
+    },
+    {
+      "ticker": "SZ001965",
+      "name": "招商公路",
+      "streak": 3,
+      "first_date": "2026-07-28",
+      "last_date": "2026-07-30",
+      "total_pct": 11.81
+    }
+  ]
+}

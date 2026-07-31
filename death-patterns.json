@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-29",
-  "total_deaths": 485,
+  "date_range": "2026-06-16 ~ 2026-07-30",
+  "total_deaths": 503,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 71,
+    "高位回落": 73,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 402
+    "自然退潮": 418
   },
   "recent_deaths": [
     {
@@ -192,20 +192,20 @@
       "events": []
     },
     {
-      "ticker": "SH600744",
-      "name": "华银电力",
-      "death_date": "2026-07-22",
-      "peak_pct": 48.69,
-      "last_pct": 48.69,
+      "ticker": "SZ000533",
+      "name": "顺钠股份",
+      "death_date": "2026-07-29",
+      "peak_pct": 54.92,
+      "last_pct": 54.92,
       "last_days": 9,
-      "appearances": 2,
+      "appearances": 3,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "华银电力2026-07-17收盘价5.96元，涨幅9.96%",
-          "timestamp": 1784217600000,
-          "reason": "受全国多地用电负荷创历史新高及电力保供政策驱动，电力板块集体走强。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4e0bc6d7-4657-438c-b2a4-f67c2f80fdb8&navBarTransparent=1&navBarTheme=dark"
+          "description": "顺钠股份2026-07-27收盘价10.51元，涨幅10.05%",
+          "timestamp": 1785081600000,
+          "reason": "电网设备板块受国家电网投资数据利好提振，顺钠股份作为板块内龙头获市场资金追捧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dbdd6b05-665b-42ad-a06e-d32ebf4ab370&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
@@ -369,42 +369,6 @@
           "timestamp": 1782144000000,
           "reason": "半导体及存储芯片板块整体回调拖累元件行业，市场担忧上游原材料涨价挤压利润",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3d3a8b0-8676-4b65-b541-fd381e820616&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ000636",
-      "name": "风华高科",
-      "death_date": "2026-06-29",
-      "peak_pct": 332.72,
-      "last_pct": 332.72,
-      "last_days": 83,
-      "appearances": 5,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "风华高科2026-05-18收盘价29.43元，涨幅9.00%",
-          "timestamp": 1779033600000,
-          "reason": "元件行业受科技基金调仓及光通信需求增长带动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d90c4e26-8aef-4e56-a337-da3a52dc3d7c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "风华高科2026-05-19收盘价32.37元，涨幅9.99%",
-          "timestamp": 1779120000000,
-          "reason": "MLCC概念走强及AI服务器需求增长预期推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-223de068-f5ba-4305-9939-c5f1004fa37c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "风华高科2026-05-22收盘价37.62元，涨幅10.00%",
-          "timestamp": 1779379200000,
-          "reason": "2026-05-22到2026-05-25股价连续上涨，MLCC行业供需紧张及国产替代加速推动板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-98b3d979-bf14-4cdf-9acf-7aa2a1689e2f&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "风华高科2026-06-12收盘价59.12元，跌幅8.06%",
-          "timestamp": 1781193600000,
-          "reason": "MLCC概念板块整体调整，市场担忧高端MLCC产能扩张受限及短期涨幅过大",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7e32ac20-2b07-4c17-b6e5-1cff60f50b81&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -599,6 +563,17 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3e6d007-6e30-4d98-adff-15f6771982f2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
+    },
+    {
+      "ticker": "SH688143",
+      "name": "长盈通",
+      "death_date": "2026-06-25",
+      "peak_pct": 249.41,
+      "last_pct": 34.47,
+      "last_days": 13,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
     }
   ]
 }

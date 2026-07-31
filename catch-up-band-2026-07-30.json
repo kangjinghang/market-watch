@@ -1,0 +1,226 @@
+{
+  "date": "2026-07-30",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300996",
+      "name": "普联软件",
+      "pct": 20.03,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ002846",
+      "name": "英联股份",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000025",
+      "name": "特  力Ａ",
+      "pct": 9.99,
+      "concepts": [
+        "钢铁"
+      ]
+    },
+    {
+      "ticker": "SZ002258",
+      "name": "利尔化学",
+      "pct": 9.99,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 26,
+      "active_days": 11,
+      "heat_score": 286,
+      "leaders": [
+        {
+          "ticker": "SZ300996",
+          "name": "普联软件",
+          "pct": 20.03,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 14,
+      "active_days": 8,
+      "heat_score": 112,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 17,
+      "active_days": 5,
+      "heat_score": 85,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 17,
+      "active_days": 4,
+      "heat_score": 68,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 9,
+      "active_days": 5,
+      "heat_score": 45,
+      "leaders": []
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 6,
+      "active_days": 1,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "ESG",
+      "leader_count": 5,
+      "active_days": 1,
+      "heat_score": 5,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "钢铁",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ000025",
+          "name": "特  力Ａ",
+          "pct": 9.99,
+          "concepts": [
+            "钢铁"
+          ]
+        }
+      ]
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ000948",
+      "name": "南天信息",
+      "last_seen": "2026-07-30",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 21.1,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SZ002153",
+      "name": "石基信息",
+      "last_seen": "2026-07-30",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 12.74,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SZ300413",
+      "name": "芒果超媒",
+      "last_seen": "2026-07-30",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 8.97,
+      "trend_days": 6
+    }
+  ]
+}
