@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-30",
-  "total_deaths": 503,
+  "date_range": "2026-06-16 ~ 2026-07-31",
+  "total_deaths": 530,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 73,
+    "高位回落": 72,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 418
+    "自然退潮": 446
   },
   "recent_deaths": [
     {
@@ -17,6 +17,17 @@
       "last_pct": 41.9,
       "last_days": 7,
       "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ000636",
+      "name": "风华高科",
+      "death_date": "2026-07-30",
+      "peak_pct": 332.72,
+      "last_pct": 25.56,
+      "last_days": 6,
+      "appearances": 6,
       "pattern": "自然退潮",
       "events": []
     },
@@ -125,36 +136,6 @@
           "timestamp": 1783612800000,
           "reason": "受创新药BD交易活跃及AI医疗政策利好驱动，医疗服务板块情绪回暖，XD奥浦迈作为行业上游服务商获市场关注。",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cf6fae08-5df8-4636-82f5-a5c50a3325e2&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH688578",
-      "name": "艾力斯",
-      "death_date": "2026-07-21",
-      "peak_pct": 66.21,
-      "last_pct": 66.21,
-      "last_days": 42,
-      "appearances": 7,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "艾力斯2026-06-24收盘价93.50元，涨幅6.64%",
-          "timestamp": 1782230400000,
-          "reason": "创新药概念板块整体走强及第12批药品集采启动利好",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-5f411908-383f-41a4-85fe-ed0ada4b3c1e&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "艾力斯2026-06-29收盘价107.01元，涨幅14.49%",
-          "timestamp": 1782662400000,
-          "reason": "创新药概念板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6a30f2db-2612-42f1-bb7a-550a7c8ff760&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "艾力斯2026-07-20收盘价127.42元，涨幅11.09%",
-          "timestamp": 1784476800000,
-          "reason": "公司ADC项目研发进展积极，叠加前期业绩预告验证基本面，市场情绪回暖。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1d35acab-1809-4e25-989d-dca575dda4d5&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -373,6 +354,17 @@
       ]
     },
     {
+      "ticker": "SZ000636",
+      "name": "风华高科",
+      "death_date": "2026-07-30",
+      "peak_pct": 332.72,
+      "last_pct": 25.56,
+      "last_days": 6,
+      "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
       "ticker": "SZ002484",
       "name": "江海股份",
       "death_date": "2026-06-25",
@@ -563,17 +555,6 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3e6d007-6e30-4d98-adff-15f6771982f2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
-    },
-    {
-      "ticker": "SH688143",
-      "name": "长盈通",
-      "death_date": "2026-06-25",
-      "peak_pct": 249.41,
-      "last_pct": 34.47,
-      "last_days": 13,
-      "appearances": 4,
-      "pattern": "自然退潮",
-      "events": []
     }
   ]
 }

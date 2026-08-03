@@ -1,0 +1,849 @@
+{
+  "date": "2026-07-31",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300418",
+      "name": "昆仑万维",
+      "pct": 20,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ301396",
+      "name": "宏景科技",
+      "pct": 20,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300058",
+      "name": "蓝色光标",
+      "pct": 19.98,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300017",
+      "name": "网宿科技",
+      "pct": 17.5,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300378",
+      "name": "鼎捷数智",
+      "pct": 16.84,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688017",
+      "name": "绿的谐波",
+      "pct": 16.34,
+      "concepts": [
+        "人形机器人",
+        "机器人",
+        "IPO"
+      ]
+    },
+    {
+      "ticker": "SZ301165",
+      "name": "锐捷网络",
+      "pct": 15.69,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300857",
+      "name": "协创数据",
+      "pct": 15.13,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH688585",
+      "name": "上纬新材",
+      "pct": 14.97,
+      "concepts": [
+        "人形机器人",
+        "机器人",
+        "IPO"
+      ]
+    },
+    {
+      "ticker": "SZ300454",
+      "name": "深信服",
+      "pct": 14.77,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH688183",
+      "name": "生益电子",
+      "pct": 14.68,
+      "concepts": [
+        "PCB",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300624",
+      "name": "万兴科技",
+      "pct": 14.34,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300853",
+      "name": "申昊科技",
+      "pct": 13.92,
+      "concepts": [
+        "自动化设备",
+        "半导体",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH688508",
+      "name": "芯朋微",
+      "pct": 11.99,
+      "concepts": [
+        "存储芯片",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ301345",
+      "name": "涛涛车业",
+      "pct": 11.8,
+      "concepts": [
+        "存储芯片"
+      ]
+    },
+    {
+      "ticker": "SH688018",
+      "name": "乐鑫科技",
+      "pct": 11.78,
+      "concepts": [
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688365",
+      "name": "光云科技",
+      "pct": 11.17,
+      "concepts": [
+        "通信"
+      ]
+    },
+    {
+      "ticker": "SZ300846",
+      "name": "首都在线",
+      "pct": 10.99,
+      "concepts": [
+        "存储芯片",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH688228",
+      "name": "开普云",
+      "pct": 10.61,
+      "concepts": [
+        "存储芯片"
+      ]
+    },
+    {
+      "ticker": "SZ300170",
+      "name": "汉得信息",
+      "pct": 10.48,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300166",
+      "name": "东方国信",
+      "pct": 10.16,
+      "concepts": [
+        "存储芯片",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002775",
+      "name": "文科股份",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002896",
+      "name": "中大力德",
+      "pct": 10,
+      "concepts": [
+        "人形机器人",
+        "机器人",
+        "IPO"
+      ]
+    },
+    {
+      "ticker": "SH603721",
+      "name": "中广天择",
+      "pct": 10,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH603039",
+      "name": "泛微网络",
+      "pct": 9.99,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002197",
+      "name": "证通电子",
+      "pct": 9.98,
+      "concepts": [
+        "半导体",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002131",
+      "name": "利欧股份",
+      "pct": 9.91,
+      "concepts": [
+        "AI"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 36,
+      "active_days": 11,
+      "heat_score": 396,
+      "leaders": [
+        {
+          "ticker": "SZ300418",
+          "name": "昆仑万维",
+          "pct": 20,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300058",
+          "name": "蓝色光标",
+          "pct": 19.98,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300378",
+          "name": "鼎捷数智",
+          "pct": 16.84,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301165",
+          "name": "锐捷网络",
+          "pct": 15.69,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300454",
+          "name": "深信服",
+          "pct": 14.77,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688183",
+          "name": "生益电子",
+          "pct": 14.68,
+          "concepts": [
+            "PCB",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300624",
+          "name": "万兴科技",
+          "pct": 14.34,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300170",
+          "name": "汉得信息",
+          "pct": 10.48,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300166",
+          "name": "东方国信",
+          "pct": 10.16,
+          "concepts": [
+            "存储芯片",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603721",
+          "name": "中广天择",
+          "pct": 10,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH603039",
+          "name": "泛微网络",
+          "pct": 9.99,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002197",
+          "name": "证通电子",
+          "pct": 9.98,
+          "concepts": [
+            "半导体",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002131",
+          "name": "利欧股份",
+          "pct": 9.91,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 23,
+      "active_days": 8,
+      "heat_score": 184,
+      "leaders": [
+        {
+          "ticker": "SZ301396",
+          "name": "宏景科技",
+          "pct": 20,
+          "concepts": [
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300017",
+          "name": "网宿科技",
+          "pct": 17.5,
+          "concepts": [
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ301165",
+          "name": "锐捷网络",
+          "pct": 15.69,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300857",
+          "name": "协创数据",
+          "pct": 15.13,
+          "concepts": [
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300454",
+          "name": "深信服",
+          "pct": 14.77,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300846",
+          "name": "首都在线",
+          "pct": 10.99,
+          "concepts": [
+            "存储芯片",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300170",
+          "name": "汉得信息",
+          "pct": 10.48,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300166",
+          "name": "东方国信",
+          "pct": 10.16,
+          "concepts": [
+            "存储芯片",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603039",
+          "name": "泛微网络",
+          "pct": 9.99,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002197",
+          "name": "证通电子",
+          "pct": 9.98,
+          "concepts": [
+            "半导体",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 20,
+      "active_days": 5,
+      "heat_score": 100,
+      "leaders": [
+        {
+          "ticker": "SZ300853",
+          "name": "申昊科技",
+          "pct": 13.92,
+          "concepts": [
+            "自动化设备",
+            "半导体",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SH688508",
+          "name": "芯朋微",
+          "pct": 11.99,
+          "concepts": [
+            "存储芯片",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688018",
+          "name": "乐鑫科技",
+          "pct": 11.78,
+          "concepts": [
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ002197",
+          "name": "证通电子",
+          "pct": 9.98,
+          "concepts": [
+            "半导体",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 17,
+      "active_days": 4,
+      "heat_score": 68,
+      "leaders": []
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 9,
+      "active_days": 3,
+      "heat_score": 27,
+      "leaders": [
+        {
+          "ticker": "SH688508",
+          "name": "芯朋微",
+          "pct": 11.99,
+          "concepts": [
+            "存储芯片",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ301345",
+          "name": "涛涛车业",
+          "pct": 11.8,
+          "concepts": [
+            "存储芯片"
+          ]
+        },
+        {
+          "ticker": "SZ300846",
+          "name": "首都在线",
+          "pct": 10.99,
+          "concepts": [
+            "存储芯片",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688228",
+          "name": "开普云",
+          "pct": 10.61,
+          "concepts": [
+            "存储芯片"
+          ]
+        },
+        {
+          "ticker": "SZ300166",
+          "name": "东方国信",
+          "pct": 10.16,
+          "concepts": [
+            "存储芯片",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": [
+        {
+          "ticker": "SH688183",
+          "name": "生益电子",
+          "pct": 14.68,
+          "concepts": [
+            "PCB",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": [
+        {
+          "ticker": "SH688017",
+          "name": "绿的谐波",
+          "pct": 16.34,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        },
+        {
+          "ticker": "SH688585",
+          "name": "上纬新材",
+          "pct": 14.97,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        },
+        {
+          "ticker": "SZ300853",
+          "name": "申昊科技",
+          "pct": 13.92,
+          "concepts": [
+            "自动化设备",
+            "半导体",
+            "机器人"
+          ]
+        },
+        {
+          "ticker": "SZ002896",
+          "name": "中大力德",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": [
+        {
+          "ticker": "SH688017",
+          "name": "绿的谐波",
+          "pct": 16.34,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        },
+        {
+          "ticker": "SH688585",
+          "name": "上纬新材",
+          "pct": 14.97,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        },
+        {
+          "ticker": "SZ002896",
+          "name": "中大力德",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 6,
+      "active_days": 1,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ300853",
+          "name": "申昊科技",
+          "pct": 13.92,
+          "concepts": [
+            "自动化设备",
+            "半导体",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "钢铁",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": [
+        {
+          "ticker": "SH688017",
+          "name": "绿的谐波",
+          "pct": 16.34,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        },
+        {
+          "ticker": "SH688585",
+          "name": "上纬新材",
+          "pct": 14.97,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        },
+        {
+          "ticker": "SZ002896",
+          "name": "中大力德",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "IPO"
+          ]
+        }
+      ]
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ002400",
+      "name": "省广集团",
+      "last_seen": "2026-07-31",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 17.24,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ300987",
+      "name": "川网传媒",
+      "last_seen": "2026-07-31",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 13.24,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ300451",
+      "name": "创业慧康",
+      "last_seen": "2026-07-31",
+      "shared_concepts": [
+        "半导体",
+        "存储芯片"
+      ],
+      "trend_pct": 12.97,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ002093",
+      "name": "国脉科技",
+      "last_seen": "2026-07-31",
+      "shared_concepts": [
+        "算力",
+        "PCB",
+        "通信"
+      ],
+      "trend_pct": 11.38,
+      "trend_days": 7
+    },
+    {
+      "ticker": "SZ003040",
+      "name": "楚天龙",
+      "last_seen": "2026-07-31",
+      "shared_concepts": [
+        "AI",
+        "算力",
+        "PCB"
+      ],
+      "trend_pct": 11.19,
+      "trend_days": 11
+    }
+  ]
+}

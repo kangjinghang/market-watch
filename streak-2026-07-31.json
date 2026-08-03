@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-31",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH600428",
+      "name": "中远海特",
+      "streak": 3,
+      "first_date": "2026-07-28",
+      "last_date": "2026-07-31",
+      "total_pct": 55.71
+    },
+    {
+      "ticker": "SZ002827",
+      "name": "高争民爆",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-07-31",
+      "total_pct": 45.68
+    },
+    {
+      "ticker": "SH600733",
+      "name": "北汽蓝谷",
+      "streak": 3,
+      "first_date": "2026-07-28",
+      "last_date": "2026-07-31",
+      "total_pct": 29.18
+    },
+    {
+      "ticker": "SZ002832",
+      "name": "比音勒芬",
+      "streak": 3,
+      "first_date": "2026-07-28",
+      "last_date": "2026-07-31",
+      "total_pct": 27.9
+    },
+    {
+      "ticker": "SZ300457",
+      "name": "赢合科技",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-07-31",
+      "total_pct": 17.45
+    },
+    {
+      "ticker": "SZ300341",
+      "name": "麦克奥迪",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-07-31",
+      "total_pct": 16.52
+    },
+    {
+      "ticker": "SZ300180",
+      "name": "华峰超纤",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-07-31",
+      "total_pct": 11.99
+    }
+  ]
+}
