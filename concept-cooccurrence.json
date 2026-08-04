@@ -1,8 +1,8 @@
 {
-  "date_range": "2026-03-05 ~ 2026-07-30",
-  "total_reasons": 3128,
+  "date_range": "2026-03-05 ~ 2026-08-02",
+  "total_reasons": 3177,
   "total_concepts": 72,
-  "total_pairs": 173,
+  "total_pairs": 175,
   "nodes": [
     {
       "id": "半导体",
@@ -11,7 +11,7 @@
     },
     {
       "id": "AI",
-      "count": 339,
+      "count": 351,
       "type": "technology"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "id": "PCB",
-      "count": 195,
+      "count": 199,
       "type": "technology"
     },
     {
@@ -41,12 +41,12 @@
     },
     {
       "id": "算力",
-      "count": 104,
+      "count": 112,
       "type": "sector"
     },
     {
       "id": "机器人",
-      "count": 100,
+      "count": 104,
       "type": "sector"
     },
     {
@@ -101,12 +101,17 @@
     },
     {
       "id": "金属新材料",
-      "count": 40,
+      "count": 41,
       "type": "sector"
     },
     {
       "id": "光学光电子",
       "count": 38,
+      "type": "sector"
+    },
+    {
+      "id": "人形机器人",
+      "count": 36,
       "type": "sector"
     },
     {
@@ -116,7 +121,7 @@
     },
     {
       "id": "证券",
-      "count": 34,
+      "count": 35,
       "type": "sector"
     },
     {
@@ -125,13 +130,8 @@
       "type": "sector"
     },
     {
-      "id": "人形机器人",
-      "count": 32,
-      "type": "sector"
-    },
-    {
       "id": "通信",
-      "count": 31,
+      "count": 32,
       "type": "sector"
     },
     {
@@ -156,7 +156,7 @@
     },
     {
       "id": "汽车零部件",
-      "count": 25,
+      "count": 26,
       "type": "sector"
     },
     {
@@ -170,14 +170,19 @@
       "type": "sector"
     },
     {
-      "id": "CPO",
+      "id": "电网设备",
       "count": 22,
-      "type": "technology"
+      "type": "sector"
     },
     {
       "id": "新能源",
-      "count": 21,
+      "count": 22,
       "type": "sector"
+    },
+    {
+      "id": "CPO",
+      "count": 22,
+      "type": "technology"
     },
     {
       "id": "PTFE",
@@ -185,12 +190,12 @@
       "type": "technology"
     },
     {
-      "id": "半导体硅片",
-      "count": 19,
+      "id": "小金属",
+      "count": 20,
       "type": "sector"
     },
     {
-      "id": "小金属",
+      "id": "半导体硅片",
       "count": 19,
       "type": "sector"
     },
@@ -220,24 +225,19 @@
       "type": "technology"
     },
     {
-      "id": "电网设备",
+      "id": "服装家纺",
       "count": 16,
       "type": "sector"
     },
     {
-      "id": "服装家纺",
-      "count": 16,
+      "id": "工业金属",
+      "count": 15,
       "type": "sector"
     },
     {
       "id": "IPO",
       "count": 14,
       "type": "technology"
-    },
-    {
-      "id": "工业金属",
-      "count": 14,
-      "type": "sector"
     },
     {
       "id": "医疗服务",
@@ -280,14 +280,14 @@
       "type": "technology"
     },
     {
+      "id": "白酒",
+      "count": 11,
+      "type": "sector"
+    },
+    {
       "id": "CAE",
       "count": 10,
       "type": "technology"
-    },
-    {
-      "id": "白酒",
-      "count": 10,
-      "type": "sector"
     },
     {
       "id": "半导体靶材",
@@ -305,6 +305,11 @@
       "type": "sector"
     },
     {
+      "id": "银行",
+      "count": 7,
+      "type": "sector"
+    },
+    {
       "id": "钙钛矿",
       "count": 6,
       "type": "sector"
@@ -316,11 +321,6 @@
     },
     {
       "id": "商业航天",
-      "count": 6,
-      "type": "sector"
-    },
-    {
-      "id": "银行",
       "count": 6,
       "type": "sector"
     },
@@ -345,6 +345,11 @@
       "type": "sector"
     },
     {
+      "id": "钢铁",
+      "count": 3,
+      "type": "sector"
+    },
+    {
       "id": "固态电池",
       "count": 2,
       "type": "sector"
@@ -358,11 +363,6 @@
       "id": "LED",
       "count": 2,
       "type": "technology"
-    },
-    {
-      "id": "钢铁",
-      "count": 2,
-      "type": "sector"
     }
   ],
   "edges": [
@@ -382,14 +382,14 @@
       "weight": 94
     },
     {
+      "source": "AI",
+      "target": "算力",
+      "weight": 82
+    },
+    {
       "source": "电子",
       "target": "电子化学品",
       "weight": 80
-    },
-    {
-      "source": "AI",
-      "target": "算力",
-      "weight": 76
     },
     {
       "source": "电子",
@@ -399,7 +399,7 @@
     {
       "source": "AI",
       "target": "PCB",
-      "weight": 43
+      "weight": 45
     },
     {
       "source": "光学光电子",
@@ -409,7 +409,7 @@
     {
       "source": "人形机器人",
       "target": "机器人",
-      "weight": 32
+      "weight": 36
     },
     {
       "source": "半导体",
@@ -467,6 +467,11 @@
       "weight": 21
     },
     {
+      "source": "PCB",
+      "target": "算力",
+      "weight": 19
+    },
+    {
       "source": "半导体",
       "target": "半导体硅片",
       "weight": 19
@@ -504,11 +509,6 @@
     {
       "source": "PCB",
       "target": "电子化学品",
-      "weight": 16
-    },
-    {
-      "source": "PCB",
-      "target": "算力",
       "weight": 16
     },
     {
@@ -692,6 +692,11 @@
       "weight": 7
     },
     {
+      "source": "算力",
+      "target": "通信",
+      "weight": 7
+    },
+    {
       "source": "机器人",
       "target": "汽车零部件",
       "weight": 7
@@ -769,11 +774,6 @@
     {
       "source": "CPO",
       "target": "半导体",
-      "weight": 6
-    },
-    {
-      "source": "算力",
-      "target": "通信",
       "weight": 6
     },
     {
@@ -1022,6 +1022,11 @@
       "weight": 3
     },
     {
+      "source": "PCB",
+      "target": "通信",
+      "weight": 3
+    },
+    {
       "source": "PSPI",
       "target": "半导体",
       "weight": 3
@@ -1147,11 +1152,6 @@
       "weight": 2
     },
     {
-      "source": "PCB",
-      "target": "通信",
-      "weight": 2
-    },
-    {
       "source": "元件",
       "target": "半导体",
       "weight": 2
@@ -1212,6 +1212,11 @@
       "weight": 2
     },
     {
+      "source": "机器人",
+      "target": "金属新材料",
+      "weight": 2
+    },
+    {
       "source": "新能源",
       "target": "汽车整车",
       "weight": 2
@@ -1229,6 +1234,11 @@
     {
       "source": "先进封装",
       "target": "电子",
+      "weight": 2
+    },
+    {
+      "source": "证券",
+      "target": "银行",
       "weight": 2
     }
   ]

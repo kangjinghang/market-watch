@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-07-31",
-  "total_deaths": 530,
+  "date_range": "2026-06-16 ~ 2026-08-03",
+  "total_deaths": 554,
   "patterns": {
     "闪崩": 1,
     "高位回落": 72,
     "利空事件": 2,
     "利空+下跌": 9,
-    "自然退潮": 446
+    "自然退潮": 470
   },
   "recent_deaths": [
     {
@@ -92,63 +92,22 @@
       ]
     },
     {
-      "ticker": "SZ002396",
-      "name": "星网锐捷",
-      "death_date": "2026-07-22",
-      "peak_pct": 98.45,
-      "last_pct": 98.45,
-      "last_days": 23,
-      "appearances": 5,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "星网锐捷2026-07-01收盘价21.09元，涨幅10.02%",
-          "timestamp": 1782835200000,
-          "reason": "工业互联网政策利好及公司回购议案通过推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c49cd83b-ac57-41b7-b8e0-d5a69d4b3523&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "星网锐捷2026-07-03收盘价23.40元，涨幅10.01%",
-          "timestamp": 1783008000000,
-          "reason": "2026-07-03到2026-07-06股价连续上涨，公司发布超预期半年度业绩预告，数据中心交换机业务大幅增长",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cfcc134a-ded1-4ff7-bffb-bd90d59feb8a&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH688293",
-      "name": "奥浦迈",
-      "death_date": "2026-07-22",
-      "peak_pct": 73.04,
-      "last_pct": 73.04,
-      "last_days": 41,
+      "ticker": "SZ300996",
+      "name": "普联软件",
+      "death_date": "2026-07-31",
+      "peak_pct": 67.15,
+      "last_pct": 67.15,
+      "last_days": 9,
       "appearances": 2,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "奥浦迈2026-06-29收盘价41.60元，涨幅10.49%",
-          "timestamp": 1782662400000,
-          "reason": "创新药概念板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-58d8bbd1-2dd5-4220-98b4-5a72b295ff3f&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "XD奥浦迈2026-07-10收盘价48.39元，涨幅12.27%",
-          "timestamp": 1783612800000,
-          "reason": "受创新药BD交易活跃及AI医疗政策利好驱动，医疗服务板块情绪回暖，XD奥浦迈作为行业上游服务商获市场关注。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cf6fae08-5df8-4636-82f5-a5c50a3325e2&navBarTransparent=1&navBarTheme=dark"
+          "description": "普联软件2026-07-30收盘价15.52元，涨幅20.03%",
+          "timestamp": 1785340800000,
+          "reason": "公司控制权变更，AI龙头企业明略科技旗下公司成为控股股东，市场预期业务协同将带来AI技术赋能与应用场景落地。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6ead0e18-f429-4797-889d-d83cb08dca65&navBarTransparent=1&navBarTheme=dark"
         }
       ]
-    },
-    {
-      "ticker": "SZ000938",
-      "name": "紫光股份",
-      "death_date": "2026-07-22",
-      "peak_pct": 64.85,
-      "last_pct": 27.81,
-      "last_days": 5,
-      "appearances": 4,
-      "pattern": "自然退潮",
-      "events": []
     },
     {
       "ticker": "SZ000566",
@@ -189,6 +148,35 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dbdd6b05-665b-42ad-a06e-d32ebf4ab370&navBarTransparent=1&navBarTheme=dark"
         }
       ]
+    },
+    {
+      "ticker": "SZ300981",
+      "name": "中红医疗",
+      "death_date": "2026-07-31",
+      "peak_pct": 47.46,
+      "last_pct": 47.46,
+      "last_days": 9,
+      "appearances": 2,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "中红医疗2026-07-29收盘价12.85元，涨幅19.98%",
+          "timestamp": 1785254400000,
+          "reason": "公司发布《2026年半年度业绩预告》显示净利润预增2338%-3557%，市场对公司业绩大幅改善给予积极反馈。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cb084b0c-8ee7-4c49-a0dc-04fabcd5fd5c&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ300688",
+      "name": "创业黑马",
+      "death_date": "2026-07-27",
+      "peak_pct": 46.46,
+      "last_pct": 46.46,
+      "last_days": 7,
+      "appearances": 2,
+      "pattern": "自然退潮",
+      "events": []
     }
   ],
   "peak_deaths": [

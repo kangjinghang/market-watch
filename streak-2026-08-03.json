@@ -1,0 +1,158 @@
+{
+  "date": "2026-08-03",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002827",
+      "name": "高争民爆",
+      "streak": 4,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-03",
+      "total_pct": 60.25
+    },
+    {
+      "ticker": "SH600428",
+      "name": "中远海特",
+      "streak": 4,
+      "first_date": "2026-07-28",
+      "last_date": "2026-08-03",
+      "total_pct": 56.26
+    },
+    {
+      "ticker": "SZ300180",
+      "name": "华峰超纤",
+      "streak": 4,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-03",
+      "total_pct": 14.8
+    },
+    {
+      "ticker": "SZ002882",
+      "name": "金龙羽",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 45.16
+    },
+    {
+      "ticker": "SZ300587",
+      "name": "天铁科技",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 28.57
+    },
+    {
+      "ticker": "SZ301187",
+      "name": "欧圣电气",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 23.91
+    },
+    {
+      "ticker": "SZ002867",
+      "name": "周大生",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 23.05
+    },
+    {
+      "ticker": "SZ002075",
+      "name": "沙钢股份",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 20.88
+    },
+    {
+      "ticker": "SZ300682",
+      "name": "朗新科技",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-03",
+      "total_pct": 19.36
+    },
+    {
+      "ticker": "SZ002553",
+      "name": "南方精工",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 17.84
+    },
+    {
+      "ticker": "SZ300036",
+      "name": "超图软件",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-03",
+      "total_pct": 16.39
+    },
+    {
+      "ticker": "SZ301091",
+      "name": "深城交",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 16.17
+    },
+    {
+      "ticker": "SZ300543",
+      "name": "朗科智能",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 15.68
+    },
+    {
+      "ticker": "SZ300226",
+      "name": "上海钢联",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 15.31
+    },
+    {
+      "ticker": "SZ300703",
+      "name": "创源股份",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 14.63
+    },
+    {
+      "ticker": "SH600728",
+      "name": "佳都科技",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-03",
+      "total_pct": 13.96
+    },
+    {
+      "ticker": "SZ002276",
+      "name": "万马股份",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 13.56
+    },
+    {
+      "ticker": "SH600570",
+      "name": "恒生电子",
+      "streak": 3,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-03",
+      "total_pct": 11.55
+    },
+    {
+      "ticker": "SZ300729",
+      "name": "乐歌股份",
+      "streak": 3,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-03",
+      "total_pct": 8.25
+    }
+  ]
+}
