@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-03",
-  "total_deaths": 554,
+  "date_range": "2026-06-16 ~ 2026-08-04",
+  "total_deaths": 636,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 72,
+    "高位回落": 70,
     "利空事件": 2,
-    "利空+下跌": 9,
-    "自然退潮": 470
+    "利空+下跌": 7,
+    "自然退潮": 556
   },
   "recent_deaths": [
     {
@@ -68,30 +68,6 @@
       ]
     },
     {
-      "ticker": "SZ301165",
-      "name": "锐捷网络",
-      "death_date": "2026-07-23",
-      "peak_pct": 99.69,
-      "last_pct": 99.69,
-      "last_days": 27,
-      "appearances": 5,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "锐捷网络2026-06-30收盘价80.45元，涨幅20.00%",
-          "timestamp": 1782748800000,
-          "reason": "AI算力交换机需求爆发及CPO技术商用预期推动通信设备板块走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4075b410-6195-40e5-8438-eb5d13560a4a&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "锐捷网络2026-07-22收盘价126.00元，涨幅13.66%",
-          "timestamp": 1784649600000,
-          "reason": "AI算力超节点概念成为市场主线，锐捷网络作为高速交换机核心供应商，业绩预期及技术卡位获市场追捧。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f1661835-fae0-4cad-8152-c38faca9b886&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
       "ticker": "SZ300996",
       "name": "普联软件",
       "death_date": "2026-07-31",
@@ -121,17 +97,6 @@
       "events": []
     },
     {
-      "ticker": "SH603629",
-      "name": "利通电子",
-      "death_date": "2026-07-23",
-      "peak_pct": 57.21,
-      "last_pct": 32.92,
-      "last_days": 6,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
       "ticker": "SZ000533",
       "name": "顺钠股份",
       "death_date": "2026-07-29",
@@ -150,24 +115,6 @@
       ]
     },
     {
-      "ticker": "SZ300981",
-      "name": "中红医疗",
-      "death_date": "2026-07-31",
-      "peak_pct": 47.46,
-      "last_pct": 47.46,
-      "last_days": 9,
-      "appearances": 2,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "中红医疗2026-07-29收盘价12.85元，涨幅19.98%",
-          "timestamp": 1785254400000,
-          "reason": "公司发布《2026年半年度业绩预告》显示净利润预增2338%-3557%，市场对公司业绩大幅改善给予积极反馈。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cb084b0c-8ee7-4c49-a0dc-04fabcd5fd5c&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
       "ticker": "SZ300688",
       "name": "创业黑马",
       "death_date": "2026-07-27",
@@ -177,6 +124,72 @@
       "appearances": 2,
       "pattern": "自然退潮",
       "events": []
+    },
+    {
+      "ticker": "SZ002199",
+      "name": "东晶电子",
+      "death_date": "2026-07-30",
+      "peak_pct": 46.35,
+      "last_pct": 46.35,
+      "last_days": 10,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "东晶电子2026-07-23收盘价10.73元，涨幅10.05%",
+          "timestamp": 1784736000000,
+          "reason": "公司发布《关于撤销退市风险警示暨股票复牌的公告》，股票简称由“*ST东晶”变更为“东晶电子”，成功摘帽复牌",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-ec6143f9-76b5-48ac-8aca-4648ac1b1bc5&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ002882",
+      "name": "金龙羽",
+      "death_date": "2026-08-03",
+      "peak_pct": 45.16,
+      "last_pct": 45.16,
+      "last_days": 12,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "金龙羽2026-07-23收盘价17.41元，涨幅5.39%",
+          "timestamp": 1784736000000,
+          "reason": "所属电网设备板块因国家电网招标落地而集体活跃，带动公司股价上涨。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-edf2cfb7-32f2-4b49-ba2a-16e96bd8ca8a&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ002568",
+      "name": "百润股份",
+      "death_date": "2026-07-31",
+      "peak_pct": 44.06,
+      "last_pct": 44.06,
+      "last_days": 36,
+      "appearances": 2,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "百润股份2026-06-26收盘价15.73元，涨幅10.00%",
+          "timestamp": 1782403200000,
+          "reason": "公司发布上半年业绩预增公告，净利润同比增长19.51%-25.94%",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1a96908e-a6e4-4e76-b005-e5cb1e5c0783&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "百润股份2026-06-29收盘价17.30元，涨幅9.98%",
+          "timestamp": 1782662400000,
+          "reason": "公司发布半年度业绩预增公告及高管增持计划，叠加白酒板块整体反弹",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-abf90ee3-cbe0-4132-9324-7ac5784f9291&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "百润股份2026-07-10收盘价17.29元，涨幅8.06%",
+          "timestamp": 1783612800000,
+          "reason": "控股股东及多位高管密集增持，彰显对公司未来发展的信心",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2d13de10-a56c-4b68-b791-f3e4dfa93656&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
     }
   ],
   "peak_deaths": [

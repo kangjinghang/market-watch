@@ -1,0 +1,150 @@
+{
+  "date": "2026-08-04",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002827",
+      "name": "高争民爆",
+      "streak": 5,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-04",
+      "total_pct": 75.41
+    },
+    {
+      "ticker": "SH600428",
+      "name": "中远海特",
+      "streak": 5,
+      "first_date": "2026-07-28",
+      "last_date": "2026-08-04",
+      "total_pct": 59.42
+    },
+    {
+      "ticker": "SZ300587",
+      "name": "天铁科技",
+      "streak": 4,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-04",
+      "total_pct": 30.2
+    },
+    {
+      "ticker": "SZ301091",
+      "name": "深城交",
+      "streak": 4,
+      "first_date": "2026-07-30",
+      "last_date": "2026-08-04",
+      "total_pct": 19.49
+    },
+    {
+      "ticker": "SZ000820",
+      "name": "*ST节能",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 57.78
+    },
+    {
+      "ticker": "SZ300935",
+      "name": "盈建科",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 49.05
+    },
+    {
+      "ticker": "SH603039",
+      "name": "泛微网络",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 45.8
+    },
+    {
+      "ticker": "SH603106",
+      "name": "恒银科技",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 45.34
+    },
+    {
+      "ticker": "SZ002131",
+      "name": "利欧股份",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 41.04
+    },
+    {
+      "ticker": "SH688111",
+      "name": "金山办公",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 38
+    },
+    {
+      "ticker": "SH600962",
+      "name": "国投中鲁",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 37.36
+    },
+    {
+      "ticker": "SH688244",
+      "name": "永信至诚",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 20.54
+    },
+    {
+      "ticker": "SZ300211",
+      "name": "*ST亿通",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 20.03
+    },
+    {
+      "ticker": "SZ002527",
+      "name": "新时达",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 17.68
+    },
+    {
+      "ticker": "SZ000607",
+      "name": "华媒控股",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 15.99
+    },
+    {
+      "ticker": "SZ001306",
+      "name": "夏厦精密",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 14.84
+    },
+    {
+      "ticker": "SZ002583",
+      "name": "海能达",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 13.84
+    },
+    {
+      "ticker": "SH603602",
+      "name": "纵横通信",
+      "streak": 3,
+      "first_date": "2026-07-31",
+      "last_date": "2026-08-04",
+      "total_pct": 13.53
+    }
+  ]
+}
