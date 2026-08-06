@@ -1,85 +1,93 @@
 {
-  "date": "2026-08-04",
+  "date": "2026-08-05",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "sector_surge",
-      "label": "计算机",
-      "today": 52,
-      "avg": 11.5,
-      "deviation": 3.52,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
       "label": "电子",
-      "today": 12,
-      "avg": 2.7,
-      "deviation": 3.5,
+      "today": 49,
+      "avg": 3.6,
+      "deviation": 12.61,
       "severity": "high"
     },
     {
       "type": "sector_surge",
-      "label": "通信",
-      "today": 15,
-      "avg": 3.9,
-      "deviation": 2.89,
+      "label": "有色金属",
+      "today": 23,
+      "avg": 4.5,
+      "deviation": 4.11,
       "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "传媒",
-      "today": 28,
-      "avg": 9.4,
-      "deviation": 1.98,
-      "severity": "medium"
     },
     {
       "type": "sector_surge",
       "label": "机械设备",
-      "today": 20,
-      "avg": 7.1,
-      "deviation": 1.81,
-      "severity": "medium"
-    },
-    {
-      "type": "sector_surge",
-      "label": "医药生物",
-      "today": 17,
-      "avg": 6.6,
-      "deviation": 1.59,
-      "severity": "medium"
-    },
-    {
-      "type": "sector_surge",
-      "label": "未分类",
-      "today": 13,
-      "avg": 5.1,
-      "deviation": 1.53,
-      "severity": "medium"
-    },
-    {
-      "type": "density_shift",
-      "label": "异动密度",
-      "today": 236,
-      "avg": 95,
-      "deviation": 1.48,
+      "today": 41,
+      "avg": 9.2,
+      "deviation": 3.45,
       "severity": "high"
     },
     {
       "type": "sector_surge",
       "label": "国防军工",
-      "today": 7,
-      "avg": 3,
-      "deviation": 1.33,
+      "today": 14,
+      "avg": 3.4,
+      "deviation": 3.06,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "汽车",
+      "today": 25,
+      "avg": 7.1,
+      "deviation": 2.52,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "基础化工",
+      "today": 25,
+      "avg": 8.3,
+      "deviation": 2.01,
+      "severity": "high"
+    },
+    {
+      "type": "density_shift",
+      "label": "异动密度",
+      "today": 347,
+      "avg": 117,
+      "deviation": 1.97,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "计算机",
+      "today": 49,
+      "avg": 16.6,
+      "deviation": 1.95,
+      "severity": "medium"
+    },
+    {
+      "type": "sector_surge",
+      "label": "通信",
+      "today": 14,
+      "avg": 5.3,
+      "deviation": 1.67,
       "severity": "medium"
     },
     {
       "type": "sector_surge",
       "label": "电力设备",
-      "today": 18,
-      "avg": 8.4,
-      "deviation": 1.15,
+      "today": 23,
+      "avg": 9.4,
+      "deviation": 1.44,
+      "severity": "medium"
+    },
+    {
+      "type": "sector_surge",
+      "label": "环保",
+      "today": 5,
+      "avg": 2.4,
+      "deviation": 1.11,
       "severity": "medium"
     }
   ]

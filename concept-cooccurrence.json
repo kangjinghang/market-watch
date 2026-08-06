@@ -1,37 +1,42 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-03",
-  "total_reasons": 3250,
+  "date_range": "2026-03-05 ~ 2026-08-04",
+  "total_reasons": 3323,
   "total_concepts": 72,
-  "total_pairs": 178,
+  "total_pairs": 183,
   "nodes": [
     {
       "id": "半导体",
-      "count": 652,
+      "count": 659,
       "type": "sector"
     },
     {
       "id": "AI",
-      "count": 376,
+      "count": 397,
       "type": "technology"
     },
     {
       "id": "电子",
-      "count": 304,
+      "count": 306,
       "type": "sector"
     },
     {
       "id": "创新药",
-      "count": 239,
+      "count": 240,
       "type": "sector"
     },
     {
       "id": "PCB",
-      "count": 200,
+      "count": 206,
       "type": "technology"
     },
     {
       "id": "半导体设备",
-      "count": 172,
+      "count": 175,
+      "type": "sector"
+    },
+    {
+      "id": "算力",
+      "count": 141,
       "type": "sector"
     },
     {
@@ -40,13 +45,8 @@
       "type": "sector"
     },
     {
-      "id": "算力",
-      "count": 127,
-      "type": "sector"
-    },
-    {
       "id": "机器人",
-      "count": 108,
+      "count": 112,
       "type": "sector"
     },
     {
@@ -61,7 +61,7 @@
     },
     {
       "id": "存储芯片",
-      "count": 71,
+      "count": 75,
       "type": "sector"
     },
     {
@@ -100,13 +100,18 @@
       "type": "sector"
     },
     {
-      "id": "金属新材料",
+      "id": "人形机器人",
+      "count": 42,
+      "type": "sector"
+    },
+    {
+      "id": "通信",
       "count": 41,
       "type": "sector"
     },
     {
-      "id": "人形机器人",
-      "count": 39,
+      "id": "金属新材料",
+      "count": 41,
       "type": "sector"
     },
     {
@@ -117,11 +122,6 @@
     {
       "id": "元件",
       "count": 36,
-      "type": "sector"
-    },
-    {
-      "id": "通信",
-      "count": 35,
       "type": "sector"
     },
     {
@@ -145,7 +145,17 @@
       "type": "sector"
     },
     {
+      "id": "汽车零部件",
+      "count": 27,
+      "type": "sector"
+    },
+    {
       "id": "医疗器械",
+      "count": 27,
+      "type": "sector"
+    },
+    {
+      "id": "电网设备",
       "count": 27,
       "type": "sector"
     },
@@ -155,13 +165,13 @@
       "type": "technology"
     },
     {
-      "id": "汽车零部件",
-      "count": 26,
-      "type": "sector"
+      "id": "CPO",
+      "count": 27,
+      "type": "technology"
     },
     {
-      "id": "电网设备",
-      "count": 26,
+      "id": "新能源",
+      "count": 25,
       "type": "sector"
     },
     {
@@ -170,23 +180,13 @@
       "type": "sector"
     },
     {
-      "id": "新能源",
-      "count": 23,
-      "type": "sector"
-    },
-    {
-      "id": "CPO",
-      "count": 23,
-      "type": "technology"
-    },
-    {
       "id": "电子树脂",
       "count": 22,
       "type": "sector"
     },
     {
       "id": "小金属",
-      "count": 21,
+      "count": 22,
       "type": "sector"
     },
     {
@@ -195,18 +195,18 @@
       "type": "technology"
     },
     {
+      "id": "消费电子",
+      "count": 20,
+      "type": "sector"
+    },
+    {
       "id": "半导体硅片",
       "count": 19,
       "type": "sector"
     },
     {
-      "id": "消费电子",
-      "count": 18,
-      "type": "sector"
-    },
-    {
       "id": "液冷",
-      "count": 17,
+      "count": 18,
       "type": "sector"
     },
     {
@@ -225,6 +225,16 @@
       "type": "technology"
     },
     {
+      "id": "自动化设备",
+      "count": 16,
+      "type": "sector"
+    },
+    {
+      "id": "工业金属",
+      "count": 16,
+      "type": "sector"
+    },
+    {
       "id": "服装家纺",
       "count": 16,
       "type": "sector"
@@ -235,23 +245,13 @@
       "type": "technology"
     },
     {
-      "id": "工业金属",
-      "count": 15,
-      "type": "sector"
-    },
-    {
-      "id": "自动化设备",
-      "count": 14,
-      "type": "sector"
-    },
-    {
       "id": "医疗服务",
       "count": 14,
       "type": "sector"
     },
     {
       "id": "港股医药",
-      "count": 13,
+      "count": 14,
       "type": "sector"
     },
     {
@@ -290,6 +290,11 @@
       "type": "technology"
     },
     {
+      "id": "GPU",
+      "count": 8,
+      "type": "technology"
+    },
+    {
       "id": "锂电池",
       "count": 8,
       "type": "sector"
@@ -298,11 +303,6 @@
       "id": "半导体靶材",
       "count": 8,
       "type": "sector"
-    },
-    {
-      "id": "GPU",
-      "count": 7,
-      "type": "technology"
     },
     {
       "id": "光伏",
@@ -335,13 +335,13 @@
       "type": "sector"
     },
     {
-      "id": "量子计算",
+      "id": "计算机",
       "count": 4,
       "type": "sector"
     },
     {
-      "id": "计算机",
-      "count": 3,
+      "id": "量子计算",
+      "count": 4,
       "type": "sector"
     },
     {
@@ -369,7 +369,7 @@
     {
       "source": "半导体",
       "target": "半导体设备",
-      "weight": 172
+      "weight": 175
     },
     {
       "source": "半导体",
@@ -377,14 +377,14 @@
       "weight": 131
     },
     {
+      "source": "AI",
+      "target": "算力",
+      "weight": 99
+    },
+    {
       "source": "半导体",
       "target": "电子",
       "weight": 94
-    },
-    {
-      "source": "AI",
-      "target": "算力",
-      "weight": 91
     },
     {
       "source": "电子",
@@ -399,12 +399,12 @@
     {
       "source": "AI",
       "target": "PCB",
-      "weight": 46
+      "weight": 48
     },
     {
       "source": "人形机器人",
       "target": "机器人",
-      "weight": 39
+      "weight": 42
     },
     {
       "source": "光学光电子",
@@ -414,7 +414,7 @@
     {
       "source": "AI",
       "target": "半导体",
-      "weight": 28
+      "weight": 29
     },
     {
       "source": "半导体",
@@ -434,7 +434,7 @@
     {
       "source": "PCB",
       "target": "电子",
-      "weight": 25
+      "weight": 26
     },
     {
       "source": "军工",
@@ -447,6 +447,11 @@
       "weight": 24
     },
     {
+      "source": "半导体",
+      "target": "存储芯片",
+      "weight": 23
+    },
+    {
       "source": "PCB",
       "target": "覆铜板",
       "weight": 22
@@ -457,18 +462,18 @@
       "weight": 22
     },
     {
+      "source": "PCB",
+      "target": "算力",
+      "weight": 22
+    },
+    {
       "source": "电子",
       "target": "电子树脂",
       "weight": 22
     },
     {
-      "source": "半导体",
-      "target": "存储芯片",
-      "weight": 21
-    },
-    {
-      "source": "PCB",
-      "target": "算力",
+      "source": "消费电子",
+      "target": "电子",
       "weight": 20
     },
     {
@@ -480,11 +485,6 @@
       "source": "HBM",
       "target": "半导体",
       "weight": 19
-    },
-    {
-      "source": "消费电子",
-      "target": "电子",
-      "weight": 18
     },
     {
       "source": "先进封装",
@@ -577,9 +577,29 @@
       "weight": 10
     },
     {
+      "source": "机器人",
+      "target": "自动化设备",
+      "weight": 10
+    },
+    {
+      "source": "AI",
+      "target": "通信",
+      "weight": 10
+    },
+    {
       "source": "AI",
       "target": "CAE",
       "weight": 10
+    },
+    {
+      "source": "CPO",
+      "target": "通信",
+      "weight": 10
+    },
+    {
+      "source": "存储芯片",
+      "target": "电子",
+      "weight": 9
     },
     {
       "source": "PCB",
@@ -587,18 +607,8 @@
       "weight": 9
     },
     {
-      "source": "机器人",
-      "target": "自动化设备",
-      "weight": 9
-    },
-    {
       "source": "MLCC",
       "target": "元件",
-      "weight": 9
-    },
-    {
-      "source": "AI",
-      "target": "通信",
       "weight": 9
     },
     {
@@ -618,17 +628,17 @@
     },
     {
       "source": "存储芯片",
-      "target": "电子",
-      "weight": 8
-    },
-    {
-      "source": "存储芯片",
       "target": "电子化学品",
       "weight": 8
     },
     {
       "source": "MLCC",
       "target": "半导体",
+      "weight": 8
+    },
+    {
+      "source": "半导体设备",
+      "target": "存储芯片",
       "weight": 8
     },
     {
@@ -652,6 +662,11 @@
       "weight": 8
     },
     {
+      "source": "AI",
+      "target": "存储芯片",
+      "weight": 8
+    },
+    {
       "source": "电子",
       "target": "通信",
       "weight": 7
@@ -672,11 +687,6 @@
       "weight": 7
     },
     {
-      "source": "半导体设备",
-      "target": "存储芯片",
-      "weight": 7
-    },
-    {
       "source": "AI",
       "target": "新能源",
       "weight": 7
@@ -687,8 +697,8 @@
       "weight": 7
     },
     {
-      "source": "AI",
-      "target": "存储芯片",
+      "source": "存储芯片",
+      "target": "算力",
       "weight": 7
     },
     {
@@ -772,18 +782,13 @@
       "weight": 6
     },
     {
+      "source": "半导体",
+      "target": "算力",
+      "weight": 6
+    },
+    {
       "source": "AI",
       "target": "机器人",
-      "weight": 6
-    },
-    {
-      "source": "CPO",
-      "target": "通信",
-      "weight": 6
-    },
-    {
-      "source": "存储芯片",
-      "target": "算力",
       "weight": 6
     },
     {
@@ -804,11 +809,6 @@
     {
       "source": "电子化学品",
       "target": "通信",
-      "weight": 5
-    },
-    {
-      "source": "半导体",
-      "target": "算力",
       "weight": 5
     },
     {
@@ -947,6 +947,11 @@
       "weight": 4
     },
     {
+      "source": "机器人",
+      "target": "电子",
+      "weight": 4
+    },
+    {
       "source": "AI",
       "target": "量子计算",
       "weight": 4
@@ -1023,6 +1028,11 @@
     },
     {
       "source": "PCB",
+      "target": "消费电子",
+      "weight": 3
+    },
+    {
+      "source": "PCB",
       "target": "通信",
       "weight": 3
     },
@@ -1048,7 +1058,12 @@
     },
     {
       "source": "机器人",
-      "target": "电子",
+      "target": "消费电子",
+      "weight": 3
+    },
+    {
+      "source": "半导体",
+      "target": "机器人",
       "weight": 3
     },
     {
@@ -1094,6 +1109,11 @@
     {
       "source": "光伏",
       "target": "半导体硅片",
+      "weight": 2
+    },
+    {
+      "source": "AI",
+      "target": "自动化设备",
       "weight": 2
     },
     {
@@ -1147,11 +1167,6 @@
       "weight": 2
     },
     {
-      "source": "PCB",
-      "target": "消费电子",
-      "weight": 2
-    },
-    {
       "source": "元件",
       "target": "半导体",
       "weight": 2
@@ -1187,6 +1202,11 @@
       "weight": 2
     },
     {
+      "source": "PCB",
+      "target": "汽车零部件",
+      "weight": 2
+    },
+    {
       "source": "人形机器人",
       "target": "汽车零部件",
       "weight": 2
@@ -1204,16 +1224,6 @@
     {
       "source": "创新药",
       "target": "证券",
-      "weight": 2
-    },
-    {
-      "source": "机器人",
-      "target": "消费电子",
-      "weight": 2
-    },
-    {
-      "source": "半导体",
-      "target": "机器人",
       "weight": 2
     },
     {
@@ -1242,6 +1252,11 @@
       "weight": 2
     },
     {
+      "source": "新能源",
+      "target": "汽车零部件",
+      "weight": 2
+    },
+    {
       "source": "证券",
       "target": "银行",
       "weight": 2
@@ -1254,6 +1269,16 @@
     {
       "source": "IPO",
       "target": "机器人",
+      "weight": 2
+    },
+    {
+      "source": "PCB",
+      "target": "工业金属",
+      "weight": 2
+    },
+    {
+      "source": "半导体",
+      "target": "自动化设备",
       "weight": 2
     }
   ]

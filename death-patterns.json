@@ -1,25 +1,14 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-04",
-  "total_deaths": 636,
+  "date_range": "2026-06-16 ~ 2026-08-05",
+  "total_deaths": 631,
   "patterns": {
     "闪崩": 1,
-    "高位回落": 70,
-    "利空事件": 2,
+    "高位回落": 56,
+    "利空事件": 1,
     "利空+下跌": 7,
-    "自然退潮": 556
+    "自然退潮": 566
   },
   "recent_deaths": [
-    {
-      "ticker": "SH688146",
-      "name": "中船特气",
-      "death_date": "2026-07-27",
-      "peak_pct": 855.74,
-      "last_pct": 41.9,
-      "last_days": 7,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": []
-    },
     {
       "ticker": "SZ000636",
       "name": "风华高科",
@@ -68,20 +57,20 @@
       ]
     },
     {
-      "ticker": "SZ300996",
-      "name": "普联软件",
-      "death_date": "2026-07-31",
-      "peak_pct": 67.15,
-      "last_pct": 67.15,
-      "last_days": 9,
-      "appearances": 2,
+      "ticker": "SZ300981",
+      "name": "中红医疗",
+      "death_date": "2026-08-04",
+      "peak_pct": 65.05,
+      "last_pct": 65.05,
+      "last_days": 39,
+      "appearances": 3,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "普联软件2026-07-30收盘价15.52元，涨幅20.03%",
-          "timestamp": 1785340800000,
-          "reason": "公司控制权变更，AI龙头企业明略科技旗下公司成为控股股东，市场预期业务协同将带来AI技术赋能与应用场景落地。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6ead0e18-f429-4797-889d-d83cb08dca65&navBarTransparent=1&navBarTheme=dark"
+          "description": "中红医疗2026-07-29收盘价12.85元，涨幅19.98%",
+          "timestamp": 1785254400000,
+          "reason": "公司发布《2026年半年度业绩预告》显示净利润预增2338%-3557%，市场对公司业绩大幅改善给予积极反馈。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cb084b0c-8ee7-4c49-a0dc-04fabcd5fd5c&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -95,6 +84,35 @@
       "appearances": 4,
       "pattern": "自然退潮",
       "events": []
+    },
+    {
+      "ticker": "SZ300221",
+      "name": "银禧科技",
+      "death_date": "2026-08-04",
+      "peak_pct": 60.04,
+      "last_pct": 15.9,
+      "last_days": 5,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ000820",
+      "name": "神雾节能",
+      "death_date": "2026-08-04",
+      "peak_pct": 57.78,
+      "last_pct": 57.78,
+      "last_days": 14,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "神雾节能2026-08-03收盘价3.87元，涨幅9.94%",
+          "timestamp": 1785686400000,
+          "reason": "公司摘帽更名后，叠加环保设备板块活跃，市场情绪提振推动股价上涨。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c50ffad8-d3cb-4a80-b70d-6e4907ba80be&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
     },
     {
       "ticker": "SZ000533",
@@ -115,13 +133,13 @@
       ]
     },
     {
-      "ticker": "SZ300688",
-      "name": "创业黑马",
-      "death_date": "2026-07-27",
-      "peak_pct": 46.46,
-      "last_pct": 46.46,
-      "last_days": 7,
-      "appearances": 2,
+      "ticker": "SZ000815",
+      "name": "美利云",
+      "death_date": "2026-08-04",
+      "peak_pct": 46.37,
+      "last_pct": 33.12,
+      "last_days": 5,
+      "appearances": 3,
       "pattern": "自然退潮",
       "events": []
     },
@@ -144,50 +162,20 @@
       ]
     },
     {
-      "ticker": "SZ002882",
-      "name": "金龙羽",
-      "death_date": "2026-08-03",
-      "peak_pct": 45.16,
-      "last_pct": 45.16,
-      "last_days": 12,
+      "ticker": "SH603106",
+      "name": "恒银科技",
+      "death_date": "2026-08-04",
+      "peak_pct": 45.34,
+      "last_pct": 45.34,
+      "last_days": 11,
       "appearances": 3,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "金龙羽2026-07-23收盘价17.41元，涨幅5.39%",
-          "timestamp": 1784736000000,
-          "reason": "所属电网设备板块因国家电网招标落地而集体活跃，带动公司股价上涨。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-edf2cfb7-32f2-4b49-ba2a-16e96bd8ca8a&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ002568",
-      "name": "百润股份",
-      "death_date": "2026-07-31",
-      "peak_pct": 44.06,
-      "last_pct": 44.06,
-      "last_days": 36,
-      "appearances": 2,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "百润股份2026-06-26收盘价15.73元，涨幅10.00%",
-          "timestamp": 1782403200000,
-          "reason": "公司发布上半年业绩预增公告，净利润同比增长19.51%-25.94%",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1a96908e-a6e4-4e76-b005-e5cb1e5c0783&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "百润股份2026-06-29收盘价17.30元，涨幅9.98%",
-          "timestamp": 1782662400000,
-          "reason": "公司发布半年度业绩预增公告及高管增持计划，叠加白酒板块整体反弹",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-abf90ee3-cbe0-4132-9324-7ac5784f9291&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "百润股份2026-07-10收盘价17.29元，涨幅8.06%",
-          "timestamp": 1783612800000,
-          "reason": "控股股东及多位高管密集增持，彰显对公司未来发展的信心",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2d13de10-a56c-4b68-b791-f3e4dfa93656&navBarTransparent=1&navBarTheme=dark"
+          "description": "恒银科技2026-08-04收盘价9.04元，涨幅9.98%",
+          "timestamp": 1785772800000,
+          "reason": "AI应用端概念板块整体走强，叠加公司中标建行采购项目利好",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-852e5b90-4e50-418d-9f98-8f32d2b919ef&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
