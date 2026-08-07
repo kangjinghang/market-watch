@@ -966,7 +966,7 @@
         0
       ],
       "max_surge": 12,
-      "current": 0,
+      "current": 3,
       "peak": 13,
       "stage": "退潮"
     }

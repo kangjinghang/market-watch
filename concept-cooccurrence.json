@@ -160,7 +160,17 @@
       "type": "sector"
     },
     {
+      "id": "汽车零部件",
+      "count": 27,
+      "type": "sector"
+    },
+    {
       "id": "医疗器械",
+      "count": 27,
+      "type": "sector"
+    },
+    {
+      "id": "电网设备",
       "count": 27,
       "type": "sector"
     },
@@ -457,6 +467,11 @@
       "weight": 24
     },
     {
+      "source": "半导体",
+      "target": "存储芯片",
+      "weight": 23
+    },
+    {
       "source": "PCB",
       "target": "覆铜板",
       "weight": 22
@@ -464,6 +479,11 @@
     {
       "source": "AI",
       "target": "覆铜板",
+      "weight": 22
+    },
+    {
+      "source": "PCB",
+      "target": "算力",
       "weight": 22
     },
     {
