@@ -1855,7 +1855,8 @@
       "name": "恒工精密",
       "last_seen": "2026-07-03",
       "shared_concepts": [
-        "机器人"
+        "机器人",
+        "人形机器人"
       ],
       "trend_pct": 20.98,
       "trend_days": 4
