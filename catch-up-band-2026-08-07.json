@@ -1,0 +1,825 @@
+{
+  "date": "2026-08-07",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300916",
+      "name": "朗特智能",
+      "pct": 20,
+      "concepts": [
+        "人形机器人",
+        "机器人",
+        "液冷"
+      ]
+    },
+    {
+      "ticker": "SZ301366",
+      "name": "一博科技",
+      "pct": 20,
+      "concepts": [
+        "PCB",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH688020",
+      "name": "方邦股份",
+      "pct": 20,
+      "concepts": [
+        "PCB",
+        "光模块",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688265",
+      "name": "南模生物",
+      "pct": 20,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300400",
+      "name": "劲拓股份",
+      "pct": 17.76,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688131",
+      "name": "皓元医药",
+      "pct": 17.58,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ301217",
+      "name": "铜冠铜箔",
+      "pct": 16.98,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH688202",
+      "name": "美迪西",
+      "pct": 16.26,
+      "concepts": [
+        "创新药",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300672",
+      "name": "国科微",
+      "pct": 14.82,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ301257",
+      "name": "普蕊斯",
+      "pct": 14.65,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300558",
+      "name": "贝达药业",
+      "pct": 14.37,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ301326",
+      "name": "捷邦科技",
+      "pct": 14.23,
+      "concepts": [
+        "PCB",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300683",
+      "name": "海特生物",
+      "pct": 11.94,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688331",
+      "name": "荣昌生物",
+      "pct": 11.61,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ301626",
+      "name": "苏州天脉",
+      "pct": 11.46,
+      "concepts": [
+        "消费电子",
+        "PCB",
+        "电子",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688235",
+      "name": "百济神州",
+      "pct": 11.28,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688011",
+      "name": "新光光电",
+      "pct": 11.19,
+      "concepts": [
+        "半导体设备",
+        "半导体",
+        "PCB",
+        "军工",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SZ300981",
+      "name": "中红医疗",
+      "pct": 11.07,
+      "concepts": [
+        "医疗器械"
+      ]
+    },
+    {
+      "ticker": "SZ300125",
+      "name": "聆达股份",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002037",
+      "name": "保利联合",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002194",
+      "name": "武汉凡谷",
+      "pct": 10.01,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ000831",
+      "name": "中国稀土",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600651",
+      "name": "飞乐音响",
+      "pct": 9.97,
+      "concepts": [
+        "PCB",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH603758",
+      "name": "秦安股份",
+      "pct": 9.97,
+      "concepts": [
+        "汽车零部件",
+        "PCB"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 51,
+      "active_days": 11,
+      "heat_score": 561,
+      "leaders": [
+        {
+          "ticker": "SZ301366",
+          "name": "一博科技",
+          "pct": 20,
+          "concepts": [
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688020",
+          "name": "方邦股份",
+          "pct": 20,
+          "concepts": [
+            "PCB",
+            "光模块",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688202",
+          "name": "美迪西",
+          "pct": 16.26,
+          "concepts": [
+            "创新药",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301326",
+          "name": "捷邦科技",
+          "pct": 14.23,
+          "concepts": [
+            "PCB",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301626",
+          "name": "苏州天脉",
+          "pct": 11.46,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ002194",
+          "name": "武汉凡谷",
+          "pct": 10.01,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH600651",
+          "name": "飞乐音响",
+          "pct": 9.97,
+          "concepts": [
+            "PCB",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 30,
+      "active_days": 8,
+      "heat_score": 240,
+      "leaders": [
+        {
+          "ticker": "SZ301366",
+          "name": "一博科技",
+          "pct": 20,
+          "concepts": [
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 21,
+      "active_days": 5,
+      "heat_score": 105,
+      "leaders": [
+        {
+          "ticker": "SZ300400",
+          "name": "劲拓股份",
+          "pct": 17.76,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ300672",
+          "name": "国科微",
+          "pct": 14.82,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688011",
+          "name": "新光光电",
+          "pct": 11.19,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "PCB",
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 19,
+      "active_days": 5,
+      "heat_score": 95,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 14,
+      "active_days": 6,
+      "heat_score": 84,
+      "leaders": [
+        {
+          "ticker": "SZ301366",
+          "name": "一博科技",
+          "pct": 20,
+          "concepts": [
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688020",
+          "name": "方邦股份",
+          "pct": 20,
+          "concepts": [
+            "PCB",
+            "光模块",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301217",
+          "name": "铜冠铜箔",
+          "pct": 16.98,
+          "concepts": [
+            "PCB"
+          ]
+        },
+        {
+          "ticker": "SZ301326",
+          "name": "捷邦科技",
+          "pct": 14.23,
+          "concepts": [
+            "PCB",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301626",
+          "name": "苏州天脉",
+          "pct": 11.46,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688011",
+          "name": "新光光电",
+          "pct": 11.19,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "PCB",
+            "军工",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SH600651",
+          "name": "飞乐音响",
+          "pct": 9.97,
+          "concepts": [
+            "PCB",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH603758",
+          "name": "秦安股份",
+          "pct": 9.97,
+          "concepts": [
+            "汽车零部件",
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 10,
+      "active_days": 5,
+      "heat_score": 50,
+      "leaders": [
+        {
+          "ticker": "SZ301626",
+          "name": "苏州天脉",
+          "pct": 11.46,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH688011",
+          "name": "新光光电",
+          "pct": 11.19,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "PCB",
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 4,
+      "heat_score": 48,
+      "leaders": [
+        {
+          "ticker": "SH688265",
+          "name": "南模生物",
+          "pct": 20,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688202",
+          "name": "美迪西",
+          "pct": 16.26,
+          "concepts": [
+            "创新药",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ301257",
+          "name": "普蕊斯",
+          "pct": 14.65,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ300558",
+          "name": "贝达药业",
+          "pct": 14.37,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ300683",
+          "name": "海特生物",
+          "pct": 11.94,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688331",
+          "name": "荣昌生物",
+          "pct": 11.61,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688235",
+          "name": "百济神州",
+          "pct": 11.28,
+          "concepts": [
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 11,
+      "active_days": 4,
+      "heat_score": 44,
+      "leaders": [
+        {
+          "ticker": "SZ300916",
+          "name": "朗特智能",
+          "pct": 20,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "通信",
+      "leader_count": 10,
+      "active_days": 4,
+      "heat_score": 40,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 12,
+      "active_days": 3,
+      "heat_score": 36,
+      "leaders": [
+        {
+          "ticker": "SZ300400",
+          "name": "劲拓股份",
+          "pct": 17.76,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ300672",
+          "name": "国科微",
+          "pct": 14.82,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688011",
+          "name": "新光光电",
+          "pct": 11.19,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "PCB",
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": [
+        {
+          "ticker": "SZ300916",
+          "name": "朗特智能",
+          "pct": 20,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 8,
+      "active_days": 2,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SH688011",
+          "name": "新光光电",
+          "pct": 11.19,
+          "concepts": [
+            "半导体设备",
+            "半导体",
+            "PCB",
+            "军工",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SZ300981",
+          "name": "中红医疗",
+          "pct": 11.07,
+          "concepts": [
+            "医疗器械"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 9,
+      "active_days": 1,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SH603758",
+          "name": "秦安股份",
+          "pct": 9.97,
+          "concepts": [
+            "汽车零部件",
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": [
+        {
+          "ticker": "SZ300916",
+          "name": "朗特智能",
+          "pct": 20,
+          "concepts": [
+            "人形机器人",
+            "机器人",
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "钢铁",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ301626",
+          "name": "苏州天脉",
+          "pct": 11.46,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH688668",
+      "name": "鼎通科技",
+      "last_seen": "2026-08-07",
+      "shared_concepts": [
+        "液冷"
+      ],
+      "trend_pct": 42.89,
+      "trend_days": 8
+    },
+    {
+      "ticker": "SH603990",
+      "name": "麦迪科技",
+      "last_seen": "2026-08-07",
+      "shared_concepts": [
+        "机器人"
+      ],
+      "trend_pct": 33.19,
+      "trend_days": 17
+    },
+    {
+      "ticker": "SZ002213",
+      "name": "大为股份",
+      "last_seen": "2026-08-07",
+      "shared_concepts": [
+        "半导体设备",
+        "半导体"
+      ],
+      "trend_pct": 20.87,
+      "trend_days": 4
+    }
+  ]
+}

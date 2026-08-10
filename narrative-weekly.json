@@ -1249,11 +1249,11 @@
     {
       "week": "2026-W27",
       "date_range": "06-29 ~ 07-05",
-      "total_reasons": 590,
+      "total_reasons": 595,
       "top_concepts": [
         {
           "concept": "创新药",
-          "count": 177
+          "count": 181
         },
         {
           "concept": "机器人",
@@ -1269,7 +1269,7 @@
         },
         {
           "concept": "中药",
-          "count": 25
+          "count": 27
         },
         {
           "concept": "电子",
@@ -1300,7 +1300,7 @@
         },
         {
           "concept": "中药",
-          "count": 25,
+          "count": 27,
           "prev_count": 1
         },
         {
@@ -1380,11 +1380,11 @@
     {
       "week": "2026-W28",
       "date_range": "07-06 ~ 07-12",
-      "total_reasons": 77,
+      "total_reasons": 78,
       "top_concepts": [
         {
           "concept": "创新药",
-          "count": 13
+          "count": 14
         },
         {
           "concept": "ESG",
@@ -1438,7 +1438,7 @@
         {
           "concept": "中药",
           "count": 0,
-          "prev_count": 25
+          "prev_count": 27
         },
         {
           "concept": "电子",
@@ -1470,7 +1470,7 @@
     {
       "week": "2026-W29",
       "date_range": "07-13 ~ 07-19",
-      "total_reasons": 87,
+      "total_reasons": 92,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1482,14 +1482,14 @@
         },
         {
           "concept": "中药",
-          "count": 6
-        },
-        {
-          "concept": "量子计算",
-          "count": 4
+          "count": 7
         },
         {
           "concept": "创新药",
+          "count": 7
+        },
+        {
+          "concept": "量子计算",
           "count": 4
         },
         {
@@ -1521,7 +1521,7 @@
         },
         {
           "concept": "中药",
-          "count": 6,
+          "count": 7,
           "prev_count": 0
         },
         {
@@ -1551,7 +1551,7 @@
     {
       "week": "2026-W30",
       "date_range": "07-20 ~ 07-26",
-      "total_reasons": 83,
+      "total_reasons": 84,
       "top_concepts": [
         {
           "concept": "电网设备",
@@ -1575,7 +1575,7 @@
         },
         {
           "concept": "创新药",
-          "count": 3
+          "count": 4
         },
         {
           "concept": "CPO",
@@ -1625,7 +1625,7 @@
         {
           "concept": "中药",
           "count": 0,
-          "prev_count": 6
+          "prev_count": 7
         },
         {
           "concept": "量子计算",
@@ -1642,73 +1642,78 @@
     {
       "week": "2026-W31",
       "date_range": "07-27 ~ 08-02",
-      "total_reasons": 168,
+      "total_reasons": 180,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 63
+          "count": 66
         },
         {
           "concept": "算力",
-          "count": 39
+          "count": 41
         },
         {
           "concept": "PCB",
-          "count": 16
+          "count": 19
         },
         {
           "concept": "存储芯片",
-          "count": 9
+          "count": 11
         },
         {
           "concept": "半导体",
-          "count": 8
+          "count": 10
         },
         {
           "concept": "通信",
-          "count": 7
+          "count": 8
+        },
+        {
+          "concept": "机器人",
+          "count": 6
         },
         {
           "concept": "电网设备",
           "count": 5
         },
         {
-          "concept": "机器人",
-          "count": 5
+          "concept": "人形机器人",
+          "count": 4
         },
         {
-          "concept": "汽车零部件",
-          "count": 3
-        },
-        {
-          "concept": "新能源",
+          "concept": "创新药",
           "count": 3
         }
       ],
       "emerging": [
         {
           "concept": "PCB",
-          "count": 16,
+          "count": 19,
           "prev_count": 0
         },
         {
           "concept": "存储芯片",
-          "count": 9,
+          "count": 11,
           "prev_count": 1
         },
         {
           "concept": "半导体",
-          "count": 8,
+          "count": 10,
           "prev_count": 1
         },
         {
           "concept": "通信",
-          "count": 7,
+          "count": 8,
           "prev_count": 0
         },
         {
           "concept": "机器人",
-          "count": 5,
+          "count": 6,
+          "prev_count": 0
+        },
+        {
+          "concept": "人形机器人",
+          "count": 4,
           "prev_count": 0
         },
         {
@@ -1718,11 +1723,6 @@
         },
         {
           "concept": "新能源",
-          "count": 3,
-          "prev_count": 0
-        },
-        {
-          "concept": "人形机器人",
           "count": 3,
           "prev_count": 0
         }
@@ -1748,74 +1748,84 @@
     {
       "week": "2026-W32",
       "date_range": "08-03 ~ 08-09",
-      "total_reasons": 100,
+      "total_reasons": 148,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 18
+          "count": 29
         },
         {
           "concept": "算力",
-          "count": 17
+          "count": 22
         },
         {
           "concept": "通信",
-          "count": 11
+          "count": 15
         },
         {
           "concept": "CPO",
+          "count": 14
+        },
+        {
+          "concept": "PCB",
+          "count": 14
+        },
+        {
+          "concept": "半导体设备",
+          "count": 13
+        },
+        {
+          "concept": "半导体",
+          "count": 13
+        },
+        {
+          "concept": "机器人",
           "count": 10
         },
         {
           "concept": "人形机器人",
-          "count": 8
-        },
-        {
-          "concept": "机器人",
-          "count": 8
-        },
-        {
-          "concept": "半导体设备",
-          "count": 7
-        },
-        {
-          "concept": "半导体",
-          "count": 7
-        },
-        {
-          "concept": "电网设备",
-          "count": 5
+          "count": 9
         },
         {
           "concept": "电子",
-          "count": 4
+          "count": 9
         }
       ],
       "emerging": [
         {
           "concept": "CPO",
-          "count": 10,
+          "count": 14,
           "prev_count": 0
         },
         {
           "concept": "半导体设备",
-          "count": 7,
+          "count": 13,
           "prev_count": 0
         },
         {
           "concept": "电子",
-          "count": 4,
+          "count": 9,
           "prev_count": 1
+        },
+        {
+          "concept": "液冷",
+          "count": 4,
+          "prev_count": 0
+        },
+        {
+          "concept": "光学光电子",
+          "count": 4,
+          "prev_count": 0
         }
       ],
       "fading": [
         {
-          "concept": "存储芯片",
-          "count": 1,
-          "prev_count": 9
+          "concept": "新能源",
+          "count": 0,
+          "prev_count": 3
         },
         {
-          "concept": "新能源",
+          "concept": "IPO",
           "count": 0,
           "prev_count": 3
         },
@@ -1833,9 +1843,14 @@
           "concept": "自动化设备",
           "count": 1,
           "prev_count": 3
+        },
+        {
+          "concept": "专用设备",
+          "count": 1,
+          "prev_count": 3
         }
       ]
     }
   ],
-  "generated_at": "2026-08-07T09:50:56.917Z"
+  "generated_at": "2026-08-10T11:22:52.599Z"
 }

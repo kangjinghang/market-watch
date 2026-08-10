@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-06",
-  "total_deaths": 762,
+  "date_range": "2026-06-16 ~ 2026-08-07",
+  "total_deaths": 776,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 41,
+    "高位回落": 29,
     "利空事件": 2,
-    "利空+下跌": 6,
-    "自然退潮": 713
+    "利空+下跌": 4,
+    "自然退潮": 741
   },
   "recent_deaths": [
     {
@@ -43,6 +43,39 @@
       "events": []
     },
     {
+      "ticker": "SH688456",
+      "name": "有研粉材",
+      "death_date": "2026-08-06",
+      "peak_pct": 220.91,
+      "last_pct": 30.08,
+      "last_days": 3,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH600367",
+      "name": "红星发展",
+      "death_date": "2026-08-06",
+      "peak_pct": 215.45,
+      "last_pct": 22.91,
+      "last_days": 3,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "death_date": "2026-08-06",
+      "peak_pct": 204.96,
+      "last_pct": 22.41,
+      "last_days": 7,
+      "appearances": 11,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
       "ticker": "SZ300408",
       "name": "三环集团",
       "death_date": "2026-08-05",
@@ -54,13 +87,13 @@
       "events": []
     },
     {
-      "ticker": "SZ301377",
-      "name": "鼎泰高科",
-      "death_date": "2026-08-05",
-      "peak_pct": 191.86,
-      "last_pct": 24.95,
-      "last_days": 6,
-      "appearances": 5,
+      "ticker": "SH600378",
+      "name": "昊华科技",
+      "death_date": "2026-08-06",
+      "peak_pct": 176.79,
+      "last_pct": 28.01,
+      "last_days": 3,
+      "appearances": 7,
       "pattern": "自然退潮",
       "events": []
     },
@@ -85,39 +118,6 @@
       "appearances": 5,
       "pattern": "自然退潮",
       "events": []
-    },
-    {
-      "ticker": "SZ001331",
-      "name": "胜通能源",
-      "death_date": "2026-08-05",
-      "peak_pct": 115.41,
-      "last_pct": 35.31,
-      "last_days": 6,
-      "appearances": 7,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ301349",
-      "name": "信德新材",
-      "death_date": "2026-08-05",
-      "peak_pct": 114.42,
-      "last_pct": 18.07,
-      "last_days": 6,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SH603011",
-      "name": "合锻智能",
-      "death_date": "2026-08-05",
-      "peak_pct": 111.27,
-      "last_pct": 22.97,
-      "last_days": 6,
-      "appearances": 4,
-      "pattern": "自然退潮",
-      "events": []
     }
   ],
   "peak_deaths": [
@@ -131,48 +131,6 @@
       "appearances": 3,
       "pattern": "自然退潮",
       "events": []
-    },
-    {
-      "ticker": "SH603186",
-      "name": "华正新材",
-      "death_date": "2026-06-25",
-      "peak_pct": 354.44,
-      "last_pct": 354.44,
-      "last_days": 94,
-      "appearances": 6,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "华正新材2026-05-12收盘价97.91元，涨幅10.00%",
-          "timestamp": 1778515200000,
-          "reason": "人形机器人产业链进入规模化商业化新阶段，带动元件行业板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-854ea632-4075-432a-b237-365de7867f95&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-05-22收盘价123.84元，涨幅10.00%",
-          "timestamp": 1779379200000,
-          "reason": "覆铜板板块大涨带动个股上涨，华正新材作为ABF膜国产替代标的受市场关注",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-98627688-453e-47c3-bd1a-ff2e24dfea61&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-06-01收盘价120.32元，跌幅8.92%",
-          "timestamp": 1780243200000,
-          "reason": "PCB概念板块整体下挫及市场对华正新材CBF膜量产进展的担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3f7b96e2-1ff9-49b0-b6b1-6db1959280f8&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-06-08收盘价136.03元，涨幅10.00%",
-          "timestamp": 1780848000000,
-          "reason": "物理AI概念持续走强带动元件板块上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1361e8c1-3be5-4203-8779-d733bcef52d6&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "华正新材2026-06-23收盘价231.60元，跌幅7.06%",
-          "timestamp": 1782144000000,
-          "reason": "半导体及存储芯片板块整体回调拖累元件行业，市场担忧上游原材料涨价挤压利润",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3d3a8b0-8676-4b65-b541-fd381e820616&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
     },
     {
       "ticker": "SZ000636",
@@ -230,102 +188,6 @@
           "timestamp": 1779120000000,
           "reason": "AI服务器需求推动铝电解电容行业景气度提升，江海股份产品确认应用于国产AI服务器",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-620818f8-494d-4fe7-bf3c-703157a3f928&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ003036",
-      "name": "泰坦股份",
-      "death_date": "2026-06-17",
-      "peak_pct": 288.47,
-      "last_pct": 288.47,
-      "last_days": 64,
-      "appearances": 2,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "泰坦股份2026-04-15收盘价29.70元，涨幅10.00%",
-          "timestamp": 1776182400000,
-          "reason": "专用设备行业板块走强及公司股价创历史新高驱动上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-91171dfd-e05a-4a54-806d-d73859835323&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "泰坦股份2026-04-28收盘价33.83元，跌幅8.44%",
-          "timestamp": 1777305600000,
-          "reason": "国产替代设备验证不及预期引发市场担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-9936c6fe-760e-4dfe-aa5f-20d7ea06ceb0&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH600183",
-      "name": "生益科技",
-      "death_date": "2026-06-25",
-      "peak_pct": 264.61,
-      "last_pct": 264.61,
-      "last_days": 84,
-      "appearances": 5,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "生益科技2026-05-13收盘价94.18元，涨幅10.00%",
-          "timestamp": 1778601600000,
-          "reason": "英伟达下一代AI芯片Vera Rubin量产方案敲定，带动PCB用量倍增，生益科技作为高端覆铜板龙头受益",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-71d91736-2c20-4aff-8a99-a62b2fd6dd21&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-05-18收盘价98.95元，涨幅10.01%",
-          "timestamp": 1779033600000,
-          "reason": "AI服务器高端覆铜板供需紧张及行业涨价潮驱动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dadd6e92-5107-419a-84e7-93b7f10f34af&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-05-22收盘价108.01元，涨幅10.00%",
-          "timestamp": 1779379200000,
-          "reason": "PCB板块整体走强及生益科技主导制定PTFE覆铜板国际标准",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-537788e9-a2e9-4213-8f93-f5d3312be8f0&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-05-26收盘价128.17元，涨幅10.00%",
-          "timestamp": 1779724800000,
-          "reason": "PCB板块整体走强及AI服务器高端覆铜板需求激增驱动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-0f7479e4-fb22-4d85-98c1-29b7d448f558&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-06-09收盘价147.47元，涨幅10.00%",
-          "timestamp": 1780934400000,
-          "reason": "覆铜板行业涨价及AI算力需求爆发推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-2c787169-00a1-4897-bd81-10a50e1fdb63&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-06-15收盘价166.41元，涨幅10.00%",
-          "timestamp": 1781452800000,
-          "reason": "花旗与高盛大幅上调目标价，预测AI覆铜板业务将推动毛利率突破历史峰值",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c7345a2b-b547-43f4-bdc7-fed94b8858aa&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "生益科技2026-06-23收盘价167.87元，跌幅9.01%",
-          "timestamp": 1782144000000,
-          "reason": "市场担忧英伟达正交背板方案推迟导致高端覆铜板需求预期下调",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-29c65192-6d53-45c9-bf23-08afaae70bf7&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SH600353",
-      "name": "旭光电子",
-      "death_date": "2026-06-24",
-      "peak_pct": 255.18,
-      "last_pct": 94.34,
-      "last_days": 14,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "旭光电子2026-06-11收盘价29.94元，涨幅9.99%",
-          "timestamp": 1781107200000,
-          "reason": "市场看好其氮化铝粉体在AI散热材料领域的领先地位及扩产预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-83de38f2-218b-4c75-98bd-0d892f6c681d&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -411,6 +273,75 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-dabefa3c-71b1-4d94-b7b0-722ba6f69e0c&navBarTransparent=1&navBarTheme=dark"
         }
       ]
+    },
+    {
+      "ticker": "SH688507",
+      "name": "索辰科技",
+      "death_date": "2026-08-05",
+      "peak_pct": 221.1,
+      "last_pct": 35.29,
+      "last_days": 6,
+      "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH688456",
+      "name": "有研粉材",
+      "death_date": "2026-08-06",
+      "peak_pct": 220.91,
+      "last_pct": 30.08,
+      "last_days": 3,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH688082",
+      "name": "盛美上海",
+      "death_date": "2026-06-29",
+      "peak_pct": 220.56,
+      "last_pct": 220.56,
+      "last_days": 87,
+      "appearances": 7,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "盛美上海2026-04-28收盘价146.60元，跌幅11.74%",
+          "timestamp": 1777305600000,
+          "reason": "一季度净利润同比下滑57.66%及半导体设备板块整体走弱",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-cd96ab50-c57d-4e07-bfa4-5c3888f7fdf7&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "盛美上海2026-05-25收盘价251.00元，涨幅17.75%",
+          "timestamp": 1779638400000,
+          "reason": "半导体设备板块整体走强及公司高温SPM清洗技术突破双重驱动",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b544375a-9301-470d-be8c-e01e0bdc4c13&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "盛美上海2026-06-03收盘价252.94元，涨幅12.39%",
+          "timestamp": 1780416000000,
+          "reason": "公司同日公布多项半导体设备专利技术申请，市场预期技术突破将增强竞争力",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-c1f64f67-07ce-4f83-9451-ce94cef800a8&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "盛美上海2026-06-17收盘价361.20元，涨幅20.00%",
+          "timestamp": 1781625600000,
+          "reason": "半导体设备板块整体走强及公司技术突破与订单增长",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-76c443f0-34f7-4adb-bfad-33e8a0a2b401&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH600367",
+      "name": "红星发展",
+      "death_date": "2026-08-06",
+      "peak_pct": 215.45,
+      "last_pct": 22.91,
+      "last_days": 3,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
     }
   ]
 }

@@ -960,7 +960,8 @@
       "name": "铜冠铜箔",
       "last_seen": "2026-06-18",
       "shared_concepts": [
-        "AI"
+        "AI",
+        "PCB"
       ],
       "trend_pct": 79.76,
       "trend_days": 13
