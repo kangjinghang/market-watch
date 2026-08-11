@@ -1,0 +1,190 @@
+{
+  "date": "2026-08-10",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002827",
+      "name": "高争民爆",
+      "streak": 9,
+      "first_date": "2026-07-29",
+      "last_date": "2026-08-10",
+      "total_pct": 129.24
+    },
+    {
+      "ticker": "SH600721",
+      "name": "百花医药",
+      "streak": 5,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-10",
+      "total_pct": 69.2
+    },
+    {
+      "ticker": "SZ000506",
+      "name": "招金黄金",
+      "streak": 5,
+      "first_date": "2026-08-03",
+      "last_date": "2026-08-10",
+      "total_pct": 59.39
+    },
+    {
+      "ticker": "SZ300631",
+      "name": "久吾高科",
+      "streak": 5,
+      "first_date": "2026-08-03",
+      "last_date": "2026-08-10",
+      "total_pct": 17.33
+    },
+    {
+      "ticker": "SZ301047",
+      "name": "义翘神州",
+      "streak": 4,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-10",
+      "total_pct": 91.91
+    },
+    {
+      "ticker": "SZ301141",
+      "name": "中科磁业",
+      "streak": 4,
+      "first_date": "2026-08-05",
+      "last_date": "2026-08-10",
+      "total_pct": 34.34
+    },
+    {
+      "ticker": "SZ300756",
+      "name": "金马游乐",
+      "streak": 4,
+      "first_date": "2026-08-05",
+      "last_date": "2026-08-10",
+      "total_pct": 30.34
+    },
+    {
+      "ticker": "SZ300930",
+      "name": "屹通新材",
+      "streak": 4,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-10",
+      "total_pct": 16.84
+    },
+    {
+      "ticker": "SZ002933",
+      "name": "新兴装备",
+      "streak": 4,
+      "first_date": "2026-08-05",
+      "last_date": "2026-08-10",
+      "total_pct": 12.97
+    },
+    {
+      "ticker": "SH688313",
+      "name": "仕佳光子",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 59.59
+    },
+    {
+      "ticker": "SZ301230",
+      "name": "泓博医药",
+      "streak": 3,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-10",
+      "total_pct": 55.65
+    },
+    {
+      "ticker": "SZ000657",
+      "name": "中钨高新",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 51.7
+    },
+    {
+      "ticker": "SZ002842",
+      "name": "翔鹭钨业",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 46.7
+    },
+    {
+      "ticker": "SZ300139",
+      "name": "晓程科技",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 45.2
+    },
+    {
+      "ticker": "SH603269",
+      "name": "海鸥股份",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 43.66
+    },
+    {
+      "ticker": "SH603306",
+      "name": "华懋科技",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 41.84
+    },
+    {
+      "ticker": "SH688011",
+      "name": "新光光电",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 40.7
+    },
+    {
+      "ticker": "SH600379",
+      "name": "宝光股份",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 35.13
+    },
+    {
+      "ticker": "SZ002645",
+      "name": "华宏科技",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 27.54
+    },
+    {
+      "ticker": "SZ002742",
+      "name": "冀衡医药",
+      "streak": 3,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-10",
+      "total_pct": 27.51
+    },
+    {
+      "ticker": "SZ002584",
+      "name": "西陇科学",
+      "streak": 3,
+      "first_date": "2026-08-06",
+      "last_date": "2026-08-10",
+      "total_pct": 19.48
+    },
+    {
+      "ticker": "SZ301193",
+      "name": "家联科技",
+      "streak": 3,
+      "first_date": "2026-08-05",
+      "last_date": "2026-08-10",
+      "total_pct": 19.3
+    },
+    {
+      "ticker": "SZ300254",
+      "name": "仟源医药",
+      "streak": 3,
+      "first_date": "2026-08-04",
+      "last_date": "2026-08-10",
+      "total_pct": 17.11
+    }
+  ]
+}
