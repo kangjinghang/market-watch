@@ -1,21 +1,21 @@
 {
-  "date": "2026-08-10",
+  "date": "2026-08-11",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "sector_surge",
       "label": "医药生物",
-      "today": 56,
+      "today": 32,
       "avg": 14.3,
-      "deviation": 2.92,
-      "severity": "high"
+      "deviation": 1.24,
+      "severity": "medium"
     },
     {
-      "type": "sector_surge",
-      "label": "有色金属",
-      "today": 27,
-      "avg": 11.3,
-      "deviation": 1.39,
+      "type": "density_shift",
+      "label": "异动密度",
+      "today": 77,
+      "avg": 191,
+      "deviation": -0.6,
       "severity": "medium"
     }
   ]

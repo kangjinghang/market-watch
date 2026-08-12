@@ -211,11 +211,11 @@
       "ratio": 0.059907834101382486
     },
     {
-      "date": "2026-08-10",
-      "candidates": 197,
-      "daily_candidates": 41,
+      "date": "2026-08-11",
+      "candidates": 77,
+      "daily_candidates": 14,
       "universe": 5208,
-      "ratio": 0.03782642089093702
+      "ratio": 0.01478494623655914
     }
   ]
 }

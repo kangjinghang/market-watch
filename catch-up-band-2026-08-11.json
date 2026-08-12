@@ -1,0 +1,428 @@
+{
+  "date": "2026-08-11",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ301209",
+      "name": "联合化学",
+      "pct": 15.04,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ300158",
+      "name": "振东制药",
+      "pct": 14.26,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300693",
+      "name": "盛弘股份",
+      "pct": 12.92,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002721",
+      "name": "金一文化",
+      "pct": 10.11,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002329",
+      "name": "皇氏集团",
+      "pct": 10.09,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002235",
+      "name": "安妮股份",
+      "pct": 10.02,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH603887",
+      "name": "城地香江",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600126",
+      "name": "杭钢股份",
+      "pct": 10,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH603009",
+      "name": "北特科技",
+      "pct": 10,
+      "concepts": [
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SZ002246",
+      "name": "北化股份",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603883",
+      "name": "老百姓",
+      "pct": 9.97,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 49,
+      "active_days": 11,
+      "heat_score": 539,
+      "leaders": [
+        {
+          "ticker": "SZ002235",
+          "name": "安妮股份",
+          "pct": 10.02,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 30,
+      "active_days": 8,
+      "heat_score": 240,
+      "leaders": [
+        {
+          "ticker": "SH600126",
+          "name": "杭钢股份",
+          "pct": 10,
+          "concepts": [
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 22,
+      "active_days": 6,
+      "heat_score": 132,
+      "leaders": [
+        {
+          "ticker": "SZ301209",
+          "name": "联合化学",
+          "pct": 15.04,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 14,
+      "active_days": 6,
+      "heat_score": 84,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 12,
+      "active_days": 5,
+      "heat_score": 60,
+      "leaders": [
+        {
+          "ticker": "SH603009",
+          "name": "北特科技",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 13,
+      "active_days": 4,
+      "heat_score": 52,
+      "leaders": [
+        {
+          "ticker": "SZ301209",
+          "name": "联合化学",
+          "pct": 15.04,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 4,
+      "heat_score": 48,
+      "leaders": [
+        {
+          "ticker": "SZ300158",
+          "name": "振东制药",
+          "pct": 14.26,
+          "concepts": [
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 10,
+      "active_days": 4,
+      "heat_score": 40,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 10,
+      "active_days": 4,
+      "heat_score": 40,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 9,
+      "active_days": 4,
+      "heat_score": 36,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 9,
+      "active_days": 4,
+      "heat_score": 36,
+      "leaders": [
+        {
+          "ticker": "SH603009",
+          "name": "北特科技",
+          "pct": 10,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 8,
+      "active_days": 2,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 9,
+      "active_days": 1,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "半导体材料",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "MLCC",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "钢铁",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH688114",
+      "name": "华大智造",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 37.16,
+      "trend_days": 12
+    },
+    {
+      "ticker": "SZ300683",
+      "name": "海特生物",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "创新药"
+      ],
+      "trend_pct": 27.6,
+      "trend_days": 12
+    },
+    {
+      "ticker": "SH688018",
+      "name": "乐鑫科技",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "半导体"
+      ],
+      "trend_pct": 24.59,
+      "trend_days": 12
+    },
+    {
+      "ticker": "SH603882",
+      "name": "金域医学",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 15.92,
+      "trend_days": 12
+    },
+    {
+      "ticker": "SZ000661",
+      "name": "长春高新",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "创新药"
+      ],
+      "trend_pct": 15.5,
+      "trend_days": 5
+    },
+    {
+      "ticker": "SH603341",
+      "name": "龙旗科技",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 14.41,
+      "trend_days": 12
+    },
+    {
+      "ticker": "SH688278",
+      "name": "特宝生物",
+      "last_seen": "2026-08-11",
+      "shared_concepts": [
+        "创新药"
+      ],
+      "trend_pct": 10.79,
+      "trend_days": 5
+    }
+  ]
+}
