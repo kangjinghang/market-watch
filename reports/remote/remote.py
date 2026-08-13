@@ -25,6 +25,7 @@ REMOTE_WORK = r"C:\workspace"
 REMOTE_MAIN = r"C:\workspace\trend-trading-agents"
 REMOTE_SITE = r"C:\workspace\market-watch"
 REMOTE_CMD = r"C:\workspace\run_market_watch.cmd"
+REMOTE_SNAPSHOT = r"C:\workspace\trend-trading-agents\skills\watchlist\scripts\snapshot.py"
 REMOTE_VENV_PY = r"C:\workspace\trend-trading-agents\.venv\Scripts\python.exe"
 REMOTE_NODE = r"C:\Program Files\nodejs\node.exe"
 XUEQIU_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
@@ -186,17 +187,21 @@ Set-Content -Path C:\workspace\_probe.js -Value $code -Encoding UTF8
 
 
 def cmd_probe(args):
-    """测 token 是否有效。不传 token 则读 run_market_watch.cmd 里现有的。"""
+    """测 token 是否有效。不传 token 则读 snapshot.py 默认值。"""
     token = args.token
     if not token:
-        # 从远程 cmd 读当前 token
-        rc, out, err = _ssh_run(f'powershell -NoProfile -Command "Select-String -Path \'{REMOTE_CMD}\' -Pattern \'XUEQIU_TOKEN=\' | ForEach-Object {{ $_.Line.Trim() }}"', timeout=15)
-        print("当前 run_market_watch.cmd 里的 token 行：")
+        # 从远程 snapshot.py 读当前默认 token
+        rc, out, err = _ssh_run(f'powershell -NoProfile -Command "Select-String -Path \'{REMOTE_SNAPSHOT}\' -Pattern \'XUEQIU_TOKEN\' | ForEach-Object {{ $_.Line.Trim() }}"', timeout=15)
+        print("当前 snapshot.py 里的 token 行：")
         print(out.strip())
-        # 提取 token 值
+        # 提取 token 值（格式: os.environ.get("XUEQIU_TOKEN", "XqTest...")）
+        import re as _re
         for line in out.split('\n'):
-            if 'XUEQIU_TOKEN=' in line:
-                token = line.split('XUEQIU_TOKEN=')[1].strip()
+            s = line.strip()
+            if 'XUEQIU_TOKEN' in s:
+                m = _re.search(r'"((?:XqTest|xq_a_token=)[^"]*)"', s)
+                if m:
+                    token = m.group(1)
                 break
         if not token:
             print("[ERROR] 无法提取 token，请手动传：probe <TOKEN>")
@@ -211,7 +216,9 @@ def cmd_probe(args):
 
 
 # ============================================================
-# 子命令：set-token —— 更新 run_market_watch.cmd 的 token
+# 子命令：set-token —— 更新 snapshot.py 里的 token 默认值
+# （方案A 后 token 不再写在 run_market_watch.cmd，统一由 snapshot.py
+#  的 os.environ.get("XUEQIU_TOKEN", "<默认值>") 提供；set-token 即改该默认值）
 # ============================================================
 PS_SET_TOKEN = r"""
 chcp 65001 > $null
@@ -220,15 +227,25 @@ $ProgressPreference = 'SilentlyContinue'
 $path = '__CMD__'
 $new = '__TOKEN__'
 $txt = [IO.File]::ReadAllText($path, [Text.Encoding]::Default)
-# 匹配 XUEQIU_TOKEN=<一串非空白>
-$pattern = 'XUEQIU_TOKEN=\S+'
-if ($txt -match $pattern) {
+$replaced = $false
+# 1) snapshot.py 默认 token：os.environ.get("XUEQIU_TOKEN", "XqTest....")
+if ($txt -match '"XqTest\S+"') {
+    $old_match = $Matches[0]
+    $txt = $txt -replace [regex]::Escape($old_match), ('"' + $new + '"')
+    [Console]::WriteLine("REPLACED default: " + $old_match + " -> " + ('"' + $new + '"'))
+    $replaced = $true
+}
+# 2) 兼容：若仍有旧 run_market_watch.cmd 的 XUEQIU_TOKEN=<非空白> 行也一并改
+if ($txt -match 'XUEQIU_TOKEN=\S+') {
     $old_match = $Matches[0]
     $txt = $txt -replace [regex]::Escape($old_match), ('XUEQIU_TOKEN=' + $new)
+    [Console]::WriteLine("REPLACED legacy: " + $old_match + " -> XUEQIU_TOKEN=" + $new.Substring(0,15) + "...")
+    $replaced = $true
+}
+if ($replaced) {
     [IO.File]::WriteAllText($path, $txt, [Text.Encoding]::Default)
-    [Console]::WriteLine("REPLACED: " + $old_match + " -> XUEQIU_TOKEN=" + $new.Substring(0,15) + "...")
 } else {
-    [Console]::WriteLine("[ERROR] XUEQIU_TOKEN= not found in " + $path)
+    [Console]::WriteLine("[ERROR] 未在 " + $path + " 找到可替换的 token（既不是 XqTest 默认值也不是 XUEQIU_TOKEN= 行）")
 }
 # verify
 $t2 = [IO.File]::ReadAllText($path, [Text.Encoding]::Default)
@@ -238,11 +255,14 @@ $t2 -split "`r?`n" | Where-Object { $_ -match 'XUEQIU_TOKEN' } | ForEach-Object 
 
 def cmd_set_token(args):
     token = args.token
-    if not token.startswith('XqTest') and not token.startswith('xq_a_token='):
+    # 兼容两种输入：纯 token（XqTest...）或带前缀 xq_a_token=xxx
+    if token.startswith('xq_a_token='):
+        token = token[len('xq_a_token='):]
+    if not token.startswith('XqTest'):
         print("[WARN] token 不以 XqTest 开头，确认是雪球 token？继续执行...")
 
     script = (PS_SET_TOKEN
-              .replace("__CMD__", REMOTE_CMD)
+              .replace("__CMD__", REMOTE_SNAPSHOT)
               .replace("__TOKEN__", token))
     print(_scp_run_ps(script, timeout=15))
     print("\n→ 现在跑 probe 验证新 token：")
@@ -257,7 +277,6 @@ def cmd_set_token(args):
 SCAN_CMD_TEMPLATE = r"""@echo off
 setlocal
 cd /d C:\workspace\trend-trading-agents
-set XUEQIU_TOKEN=__TOKEN__
 set PATH=C:\Program Files\nodejs;%APPDATA%\npm;%PATH%
 set PY=C:\workspace\trend-trading-agents\.venv\Scripts\python.exe
 echo %date% %time% ===== scan __DATE__ start (python -u) =====> C:\workspace\scan__MMDD__.log
@@ -290,25 +309,20 @@ def cmd_rerun_scan(args):
     sleep = args.sleep
     conc = args.concurrency
 
-    # 先读当前 token
-    ps_cmd = 'powershell -NoProfile -Command "(Get-Content \'%s\' | Select-String \'XUEQIU_TOKEN=\').Line"' % REMOTE_CMD
+    # token 来源：snapshot.py 里的默认值（os.environ.get("XUEQIU_TOKEN", "<默认值>")）。
+    # set-token 已更新该默认值，故 rerun 直接让 snapshot 用文件默认值，无需显式传 env。
+    ps_cmd = 'powershell -NoProfile -Command "(Get-Content \'%s\' | Select-String \'XUEQIU_TOKEN\').Line"' % REMOTE_SNAPSHOT
     rc, out, err = _ssh_run(ps_cmd, timeout=15)
-    if rc != 0:
-        print(f"[ERROR] 读 token 失败: {err}")
-        return
-    token = ""
-    for line in out.split('\n'):
-        if 'XUEQIU_TOKEN=' in line:
-            token = line.split('XUEQIU_TOKEN=')[1].strip()
-            break
-    if not token:
-        print("[ERROR] 无法从 run_market_watch.cmd 提取 token")
-        return
-    print(f"使用 token: {token[:20]}...")
+    if rc == 0 and out.strip():
+        for line in out.split('\n'):
+            if 'XUEQIU_TOKEN' in line:
+                print(f"snapshot.py token 行: {line.strip()[:40]}...")
+                break
+    else:
+        print("[WARN] 未能读取 snapshot.py token 行（不影响运行，snapshot 用默认值）")
 
-    # 生成 cmd 内容
+    # 生成 cmd 内容（不再注入 XUEQIU_TOKEN env，snapshot 用文件默认值）
     cmd_content = (SCAN_CMD_TEMPLATE
-                   .replace("__TOKEN__", token)
                    .replace("__DATE__", date)
                    .replace("__MMDD__", mmdd)
                    .replace("__SLEEP__", str(sleep))
