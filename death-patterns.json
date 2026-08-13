@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-11",
-  "total_deaths": 1000,
+  "date_range": "2026-06-16 ~ 2026-08-12",
+  "total_deaths": 1021,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 33,
+    "高位回落": 34,
     "利空事件": 2,
-    "利空+下跌": 4,
-    "自然退潮": 961
+    "利空+下跌": 3,
+    "自然退潮": 982
   },
   "recent_deaths": [
     {
@@ -17,17 +17,6 @@
       "last_pct": 50.61,
       "last_days": 8,
       "appearances": 8,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ002552",
-      "name": "宝鼎科技",
-      "death_date": "2026-08-07",
-      "peak_pct": 401.5,
-      "last_pct": 49.4,
-      "last_days": 8,
-      "appearances": 6,
       "pattern": "自然退潮",
       "events": []
     },
@@ -118,6 +107,17 @@
       "appearances": 6,
       "pattern": "自然退潮",
       "events": []
+    },
+    {
+      "ticker": "SH688456",
+      "name": "有研粉材",
+      "death_date": "2026-08-06",
+      "peak_pct": 220.91,
+      "last_pct": 30.08,
+      "last_days": 3,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
     }
   ],
   "peak_deaths": [
@@ -140,17 +140,6 @@
       "last_pct": 50.61,
       "last_days": 8,
       "appearances": 8,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ002552",
-      "name": "宝鼎科技",
-      "death_date": "2026-08-07",
-      "peak_pct": 401.5,
-      "last_pct": 49.4,
-      "last_days": 8,
-      "appearances": 6,
       "pattern": "自然退潮",
       "events": []
     },
@@ -304,6 +293,17 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a3e6d007-6e30-4d98-adff-15f6771982f2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
+    },
+    {
+      "ticker": "SH688143",
+      "name": "长盈通",
+      "death_date": "2026-08-07",
+      "peak_pct": 249.41,
+      "last_pct": 40.64,
+      "last_days": 8,
+      "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
     }
   ]
 }
