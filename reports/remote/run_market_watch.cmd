@@ -29,31 +29,19 @@ cd /d "%MAIN_REPO%"
 :: --- ????????????????????????????? ---
 set DATA_DATE=
 for /f "delims=" %%a in ('dir /b /o-n "%MAIN_REPO%\data\watchlist\raw\*.json" 2^>nul') do if not defined DATA_DATE set DATA_DATE=%%~na
-if "!DATA_DATE!"=="!TODAY!" (
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-  echo [!TS!] Skip: !TODAY! data already exists =!DATA_DATE!>> "%LOG%"
-  exit /b 0
-)
+if "!DATA_DATE!"=="!TODAY!" goto :already_done
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] git sync (checkout + clean + pull)>> "%LOG%"
 git checkout -- . 2>nul
 git clean -fdq 2>nul
 git pull --rebase --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-  echo [!TS!] git pull FAILED (rc=!errorlevel!), abort to avoid scanning stale code>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :git_pull_fail
 :: 再校验 snapshot.py 可编译（防编码/语法损坏白跑 30 分钟）
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] syntax check snapshot.py>> "%LOG%"
 "%MAIN_REPO%\.venv\Scripts\python.exe" -m py_compile "%MAIN_REPO%\skills\watchlist\scripts\snapshot.py" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-  echo [!TS!] snapshot.py syntax check FAILED, abort (avoid scanning with broken code)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :syntax_fail
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] git sync + syntax OK>> "%LOG%"
 
@@ -93,23 +81,14 @@ set /a RAW_RETRY+=1
 if !RAW_RETRY! leq 6 (timeout /t 5 /nobreak >nul & goto :raw_check)
 if !SCAN_EXIT! neq 0 (
   echo [!TS!] scan-all exited !SCAN_EXIT! and raw missing=!TODAY!>> "%LOG%"
-) else (
-  echo [!TS!] scan-all raw missing=!TODAY! (exit=0)>> "%LOG%"
 )
 goto :scan_fail
 
-:scan_fail
-echo [!TS!] scan-all FAILED (exit=!SCAN_EXIT!, missing raw=!TODAY!)>> "%LOG%"
-exit /b 1
 :real_scan_ok
 
 echo [!TS!] scan-all OK>> "%LOG%"
 
-if not exist "%MAIN_REPO%\data\watchlist\raw\!TODAY!.json" (
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-  echo [!TS!] Skip: freshness check failed missing raw=!TODAY!>> "%LOG%"
-  exit /b 0
-)
+if not exist "%MAIN_REPO%\data\watchlist\raw\!TODAY!.json" goto :fresh_fail
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] Freshness OK: !TODAY!>> "%LOG%"
@@ -118,48 +97,52 @@ echo [!TS!] Push main repo data...>> "%LOG%"
 cd /d "%MAIN_REPO%"
 git add data\
 git diff --cached --quiet
-if !errorlevel! equ 0 (
-  echo [!TS!] Main repo data no change, skip push>> "%LOG%"
-) else (
-  git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
-  git push --quiet >> "%LOG%" 2>&1
-  if !errorlevel! neq 0 (
-    echo [!TS!] Main repo git push FAILED (rc=!errorlevel!)>> "%LOG%"
-    exit /b 1
-  )
-)
+if !errorlevel! equ 0 goto :main_no_change
+git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
+git push --quiet >> "%LOG%" 2>&1
+if !errorlevel! neq 0 goto :scan_fail
+:main_no_change
+echo [!TS!] Main repo data push OK>> "%LOG%"
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 call npm run build:report -- --in data/watchlist --out "%SITE_REPO%" --date "!TODAY!" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] build:report (--date) FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :scan_fail
 call npm run build:report -- --in data/watchlist --out "%SITE_REPO%" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] build:report (full) FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :scan_fail
 
 cd /d "%SITE_REPO%"
 git add daily\ series\ meta.json *.json
 git diff --cached --quiet
-if !errorlevel! equ 0 (
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-  echo [!TS!] No data change, skip push>> "%LOG%"
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'") do set TS=%%a
-  echo [!TS!] ===== market-watch done, no change (target=!TODAY!) =====>> "%LOG%"
-  exit /b 0
-)
+if !errorlevel! equ 0 goto :site_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] Site repo git push FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
-
+if !errorlevel! neq 0 goto :scan_fail
+:site_no_change
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] ===== market-watch done (target=!TODAY!) =====>> "%LOG%"
-
-
 exit /b 0
+
+:already_done
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] Skip: !TODAY! data already exists>> "%LOG%"
+exit /b 0
+
+:fresh_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] Skip: freshness check failed missing raw=!TODAY!>> "%LOG%"
+exit /b 0
+
+:git_pull_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] git pull FAILED (rc=!errorlevel!), abort to avoid scanning stale code>> "%LOG%"
+exit /b 1
+
+:syntax_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] snapshot.py syntax check FAILED, abort (avoid scanning with broken code)>> "%LOG%"
+exit /b 1
+
+:scan_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] scan FAILED (exit=!SCAN_EXIT!, target=!TODAY!)>> "%LOG%"
+exit /b 1
