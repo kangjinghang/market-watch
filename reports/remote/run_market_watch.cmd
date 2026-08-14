@@ -43,14 +43,30 @@ git pull --rebase --quiet >> "%LOG%" 2>&1
 
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-echo [!TS!] scan-all (--date !TODAY! --sleep !SLEEP!, hard timeout 3h)>> "%LOG%"
+echo [!TS!] snapshot (python -u, realtime log scan_live_!TODAY!.log, hard timeout 3h)>> "%LOG%"
 set SCAN_RC_FILE=%MAIN_REPO%\scan_rc.tmp
 if exist "%SCAN_RC_FILE%" del /q "%SCAN_RC_FILE%"
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$p = Start-Process -FilePath 'C:\Program Files\nodejs\npm.cmd' -ArgumentList 'run','scan-all','--','--date','!TODAY!','--sleep','!SLEEP!' -WorkingDirectory '%MAIN_REPO%' -NoNewWindow -PassThru -RedirectStandardOutput '%MAIN_REPO%\scan_out.tmp' -RedirectStandardError '%MAIN_REPO%\scan_err.tmp'; if ($p.WaitForExit(10800000)) { $code = $p.ExitCode } else { Stop-Process -Id $p.Id -Force -ErrorAction SilentlyContinue; Get-Process node,python -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue; $code = 1 }; Set-Content -Path '%SCAN_RC_FILE%' -Value $code -Encoding Ascii"
-type "%MAIN_REPO%\scan_out.tmp" >> "%LOG%" 2>nul
-type "%MAIN_REPO%\scan_err.tmp" >> "%LOG%" 2>nul
+set SCAN_OUT=%MAIN_REPO%\scan_live_!TODAY!.out
+set SCAN_ERR=%MAIN_REPO%\scan_live_!TODAY!.err
+if exist "%SCAN_OUT%" del /q "%SCAN_OUT%"
+if exist "%SCAN_ERR%" del /q "%SCAN_ERR%"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$p = Start-Process -FilePath '%MAIN_REPO%\.venv\Scripts\python.exe' -ArgumentList '-u','%MAIN_REPO%\skills\watchlist\scripts\snapshot.py','--date','!TODAY!','--concurrency','2','--sleep','!SLEEP!' -WorkingDirectory '%MAIN_REPO%' -NoNewWindow -PassThru -RedirectStandardOutput '%SCAN_OUT%' -RedirectStandardError '%SCAN_ERR%'; if ($p.WaitForExit(10800000)) { $code = $p.ExitCode } else { Stop-Process -Id $p.Id -Force -ErrorAction SilentlyContinue; Get-Process python -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue; $code = 1 }; Set-Content -Path '%SCAN_RC_FILE%' -Value $code -Encoding Ascii"
+type "%SCAN_OUT%" >> "%LOG%" 2>nul
+type "%SCAN_ERR%" >> "%LOG%" 2>nul
 set SCAN_EXIT=1
 if exist "%SCAN_RC_FILE%" for /f "delims=" %%r in (%SCAN_RC_FILE%) do set SCAN_EXIT=%%r
+if !SCAN_EXIT! neq 0 goto :scan_fail
+
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] diff (--date !TODAY!)>> "%LOG%"
+call npm run diff -- --date "!TODAY!" >> "%LOG%" 2>&1
+if !errorlevel! neq 0 goto :scan_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] candidates (--date !TODAY!)>> "%LOG%"
+call npm run candidates -- --date "!TODAY!" >> "%LOG%" 2>&1
+if !errorlevel! neq 0 goto :scan_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] snapshot+diff+candidates OK>> "%LOG%"
 
 :: --- ??????scan-all errorlevel ?????? Node.js ???????????????? 0 ---
 :: ???????? raw ????????????????
