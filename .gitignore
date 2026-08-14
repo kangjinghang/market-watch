@@ -1,2 +1,5 @@
 # 本地凭证，不进 git
 .env
+
+# CodeBuddy agent 数据目录（记忆/调试脚本）
+.codebuddy/
