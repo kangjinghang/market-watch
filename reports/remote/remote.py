@@ -87,20 +87,18 @@ Get-CimInstance Win32_Process | Where-Object {
 }
 
 [Console]::WriteLine("")
-[Console]::WriteLine("=== SCAN PROGRESS ===")
-$scan_full = '__WORK__\scan_' + $date + '.log'
-$scan_short = '__WORK__\scan_' + $mmdd + '.log'
-$scan_tmp = '__MAIN__\scan_out.tmp'
-if (Test-Path $scan_full) {
-    [Console]::WriteLine("  [from scan_$date.log]")
-    Get-Content $scan_full -Encoding Default -Tail 5 | ForEach-Object { [Console]::WriteLine("  " + $_) }
-} elseif (Test-Path $scan_short) {
-    [Console]::WriteLine("  [from scan_$mmdd.log]")
-    Get-Content $scan_short -Encoding Default -Tail 5 | ForEach-Object { [Console]::WriteLine("  " + $_) }
-} elseif (Test-Path $scan_tmp) {
-    Get-Content $scan_tmp -Encoding UTF8 -Tail 3 | ForEach-Object { [Console]::WriteLine("  " + $_) }
+[Console]::WriteLine("=== SCAN PROGRESS (scan_live_$date.err) ===")
+$scan_err = '__MAIN__\scan_live_' + $date + '.err'
+$scan_out = '__MAIN__\scan_live_' + $date + '.out'
+if (Test-Path $scan_err) {
+    Get-Content $scan_err -Encoding UTF8 -Tail 4 | ForEach-Object { [Console]::WriteLine("  " + $_) }
+    if (Test-Path $scan_out) {
+        Get-Content $scan_out -Encoding UTF8 -Tail 2 | ForEach-Object { [Console]::WriteLine("  " + $_) }
+    }
+} elseif (Test-Path $scan_out) {
+    Get-Content $scan_out -Encoding UTF8 -Tail 4 | ForEach-Object { [Console]::WriteLine("  " + $_) }
 } else {
-    [Console]::WriteLine("  (no scan log found)")
+    [Console]::WriteLine("  (no scan_live_$date.err/out found - scan may not have started)")
 }
 
 [Console]::WriteLine("")
@@ -125,10 +123,10 @@ foreach ($f in @(
 }
 
 [Console]::WriteLine("")
-[Console]::WriteLine("=== LATEST LOG (market-watch.log) ===")
-$mw_log = '__MAIN__\market-watch.log'
+[Console]::WriteLine("=== LATEST LOG (C:\workspace\market-watch.log) ===")
+$mw_log = 'C:\workspace\market-watch.log'
 if (Test-Path $mw_log) {
-    Get-Content $mw_log -Tail 10 | ForEach-Object { [Console]::WriteLine("  " + $_) }
+    Get-Content $mw_log -Encoding UTF8 -Tail 10 | ForEach-Object { [Console]::WriteLine("  " + $_) }
 } else {
     [Console]::WriteLine("  (no market-watch.log)")
 }
