@@ -397,33 +397,21 @@ cd /d "%MAIN_REPO%"
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] diff + candidates...>> "%LOG%"
 call npm run diff -- --date "!TODAY!" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] diff FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :build_fail
 call npm run candidates -- --date "!TODAY!" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] candidates FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :build_fail
 
 ::: build:report --date
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] build:report --date !TODAY!...>> "%LOG%"
 call npm run build:report -- --in data/watchlist --out "%SITE_REPO%" --date "!TODAY!" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] build:report (--date) FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :build_fail
 
 ::: build:report full
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] build:report (full)...>> "%LOG%"
 call npm run build:report -- --in data/watchlist --out "%SITE_REPO%" >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] build:report (full) FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :build_fail
 
 :::: git push main repo (build finished; commit outside () block)
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
@@ -434,32 +422,27 @@ git diff --cached --quiet
 if !errorlevel! equ 0 goto main_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] Main repo git push FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :build_fail
 :main_no_change
 
 ::: git push site repo
 cd /d "%SITE_REPO%"
 git add daily\ series\ meta.json *.json >> "%LOG%" 2>&1
 git diff --cached --quiet
-if !errorlevel! equ 0 (
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-  echo [!TS!] No data change, skip site push>> "%LOG%"
-  echo [!TS!] ===== build-only done, no change (target=!TODAY!) =====>> "%LOG%"
-  exit /b 0
-)
+if !errorlevel! equ 0 goto site_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 (
-  echo [!TS!] Site repo git push FAILED (rc=!errorlevel!)>> "%LOG%"
-  exit /b 1
-)
+if !errorlevel! neq 0 goto :build_fail
+:site_no_change
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] ===== build-only done (target=!TODAY!) =====>> "%LOG%"
 exit /b 0
+
+:build_fail
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] build-only FAILED at step (target=!TODAY!)>> "%LOG%"
+exit /b 1
 """
 
 PS_BUILD = r"""
