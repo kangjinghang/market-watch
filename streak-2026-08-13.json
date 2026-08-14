@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-13",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH603758",
+      "name": "秦安股份",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 66.13
+    },
+    {
+      "ticker": "SZ000802",
+      "name": "北京文化",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 61.34
+    },
+    {
+      "ticker": "SZ002329",
+      "name": "皇氏集团",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 53.49
+    },
+    {
+      "ticker": "SZ002437",
+      "name": "誉衡药业",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 49.65
+    },
+    {
+      "ticker": "SH603897",
+      "name": "长城科技",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 41.55
+    },
+    {
+      "ticker": "SZ000887",
+      "name": "中鼎股份",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 37.33
+    },
+    {
+      "ticker": "SH603236",
+      "name": "移远通信",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-13",
+      "total_pct": 31.25
+    }
+  ]
+}

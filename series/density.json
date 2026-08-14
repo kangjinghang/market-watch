@@ -223,6 +223,13 @@
       "daily_candidates": 22,
       "universe": 5208,
       "ratio": 0.013056835637480798
+    },
+    {
+      "date": "2026-08-13",
+      "candidates": 64,
+      "daily_candidates": 17,
+      "universe": 5208,
+      "ratio": 0.01228878648233487
     }
   ]
 }

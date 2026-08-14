@@ -1,0 +1,469 @@
+{
+  "date": "2026-08-13",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300404",
+      "name": "博济医药",
+      "pct": 20.02,
+      "concepts": [
+        "医疗服务",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688265",
+      "name": "南模生物",
+      "pct": 20.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300534",
+      "name": "陇神戎发",
+      "pct": 19.97,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300333",
+      "name": "兆日科技",
+      "pct": 19.95,
+      "concepts": [
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300725",
+      "name": "药石科技",
+      "pct": 10.64,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000972",
+      "name": "中基健康",
+      "pct": 10.09,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002174",
+      "name": "游族网络",
+      "pct": 10.03,
+      "concepts": [
+        "先进封装",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002706",
+      "name": "良信股份",
+      "pct": 10.02,
+      "concepts": [
+        "电网设备",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH603912",
+      "name": "佳力图",
+      "pct": 10.02,
+      "concepts": [
+        "PCB",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002921",
+      "name": "联诚精密",
+      "pct": 10,
+      "concepts": [
+        "汽车零部件",
+        "PCB",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH600821",
+      "name": "金开新能",
+      "pct": 10,
+      "concepts": [
+        "算力"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 52,
+      "active_days": 11,
+      "heat_score": 572,
+      "leaders": [
+        {
+          "ticker": "SZ300404",
+          "name": "博济医药",
+          "pct": 20.02,
+          "concepts": [
+            "医疗服务",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300333",
+          "name": "兆日科技",
+          "pct": 19.95,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002174",
+          "name": "游族网络",
+          "pct": 10.03,
+          "concepts": [
+            "先进封装",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002706",
+          "name": "良信股份",
+          "pct": 10.02,
+          "concepts": [
+            "电网设备",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603912",
+          "name": "佳力图",
+          "pct": 10.02,
+          "concepts": [
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002921",
+          "name": "联诚精密",
+          "pct": 10,
+          "concepts": [
+            "汽车零部件",
+            "PCB",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 33,
+      "active_days": 9,
+      "heat_score": 297,
+      "leaders": [
+        {
+          "ticker": "SZ300333",
+          "name": "兆日科技",
+          "pct": 19.95,
+          "concepts": [
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002174",
+          "name": "游族网络",
+          "pct": 10.03,
+          "concepts": [
+            "先进封装",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002706",
+          "name": "良信股份",
+          "pct": 10.02,
+          "concepts": [
+            "电网设备",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603912",
+          "name": "佳力图",
+          "pct": 10.02,
+          "concepts": [
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH600821",
+          "name": "金开新能",
+          "pct": 10,
+          "concepts": [
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 21,
+      "active_days": 5,
+      "heat_score": 105,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 15,
+      "active_days": 6,
+      "heat_score": 90,
+      "leaders": [
+        {
+          "ticker": "SH603912",
+          "name": "佳力图",
+          "pct": 10.02,
+          "concepts": [
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002921",
+          "name": "联诚精密",
+          "pct": 10,
+          "concepts": [
+            "汽车零部件",
+            "PCB",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 14,
+      "active_days": 6,
+      "heat_score": 84,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 11,
+      "active_days": 5,
+      "heat_score": 55,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 11,
+      "active_days": 5,
+      "heat_score": 55,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 13,
+      "active_days": 4,
+      "heat_score": 52,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 7,
+      "active_days": 4,
+      "heat_score": 28,
+      "leaders": [
+        {
+          "ticker": "SZ002706",
+          "name": "良信股份",
+          "pct": 10.02,
+          "concepts": [
+            "电网设备",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 9,
+      "active_days": 3,
+      "heat_score": 27,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 5,
+      "active_days": 5,
+      "heat_score": 25,
+      "leaders": [
+        {
+          "ticker": "SZ002921",
+          "name": "联诚精密",
+          "pct": 10,
+          "concepts": [
+            "汽车零部件",
+            "PCB",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 10,
+      "active_days": 2,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 8,
+      "active_days": 2,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "钢铁",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ300404",
+          "name": "博济医药",
+          "pct": 20.02,
+          "concepts": [
+            "医疗服务",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH688222",
+      "name": "成都先导",
+      "last_seen": "2026-08-13",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 50.76,
+      "trend_days": 10
+    },
+    {
+      "ticker": "SH603456",
+      "name": "九洲药业",
+      "last_seen": "2026-08-13",
+      "shared_concepts": [
+        "医疗服务"
+      ],
+      "trend_pct": 25.41,
+      "trend_days": 13
+    }
+  ]
+}
