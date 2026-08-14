@@ -36,10 +36,26 @@ if "!DATA_DATE!"=="!TODAY!" (
 )
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-echo [!TS!] git pull>> "%LOG%"
+echo [!TS!] git sync (checkout + clean + pull)>> "%LOG%"
 git checkout -- . 2>nul
 git clean -fdq 2>nul
 git pull --rebase --quiet >> "%LOG%" 2>&1
+if !errorlevel! neq 0 (
+  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+  echo [!TS!] git pull FAILED (rc=!errorlevel!), abort to avoid scanning stale code>> "%LOG%"
+  exit /b 1
+)
+:: 再校验 snapshot.py 可编译（防编码/语法损坏白跑 30 分钟）
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] syntax check snapshot.py>> "%LOG%"
+"%MAIN_REPO%\.venv\Scripts\python.exe" -m py_compile "%MAIN_REPO%\skills\watchlist\scripts\snapshot.py" >> "%LOG%" 2>&1
+if !errorlevel! neq 0 (
+  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+  echo [!TS!] snapshot.py syntax check FAILED, abort (avoid scanning with broken code)>> "%LOG%"
+  exit /b 1
+)
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] git sync + syntax OK>> "%LOG%"
 
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
