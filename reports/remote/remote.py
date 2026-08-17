@@ -420,7 +420,7 @@ git diff --cached --quiet
 if !errorlevel! equ 0 goto main_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 goto :build_fail
+if !errorlevel! neq 0 goto :main_push_retry
 :main_no_change
 
 ::: git push site repo
@@ -430,8 +430,27 @@ git diff --cached --quiet
 if !errorlevel! equ 0 goto site_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 goto :build_fail
+if !errorlevel! neq 0 goto :site_push_retry
 :site_no_change
+
+:: push retry (rebase then push again, only fail if 2nd push also fails)
+:main_push_retry
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] main push failed, pull --rebase and retry>> "%LOG%"
+cd /d "%MAIN_REPO%"
+git pull --rebase --quiet >> "%LOG%" 2>&1
+git push --quiet >> "%LOG%" 2>&1
+if !errorlevel! neq 0 goto :build_fail
+goto :main_no_change
+
+:site_push_retry
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] site push failed, pull --rebase and retry>> "%LOG%"
+cd /d "%SITE_REPO%"
+git pull --rebase --quiet >> "%LOG%" 2>&1
+git push --quiet >> "%LOG%" 2>&1
+if !errorlevel! neq 0 goto :build_fail
+goto :site_no_change
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] ===== build-only done (target=!TODAY!) =====>> "%LOG%"
