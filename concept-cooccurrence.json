@@ -1,17 +1,17 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-12",
-  "total_reasons": 3584,
+  "date_range": "2026-03-05 ~ 2026-08-13",
+  "total_reasons": 3603,
   "total_concepts": 72,
   "total_pairs": 197,
   "nodes": [
     {
       "id": "半导体",
-      "count": 674,
+      "count": 675,
       "type": "sector"
     },
     {
       "id": "AI",
-      "count": 440,
+      "count": 445,
       "type": "technology"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 275,
+      "count": 277,
       "type": "sector"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "算力",
-      "count": 164,
+      "count": 168,
       "type": "sector"
     },
     {
@@ -75,14 +75,14 @@
       "type": "sector"
     },
     {
+      "id": "通信",
+      "count": 56,
+      "type": "sector"
+    },
+    {
       "id": "ESG",
       "count": 55,
       "type": "technology"
-    },
-    {
-      "id": "通信",
-      "count": 54,
-      "type": "sector"
     },
     {
       "id": "人形机器人",
@@ -96,7 +96,7 @@
     },
     {
       "id": "光模块",
-      "count": 44,
+      "count": 45,
       "type": "sector"
     },
     {
@@ -120,14 +120,14 @@
       "type": "sector"
     },
     {
+      "id": "CPO",
+      "count": 41,
+      "type": "technology"
+    },
+    {
       "id": "中药",
       "count": 41,
       "type": "sector"
-    },
-    {
-      "id": "CPO",
-      "count": 39,
-      "type": "technology"
     },
     {
       "id": "元件",
@@ -151,7 +151,7 @@
     },
     {
       "id": "医疗器械",
-      "count": 30,
+      "count": 31,
       "type": "sector"
     },
     {
@@ -215,6 +215,16 @@
       "type": "sector"
     },
     {
+      "id": "医疗服务",
+      "count": 18,
+      "type": "sector"
+    },
+    {
+      "id": "港股医药",
+      "count": 18,
+      "type": "sector"
+    },
+    {
       "id": "有色金属",
       "count": 17,
       "type": "sector"
@@ -226,16 +236,6 @@
     },
     {
       "id": "服装家纺",
-      "count": 17,
-      "type": "sector"
-    },
-    {
-      "id": "医疗服务",
-      "count": 17,
-      "type": "sector"
-    },
-    {
-      "id": "港股医药",
       "count": 17,
       "type": "sector"
     },
@@ -379,7 +379,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 117
+      "weight": 121
     },
     {
       "source": "半导体",
@@ -502,13 +502,13 @@
       "weight": 18
     },
     {
-      "source": "功率半导体",
-      "target": "半导体",
-      "weight": 17
-    },
-    {
       "source": "CPO",
       "target": "通信",
+      "weight": 18
+    },
+    {
+      "source": "功率半导体",
+      "target": "半导体",
       "weight": 17
     },
     {
@@ -529,6 +529,11 @@
     {
       "source": "光学光电子",
       "target": "半导体",
+      "weight": 14
+    },
+    {
+      "source": "AI",
+      "target": "通信",
       "weight": 14
     },
     {
@@ -553,11 +558,6 @@
     },
     {
       "source": "AI",
-      "target": "通信",
-      "weight": 13
-    },
-    {
-      "source": "AI",
       "target": "MLCC",
       "weight": 13
     },
@@ -572,6 +572,16 @@
       "weight": 12
     },
     {
+      "source": "AI",
+      "target": "CPO",
+      "weight": 12
+    },
+    {
+      "source": "CPO",
+      "target": "算力",
+      "weight": 12
+    },
+    {
       "source": "PFA",
       "target": "氟化工",
       "weight": 11
@@ -579,6 +589,11 @@
     {
       "source": "HBM",
       "target": "半导体设备",
+      "weight": 11
+    },
+    {
+      "source": "算力",
+      "target": "通信",
       "weight": 11
     },
     {
@@ -593,22 +608,12 @@
     },
     {
       "source": "AI",
-      "target": "CAE",
+      "target": "光模块",
       "weight": 10
     },
     {
       "source": "AI",
-      "target": "CPO",
-      "weight": 10
-    },
-    {
-      "source": "CPO",
-      "target": "算力",
-      "weight": 10
-    },
-    {
-      "source": "算力",
-      "target": "通信",
+      "target": "CAE",
       "weight": 10
     },
     {
@@ -634,11 +639,6 @@
     {
       "source": "AI",
       "target": "元件",
-      "weight": 9
-    },
-    {
-      "source": "AI",
-      "target": "光模块",
       "weight": 9
     },
     {
@@ -832,6 +832,11 @@
       "weight": 5
     },
     {
+      "source": "光模块",
+      "target": "算力",
+      "weight": 5
+    },
+    {
       "source": "AI",
       "target": "电子特气",
       "weight": 5
@@ -957,11 +962,6 @@
       "weight": 4
     },
     {
-      "source": "光模块",
-      "target": "算力",
-      "weight": 4
-    },
-    {
       "source": "PCB",
       "target": "消费电子",
       "weight": 4
@@ -994,6 +994,11 @@
     {
       "source": "AI",
       "target": "量子计算",
+      "weight": 4
+    },
+    {
+      "source": "AI",
+      "target": "医疗服务",
       "weight": 4
     },
     {
@@ -1034,6 +1039,11 @@
     {
       "source": "元件",
       "target": "通信",
+      "weight": 3
+    },
+    {
+      "source": "CPO",
+      "target": "光模块",
       "weight": 3
     },
     {
@@ -1098,11 +1108,6 @@
     },
     {
       "source": "创新药",
-      "target": "医疗服务",
-      "weight": 3
-    },
-    {
-      "source": "AI",
       "target": "医疗服务",
       "weight": 3
     },
@@ -1214,11 +1219,6 @@
     {
       "source": "MLCC",
       "target": "算力",
-      "weight": 2
-    },
-    {
-      "source": "CPO",
-      "target": "光模块",
       "weight": 2
     },
     {

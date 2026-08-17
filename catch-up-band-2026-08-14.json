@@ -1,0 +1,430 @@
+{
+  "date": "2026-08-14",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300017",
+      "name": "网宿科技",
+      "pct": 20.01,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300684",
+      "name": "中石科技",
+      "pct": 20.01,
+      "concepts": [
+        "CPO",
+        "光模块",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH688286",
+      "name": "敏芯股份",
+      "pct": 20.01,
+      "concepts": [
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688662",
+      "name": "富信科技",
+      "pct": 20,
+      "concepts": [
+        "CPO",
+        "光模块",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ301489",
+      "name": "思泉新材",
+      "pct": 14.96,
+      "concepts": [
+        "液冷"
+      ]
+    },
+    {
+      "ticker": "SZ002628",
+      "name": "成都路桥",
+      "pct": 10.1,
+      "concepts": []
+    },
+    {
+      "ticker": "SH601609",
+      "name": "金田股份",
+      "pct": 10.05,
+      "concepts": [
+        "液冷"
+      ]
+    },
+    {
+      "ticker": "SZ002658",
+      "name": "雪迪龙",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002651",
+      "name": "利君股份",
+      "pct": 9.96,
+      "concepts": [
+        "军工"
+      ]
+    },
+    {
+      "ticker": "SH600198",
+      "name": "大唐电信",
+      "pct": 9.96,
+      "concepts": [
+        "存储芯片"
+      ]
+    },
+    {
+      "ticker": "SH600815",
+      "name": "厦工股份",
+      "pct": 9.94,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 51,
+      "active_days": 11,
+      "heat_score": 561,
+      "leaders": [
+        {
+          "ticker": "SZ300684",
+          "name": "中石科技",
+          "pct": 20.01,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688662",
+          "name": "富信科技",
+          "pct": 20,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 36,
+      "active_days": 10,
+      "heat_score": 360,
+      "leaders": [
+        {
+          "ticker": "SZ300017",
+          "name": "网宿科技",
+          "pct": 20.01,
+          "concepts": [
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ300684",
+          "name": "中石科技",
+          "pct": 20.01,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688662",
+          "name": "富信科技",
+          "pct": 20,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 22,
+      "active_days": 6,
+      "heat_score": 132,
+      "leaders": [
+        {
+          "ticker": "SH688286",
+          "name": "敏芯股份",
+          "pct": 20.01,
+          "concepts": [
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 15,
+      "active_days": 6,
+      "heat_score": 90,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 14,
+      "active_days": 6,
+      "heat_score": 84,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 11,
+      "active_days": 5,
+      "heat_score": 55,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 11,
+      "active_days": 5,
+      "heat_score": 55,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 13,
+      "active_days": 4,
+      "heat_score": 52,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 12,
+      "active_days": 3,
+      "heat_score": 36,
+      "leaders": [
+        {
+          "ticker": "SZ300684",
+          "name": "中石科技",
+          "pct": 20.01,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688662",
+          "name": "富信科技",
+          "pct": 20,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 9,
+      "active_days": 3,
+      "heat_score": 27,
+      "leaders": [
+        {
+          "ticker": "SH600198",
+          "name": "大唐电信",
+          "pct": 9.96,
+          "concepts": [
+            "存储芯片"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 9,
+      "active_days": 3,
+      "heat_score": 27,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 5,
+      "active_days": 5,
+      "heat_score": 25,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": [
+        {
+          "ticker": "SZ301489",
+          "name": "思泉新材",
+          "pct": 14.96,
+          "concepts": [
+            "液冷"
+          ]
+        },
+        {
+          "ticker": "SH601609",
+          "name": "金田股份",
+          "pct": 10.05,
+          "concepts": [
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 5,
+      "active_days": 3,
+      "heat_score": 15,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ300684",
+          "name": "中石科技",
+          "pct": 20.01,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688662",
+          "name": "富信科技",
+          "pct": 20,
+          "concepts": [
+            "CPO",
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ002651",
+          "name": "利君股份",
+          "pct": 9.96,
+          "concepts": [
+            "军工"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}

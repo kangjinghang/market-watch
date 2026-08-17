@@ -992,7 +992,7 @@
     {
       "week": "2026-W25",
       "date_range": "06-15 ~ 06-21",
-      "total_reasons": 487,
+      "total_reasons": 488,
       "top_concepts": [
         {
           "concept": "半导体",
@@ -1052,14 +1052,14 @@
           "prev_count": 0
         },
         {
+          "concept": "通信",
+          "count": 9,
+          "prev_count": 1
+        },
+        {
           "concept": "半导体靶材",
           "count": 8,
           "prev_count": 0
-        },
-        {
-          "concept": "通信",
-          "count": 8,
-          "prev_count": 1
         },
         {
           "concept": "锂电池",
@@ -1118,7 +1118,7 @@
     {
       "week": "2026-W26",
       "date_range": "06-22 ~ 06-28",
-      "total_reasons": 475,
+      "total_reasons": 476,
       "top_concepts": [
         {
           "concept": "半导体",
@@ -1145,11 +1145,11 @@
           "count": 17
         },
         {
-          "concept": "算力",
-          "count": 16
+          "concept": "港股医药",
+          "count": 17
         },
         {
-          "concept": "港股医药",
+          "concept": "算力",
           "count": 16
         },
         {
@@ -1164,7 +1164,7 @@
       "emerging": [
         {
           "concept": "港股医药",
-          "count": 16,
+          "count": 17,
           "prev_count": 0
         },
         {
@@ -1215,6 +1215,11 @@
           "prev_count": 16
         },
         {
+          "concept": "通信",
+          "count": 1,
+          "prev_count": 9
+        },
+        {
           "concept": "机器人",
           "count": 0,
           "prev_count": 9
@@ -1222,11 +1227,6 @@
         {
           "concept": "半导体靶材",
           "count": 0,
-          "prev_count": 8
-        },
-        {
-          "concept": "通信",
-          "count": 1,
           "prev_count": 8
         },
         {
@@ -1249,11 +1249,11 @@
     {
       "week": "2026-W27",
       "date_range": "06-29 ~ 07-05",
-      "total_reasons": 609,
+      "total_reasons": 611,
       "top_concepts": [
         {
           "concept": "创新药",
-          "count": 186
+          "count": 187
         },
         {
           "concept": "机器人",
@@ -1277,7 +1277,7 @@
         },
         {
           "concept": "AI",
-          "count": 21
+          "count": 22
         },
         {
           "concept": "人形机器人",
@@ -1315,7 +1315,7 @@
         },
         {
           "concept": "通信",
-          "count": 4,
+          "count": 5,
           "prev_count": 1
         },
         {
@@ -1333,7 +1333,7 @@
         {
           "concept": "港股医药",
           "count": 0,
-          "prev_count": 16
+          "prev_count": 17
         },
         {
           "concept": "先进封装",
@@ -1546,7 +1546,7 @@
     {
       "week": "2026-W30",
       "date_range": "07-20 ~ 07-26",
-      "total_reasons": 89,
+      "total_reasons": 90,
       "top_concepts": [
         {
           "concept": "电网设备",
@@ -1554,7 +1554,7 @@
         },
         {
           "concept": "AI",
-          "count": 9
+          "count": 10
         },
         {
           "concept": "军工",
@@ -1562,7 +1562,7 @@
         },
         {
           "concept": "算力",
-          "count": 6
+          "count": 7
         },
         {
           "concept": "创新药",
@@ -1637,15 +1637,15 @@
     {
       "week": "2026-W31",
       "date_range": "07-27 ~ 08-02",
-      "total_reasons": 187,
+      "total_reasons": 188,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 69
+          "count": 70
         },
         {
           "concept": "算力",
-          "count": 42
+          "count": 43
         },
         {
           "concept": "PCB",
@@ -1738,7 +1738,7 @@
     {
       "week": "2026-W32",
       "date_range": "08-03 ~ 08-09",
-      "total_reasons": 187,
+      "total_reasons": 193,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1762,7 +1762,7 @@
         },
         {
           "concept": "创新药",
-          "count": 14
+          "count": 15
         },
         {
           "concept": "半导体设备",
@@ -1839,11 +1839,11 @@
     {
       "week": "2026-W33",
       "date_range": "08-10 ~ 08-16",
-      "total_reasons": 46,
+      "total_reasons": 53,
       "top_concepts": [
         {
           "concept": "AI",
-          "count": 11
+          "count": 13
         },
         {
           "concept": "人形机器人",
@@ -1855,6 +1855,10 @@
         },
         {
           "concept": "算力",
+          "count": 4
+        },
+        {
+          "concept": "医疗器械",
           "count": 3
         },
         {
@@ -1862,33 +1866,35 @@
           "count": 3
         },
         {
-          "concept": "医疗器械",
+          "concept": "医疗服务",
+          "count": 3
+        },
+        {
+          "concept": "半导体",
           "count": 2
         },
         {
-          "concept": "医疗服务",
+          "concept": "CPO",
           "count": 2
         },
         {
           "concept": "PCB",
           "count": 2
-        },
-        {
-          "concept": "港股医药",
-          "count": 1
-        },
-        {
-          "concept": "半导体设备",
-          "count": 1
         }
       ],
-      "emerging": [],
-      "fading": [
+      "emerging": [
         {
-          "concept": "CPO",
-          "count": 1,
-          "prev_count": 16
+          "concept": "医疗器械",
+          "count": 3,
+          "prev_count": 0
         },
+        {
+          "concept": "医疗服务",
+          "count": 3,
+          "prev_count": 1
+        }
+      ],
+      "fading": [
         {
           "concept": "通信",
           "count": 1,
@@ -1897,15 +1903,10 @@
         {
           "concept": "创新药",
           "count": 0,
-          "prev_count": 14
+          "prev_count": 15
         },
         {
           "concept": "半导体设备",
-          "count": 1,
-          "prev_count": 13
-        },
-        {
-          "concept": "半导体",
           "count": 1,
           "prev_count": 13
         },
@@ -1923,9 +1924,14 @@
           "concept": "液冷",
           "count": 0,
           "prev_count": 4
+        },
+        {
+          "concept": "光学光电子",
+          "count": 0,
+          "prev_count": 4
         }
       ]
     }
   ],
-  "generated_at": "2026-08-14T16:53:32.045Z"
+  "generated_at": "2026-08-17T10:58:14.904Z"
 }

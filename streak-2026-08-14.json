@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-14",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002437",
+      "name": "誉衡药业",
+      "streak": 4,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-14",
+      "total_pct": 59.51
+    },
+    {
+      "ticker": "SH603236",
+      "name": "移远通信",
+      "streak": 4,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-14",
+      "total_pct": 32.25
+    },
+    {
+      "ticker": "SH688137",
+      "name": "近岸蛋白",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-14",
+      "total_pct": 96.22
+    },
+    {
+      "ticker": "SZ300404",
+      "name": "博济医药",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-14",
+      "total_pct": 88.07
+    },
+    {
+      "ticker": "SH688177",
+      "name": "百奥泰",
+      "streak": 3,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-14",
+      "total_pct": 25.53
+    },
+    {
+      "ticker": "SZ300314",
+      "name": "戴维医疗",
+      "streak": 3,
+      "first_date": "2026-08-12",
+      "last_date": "2026-08-14",
+      "total_pct": 22.92
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-13",
-  "total_deaths": 1038,
+  "date_range": "2026-06-16 ~ 2026-08-14",
+  "total_deaths": 1066,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 34,
+    "高位回落": 36,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 999
+    "自然退潮": 1025
   },
   "recent_deaths": [
     {
@@ -76,17 +76,6 @@
       "events": []
     },
     {
-      "ticker": "SH688143",
-      "name": "长盈通",
-      "death_date": "2026-08-07",
-      "peak_pct": 249.41,
-      "last_pct": 40.64,
-      "last_days": 8,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
       "ticker": "SZ301013",
       "name": "利和兴",
       "death_date": "2026-08-05",
@@ -116,6 +105,17 @@
       "last_pct": 35.29,
       "last_days": 6,
       "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH688456",
+      "name": "有研粉材",
+      "death_date": "2026-08-06",
+      "peak_pct": 220.91,
+      "last_pct": 30.08,
+      "last_days": 3,
+      "appearances": 3,
       "pattern": "自然退潮",
       "events": []
     }
