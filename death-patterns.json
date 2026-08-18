@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-14",
-  "total_deaths": 1066,
+  "date_range": "2026-06-16 ~ 2026-08-17",
+  "total_deaths": 1071,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 36,
+    "高位回落": 34,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1025
+    "自然退潮": 1032
   },
   "recent_deaths": [
     {
@@ -76,17 +76,6 @@
       "events": []
     },
     {
-      "ticker": "SZ301013",
-      "name": "利和兴",
-      "death_date": "2026-08-05",
-      "peak_pct": 241.36,
-      "last_pct": 29.39,
-      "last_days": 6,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
       "ticker": "SH688519",
       "name": "南亚新材",
       "death_date": "2026-08-07",
@@ -98,17 +87,6 @@
       "events": []
     },
     {
-      "ticker": "SH688507",
-      "name": "索辰科技",
-      "death_date": "2026-08-05",
-      "peak_pct": 221.1,
-      "last_pct": 35.29,
-      "last_days": 6,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
       "ticker": "SH688456",
       "name": "有研粉材",
       "death_date": "2026-08-06",
@@ -116,6 +94,28 @@
       "last_pct": 30.08,
       "last_days": 3,
       "appearances": 3,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH600367",
+      "name": "红星发展",
+      "death_date": "2026-08-06",
+      "peak_pct": 215.45,
+      "last_pct": 22.91,
+      "last_days": 3,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH600667",
+      "name": "太极实业",
+      "death_date": "2026-08-13",
+      "peak_pct": 204.96,
+      "last_pct": 46.07,
+      "last_days": 10,
+      "appearances": 14,
       "pattern": "自然退潮",
       "events": []
     }

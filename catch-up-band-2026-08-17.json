@@ -1,0 +1,532 @@
+{
+  "date": "2026-08-17",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300313",
+      "name": "天山生物",
+      "pct": 20.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300570",
+      "name": "太辰光",
+      "pct": 20,
+      "concepts": [
+        "CPO"
+      ]
+    },
+    {
+      "ticker": "SZ300679",
+      "name": "电连技术",
+      "pct": 20,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH688206",
+      "name": "概伦电子",
+      "pct": 16.38,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688508",
+      "name": "芯朋微",
+      "pct": 13.89,
+      "concepts": [
+        "半导体设备",
+        "先进封装",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SH688210",
+      "name": "统联精密",
+      "pct": 12.08,
+      "concepts": [
+        "消费电子",
+        "先进封装",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH688353",
+      "name": "华盛锂电",
+      "pct": 10.49,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000670",
+      "name": "盈方微",
+      "pct": 10.07,
+      "concepts": [
+        "先进封装",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ002742",
+      "name": "冀衡医药",
+      "pct": 10.07,
+      "concepts": [
+        "化学制药",
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ002907",
+      "name": "华森制药",
+      "pct": 10.03,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ000737",
+      "name": "北方铜业",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603389",
+      "name": "亚振家居",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002028",
+      "name": "思源电气",
+      "pct": 10,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SH603530",
+      "name": "神马电力",
+      "pct": 10,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SH600281",
+      "name": "华阳新材",
+      "pct": 9.98,
+      "concepts": [
+        "有色金属",
+        "小金属"
+      ]
+    },
+    {
+      "ticker": "SZ001318",
+      "name": "阳光乳业",
+      "pct": 9.97,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600222",
+      "name": "太龙药业",
+      "pct": 9.95,
+      "concepts": [
+        "创新药"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 50,
+      "active_days": 10,
+      "heat_score": 500,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 36,
+      "active_days": 10,
+      "heat_score": 360,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 25,
+      "active_days": 7,
+      "heat_score": 175,
+      "leaders": [
+        {
+          "ticker": "SH688206",
+          "name": "概伦电子",
+          "pct": 16.38,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688508",
+          "name": "芯朋微",
+          "pct": 13.89,
+          "concepts": [
+            "半导体设备",
+            "先进封装",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SZ000670",
+          "name": "盈方微",
+          "pct": 10.07,
+          "concepts": [
+            "先进封装",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 16,
+      "active_days": 7,
+      "heat_score": 112,
+      "leaders": [
+        {
+          "ticker": "SZ300679",
+          "name": "电连技术",
+          "pct": 20,
+          "concepts": [
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 14,
+      "active_days": 6,
+      "heat_score": 84,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 15,
+      "active_days": 5,
+      "heat_score": 75,
+      "leaders": [
+        {
+          "ticker": "SH688206",
+          "name": "概伦电子",
+          "pct": 16.38,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688508",
+          "name": "芯朋微",
+          "pct": 13.89,
+          "concepts": [
+            "半导体设备",
+            "先进封装",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 11,
+      "active_days": 5,
+      "heat_score": 55,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 11,
+      "active_days": 5,
+      "heat_score": 55,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 13,
+      "active_days": 4,
+      "heat_score": 52,
+      "leaders": [
+        {
+          "ticker": "SZ300570",
+          "name": "太辰光",
+          "pct": 20,
+          "concepts": [
+            "CPO"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 4,
+      "heat_score": 48,
+      "leaders": [
+        {
+          "ticker": "SZ002742",
+          "name": "冀衡医药",
+          "pct": 10.07,
+          "concepts": [
+            "化学制药",
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ002907",
+          "name": "华森制药",
+          "pct": 10.03,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH600222",
+          "name": "太龙药业",
+          "pct": 9.95,
+          "concepts": [
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 9,
+      "active_days": 4,
+      "heat_score": 36,
+      "leaders": [
+        {
+          "ticker": "SH688210",
+          "name": "统联精密",
+          "pct": 12.08,
+          "concepts": [
+            "消费电子",
+            "先进封装",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 7,
+      "active_days": 4,
+      "heat_score": 28,
+      "leaders": [
+        {
+          "ticker": "SZ002028",
+          "name": "思源电气",
+          "pct": 10,
+          "concepts": [
+            "电网设备"
+          ]
+        },
+        {
+          "ticker": "SH603530",
+          "name": "神马电力",
+          "pct": 10,
+          "concepts": [
+            "电网设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 9,
+      "active_days": 3,
+      "heat_score": 27,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 5,
+      "active_days": 5,
+      "heat_score": 25,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SH688210",
+          "name": "统联精密",
+          "pct": 12.08,
+          "concepts": [
+            "消费电子",
+            "先进封装",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": [
+        {
+          "ticker": "SH688508",
+          "name": "芯朋微",
+          "pct": 13.89,
+          "concepts": [
+            "半导体设备",
+            "先进封装",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH688210",
+          "name": "统联精密",
+          "pct": 12.08,
+          "concepts": [
+            "消费电子",
+            "先进封装",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ000670",
+          "name": "盈方微",
+          "pct": 10.07,
+          "concepts": [
+            "先进封装",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SH600281",
+          "name": "华阳新材",
+          "pct": 9.98,
+          "concepts": [
+            "有色金属",
+            "小金属"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "光伏",
+      "leader_count": 4,
+      "active_days": 1,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "IPO",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ002365",
+      "name": "永安药业",
+      "last_seen": "2026-08-17",
+      "shared_concepts": [
+        "创新药"
+      ],
+      "trend_pct": 40.28,
+      "trend_days": 39
+    },
+    {
+      "ticker": "SZ300832",
+      "name": "新产业",
+      "last_seen": "2026-08-17",
+      "shared_concepts": [
+        "创新药"
+      ],
+      "trend_pct": 30.42,
+      "trend_days": 41
+    }
+  ]
+}

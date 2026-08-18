@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-17",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002437",
+      "name": "誉衡药业",
+      "streak": 5,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-17",
+      "total_pct": 75.35
+    },
+    {
+      "ticker": "SZ301047",
+      "name": "义翘神州",
+      "streak": 4,
+      "first_date": "2026-08-11",
+      "last_date": "2026-08-17",
+      "total_pct": 135.63
+    },
+    {
+      "ticker": "SZ300314",
+      "name": "戴维医疗",
+      "streak": 4,
+      "first_date": "2026-08-12",
+      "last_date": "2026-08-17",
+      "total_pct": 47.55
+    },
+    {
+      "ticker": "SZ300684",
+      "name": "中石科技",
+      "streak": 3,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-17",
+      "total_pct": 79.7
+    },
+    {
+      "ticker": "SZ002581",
+      "name": "*ST未名",
+      "streak": 3,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-17",
+      "total_pct": 50
+    },
+    {
+      "ticker": "SZ300120",
+      "name": "经纬辉开",
+      "streak": 3,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-17",
+      "total_pct": 45.14
+    },
+    {
+      "ticker": "SZ002951",
+      "name": "金时科技",
+      "streak": 3,
+      "first_date": "2026-08-12",
+      "last_date": "2026-08-17",
+      "total_pct": 36.7
+    },
+    {
+      "ticker": "SH603083",
+      "name": "剑桥科技",
+      "streak": 3,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-17",
+      "total_pct": 28.59
+    },
+    {
+      "ticker": "SZ002086",
+      "name": "东方海洋",
+      "streak": 3,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-17",
+      "total_pct": 16.04
+    }
+  ]
+}
