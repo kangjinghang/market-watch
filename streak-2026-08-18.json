@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-18",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ300314",
+      "name": "戴维医疗",
+      "streak": 5,
+      "first_date": "2026-08-12",
+      "last_date": "2026-08-18",
+      "total_pct": 53.65
+    },
+    {
+      "ticker": "SZ300684",
+      "name": "中石科技",
+      "streak": 4,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-18",
+      "total_pct": 105.51
+    },
+    {
+      "ticker": "SH688448",
+      "name": "磁谷科技",
+      "streak": 3,
+      "first_date": "2026-08-14",
+      "last_date": "2026-08-18",
+      "total_pct": 28.99
+    },
+    {
+      "ticker": "SZ300832",
+      "name": "新产业",
+      "streak": 3,
+      "first_date": "2026-08-14",
+      "last_date": "2026-08-18",
+      "total_pct": 14.82
+    }
+  ]
+}
