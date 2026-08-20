@@ -1546,7 +1546,7 @@
     {
       "week": "2026-W30",
       "date_range": "07-20 ~ 07-26",
-      "total_reasons": 93,
+      "total_reasons": 94,
       "top_concepts": [
         {
           "concept": "电网设备",
@@ -1557,6 +1557,10 @@
           "count": 11
         },
         {
+          "concept": "创新药",
+          "count": 8
+        },
+        {
           "concept": "算力",
           "count": 8
         },
@@ -1565,20 +1569,16 @@
           "count": 8
         },
         {
-          "concept": "创新药",
-          "count": 7
-        },
-        {
           "concept": "电子",
           "count": 5
         },
         {
-          "concept": "CPO",
+          "concept": "医疗器械",
           "count": 3
         },
         {
-          "concept": "医疗器械",
-          "count": 2
+          "concept": "CPO",
+          "count": 3
         },
         {
           "concept": "煤炭",
@@ -1603,6 +1603,11 @@
         {
           "concept": "电子",
           "count": 5,
+          "prev_count": 1
+        },
+        {
+          "concept": "医疗器械",
+          "count": 3,
           "prev_count": 1
         },
         {
@@ -1729,6 +1734,11 @@
           "prev_count": 8
         },
         {
+          "concept": "医疗器械",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
           "concept": "CPO",
           "count": 0,
           "prev_count": 3
@@ -1849,7 +1859,7 @@
     {
       "week": "2026-W33",
       "date_range": "08-10 ~ 08-16",
-      "total_reasons": 59,
+      "total_reasons": 60,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1931,11 +1941,6 @@
           "prev_count": 5
         },
         {
-          "concept": "液冷",
-          "count": 1,
-          "prev_count": 4
-        },
-        {
           "concept": "光学光电子",
           "count": 0,
           "prev_count": 4
@@ -1950,7 +1955,7 @@
     {
       "week": "2026-W34",
       "date_range": "08-17 ~ 08-23",
-      "total_reasons": 15,
+      "total_reasons": 18,
       "top_concepts": [
         {
           "concept": "先进封装",
@@ -2045,5 +2050,5 @@
       ]
     }
   ],
-  "generated_at": "2026-08-19T11:29:56.638Z"
+  "generated_at": "2026-08-20T13:52:49.098Z"
 }

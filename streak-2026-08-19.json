@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-19",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002581",
+      "name": "*ST未名",
+      "streak": 4,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-19",
+      "total_pct": 61.49
+    },
+    {
+      "ticker": "SZ300832",
+      "name": "新产业",
+      "streak": 4,
+      "first_date": "2026-08-14",
+      "last_date": "2026-08-19",
+      "total_pct": 36.02
+    },
+    {
+      "ticker": "SZ300313",
+      "name": "天山生物",
+      "streak": 3,
+      "first_date": "2026-08-17",
+      "last_date": "2026-08-19",
+      "total_pct": 77.3
+    },
+    {
+      "ticker": "SH601919",
+      "name": "中远海控",
+      "streak": 3,
+      "first_date": "2026-08-17",
+      "last_date": "2026-08-19",
+      "total_pct": 8.52
+    }
+  ]
+}

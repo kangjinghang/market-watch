@@ -1,0 +1,250 @@
+{
+  "date": "2026-08-19",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ000736",
+      "name": "中交发展",
+      "pct": 10.11,
+      "concepts": [
+        "房地产"
+      ]
+    },
+    {
+      "ticker": "SH603801",
+      "name": "志邦家居",
+      "pct": 10.05,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ001301",
+      "name": "尚太科技",
+      "pct": 10.01,
+      "concepts": [
+        "证券"
+      ]
+    },
+    {
+      "ticker": "SH600610",
+      "name": "中毅达",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002040",
+      "name": "南 京 港",
+      "pct": 9.95,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 36,
+      "active_days": 9,
+      "heat_score": 324,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 25,
+      "active_days": 9,
+      "heat_score": 225,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 21,
+      "active_days": 6,
+      "heat_score": 126,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 15,
+      "active_days": 6,
+      "heat_score": 90,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 15,
+      "active_days": 5,
+      "heat_score": 75,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 13,
+      "active_days": 4,
+      "heat_score": 52,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 4,
+      "heat_score": 48,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 9,
+      "active_days": 3,
+      "heat_score": 27,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 5,
+      "active_days": 5,
+      "heat_score": 25,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ000736",
+          "name": "中交发展",
+          "pct": 10.11,
+          "concepts": [
+            "房地产"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ001301",
+          "name": "尚太科技",
+          "pct": 10.01,
+          "concepts": [
+            "证券"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}

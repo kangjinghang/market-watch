@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-17",
-  "total_reasons": 3654,
+  "date_range": "2026-03-05 ~ 2026-08-18",
+  "total_reasons": 3659,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 286,
+      "count": 287,
       "type": "sector"
     },
     {
@@ -151,7 +151,7 @@
     },
     {
       "id": "医疗器械",
-      "count": 34,
+      "count": 35,
       "type": "sector"
     },
     {
@@ -186,7 +186,7 @@
     },
     {
       "id": "液冷",
-      "count": 22,
+      "count": 23,
       "type": "sector"
     },
     {
@@ -697,6 +697,11 @@
       "weight": 8
     },
     {
+      "source": "创新药",
+      "target": "医疗器械",
+      "weight": 8
+    },
+    {
       "source": "AI",
       "target": "PTFE",
       "weight": 7
@@ -739,11 +744,6 @@
     {
       "source": "半导体材料",
       "target": "氟化工",
-      "weight": 7
-    },
-    {
-      "source": "创新药",
-      "target": "医疗器械",
       "weight": 7
     },
     {
