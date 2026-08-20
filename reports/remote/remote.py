@@ -385,6 +385,8 @@ set MAIN_REPO=C:\workspace\trend-trading-agents
 set SITE_REPO=C:\workspace\market-watch
 set LOG=C:\workspace\build___MMDD__.log
 set PATH=C:\Program Files\nodejs;%APPDATA%\npm;%PATH%
+set MAIN_TRIES=0
+set SITE_TRIES=0
 set TODAY=__DATE__
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
