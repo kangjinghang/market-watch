@@ -1,0 +1,535 @@
+{
+  "date": "2026-08-20",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300006",
+      "name": "莱美药业",
+      "pct": 20,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300142",
+      "name": "沃森生物",
+      "pct": 20,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300363",
+      "name": "博腾股份",
+      "pct": 20,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300765",
+      "name": "石药创新",
+      "pct": 20,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688137",
+      "name": "近岸蛋白",
+      "pct": 20,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688185",
+      "name": "康希诺",
+      "pct": 20,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688356",
+      "name": "键凯科技",
+      "pct": 20,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300009",
+      "name": "安科生物",
+      "pct": 19.98,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300601",
+      "name": "康泰生物",
+      "pct": 19.98,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688658",
+      "name": "悦康药业",
+      "pct": 19.98,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ300109",
+      "name": "新开源",
+      "pct": 19.97,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300122",
+      "name": "智飞生物",
+      "pct": 19.97,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688143",
+      "name": "长盈通",
+      "pct": 18.41,
+      "concepts": [
+        "CPO"
+      ]
+    },
+    {
+      "ticker": "SH688617",
+      "name": "惠泰医疗",
+      "pct": 16.51,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688536",
+      "name": "思瑞浦",
+      "pct": 15.31,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688266",
+      "name": "泽璟制药",
+      "pct": 12.89,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ002399",
+      "name": "海普瑞",
+      "pct": 10.05,
+      "concepts": [
+        "化学制药",
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH603882",
+      "name": "金域医学",
+      "pct": 10.01,
+      "concepts": [
+        "医疗服务",
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SZ002437",
+      "name": "誉衡药业",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002880",
+      "name": "卫光生物",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600250",
+      "name": "南京商旅",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SH601877",
+      "name": "正泰电器",
+      "pct": 10,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SH603392",
+      "name": "万泰生物",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002940",
+      "name": "昂利康",
+      "pct": 9.99,
+      "concepts": [
+        "化学制药"
+      ]
+    },
+    {
+      "ticker": "SZ002365",
+      "name": "永安药业",
+      "pct": 9.98,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002030",
+      "name": "达安基因",
+      "pct": 9.94,
+      "concepts": [
+        "医疗器械"
+      ]
+    },
+    {
+      "ticker": "SH601118",
+      "name": "海南橡胶",
+      "pct": 9.93,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 27,
+      "active_days": 8,
+      "heat_score": 216,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 18,
+      "active_days": 8,
+      "heat_score": 144,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 22,
+      "active_days": 5,
+      "heat_score": 110,
+      "leaders": [
+        {
+          "ticker": "SZ300006",
+          "name": "莱美药业",
+          "pct": 20,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ300765",
+          "name": "石药创新",
+          "pct": 20,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688356",
+          "name": "键凯科技",
+          "pct": 20,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ300009",
+          "name": "安科生物",
+          "pct": 19.98,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ300601",
+          "name": "康泰生物",
+          "pct": 19.98,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688658",
+          "name": "悦康药业",
+          "pct": 19.98,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ300122",
+          "name": "智飞生物",
+          "pct": 19.97,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH688266",
+          "name": "泽璟制药",
+          "pct": 12.89,
+          "concepts": [
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ002399",
+          "name": "海普瑞",
+          "pct": 10.05,
+          "concepts": [
+            "化学制药",
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH603882",
+          "name": "金域医学",
+          "pct": 10.01,
+          "concepts": [
+            "医疗服务",
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 18,
+      "active_days": 5,
+      "heat_score": 90,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 13,
+      "active_days": 5,
+      "heat_score": 65,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 14,
+      "active_days": 4,
+      "heat_score": 56,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 5,
+      "active_days": 5,
+      "heat_score": 25,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": [
+        {
+          "ticker": "SH688143",
+          "name": "长盈通",
+          "pct": 18.41,
+          "concepts": [
+            "CPO"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SH601877",
+          "name": "正泰电器",
+          "pct": 10,
+          "concepts": [
+            "电网设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "存储芯片",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ002399",
+          "name": "海普瑞",
+          "pct": 10.05,
+          "concepts": [
+            "化学制药",
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SZ002940",
+          "name": "昂利康",
+          "pct": 9.99,
+          "concepts": [
+            "化学制药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "自动化设备",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ002030",
+          "name": "达安基因",
+          "pct": 9.94,
+          "concepts": [
+            "医疗器械"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH603882",
+          "name": "金域医学",
+          "pct": 10.01,
+          "concepts": [
+            "医疗服务",
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光学光电子",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    },
+    {
+      "concept": "电子特气",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}

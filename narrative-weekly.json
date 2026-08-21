@@ -1249,7 +1249,7 @@
     {
       "week": "2026-W27",
       "date_range": "06-29 ~ 07-05",
-      "total_reasons": 621,
+      "total_reasons": 622,
       "top_concepts": [
         {
           "concept": "创新药",
@@ -1642,7 +1642,7 @@
     {
       "week": "2026-W31",
       "date_range": "07-27 ~ 08-02",
-      "total_reasons": 190,
+      "total_reasons": 191,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1748,7 +1748,7 @@
     {
       "week": "2026-W32",
       "date_range": "08-03 ~ 08-09",
-      "total_reasons": 200,
+      "total_reasons": 202,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1814,7 +1814,7 @@
         },
         {
           "concept": "医疗服务",
-          "count": 3,
+          "count": 4,
           "prev_count": 0
         },
         {
@@ -1859,7 +1859,7 @@
     {
       "week": "2026-W33",
       "date_range": "08-10 ~ 08-16",
-      "total_reasons": 60,
+      "total_reasons": 61,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1955,7 +1955,7 @@
     {
       "week": "2026-W34",
       "date_range": "08-17 ~ 08-23",
-      "total_reasons": 18,
+      "total_reasons": 27,
       "top_concepts": [
         {
           "concept": "先进封装",
@@ -1978,6 +1978,10 @@
           "count": 2
         },
         {
+          "concept": "CPO",
+          "count": 2
+        },
+        {
           "concept": "创新药",
           "count": 2
         },
@@ -1986,11 +1990,11 @@
           "count": 1
         },
         {
-          "concept": "CPO",
+          "concept": "港股医药",
           "count": 1
         },
         {
-          "concept": "港股医药",
+          "concept": "证券",
           "count": 1
         }
       ],
@@ -2033,11 +2037,6 @@
           "prev_count": 5
         },
         {
-          "concept": "CPO",
-          "count": 1,
-          "prev_count": 4
-        },
-        {
           "concept": "汽车零部件",
           "count": 0,
           "prev_count": 3
@@ -2046,9 +2045,14 @@
           "concept": "医疗服务",
           "count": 0,
           "prev_count": 3
+        },
+        {
+          "concept": "光模块",
+          "count": 0,
+          "prev_count": 3
         }
       ]
     }
   ],
-  "generated_at": "2026-08-20T13:52:49.098Z"
+  "generated_at": "2026-08-21T10:36:24.791Z"
 }

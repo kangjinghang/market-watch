@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-18",
-  "total_reasons": 3659,
+  "date_range": "2026-03-05 ~ 2026-08-19",
+  "total_reasons": 3673,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
@@ -106,7 +106,7 @@
     },
     {
       "id": "CPO",
-      "count": 45,
+      "count": 46,
       "type": "technology"
     },
     {
@@ -140,12 +140,12 @@
       "type": "sector"
     },
     {
-      "id": "汽车零部件",
-      "count": 36,
+      "id": "证券",
+      "count": 37,
       "type": "sector"
     },
     {
-      "id": "证券",
+      "id": "汽车零部件",
       "count": 36,
       "type": "sector"
     },
@@ -200,14 +200,14 @@
       "type": "sector"
     },
     {
+      "id": "医疗服务",
+      "count": 21,
+      "type": "sector"
+    },
+    {
       "id": "PTFE",
       "count": 20,
       "type": "technology"
-    },
-    {
-      "id": "医疗服务",
-      "count": 20,
-      "type": "sector"
     },
     {
       "id": "港股医药",
@@ -311,7 +311,7 @@
     },
     {
       "id": "银行",
-      "count": 7,
+      "count": 8,
       "type": "sector"
     },
     {
