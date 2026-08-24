@@ -3,3 +3,5 @@
 
 # CodeBuddy agent 数据目录（记忆/调试脚本）
 .codebuddy/
+
+__pycache__/
