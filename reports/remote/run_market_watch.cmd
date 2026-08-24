@@ -47,18 +47,12 @@ echo [!TS!] git sync + syntax OK>> "%LOG%"
 
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-echo [!TS!] snapshot (python -u, realtime log scan_live_!TODAY!.log, hard timeout 3h)>> "%LOG%"
-set SCAN_RC_FILE=%MAIN_REPO%\scan_rc.tmp
-if exist "%SCAN_RC_FILE%" del /q "%SCAN_RC_FILE%"
-set SCAN_OUT=%MAIN_REPO%\scan_live_!TODAY!.out
-set SCAN_ERR=%MAIN_REPO%\scan_live_!TODAY!.err
-if exist "%SCAN_OUT%" del /q "%SCAN_OUT%"
-if exist "%SCAN_ERR%" del /q "%SCAN_ERR%"
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$p = Start-Process -FilePath '%MAIN_REPO%\.venv\Scripts\python.exe' -ArgumentList '-u','%MAIN_REPO%\skills\watchlist\scripts\snapshot.py','--date','!TODAY!','--concurrency','2','--sleep','!SLEEP!' -WorkingDirectory '%MAIN_REPO%' -NoNewWindow -PassThru -RedirectStandardOutput '%SCAN_OUT%' -RedirectStandardError '%SCAN_ERR%'; if ($p.WaitForExit(10800000)) { $code = $p.ExitCode } else { Stop-Process -Id $p.Id -Force -ErrorAction SilentlyContinue; Get-Process python -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue; $code = 1 }; Set-Content -Path '%SCAN_RC_FILE%' -Value $code -Encoding Ascii"
-type "%SCAN_OUT%" >> "%LOG%" 2>nul
-type "%SCAN_ERR%" >> "%LOG%" 2>nul
-set SCAN_EXIT=1
-if exist "%SCAN_RC_FILE%" for /f "delims=" %%r in (%SCAN_RC_FILE%) do set SCAN_EXIT=%%r
+echo [!TS!] snapshot (python -u foreground, hard timeout 3h via outer guard)>> "%LOG%"
+:: 前台直跑 python（避免 Start-Process -Redirect -NoNewWindow 在 SSH 非交互下卡/挂，
+:: 以及 SCAN_RC_FILE 临时文件传递退出码不可靠导致误判 snapshot 失败）。
+:: 超时保护交给外层：若 3h 仍未结束，由 scheduled task 的"停止任务"兜底。
+"%MAIN_REPO%\.venv\Scripts\python.exe" -u "%MAIN_REPO%\skills\watchlist\scripts\snapshot.py" --date "!TODAY!" --concurrency 2 --sleep "!SLEEP!" >> "%LOG%" 2>&1
+set SCAN_EXIT=!errorlevel!
 if !SCAN_EXIT! neq 0 goto :scan_fail
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
