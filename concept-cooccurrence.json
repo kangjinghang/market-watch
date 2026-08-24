@@ -1,17 +1,17 @@
 {
   "date_range": "2026-03-05 ~ 2026-08-19",
-  "total_reasons": 3673,
+  "total_reasons": 3687,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
     {
       "id": "半导体",
-      "count": 679,
+      "count": 680,
       "type": "sector"
     },
     {
       "id": "AI",
-      "count": 450,
+      "count": 451,
       "type": "technology"
     },
     {
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 287,
+      "count": 288,
       "type": "sector"
     },
     {
@@ -31,7 +31,7 @@
     },
     {
       "id": "半导体设备",
-      "count": 190,
+      "count": 191,
       "type": "sector"
     },
     {
@@ -151,7 +151,7 @@
     },
     {
       "id": "医疗器械",
-      "count": 35,
+      "count": 36,
       "type": "sector"
     },
     {
@@ -290,6 +290,11 @@
       "type": "technology"
     },
     {
+      "id": "银行",
+      "count": 9,
+      "type": "sector"
+    },
+    {
       "id": "GPU",
       "count": 8,
       "type": "technology"
@@ -306,11 +311,6 @@
     },
     {
       "id": "半导体靶材",
-      "count": 8,
-      "type": "sector"
-    },
-    {
-      "id": "银行",
       "count": 8,
       "type": "sector"
     },
@@ -369,7 +369,7 @@
     {
       "source": "半导体",
       "target": "半导体设备",
-      "weight": 190
+      "weight": 191
     },
     {
       "source": "半导体",
@@ -1147,6 +1147,11 @@
       "weight": 3
     },
     {
+      "source": "AI",
+      "target": "医疗器械",
+      "weight": 3
+    },
+    {
       "source": "消费电子",
       "target": "液冷",
       "weight": 2
@@ -1354,11 +1359,6 @@
     {
       "source": "半导体设备",
       "target": "电子特气",
-      "weight": 2
-    },
-    {
-      "source": "AI",
-      "target": "医疗器械",
       "weight": 2
     },
     {
