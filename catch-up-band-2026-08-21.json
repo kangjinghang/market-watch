@@ -1,0 +1,316 @@
+{
+  "date": "2026-08-21",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ301591",
+      "name": "肯特股份",
+      "pct": 20.01,
+      "concepts": [
+        "电子特气",
+        "PCB",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH688328",
+      "name": "深科达",
+      "pct": 19.99,
+      "concepts": [
+        "半导体设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ300588",
+      "name": "熙菱信息",
+      "pct": 11.47,
+      "concepts": [
+        "计算机",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300399",
+      "name": "天利科技",
+      "pct": 10.51,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600577",
+      "name": "精达股份",
+      "pct": 10.04,
+      "concepts": [
+        "功率半导体",
+        "电网设备",
+        "半导体"
+      ]
+    },
+    {
+      "ticker": "SZ000710",
+      "name": "贝瑞基因",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002716",
+      "name": "湖南白银",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002192",
+      "name": "融捷股份",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002017",
+      "name": "东信和平",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002886",
+      "name": "沃特股份",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SH601212",
+      "name": "白银有色",
+      "pct": 9.93,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 20,
+      "active_days": 8,
+      "heat_score": 160,
+      "leaders": [
+        {
+          "ticker": "SZ300588",
+          "name": "熙菱信息",
+          "pct": 11.47,
+          "concepts": [
+            "计算机",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 22,
+      "active_days": 5,
+      "heat_score": 110,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 13,
+      "active_days": 7,
+      "heat_score": 91,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 13,
+      "active_days": 5,
+      "heat_score": 65,
+      "leaders": [
+        {
+          "ticker": "SZ301591",
+          "name": "肯特股份",
+          "pct": 20.01,
+          "concepts": [
+            "电子特气",
+            "PCB",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 10,
+      "active_days": 5,
+      "heat_score": 50,
+      "leaders": [
+        {
+          "ticker": "SH688328",
+          "name": "深科达",
+          "pct": 19.99,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        },
+        {
+          "ticker": "SH600577",
+          "name": "精达股份",
+          "pct": 10.04,
+          "concepts": [
+            "功率半导体",
+            "电网设备",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 7,
+      "active_days": 4,
+      "heat_score": 28,
+      "leaders": [
+        {
+          "ticker": "SH688328",
+          "name": "深科达",
+          "pct": 19.99,
+          "concepts": [
+            "半导体设备",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": [
+        {
+          "ticker": "SH600577",
+          "name": "精达股份",
+          "pct": 10.04,
+          "concepts": [
+            "功率半导体",
+            "电网设备",
+            "半导体"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 4,
+      "active_days": 4,
+      "heat_score": 16,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SZ301591",
+          "name": "肯特股份",
+          "pct": 20.01,
+          "concepts": [
+            "电子特气",
+            "PCB",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "煤炭",
+      "leader_count": 3,
+      "active_days": 1,
+      "heat_score": 3,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}

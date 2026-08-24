@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-21",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ002581",
+      "name": "*ST未名",
+      "streak": 6,
+      "first_date": "2026-08-13",
+      "last_date": "2026-08-21",
+      "total_pct": 75.45
+    },
+    {
+      "ticker": "SH601919",
+      "name": "中远海控",
+      "streak": 5,
+      "first_date": "2026-08-17",
+      "last_date": "2026-08-21",
+      "total_pct": 29.26
+    },
+    {
+      "ticker": "SZ002365",
+      "name": "永安药业",
+      "streak": 3,
+      "first_date": "2026-08-17",
+      "last_date": "2026-08-21",
+      "total_pct": 25.49
+    },
+    {
+      "ticker": "SH600238",
+      "name": "ST椰岛",
+      "streak": 3,
+      "first_date": "2026-08-18",
+      "last_date": "2026-08-21",
+      "total_pct": 17.4
+    },
+    {
+      "ticker": "SH600971",
+      "name": "恒源煤电",
+      "streak": 3,
+      "first_date": "2026-08-19",
+      "last_date": "2026-08-21",
+      "total_pct": 11.11
+    }
+  ]
+}
