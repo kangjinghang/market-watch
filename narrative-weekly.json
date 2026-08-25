@@ -1375,7 +1375,7 @@
     {
       "week": "2026-W28",
       "date_range": "07-06 ~ 07-12",
-      "total_reasons": 83,
+      "total_reasons": 84,
       "top_concepts": [
         {
           "concept": "创新药",
@@ -1642,7 +1642,7 @@
     {
       "week": "2026-W31",
       "date_range": "07-27 ~ 08-02",
-      "total_reasons": 192,
+      "total_reasons": 193,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1859,7 +1859,7 @@
     {
       "week": "2026-W33",
       "date_range": "08-10 ~ 08-16",
-      "total_reasons": 63,
+      "total_reasons": 65,
       "top_concepts": [
         {
           "concept": "AI",
@@ -1955,7 +1955,7 @@
     {
       "week": "2026-W34",
       "date_range": "08-17 ~ 08-23",
-      "total_reasons": 34,
+      "total_reasons": 44,
       "top_concepts": [
         {
           "concept": "先进封装",
@@ -1963,6 +1963,14 @@
         },
         {
           "concept": "电子",
+          "count": 3
+        },
+        {
+          "concept": "创新药",
+          "count": 3
+        },
+        {
+          "concept": "银行",
           "count": 3
         },
         {
@@ -1982,14 +1990,6 @@
           "count": 2
         },
         {
-          "concept": "创新药",
-          "count": 2
-        },
-        {
-          "concept": "银行",
-          "count": 2
-        },
-        {
           "concept": "消费电子",
           "count": 1
         },
@@ -2006,6 +2006,16 @@
         },
         {
           "concept": "电子",
+          "count": 3,
+          "prev_count": 0
+        },
+        {
+          "concept": "创新药",
+          "count": 3,
+          "prev_count": 0
+        },
+        {
+          "concept": "银行",
           "count": 3,
           "prev_count": 0
         }
@@ -2052,7 +2062,41 @@
           "prev_count": 3
         }
       ]
+    },
+    {
+      "week": "2026-W35",
+      "date_range": "08-24 ~ 08-30",
+      "total_reasons": 2,
+      "top_concepts": [
+        {
+          "concept": "固态电池",
+          "count": 1
+        }
+      ],
+      "emerging": [],
+      "fading": [
+        {
+          "concept": "先进封装",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
+          "concept": "电子",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
+          "concept": "创新药",
+          "count": 0,
+          "prev_count": 3
+        },
+        {
+          "concept": "银行",
+          "count": 0,
+          "prev_count": 3
+        }
+      ]
     }
   ],
-  "generated_at": "2026-08-24T10:02:13.771Z"
+  "generated_at": "2026-08-25T12:28:19.737Z"
 }

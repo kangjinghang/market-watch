@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-19",
-  "total_reasons": 3687,
+  "date_range": "2026-03-05 ~ 2026-08-23",
+  "total_reasons": 3703,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 288,
+      "count": 289,
       "type": "sector"
     },
     {
@@ -91,7 +91,7 @@
     },
     {
       "id": "专用设备",
-      "count": 48,
+      "count": 49,
       "type": "sector"
     },
     {
@@ -291,7 +291,7 @@
     },
     {
       "id": "银行",
-      "count": 9,
+      "count": 10,
       "type": "sector"
     },
     {
@@ -345,13 +345,13 @@
       "type": "sector"
     },
     {
-      "id": "钢铁",
+      "id": "固态电池",
       "count": 3,
       "type": "sector"
     },
     {
-      "id": "固态电池",
-      "count": 2,
+      "id": "钢铁",
+      "count": 3,
       "type": "sector"
     },
     {

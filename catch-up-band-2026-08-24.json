@@ -1,0 +1,187 @@
+{
+  "date": "2026-08-24",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ002015",
+      "name": "协鑫能科",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000065",
+      "name": "北方国际",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603032",
+      "name": "德新科技",
+      "pct": 10.01,
+      "concepts": [
+        "固态电池"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 19,
+      "active_days": 7,
+      "heat_score": 133,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 21,
+      "active_days": 4,
+      "heat_score": 84,
+      "leaders": []
+    },
+    {
+      "concept": "算力",
+      "leader_count": 12,
+      "active_days": 6,
+      "heat_score": 72,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 10,
+      "active_days": 5,
+      "heat_score": 50,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 12,
+      "active_days": 4,
+      "heat_score": 48,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 7,
+      "active_days": 4,
+      "heat_score": 28,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗器械",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ002132",
+      "name": "恒星科技",
+      "last_seen": "2026-08-24",
+      "shared_concepts": [
+        "固态电池"
+      ],
+      "trend_pct": 25.3,
+      "trend_days": 13
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-21",
-  "total_deaths": 1111,
+  "date_range": "2026-06-16 ~ 2026-08-24",
+  "total_deaths": 1117,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 34,
+    "高位回落": 35,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1072
+    "自然退潮": 1077
   },
   "recent_deaths": [
     {
@@ -17,17 +17,6 @@
       "last_pct": 70.73,
       "last_days": 13,
       "appearances": 8,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SH600667",
-      "name": "太极实业",
-      "death_date": "2026-08-13",
-      "peak_pct": 204.96,
-      "last_pct": 46.07,
-      "last_days": 10,
-      "appearances": 14,
       "pattern": "自然退潮",
       "events": []
     },
@@ -140,20 +129,44 @@
       ]
     },
     {
-      "ticker": "SH600721",
-      "name": "百花医药",
-      "death_date": "2026-08-13",
-      "peak_pct": 106.26,
-      "last_pct": 106.26,
-      "last_days": 13,
-      "appearances": 7,
+      "ticker": "SH688137",
+      "name": "近岸蛋白",
+      "death_date": "2026-08-21",
+      "peak_pct": 134.41,
+      "last_pct": 134.41,
+      "last_days": 22,
+      "appearances": 5,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "百花医药2026-08-04收盘价7.92元，涨幅10.00%",
+          "description": "近岸蛋白2026-08-04收盘价40.53元，涨幅14.30%",
           "timestamp": 1785772800000,
-          "reason": "CRO概念板块受药明康德上调全年业绩指引刺激走强，百花医药作为板块个股跟随涨停。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d5c9d8ac-74d1-497b-87bc-7740e828ae0f&navBarTransparent=1&navBarTheme=dark"
+          "reason": "所属CRO/医药外包板块因龙头公司药明康德大幅上调业绩指引而集体走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7e121020-2a4b-443a-8e9a-e31c4e2d3e8a&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "近岸蛋白2026-08-20收盘价67.49元，涨幅20.00%",
+          "timestamp": 1787155200000,
+          "reason": "医药生物板块整体受海外mRNA疫苗重大进展催化，近岸蛋白作为mRNA原料酶核心供应商，市场预期其业务将受益。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-246114c6-6c8c-4d2a-b8b0-c96b5ce72b4d&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ301080",
+      "name": "百普赛斯",
+      "death_date": "2026-08-21",
+      "peak_pct": 119.82,
+      "last_pct": 119.82,
+      "last_days": 18,
+      "appearances": 5,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "百普赛斯2026-08-03收盘价45.00元，跌幅6.99%",
+          "timestamp": 1785686400000,
+          "reason": "所属的生物制品板块未获市场资金关注，叠加半导体设备等科技板块整体下挫，引发市场情绪转向谨慎。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6f0e8bc4-4b3a-4fc6-91cb-4d23179e6736&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -187,17 +200,6 @@
       "events": []
     },
     {
-      "ticker": "SZ002396",
-      "name": "星网锐捷",
-      "death_date": "2026-08-13",
-      "peak_pct": 98.45,
-      "last_pct": 29.73,
-      "last_days": 10,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
       "ticker": "SZ300570",
       "name": "太辰光",
       "death_date": "2026-08-20",
@@ -212,6 +214,24 @@
           "timestamp": 1786896000000,
           "reason": "公司所属CPO概念板块受英伟达硅光交换机量产消息刺激集体走强，同时市场传闻公司MPO连接器等产品需求旺盛，扩产计划强化增长预期。",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-813c3f5a-98a2-404e-aa01-bd59dd24a5ac&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH688286",
+      "name": "敏芯股份",
+      "death_date": "2026-08-14",
+      "peak_pct": 89.57,
+      "last_pct": 42.14,
+      "last_days": 11,
+      "appearances": 8,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "敏芯股份2026-08-14收盘价53.56元，涨幅20.01%",
+          "timestamp": 1786636800000,
+          "reason": "全球模拟芯片龙头ADI宣布9月全产品线涨价，带动半导体板块及模拟芯片概念股走强。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d4a93369-d506-49e0-93f3-930a5fdf25c0&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
