@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-24",
-  "total_deaths": 1117,
+  "date_range": "2026-06-16 ~ 2026-08-25",
+  "total_deaths": 1121,
   "patterns": {
     "闪崩": 0,
     "高位回落": 35,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1077
+    "自然退潮": 1081
   },
   "recent_deaths": [
     {
@@ -129,30 +129,6 @@
       ]
     },
     {
-      "ticker": "SH688137",
-      "name": "近岸蛋白",
-      "death_date": "2026-08-21",
-      "peak_pct": 134.41,
-      "last_pct": 134.41,
-      "last_days": 22,
-      "appearances": 5,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "近岸蛋白2026-08-04收盘价40.53元，涨幅14.30%",
-          "timestamp": 1785772800000,
-          "reason": "所属CRO/医药外包板块因龙头公司药明康德大幅上调业绩指引而集体走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7e121020-2a4b-443a-8e9a-e31c4e2d3e8a&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "近岸蛋白2026-08-20收盘价67.49元，涨幅20.00%",
-          "timestamp": 1787155200000,
-          "reason": "医药生物板块整体受海外mRNA疫苗重大进展催化，近岸蛋白作为mRNA原料酶核心供应商，市场预期其业务将受益。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-246114c6-6c8c-4d2a-b8b0-c96b5ce72b4d&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
       "ticker": "SZ301080",
       "name": "百普赛斯",
       "death_date": "2026-08-21",
@@ -200,6 +176,17 @@
       "events": []
     },
     {
+      "ticker": "SZ000506",
+      "name": "招金黄金",
+      "death_date": "2026-08-24",
+      "peak_pct": 100.36,
+      "last_pct": 100.36,
+      "last_days": 35,
+      "appearances": 7,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
       "ticker": "SZ300570",
       "name": "太辰光",
       "death_date": "2026-08-20",
@@ -218,22 +205,15 @@
       ]
     },
     {
-      "ticker": "SH688286",
-      "name": "敏芯股份",
-      "death_date": "2026-08-14",
-      "peak_pct": 89.57,
-      "last_pct": 42.14,
-      "last_days": 11,
-      "appearances": 8,
+      "ticker": "SH688332",
+      "name": "中科蓝讯",
+      "death_date": "2026-08-17",
+      "peak_pct": 79.79,
+      "last_pct": 24.1,
+      "last_days": 13,
+      "appearances": 5,
       "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "敏芯股份2026-08-14收盘价53.56元，涨幅20.01%",
-          "timestamp": 1786636800000,
-          "reason": "全球模拟芯片龙头ADI宣布9月全产品线涨价，带动半导体板块及模拟芯片概念股走强。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d4a93369-d506-49e0-93f3-930a5fdf25c0&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
+      "events": []
     }
   ],
   "peak_deaths": [

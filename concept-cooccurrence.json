@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-23",
-  "total_reasons": 3703,
+  "date_range": "2026-03-05 ~ 2026-08-24",
+  "total_reasons": 3713,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
@@ -21,7 +21,7 @@
     },
     {
       "id": "创新药",
-      "count": 289,
+      "count": 290,
       "type": "sector"
     },
     {

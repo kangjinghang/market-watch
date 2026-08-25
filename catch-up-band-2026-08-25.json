@@ -1,0 +1,450 @@
+{
+  "date": "2026-08-25",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300642",
+      "name": "透景生命",
+      "pct": 20,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688169",
+      "name": "石头科技",
+      "pct": 20,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300922",
+      "name": "天秦装备",
+      "pct": 19.99,
+      "concepts": [
+        "军工"
+      ]
+    },
+    {
+      "ticker": "SZ301018",
+      "name": "申菱环境",
+      "pct": 16.16,
+      "concepts": [
+        "AI",
+        "液冷",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300690",
+      "name": "双一科技",
+      "pct": 14.57,
+      "concepts": [
+        "新能源"
+      ]
+    },
+    {
+      "ticker": "SZ301606",
+      "name": "绿联科技",
+      "pct": 12.56,
+      "concepts": [
+        "消费电子",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH688373",
+      "name": "盟科药业",
+      "pct": 12.4,
+      "concepts": [
+        "化学制药"
+      ]
+    },
+    {
+      "ticker": "SZ002094",
+      "name": "青岛金王",
+      "pct": 10.06,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH603912",
+      "name": "佳力图",
+      "pct": 10.06,
+      "concepts": [
+        "AI",
+        "液冷",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002418",
+      "name": "康盛股份",
+      "pct": 10.05,
+      "concepts": [
+        "液冷"
+      ]
+    },
+    {
+      "ticker": "SZ003040",
+      "name": "楚天龙",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600281",
+      "name": "华阳新材",
+      "pct": 10.02,
+      "concepts": [
+        "小金属"
+      ]
+    },
+    {
+      "ticker": "SZ002837",
+      "name": "英维克",
+      "pct": 10.01,
+      "concepts": [
+        "液冷"
+      ]
+    },
+    {
+      "ticker": "SZ002947",
+      "name": "恒铭达",
+      "pct": 10,
+      "concepts": [
+        "消费电子",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SZ002703",
+      "name": "浙江世宝",
+      "pct": 9.98,
+      "concepts": [
+        "汽车零部件",
+        "机器人"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 14,
+      "active_days": 7,
+      "heat_score": 98,
+      "leaders": [
+        {
+          "ticker": "SZ301018",
+          "name": "申菱环境",
+          "pct": 16.16,
+          "concepts": [
+            "AI",
+            "液冷",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603912",
+          "name": "佳力图",
+          "pct": 10.06,
+          "concepts": [
+            "AI",
+            "液冷",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 13,
+      "active_days": 6,
+      "heat_score": 78,
+      "leaders": [
+        {
+          "ticker": "SZ301018",
+          "name": "申菱环境",
+          "pct": 16.16,
+          "concepts": [
+            "AI",
+            "液冷",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603912",
+          "name": "佳力图",
+          "pct": 10.06,
+          "concepts": [
+            "AI",
+            "液冷",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 14,
+      "active_days": 3,
+      "heat_score": 42,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 7,
+      "active_days": 4,
+      "heat_score": 28,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": [
+        {
+          "ticker": "SZ002094",
+          "name": "青岛金王",
+          "pct": 10.06,
+          "concepts": [
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SZ002703",
+          "name": "浙江世宝",
+          "pct": 9.98,
+          "concepts": [
+            "汽车零部件",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 6,
+      "active_days": 2,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SZ301018",
+          "name": "申菱环境",
+          "pct": 16.16,
+          "concepts": [
+            "AI",
+            "液冷",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603912",
+          "name": "佳力图",
+          "pct": 10.06,
+          "concepts": [
+            "AI",
+            "液冷",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002418",
+          "name": "康盛股份",
+          "pct": 10.05,
+          "concepts": [
+            "液冷"
+          ]
+        },
+        {
+          "ticker": "SZ002837",
+          "name": "英维克",
+          "pct": 10.01,
+          "concepts": [
+            "液冷"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SZ301606",
+          "name": "绿联科技",
+          "pct": 12.56,
+          "concepts": [
+            "消费电子",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ002947",
+          "name": "恒铭达",
+          "pct": 10,
+          "concepts": [
+            "消费电子",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SH688373",
+          "name": "盟科药业",
+          "pct": 12.4,
+          "concepts": [
+            "化学制药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SZ002703",
+          "name": "浙江世宝",
+          "pct": 9.98,
+          "concepts": [
+            "汽车零部件",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ301606",
+          "name": "绿联科技",
+          "pct": 12.56,
+          "concepts": [
+            "消费电子",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ002947",
+          "name": "恒铭达",
+          "pct": 10,
+          "concepts": [
+            "消费电子",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SZ300922",
+          "name": "天秦装备",
+          "pct": 19.99,
+          "concepts": [
+            "军工"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH600281",
+          "name": "华阳新材",
+          "pct": 10.02,
+          "concepts": [
+            "小金属"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}
