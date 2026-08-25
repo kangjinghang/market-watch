@@ -35,6 +35,8 @@ python3 reports/remote/remote.py status --date <可疑日期>   # 看 market-wat
 3. **先看日志，别猜 CPU/进程**。排错第一动作永远是 `status`（它 dump `market-watch.log` 尾部），不是 `Get-CimInstance` 看进程 CPU。
 4. **token 由用户保证最新**：`set-token` 纯写 `.env`，不 probe。要验证就单独 `probe`（只读）。
 5. **路径无空格就不套引号**（`Win32_Process.Create` 的 CommandLine）；cmd 重定向 `>>` 前必须有空格。
+6. **上传到 Windows 的 `.cmd`/`.bat` 必须是 CRLF 行尾**。`git pull` 已被 `.gitattributes`(`*.cmd text eol=crlf`) 保成 CRLF，但**手动 `scp` 覆盖服务器 .cmd 时仍必须先在本地转 CRLF**（否则 cmd.exe 解析错乱：注释行 `::` 被当命令执行、变量展开崩、整段脚本废掉）。转法：`python3 -c "open(f).read().replace('\n','\r\n')"` 后 scp。
+7. **改完 `remote.py` 也要验**：至少 `python3 reports/remote/remote.py --help` 确认无 SyntaxError/Warning；改了子命令逻辑再 `python3 -c "import ast; ast.parse(open('reports/remote/remote.py').read())"` 静态校验。今天曾因 docstring 里 `\w` 非 raw 字符串触发 SyntaxWarning 未察觉。
 
 ---
 
@@ -103,6 +105,9 @@ status 显示 scan FAILED / 400016
   ├─ probe 返回 400016 → set-token 换 token → run 重跑
   ├─ probe 返回 WAF 拦截页 → 浏览器过验证码解封 IP → probe 复 200 → run 重跑
   └─ probe 返回 200 但仍失败 → 看 market-watch.log 具体报错
+        ├─ push 被拒(rejected/non-fast-forward) → 本地/服务器 git pull --rebase 合入再 push
+        │     （run_market_watch.cmd 的 push 段已有 pull --rebase 重试兜底，此支多发生于
+        │      手动 git 操作或极端 rebase 冲突；冲突需人工解决后重跑）
         ├─ snapshot.py 语法错误 → 本地修 snapshot.py（只许 ASCII 注释）→ push → run 重跑
         ├─ npm run verify 自检失败 → 本地 npm test + npm run verify 修坏代码 → push → run 重跑
         └─ 进程卡死无进展 → kill-scan → run 重跑
@@ -128,8 +133,39 @@ status 显示 scan FAILED / 400016
 改 `run_market_watch.cmd` 调度逻辑后，**必须先本地验证再上生产**（历史教训：连续两次线上 FAILED）：
 
 ```bash
+# ⚠️ 以下两条 npm 命令必须在【主控仓 trend-trading-agents】目录执行，
+#    站点仓 market-watch 没有这些 script，在站点仓跑会报 "Missing script"。
+cd /workspace/trend-trading-agents   # 或本地对应路径
 npm test                              # pipeline-check 单测+集成测试
-npm run verify                        # cmd 调度逻辑孪生冒烟（假 raw 跑真实 diff/candidates）
+npm run verify                        # 管线调度逻辑孪生冒烟（bash verify_pipeline.sh，假 raw 跑真实 diff/candidates/build）
 ```
 
-`run_market_watch.cmd` 自身也有 `--verify` 模式（假 raw 占位走产物契约检查），可在服务器直接 `cmd /c run_market_watch.cmd --verify` 验证。
+> **注意**：`run_market_watch.cmd` 的 `--verify` 模式**已于 2026-08-25 删除**——
+> 它是 `npm run verify`(bash) 的冗余 Windows 重写且已写坏。不要再在服务器跑
+> `cmd /c run_market_watch.cmd --verify`（参数不被识别，会被当成日期去真抓数据）。
+> 想离线验管线，直接在主控仓 `npm run verify`。
+
+### 上生产闭环（验证通过后，别漏这步）
+
+改的是**站点仓 `market-watch` 里的 `run_market_watch.cmd`** 时，光本地验证不够，必须让**服务器**用上改后的版本：
+
+```bash
+# 1) 本地 commit + push 到 origin
+git add reports/remote/run_market_watch.cmd && git commit -m "..." && git push
+#    （git push 若被拒：先 git pull --rebase 再 push）
+
+# 2) 服务器拉正式版（关键：别用 scp 直接覆盖！会破坏 CRLF + 留未提交改动）
+ssh quant-server "cmd /c \"cd /d C:\workspace\market-watch && git pull --quiet\""
+
+# 3) 确认服务器工作区干净 + cmd 是 CRLF（防定时任务崩）
+ssh quant-server "cmd /c \"cd /d C:\workspace\market-watch && git status --short\""
+#    → 应无输出；且文件含 CRLF（.gitattributes 已保）
+
+# 4) 轻量冒烟：用一个【已存在 raw 的日期】跑，会走 already_done 分支直接退出，零风险
+ssh quant-server 'cmd /c "C:\workspace\market-watch\reports\remote\run_market_watch.cmd" 2026-08-24'
+#    → 若报 "命令语法不正确" 说明 CRLF 又坏了；若正常 echo Skip 并 exit /b 0 即 OK
+```
+
+> **血泪**：曾 scp 直接覆盖服务器 .cmd（忘了转 CRLF）+ 没让服务器 pull 正式版，
+> 导致服务器工作区既有"未提交 scp 改动"又落后 origin，下次定时任务 `git pull` 失败。
+> 现在一律走"本地 commit → push → 服务器 git pull"正规链路，禁用 scp 覆盖生产脚本。
