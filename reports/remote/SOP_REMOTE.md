@@ -109,8 +109,14 @@ status 显示 scan FAILED / 400016
         │     （run_market_watch.cmd 的 push 段已有 pull --rebase 重试兜底，此支多发生于
         │      手动 git 操作或极端 rebase 冲突；冲突需人工解决后重跑）
         ├─ snapshot.py 语法错误 → 本地修 snapshot.py（只许 ASCII 注释）→ push → run 重跑
-        ├─ npm run verify 自检失败 → 本地 npm test + npm run verify 修坏代码 → push → run 重跑
-        └─ 进程卡死无进展 → kill-scan → run 重跑
+        ├─ 进程卡死无进展 → kill-scan → run 重跑
+```
+> **关于"生产前门禁"**：`run_market_watch.cmd` 里的 `npm run verify` 自检门禁**已于
+> 2026-08-25 暂禁用**——它依赖 `WATCHLIST_DIR` 环境变量跨 powershell→npm→node 三层传递，
+> Windows 上不可靠（`diff-cli` 读不到临时假 raw，永远 FAIL）。改代码时的质量保障改由
+> **本地/CI `npm run verify`**（mac 用 `verify_pipeline.sh`，Windows 修好 `verify_pipeline.ps1`
+> 后可用）承担，**不在线上重跑路径**。线上重跑的是 git 稳定版，不每次自检。
+> 参见 MEMORY.md 坑位 #15。
 ```
 
 ---
