@@ -1,0 +1,3 @@
+# Windows 批处理脚本必须 CRLF，否则 cmd.exe 解析错位（注释行 :: 被当命令、变量展开崩）
+*.cmd text eol=crlf
+*.bat text eol=crlf

@@ -2,12 +2,21 @@
 """
 market-watch 远程操作工具集 —— 所有 quant-server 操作的唯一入口。
 
+============================================================================
+⚠️ 失忆保护（AI 每次动手前必读，避免重复踩坑/写临时脚本瞎试）：
+  1. 先读 reports/remote/SOP_REMOTE.md  —— 端到端运维手册，照做别发挥。
+  2. 再读 .codebuddy/memory/MEMORY.md     —— 坑位表 + 重跑 SOP 摘要。
+  3. 铁律：补跑/重跑只用 `run <日期>`（后台拉生产脚本 run_market_watch.cmd）。
+          不要另写 Win32_Process.Create 拉 snapshot.py 半截（日志落盘不可靠）。
+          日志唯一真相源 = C:\\workspace\\market-watch.log（GBK 编码，读用 -Encoding Default）。
+============================================================================
+
 用法：
   python3 reports/remote/remote.py status [--date YYYY-MM-DD]
   python3 reports/remote/remote.py probe [TOKEN]
-  python3 reports/remote/remote.py set-token TOKEN
-  python3 reports/remote/remote.py rerun-scan YYYY-MM-DD [--sleep 0.8] [--concurrency 2]
-  python3 reports/remote/remote.py run [YYYY-MM-DD] [--sleep 0.8]
+  python3 reports/remote/remote.py set-token TOKEN   # 纯写 .env，不 probe（token 由用户保证最新）
+  python3 reports/remote/remote.py kill-scan          # 精准杀卡死的 snapshot 进程（不动其它 python）
+  python3 reports/remote/remote.py run [YYYY-MM-DD] [--sleep 0.8]   # 补跑/重跑统一入口（后台拉 run_market_watch.cmd 全链路）
 
 设计原则（踩坑沉淀，见 MEMORY.md Windows 坑位表）：
   - 所有 PS 脚本走 scp + powershell -File，不用 EncodedCommand（避免 base64 长度/编码问题）
@@ -87,18 +96,12 @@ Get-CimInstance Win32_Process | Where-Object {
 }
 
 [Console]::WriteLine("")
-[Console]::WriteLine("=== SCAN PROGRESS (scan_live_$date.err) ===")
-$scan_err = '__MAIN__\scan_live_' + $date + '.err'
-$scan_out = '__MAIN__\scan_live_' + $date + '.out'
-if (Test-Path $scan_err) {
-    Get-Content $scan_err -Encoding UTF8 -Tail 4 | ForEach-Object { [Console]::WriteLine("  " + $_) }
-    if (Test-Path $scan_out) {
-        Get-Content $scan_out -Encoding UTF8 -Tail 2 | ForEach-Object { [Console]::WriteLine("  " + $_) }
-    }
-} elseif (Test-Path $scan_out) {
-    Get-Content $scan_out -Encoding UTF8 -Tail 4 | ForEach-Object { [Console]::WriteLine("  " + $_) }
+[Console]::WriteLine("=== SCAN PROGRESS (market-watch.log) ===")
+$scan_log = 'C:\workspace\market-watch.log'
+if (Test-Path $scan_log) {
+    Get-Content $scan_log -Encoding Default -Tail 8 | ForEach-Object { [Console]::WriteLine("  " + $_) }
 } else {
-    [Console]::WriteLine("  (no scan_live_$date.err/out found - scan may not have started)")
+    [Console]::WriteLine("  (no market-watch.log found)")
 }
 
 [Console]::WriteLine("")
@@ -126,7 +129,7 @@ foreach ($f in @(
 [Console]::WriteLine("=== LATEST LOG (C:\workspace\market-watch.log) ===")
 $mw_log = 'C:\workspace\market-watch.log'
 if (Test-Path $mw_log) {
-    Get-Content $mw_log -Encoding UTF8 -Tail 10 | ForEach-Object { [Console]::WriteLine("  " + $_) }
+    Get-Content $mw_log -Encoding Default -Tail 10 | ForEach-Object { [Console]::WriteLine("  " + $_) }
 } else {
     [Console]::WriteLine("  (no market-watch.log)")
 }
@@ -159,10 +162,12 @@ Pop-Location
 
 def cmd_status(args):
     date = args.date or datetime.date.today().isoformat()
+    mmdd = date[5:7] + date[8:10]
     print(f"=== quant-server status @ {datetime.datetime.now().strftime('%H:%M:%S')} (date={date}) ===")
     print()
     script = (PS_STATUS
               .replace("__DATE__", date)
+              .replace("__MMDD__", mmdd)
               .replace("__MAIN__", REMOTE_MAIN)
               .replace("__SITE__", REMOTE_SITE)
               .replace("__WORK__", REMOTE_WORK))
@@ -185,24 +190,22 @@ Set-Content -Path C:\workspace\_probe.js -Value $code -Encoding UTF8
 
 
 def cmd_probe(args):
-    """测 token 是否有效。不传 token 则读 snapshot.py 默认值。"""
+    """测 token 是否有效。不传 token 则读服务器 .env 的 XUEQIU_TOKEN。"""
     token = args.token
     if not token:
-        # 从远程 snapshot.py 读当前默认 token
-        rc, out, err = _ssh_run(f'powershell -NoProfile -Command "Select-String -Path \'{REMOTE_SNAPSHOT}\' -Pattern \'XUEQIU_TOKEN\' | ForEach-Object {{ $_.Line.Trim() }}"', timeout=15)
-        print("当前 snapshot.py 里的 token 行：")
+        # 从服务器 .env 读当前 token（token 单一来源 = .env）
+        rc, out, err = _ssh_run(
+            f'powershell -NoProfile -Command "(Get-Content \'{REMOTE_SITE}\\.env\' | Where-Object {{ $_ -match \'^\\s*XUEQIU_TOKEN\\s*=\' }}).Trim()"',
+            timeout=15)
+        print("当前 .env 里的 token 行：")
         print(out.strip())
-        # 提取 token 值（格式: os.environ.get("XUEQIU_TOKEN", "XqTest...")）
-        import re as _re
         for line in out.split('\n'):
             s = line.strip()
-            if 'XUEQIU_TOKEN' in s:
-                m = _re.search(r'"((?:XqTest|xq_a_token=)[^"]*)"', s)
-                if m:
-                    token = m.group(1)
+            if 'XUEQIU_TOKEN' in s and '=' in s:
+                token = s.split('=', 1)[1].strip().strip('"').strip("'")
                 break
         if not token:
-            print("[ERROR] 无法提取 token，请手动传：probe <TOKEN>")
+            print("[ERROR] 无法从 .env 提取 token，请手动传：probe <TOKEN>")
             return
         print(f"\n用提取到的 token 测试：{token[:20]}...\n")
 
@@ -214,40 +217,39 @@ def cmd_probe(args):
 
 
 # ============================================================
-# 子命令：set-token —— 更新 snapshot.py 里的 token 默认值
-# （方案A 后 token 不再写在 run_market_watch.cmd，统一由 snapshot.py
-#  的 os.environ.get("XUEQIU_TOKEN", "<默认值>") 提供；set-token 即改该默认值）
+# 子命令：set-token —— 更新服务器 .env 里的 XUEQIU_TOKEN
+# token 单一来源 = 服务器 C:\workspace\market-watch\.env（snapshot.py 启动时
+# 由 _load_env_file 注入 os.environ，不再在代码里写默认值）。set-token 即改 .env。
 # ============================================================
 PS_SET_TOKEN = r"""
 chcp 65001 > $null
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $ProgressPreference = 'SilentlyContinue'
-$path = '__CMD__'
+$path = '__ENV__'
 $new = '__TOKEN__'
-$txt = [IO.File]::ReadAllText($path, [Text.Encoding]::Default)
+if (-not (Test-Path $path)) {
+    [Console]::WriteLine("[ERROR] .env 不存在: " + $path)
+    exit 1
+}
+$lines = [IO.File]::ReadAllLines($path, [Text.Encoding]::Default)
 $replaced = $false
-# 1) snapshot.py 默认 token：os.environ.get("XUEQIU_TOKEN", "XqTest....")
-if ($txt -match '"XqTest\S+"') {
-    $old_match = $Matches[0]
-    $txt = $txt -replace [regex]::Escape($old_match), ('"' + $new + '"')
-    [Console]::WriteLine("REPLACED default: " + $old_match + " -> " + ('"' + $new + '"'))
-    $replaced = $true
+$out = @()
+foreach ($l in $lines) {
+    if ($l -match '^\s*XUEQIU_TOKEN\s*=') {
+        $out += ('XUEQIU_TOKEN=' + $new)
+        $replaced = $true
+    } else {
+        $out += $l
+    }
 }
-# 2) 兼容：若仍有旧 run_market_watch.cmd 的 XUEQIU_TOKEN=<非空白> 行也一并改
-if ($txt -match 'XUEQIU_TOKEN=\S+') {
-    $old_match = $Matches[0]
-    $txt = $txt -replace [regex]::Escape($old_match), ('XUEQIU_TOKEN=' + $new)
-    [Console]::WriteLine("REPLACED legacy: " + $old_match + " -> XUEQIU_TOKEN=" + $new.Substring(0,15) + "...")
-    $replaced = $true
+if (-not $replaced) {
+    $out += ('XUEQIU_TOKEN=' + $new)
 }
-if ($replaced) {
-    [IO.File]::WriteAllText($path, $txt, [Text.Encoding]::Default)
-} else {
-    [Console]::WriteLine("[ERROR] 未在 " + $path + " 找到可替换的 token（既不是 XqTest 默认值也不是 XUEQIU_TOKEN= 行）")
-}
+[IO.File]::WriteAllLines($path, $out, [Text.Encoding]::Default)
+[Console]::WriteLine("SET XUEQIU_TOKEN in .env (value hidden): " + $new.Substring(0,15) + "...")
 # verify
-$t2 = [IO.File]::ReadAllText($path, [Text.Encoding]::Default)
-$t2 -split "`r?`n" | Where-Object { $_ -match 'XUEQIU_TOKEN' } | ForEach-Object { [Console]::WriteLine("NOW: $_") }
+$g = (Get-Content $path | Where-Object { $_ -match '^\s*XUEQIU_TOKEN\s*=' })
+[Console]::WriteLine("NOW: " + ($g -replace '(XUEQIU_TOKEN=).{15}.*', '$1<hidden>'))
 """
 
 
@@ -260,93 +262,39 @@ def cmd_set_token(args):
         print("[WARN] token 不以 XqTest 开头，确认是雪球 token？继续执行...")
 
     script = (PS_SET_TOKEN
-              .replace("__CMD__", REMOTE_SNAPSHOT)
+              .replace("__ENV__", REMOTE_SITE + r'\.env')
               .replace("__TOKEN__", token))
     print(_scp_run_ps(script, timeout=15))
-    print("\n→ 现在跑 probe 验证新 token：")
-    args.token = token
-    cmd_probe(args)
+    # 用户约定：给的 token 必是浏览器最新复制的，跳过 probe 验证（纯写 .env）
 
 
 # ============================================================
-# 子命令：rerun-scan —— 补跑单日 scan（python -u 实时日志）
+# 子命令：kill-scan —— 精准杀掉服务器上卡死的 snapshot 进程
+# （只杀命令行含 snapshot.py 的进程，不动其它 python 服务）
 # ============================================================
-# scan cmd 模板（注意：--concurrency 2 和 >> 之间必须有空格，见坑#13）
-SCAN_CMD_TEMPLATE = r"""@echo off
-setlocal
-cd /d C:\workspace\trend-trading-agents
-set PATH=C:\Program Files\nodejs;%APPDATA%\npm;%PATH%
-set PY=C:\workspace\trend-trading-agents\.venv\Scripts\python.exe
-echo %date% %time% ===== scan __DATE__ start (python -u) =====> C:\workspace\scan__MMDD__.log
-%PY% -u skills\watchlist\scripts\snapshot.py --date __DATE__ --sleep __SLEEP__ --concurrency __CONC__ >> C:\workspace\scan__MMDD__.log 2>&1
-echo %date% %time% ===== scan done rc=%errorlevel% ===== >> C:\workspace\scan__MMDD__.log
-"""
-
-PS_LAUNCH = r"""
+PS_KILL_SCAN = r"""
 chcp 65001 > $null
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $ProgressPreference = 'SilentlyContinue'
-# 删旧日志（避免误读上次进度）
-$oldlog = '__WORK__\scan__MMDD__.log'
-if (Test-Path $oldlog) { Remove-Item $oldlog -Force }
-# 后台启动 cmd（Win32_Process.Create，ssh 断开不断连）
-$r = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{CommandLine='cmd /c __WORK__\_rerun_scan.cmd'}
-if ($r.ReturnValue -eq 0) {
-    [Console]::WriteLine("STARTED pid=" + $r.ProcessId)
-    [Console]::WriteLine("log: " + $oldlog)
-    [Console]::WriteLine("查进度: python3 reports/remote/remote.py status --date __DATE__")
+$procs = Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -match 'snapshot\.py' }
+if (-not $procs) {
+    [Console]::WriteLine("No snapshot.py process running.")
 } else {
-    [Console]::WriteLine("[ERROR] Win32_Process.Create failed ReturnValue=" + $r.ReturnValue)
+    foreach ($p in $procs) {
+        Stop-Process -Id $p.ProcessId -Force -ErrorAction SilentlyContinue
+        [Console]::WriteLine("KILLED pid=" + $p.ProcessId)
+    }
+    [Console]::WriteLine("Done. (only snapshot.py processes were targeted)")
 }
 """
 
 
-def cmd_rerun_scan(args):
-    date = args.date
-    mmdd = date[5:7] + date[8:10]  # 0810
-    sleep = args.sleep
-    conc = args.concurrency
-
-    # token 来源：snapshot.py 里的默认值（os.environ.get("XUEQIU_TOKEN", "<默认值>")）。
-    # set-token 已更新该默认值，故 rerun 直接让 snapshot 用文件默认值，无需显式传 env。
-    ps_cmd = 'powershell -NoProfile -Command "(Get-Content \'%s\' | Select-String \'XUEQIU_TOKEN\').Line"' % REMOTE_SNAPSHOT
-    rc, out, err = _ssh_run(ps_cmd, timeout=15)
-    if rc == 0 and out.strip():
-        for line in out.split('\n'):
-            if 'XUEQIU_TOKEN' in line:
-                print(f"snapshot.py token 行: {line.strip()[:40]}...")
-                break
-    else:
-        print("[WARN] 未能读取 snapshot.py token 行（不影响运行，snapshot 用默认值）")
-
-    # 生成 cmd 内容（不再注入 XUEQIU_TOKEN env，snapshot 用文件默认值）
-    cmd_content = (SCAN_CMD_TEMPLATE
-                   .replace("__DATE__", date)
-                   .replace("__MMDD__", mmdd)
-                   .replace("__SLEEP__", str(sleep))
-                   .replace("__CONC__", str(conc)))
-
-    # scp 上传 cmd（CRLF）
-    with tempfile.NamedTemporaryFile(mode='w', suffix='.cmd', delete=False, newline='') as f:
-        f.write(cmd_content.replace('\n', '\r\n'))
-        local = f.name
-    try:
-        remote_cmd = REMOTE_WORK + r'\_rerun_scan.cmd'
-        subprocess.run(['scp', local, f'{SSH_HOST}:{remote_cmd}'],
-                       capture_output=True, timeout=15)
-    finally:
-        os.unlink(local)
-
-    # 后台启动
-    script = (PS_LAUNCH
-              .replace("__WORK__", REMOTE_WORK)
-              .replace("__MMDD__", mmdd)
-              .replace("__DATE__", date))
-    print(_scp_run_ps(script, timeout=15))
+def cmd_kill_scan(args):
+    print(_scp_run_ps(PS_KILL_SCAN, timeout=15))
 
 
 # ============================================================
-# 子命令：run —— 后台跑 run_market_watch.cmd 全链路
+# 子命令：run —— 后台跑 run_market_watch.cmd 全链路（补跑/重跑统一入口）
 # ============================================================
 PS_RUN = r"""
 chcp 65001 > $null
@@ -356,7 +304,7 @@ $cmd = 'cmd /c __CMD__ __DATE__ __SLEEP__'
 $r = Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{CommandLine=$cmd}
 if ($r.ReturnValue -eq 0) {
     [Console]::WriteLine("STARTED pid=" + $r.ProcessId)
-    [Console]::WriteLine("全链路日志: __MAIN__\market-watch.log")
+    [Console]::WriteLine("全链路日志: C:\workspace\market-watch.log")
     [Console]::WriteLine("查进度: python3 reports/remote/remote.py status --date __DATE__")
 } else {
     [Console]::WriteLine("[ERROR] Win32_Process.Create failed ReturnValue=" + $r.ReturnValue)
@@ -521,9 +469,7 @@ def main():
           remote.py probe                         # 测当前 token
           remote.py probe XqTestabc123...         # 测指定 token
           remote.py set-token XqTestabc123...     # 更新 token
-          remote.py rerun-scan 2026-08-10         # 补跑单日 scan
-          remote.py rerun-scan 2026-08-10 --sleep 0.5
-          remote.py run 2026-08-10                # 后台跑全链路
+          remote.py run 2026-08-10                # 后台跑全链路（补跑/重跑统一入口）
           remote.py build 2026-08-10              # raw 已存在，只跑 build+push
         """))
     sub = parser.add_subparsers(dest='command', required=True)
@@ -540,13 +486,10 @@ def main():
     p_set.add_argument('token', help='新 token')
     p_set.set_defaults(func=cmd_set_token)
 
-    p_rerun = sub.add_parser('rerun-scan', help='补跑单日 scan（python -u 实时日志）')
-    p_rerun.add_argument('date', help='日期 YYYY-MM-DD')
-    p_rerun.add_argument('--sleep', type=float, default=0.8, help='请求间隔秒数（默认 0.8）')
-    p_rerun.add_argument('--concurrency', type=int, default=2, help='并发数（默认 2）')
-    p_rerun.set_defaults(func=cmd_rerun_scan)
+    p_kill = sub.add_parser('kill-scan', help='精准杀掉卡死的 snapshot 进程（不动其它 python）')
+    p_kill.set_defaults(func=cmd_kill_scan)
 
-    p_run = sub.add_parser('run', help='后台跑 run_market_watch.cmd 全链路')
+    p_run = sub.add_parser('run', help='后台跑 run_market_watch.cmd 全链路（补跑/重跑统一入口）')
     p_run.add_argument('date', nargs='?', default=None, help='日期 YYYY-MM-DD（默认今天）')
     p_run.add_argument('--sleep', type=float, default=0.8, help='请求间隔秒数（默认 0.8）')
     p_run.set_defaults(func=cmd_run)

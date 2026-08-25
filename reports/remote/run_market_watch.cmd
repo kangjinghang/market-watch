@@ -1,5 +1,7 @@
 ﻿@echo off
 setlocal enabledelayedexpansion
+set MAIN_PUSH_TRIES=0
+set SITE_PUSH_TRIES=0
 set MAIN_REPO=C:\workspace\trend-trading-agents
 set SITE_REPO=C:\workspace\market-watch
 set WATCHLIST_DIR=%MAIN_REPO%\data\watchlist
@@ -132,8 +134,14 @@ git add data\
 git diff --cached --quiet
 if !errorlevel! equ 0 goto :main_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
+:main_push_retry
+git pull --rebase --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 goto :scan_fail
+if !errorlevel! equ 0 goto :main_no_change
+set /a MAIN_PUSH_TRIES+=1
+if !MAIN_PUSH_TRIES! geq 3 goto :scan_fail
+echo [!TS!] main push rejected, pull --rebase + retry (!MAIN_PUSH_TRIES!/3)>> "%LOG%"
+goto :main_push_retry
 :main_no_change
 echo [!TS!] Main repo data push OK>> "%LOG%"
 
@@ -153,8 +161,14 @@ git add daily\ series\ meta.json *.json
 git diff --cached --quiet
 if !errorlevel! equ 0 goto :site_no_change
 git commit -m "data: !TODAY!" --quiet >> "%LOG%" 2>&1
+:site_push_retry
+git pull --rebase --quiet >> "%LOG%" 2>&1
 git push --quiet >> "%LOG%" 2>&1
-if !errorlevel! neq 0 goto :scan_fail
+if !errorlevel! equ 0 goto :site_no_change
+set /a SITE_PUSH_TRIES+=1
+if !SITE_PUSH_TRIES! geq 3 goto :scan_fail
+echo [!TS!] site push rejected, pull --rebase + retry (!SITE_PUSH_TRIES!/3)>> "%LOG%"
+goto :site_push_retry
 :site_no_change
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] ===== market-watch done (target=!TODAY!) =====>> "%LOG%"
