@@ -18,12 +18,6 @@ set TRADING_PYTHON=%MAIN_REPO%\.venv\Scripts\python.exe
 :: ============================================================
 set TARGET_DATE=
 set SLEEP=0.3
-set VERIFY=0
-if "%~1"=="--verify" (
-  set VERIFY=1
-  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"`) do set TARGET_DATE=%%a
-  goto :verify_setup
-)
 if not "%~1"=="" set TARGET_DATE=%~1
 if not "%~2"=="" set SLEEP=%~2
 if "%TARGET_DATE%"=="" (
@@ -96,17 +90,6 @@ if not exist "%WATCHLIST_DIR%\derived\!TODAY!-candidates.json" (
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] snapshot+diff+candidates OK>> "%LOG%"
 
-:: VERIFY 模式：只验证调度产物契约，不 git push / 不真 build，直接退出
-if !VERIFY! equ 1 (
-  call npm run build:report -- --in "%WATCHLIST_DIR%" --out "%WATCHLIST_DIR%" --date "!TODAY!" --dry-run >> "%LOG%" 2>&1
-  if not exist "%WATCHLIST_DIR%\daily\!TODAY!.json" (
-    echo [!TS!] VERIFY FAIL: daily missing after build --dry-run>> "%LOG%"
-    exit /b 1
-  )
-  echo [!TS!] VERIFY PIPELINE_OK — diff/candidates/daily 产物齐全，全链路调度成功路径可达>> "%LOG%"
-  exit /b 0
-)
-
 :: --- ??????scan-all errorlevel ?????? Node.js ???????????????? 0 ---
 :: ???????? raw ????????????????
 set /a RAW_RETRY=0
@@ -173,21 +156,6 @@ goto :site_push_retry
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] ===== market-watch done (target=!TODAY!) =====>> "%LOG%"
 exit /b 0
-
-:verify_setup
-:: VERIFY 模式：用假 raw 占位（不调网络、不真扫）跑真实 diff/candidates，
-:: 复用与真实模式完全相同的产物检查（if not exist ... goto :scan_fail）。
-:: 目的：让 cmd 自身成为测试对象，避免 cmd 改了而外部 verify 脚本没同步的漂移。
-:: 不碰真实 data、不 git push、不 build。
-cd /d "%MAIN_REPO%"
-set TODAY=%TARGET_DATE%
-set WLDIR=%TEMP%\mw_verify_%RANDOM%
-powershell -NoProfile -Command "$d='%WLDIR%'; New-Item -ItemType Directory -Force -Path \"$d\raw\" | Out-Null; $base=(Get-Date '%TODAY%').AddDays(-1).ToString('yyyy-MM-dd'); function fr($dt,$up){@{scan_date=$dt; stocks=@{'000001'=@{name='T'; reason_list=@(@{timestamp=[DateTime]::Parse($dt+'T00:00:00+08:00').Ticks; description=$(if($up){'收盘价10元，涨幅5%'}else{'收盘价10元，跌幅5%'})}; range_reason_list=@()})}} | ConvertTo-Json -Depth 10}; Set-Content \"$d\raw\$base.json\" (fr $base $false); Set-Content \"$d\raw\%TODAY%.json\" (fr $TODAY $true); Set-Content \"$d\universe.json\" '{\"total\":5000}'"
-set WATCHLIST_DIR=%WLDIR%
-set SCAN_EXIT=0
-for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
-echo [!TS!] VERIFY mode: 假 raw 占位走 diff/candidates 产物契约检查>> "%LOG%"
-goto :diff_stage
 
 :already_done
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
