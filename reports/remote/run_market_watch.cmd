@@ -2,6 +2,7 @@
 setlocal enabledelayedexpansion
 set MAIN_REPO=C:\workspace\trend-trading-agents
 set SITE_REPO=C:\workspace\market-watch
+set WATCHLIST_DIR=%MAIN_REPO%\data\watchlist
 set LOG=C:\workspace\market-watch.log
 set PATH=C:\Program Files\nodejs;%APPDATA%\npm;%USERPROFILE%\.pyenv\pyenv-win\versions\3.11.9;%PATH%
 set TRADING_PYTHON=%MAIN_REPO%\.venv\Scripts\python.exe
@@ -15,6 +16,12 @@ set TRADING_PYTHON=%MAIN_REPO%\.venv\Scripts\python.exe
 :: ============================================================
 set TARGET_DATE=
 set SLEEP=0.3
+set VERIFY=0
+if "%~1"=="--verify" (
+  set VERIFY=1
+  for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format yyyy-MM-dd"`) do set TARGET_DATE=%%a
+  goto :verify_setup
+)
 if not "%~1"=="" set TARGET_DATE=%~1
 if not "%~2"=="" set SLEEP=%~2
 if "%TARGET_DATE%"=="" (
@@ -45,6 +52,18 @@ if !errorlevel! neq 0 goto :syntax_fail
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] git sync + syntax OK>> "%LOG%"
 
+::: --- 生产前门禁：管线逻辑自检（防坏代码上线污染数据）---
+::: 等价于提交前的 npm run verify：用假 raw 跑真实 diff/candidates/build(dry-run)，
+::: 断言产物齐全。任一环节逻辑坏掉 → 直接中止，不跑 snapshot（避免白扫 30 分钟 + 污染）。
+::: 即便有人绕过 pre-commit 把坏代码 push 进来，线上任务也会在此 self-check 失败、拒绝运行。
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] pipeline self-check (verify)>> "%LOG%"
+call npm run verify >> "%LOG%" 2>&1
+if !errorlevel! neq 0 (
+  echo [!TS!] pipeline self-check FAILED, abort before snapshot (bad code pushed?)>> "%LOG%"
+  goto :scan_fail
+)
+echo [!TS!] pipeline self-check OK>> "%LOG%"
 
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] snapshot (python -u foreground, hard timeout 3h via outer guard)>> "%LOG%"
@@ -55,11 +74,12 @@ echo [!TS!] snapshot (python -u foreground, hard timeout 3h via outer guard)>> "
 set SCAN_EXIT=!errorlevel!
 if !SCAN_EXIT! neq 0 goto :scan_fail
 
+:diff_stage
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] diff (--date !TODAY!)>> "%LOG%"
 call npm run diff -- --date "!TODAY!" >> "%LOG%" 2>&1
 :: npm 在 cmd 下的 errorlevel 不可靠（常因无关 stderr 返回非 0），改以输出文件是否生成判断成败
-if not exist "%MAIN_REPO%\data\watchlist\diff\!TODAY!.json" (
+if not exist "%WATCHLIST_DIR%\diff\!TODAY!.json" (
   echo [!TS!] diff output missing, treat as FAIL>> "%LOG%"
   goto :scan_fail
 )
@@ -67,12 +87,23 @@ for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -For
 echo [!TS!] candidates (--date !TODAY!)>> "%LOG%"
 call npm run candidates -- --date "!TODAY!" >> "%LOG%" 2>&1
 :: 同上：以输出文件存在性为准
-if not exist "%MAIN_REPO%\data\watchlist\derived\!TODAY!-candidates.json" (
+if not exist "%WATCHLIST_DIR%\derived\!TODAY!-candidates.json" (
   echo [!TS!] candidates output missing, treat as FAIL>> "%LOG%"
   goto :scan_fail
 )
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] snapshot+diff+candidates OK>> "%LOG%"
+
+:: VERIFY 模式：只验证调度产物契约，不 git push / 不真 build，直接退出
+if !VERIFY! equ 1 (
+  call npm run build:report -- --in "%WATCHLIST_DIR%" --out "%WATCHLIST_DIR%" --date "!TODAY!" --dry-run >> "%LOG%" 2>&1
+  if not exist "%WATCHLIST_DIR%\daily\!TODAY!.json" (
+    echo [!TS!] VERIFY FAIL: daily missing after build --dry-run>> "%LOG%"
+    exit /b 1
+  )
+  echo [!TS!] VERIFY PIPELINE_OK — diff/candidates/daily 产物齐全，全链路调度成功路径可达>> "%LOG%"
+  exit /b 0
+)
 
 :: --- ??????scan-all errorlevel ?????? Node.js ???????????????? 0 ---
 :: ???????? raw ????????????????
@@ -128,6 +159,21 @@ if !errorlevel! neq 0 goto :scan_fail
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] ===== market-watch done (target=!TODAY!) =====>> "%LOG%"
 exit /b 0
+
+:verify_setup
+:: VERIFY 模式：用假 raw 占位（不调网络、不真扫）跑真实 diff/candidates，
+:: 复用与真实模式完全相同的产物检查（if not exist ... goto :scan_fail）。
+:: 目的：让 cmd 自身成为测试对象，避免 cmd 改了而外部 verify 脚本没同步的漂移。
+:: 不碰真实 data、不 git push、不 build。
+cd /d "%MAIN_REPO%"
+set TODAY=%TARGET_DATE%
+set WLDIR=%TEMP%\mw_verify_%RANDOM%
+powershell -NoProfile -Command "$d='%WLDIR%'; New-Item -ItemType Directory -Force -Path \"$d\raw\" | Out-Null; $base=(Get-Date '%TODAY%').AddDays(-1).ToString('yyyy-MM-dd'); function fr($dt,$up){@{scan_date=$dt; stocks=@{'000001'=@{name='T'; reason_list=@(@{timestamp=[DateTime]::Parse($dt+'T00:00:00+08:00').Ticks; description=$(if($up){'收盘价10元，涨幅5%'}else{'收盘价10元，跌幅5%'})}; range_reason_list=@()})}} | ConvertTo-Json -Depth 10}; Set-Content \"$d\raw\$base.json\" (fr $base $false); Set-Content \"$d\raw\%TODAY%.json\" (fr $TODAY $true); Set-Content \"$d\universe.json\" '{\"total\":5000}'"
+set WATCHLIST_DIR=%WLDIR%
+set SCAN_EXIT=0
+for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
+echo [!TS!] VERIFY mode: 假 raw 占位走 diff/candidates 产物契约检查>> "%LOG%"
+goto :diff_stage
 
 :already_done
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
