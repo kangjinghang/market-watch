@@ -48,10 +48,6 @@ if !errorlevel! neq 0 goto :syntax_fail
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 echo [!TS!] git sync + syntax OK>> "%LOG%"
 
-::: --- 生产前门禁：管线逻辑自检（防坏代码上线污染数据）---
-::: 等价于提交前的 npm run verify：用假 raw 跑真实 diff/candidates/build(dry-run)，
-::: 断言产物齐全。任一环节逻辑坏掉 → 直接中止，不跑 snapshot（避免白扫 30 分钟 + 污染）。
-::: 即便有人绕过 pre-commit 把坏代码 push 进来，线上任务也会在此 self-check 失败、拒绝运行。
 for /f "usebackq delims=" %%a in (`powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm:ss'"`) do set TS=%%a
 :: --- 生产前门禁：管线逻辑自检（防坏代码上线污染数据）---
 :: 设计本意：用假 raw 跑真实 diff/candidates 断言产物齐全，坏代码则中止不抓数据。
