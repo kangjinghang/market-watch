@@ -173,5 +173,27 @@ ssh quant-server 'cmd /c "C:\workspace\market-watch\reports\remote\run_market_wa
 ```
 
 > **血泪**：曾 scp 直接覆盖服务器 .cmd（忘了转 CRLF）+ 没让服务器 pull 正式版，
-> 导致服务器工作区既有"未提交 scp 改动"又落后 origin，下次定时任务 `git pull` 失败。
+> 导致服务器工作区既有"未提交 scp 改动"又落后 origin， `git pull` 失败。
 > 现在一律走"本地 commit → push → 服务器 git pull"正规链路，禁用 scp 覆盖生产脚本。
+
+---
+
+## 附录：定时任务真相（查错时极易查错任务名）
+
+**不是** `market-watch` / `scan` 之类的名字。`schtasks /query` 默认列表里也容易被忽略。
+真实任务名（在 `C:\Windows\System32\Tasks\` 下）：
+
+- **`MarketWatch19`** —— 每天 **19:00** 触发，调 `cmd /c C:\workspace\market-watch\reports\remote\run_market_watch.cmd`（无日期参数 → 脚本内部推断今天）
+- **`MarketWatch23`** —— 每天 **23:00** 触发，同样无参数调用 cmd（**兜底**：19:00 因 400016/WAF/网络失败后的二次机会；数据已存在则 Skip）
+
+查任务配置（避免再次用错关键词）：
+```bash
+ssh quant-server "cmd /c \"type C:\Windows\System32\Tasks\MarketWatch19\""
+ssh quant-server "cmd /c \"type C:\Windows\System32\Tasks\MarketWatch23\""
+```
+
+**推论**：
+- 不手动触发时，每天 19:00 自动跑当天数据（收盘后 4 小时，A股 15:00 收盘，数据齐全）
+- 刚开盘/盘中**切勿手动 `remote.py run` 当天日期**——会抓半截数据污染产物
+- 若某天 `status` 显示未跑，先检查这两个任务是否被禁用/删除，而非怀疑脚本
+- 查 `schtasks` 列表时用 `findstr "MarketWatch"` 而非 `market-watch`（任务名无连字符）
