@@ -1,130 +1,29 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-25",
-  "total_deaths": 1121,
+  "date_range": "2026-06-16 ~ 2026-08-26",
+  "total_deaths": 1120,
   "patterns": {
     "闪崩": 0,
     "高位回落": 35,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1081
+    "自然退潮": 1080
   },
   "recent_deaths": [
     {
-      "ticker": "SH688143",
-      "name": "长盈通",
-      "death_date": "2026-08-17",
-      "peak_pct": 249.41,
-      "last_pct": 70.73,
-      "last_days": 13,
-      "appearances": 8,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ300534",
-      "name": "陇神戎发",
-      "death_date": "2026-08-17",
-      "peak_pct": 191.08,
-      "last_pct": 191.08,
-      "last_days": 52,
-      "appearances": 7,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "陇神戎发2026-06-29收盘价7.24元，涨幅4.17%",
-          "timestamp": 1782662400000,
-          "reason": "创新药概念板块整体走强带动中药股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-fc5b44bc-fcd2-4605-8cf8-8c58c9c30a11&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "陇神戎发2026-07-01收盘价7.41元，涨幅4.66%",
-          "timestamp": 1782835200000,
-          "reason": "中药板块整体表现活跃带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-de02f2f4-a66a-4997-9a18-2bcaaa00bfd0&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "陇神戎发2026-07-13收盘价9.00元，涨幅20.00%",
-          "timestamp": 1783872000000,
-          "reason": "2026-07-13到2026-07-14股价连续上涨，受国务院原则同意《中医药振兴发展“十五五”规划》利好驱动，中药板块整体走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-443f965e-cdc4-472e-b987-17f0d8ccd502&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "陇神戎发2026-07-24收盘价11.18元，跌幅13.00%",
-          "timestamp": 1784822400000,
-          "reason": "市场传闻创新药板块走弱及公司短期涨幅过大后资金获利了结",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-70eb1e8a-366e-46ad-aca6-d6855d980a67&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "陇神戎发2026-08-13收盘价18.92元，涨幅19.97%",
-          "timestamp": 1786550400000,
-          "reason": "医药板块集体爆发，公司股票受板块效应驱动涨停",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-669b1bca-18e3-4966-94b3-7ed3a8aea365&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ301165",
-      "name": "锐捷网络",
-      "death_date": "2026-08-17",
-      "peak_pct": 164.29,
-      "last_pct": 164.29,
-      "last_days": 66,
-      "appearances": 8,
+      "ticker": "SZ300313",
+      "name": "天山生物",
+      "death_date": "2026-08-25",
+      "peak_pct": 124.73,
+      "last_pct": 124.73,
+      "last_days": 34,
+      "appearances": 6,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "锐捷网络2026-06-15收盘价63.91元，涨幅14.13%",
-          "timestamp": 1781452800000,
-          "reason": "公司与联想集团的战略合作公告及通信设备行业技术突破推动股价上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-14face22-1c8b-46eb-b41d-2ea7de294eab&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "锐捷网络2026-06-30收盘价80.45元，涨幅20.00%",
-          "timestamp": 1782748800000,
-          "reason": "AI算力交换机需求爆发及CPO技术商用预期推动通信设备板块走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-4075b410-6195-40e5-8438-eb5d13560a4a&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "锐捷网络2026-07-22收盘价126.00元，涨幅13.66%",
-          "timestamp": 1784649600000,
-          "reason": "AI算力超节点概念成为市场主线，锐捷网络作为高速交换机核心供应商，业绩预期及技术卡位获市场追捧。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f1661835-fae0-4cad-8152-c38faca9b886&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "锐捷网络2026-07-31收盘价118.00元，涨幅15.69%",
-          "timestamp": 1785427200000,
-          "reason": "母公司星网锐捷机构调研释放利好，市场对AI算力背景下锐捷网络交换机业务前景预期增强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-8921fda6-0c3a-407f-88d1-b75c683df863&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ301047",
-      "name": "义翘神州",
-      "death_date": "2026-08-17",
-      "peak_pct": 135.63,
-      "last_pct": 135.63,
-      "last_days": 67,
-      "appearances": 10,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "义翘神州2026-06-23收盘价63.00元，涨幅4.36%",
-          "timestamp": 1782144000000,
-          "reason": "港股医药板块整体上涨带动个股异动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-52f7ebe3-d848-4a0d-be8d-528f8d567497&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "义翘神州2026-06-29收盘价64.74元，涨幅6.76%",
-          "timestamp": 1782662400000,
-          "reason": "创新药概念板块整体走强带动个股上涨",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-b95c5fb3-c16d-4b6c-8af2-84ad14010044&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "义翘神州2026-08-05收盘价90.60元，涨幅8.40%",
-          "timestamp": 1785859200000,
-          "reason": "公司发布重组人源p-Tau217蛋白新产品，叠加CRO板块整体强势带动",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3ab56a15-7a82-48bf-b628-a1bd9542fa2e&navBarTransparent=1&navBarTheme=dark"
+          "description": "天山生物2026-08-17收盘价10.73元，涨幅20.02%",
+          "timestamp": 1786896000000,
+          "reason": "所属养殖业板块受猪肉价格上涨及全球粮食危机预警带动活跃",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-df0189ee-274f-4467-bf86-e963a356186e&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -147,6 +46,24 @@
       ]
     },
     {
+      "ticker": "SH688356",
+      "name": "键凯科技",
+      "death_date": "2026-08-25",
+      "peak_pct": 113.83,
+      "last_pct": 113.83,
+      "last_days": 22,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "键凯科技2026-08-20收盘价89.45元，涨幅20.00%",
+          "timestamp": 1787155200000,
+          "reason": "创新药/疫苗板块受海外mRNA肿瘤疫苗III期成功消息刺激，板块集体高开，键凯科技作为LNP递送材料核心供应商受市场追捧。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6cfef914-d7a9-414d-b8f2-d468b7eabfe5&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
       "ticker": "SZ300684",
       "name": "中石科技",
       "death_date": "2026-08-18",
@@ -163,17 +80,6 @@
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1af01576-fe61-40b4-81f2-b9f149d4e972&navBarTransparent=1&navBarTheme=dark"
         }
       ]
-    },
-    {
-      "ticker": "SH688627",
-      "name": "精智达",
-      "death_date": "2026-08-17",
-      "peak_pct": 101.22,
-      "last_pct": 34.49,
-      "last_days": 13,
-      "appearances": 9,
-      "pattern": "自然退潮",
-      "events": []
     },
     {
       "ticker": "SZ000506",
@@ -205,15 +111,98 @@
       ]
     },
     {
-      "ticker": "SH688332",
-      "name": "中科蓝讯",
-      "death_date": "2026-08-17",
-      "peak_pct": 79.79,
-      "last_pct": 24.1,
-      "last_days": 13,
-      "appearances": 5,
+      "ticker": "SZ002581",
+      "name": "*ST未名",
+      "death_date": "2026-08-21",
+      "peak_pct": 77.64,
+      "last_pct": 75.45,
+      "last_days": 22,
+      "appearances": 6,
       "pattern": "自然退潮",
       "events": []
+    },
+    {
+      "ticker": "SZ002388",
+      "name": "新亚制程",
+      "death_date": "2026-08-25",
+      "peak_pct": 74.32,
+      "last_pct": 74.32,
+      "last_days": 36,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH600428",
+      "name": "中远海特",
+      "death_date": "2026-08-18",
+      "peak_pct": 66.44,
+      "last_pct": 66.44,
+      "last_days": 71,
+      "appearances": 9,
+      "pattern": "高位回落",
+      "events": [
+        {
+          "description": "中远海特2026-06-08收盘价7.48元，跌幅5.56%",
+          "timestamp": 1780848000000,
+          "reason": "全球股市遭遇黑色星期五，港口航运板块受市场避险情绪拖累",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1be9a60e-0229-4f62-bac9-afa364b96e0b&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "中远海特2026-06-30收盘价7.81元，跌幅5.33%",
+          "timestamp": 1782748800000,
+          "reason": "市场对港口航运行业整体表现担忧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-61d81e3f-33cc-466e-9c72-50117e63c4aa&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "中远海特2026-07-01收盘价8.23元，涨幅5.38%",
+          "timestamp": 1782835200000,
+          "reason": "市场对高新技术产品出口增长的预期提振港口航运板块",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-75811000-6849-415e-b5ff-88e51d72856c&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "中远海特2026-07-10收盘价8.99元，涨幅10.04%",
+          "timestamp": 1783612800000,
+          "reason": "公司发布半年度业绩预增公告，预计净利润同比增长55%到70%，创历史最佳单季业绩",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6d2752d3-a0fc-4a9a-8ca1-5bf15384d425&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "中远海特2026-07-13收盘价9.82元，涨幅9.23%",
+          "timestamp": 1783872000000,
+          "reason": "市场看好中国高端制造出口景气度，特种船运力供需格局偏紧",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6d7a87af-c2ef-47ee-b888-312f56adc0a8&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "中远海特2026-07-14收盘价10.58元，涨幅7.74%",
+          "timestamp": 1783958400000,
+          "reason": "公司半年度业绩超预期，叠加新能源出海带动特种船运价坚挺预期",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f2238c0a-8898-4f27-98bf-161ef39344b4&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH688011",
+      "name": "新光光电",
+      "death_date": "2026-08-18",
+      "peak_pct": 58.79,
+      "last_pct": 58.79,
+      "last_days": 32,
+      "appearances": 4,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "新光光电2026-08-07收盘价81.15元，涨幅11.19%",
+          "timestamp": 1786032000000,
+          "reason": "半导体设备、PCB等电子板块整体活跃，行业景气预期提升带动军工电子板块走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-75dd4fb7-519b-434f-8f41-3722cb51c5f5&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "新光光电2026-08-17收盘价88.33元，涨幅9.51%",
+          "timestamp": 1786896000000,
+          "reason": "军工电子板块受半导体设备及先进封装产业链景气度提升带动，公司作为军工集团核心供应商受到市场关注。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-30665fe2-c3b6-4e2e-afa3-7dad1b249e24&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
     }
   ],
   "peak_deaths": [

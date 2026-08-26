@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-24",
-  "total_reasons": 3713,
+  "date_range": "2026-03-05 ~ 2026-08-25",
+  "total_reasons": 3734,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
@@ -21,12 +21,12 @@
     },
     {
       "id": "创新药",
-      "count": 290,
+      "count": 291,
       "type": "sector"
     },
     {
       "id": "PCB",
-      "count": 232,
+      "count": 233,
       "type": "technology"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "算力",
-      "count": 173,
+      "count": 174,
       "type": "sector"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "id": "机器人",
-      "count": 120,
+      "count": 121,
       "type": "sector"
     },
     {
@@ -110,12 +110,12 @@
       "type": "technology"
     },
     {
-      "id": "覆铜板",
-      "count": 44,
+      "id": "中药",
+      "count": 45,
       "type": "sector"
     },
     {
-      "id": "中药",
+      "id": "覆铜板",
       "count": 44,
       "type": "sector"
     },
@@ -140,13 +140,13 @@
       "type": "sector"
     },
     {
-      "id": "证券",
+      "id": "汽车零部件",
       "count": 37,
       "type": "sector"
     },
     {
-      "id": "汽车零部件",
-      "count": 36,
+      "id": "证券",
+      "count": 37,
       "type": "sector"
     },
     {
@@ -175,17 +175,17 @@
       "type": "technology"
     },
     {
+      "id": "液冷",
+      "count": 24,
+      "type": "sector"
+    },
+    {
       "id": "电子布",
       "count": 24,
       "type": "sector"
     },
     {
       "id": "消费电子",
-      "count": 23,
-      "type": "sector"
-    },
-    {
-      "id": "液冷",
       "count": 23,
       "type": "sector"
     },
@@ -517,6 +517,11 @@
       "weight": 17
     },
     {
+      "source": "中药",
+      "target": "创新药",
+      "weight": 17
+    },
+    {
       "source": "PCB",
       "target": "电子化学品",
       "weight": 16
@@ -524,11 +529,6 @@
     {
       "source": "电子",
       "target": "算力",
-      "weight": 16
-    },
-    {
-      "source": "中药",
-      "target": "创新药",
       "weight": 16
     },
     {
@@ -622,6 +622,11 @@
       "weight": 10
     },
     {
+      "source": "机器人",
+      "target": "汽车零部件",
+      "weight": 10
+    },
+    {
       "source": "存储芯片",
       "target": "电子",
       "weight": 9
@@ -644,11 +649,6 @@
     {
       "source": "AI",
       "target": "元件",
-      "weight": 9
-    },
-    {
-      "source": "机器人",
-      "target": "汽车零部件",
       "weight": 9
     },
     {

@@ -1,0 +1,375 @@
+{
+  "date": "2026-08-26",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ301630",
+      "name": "同宇新材",
+      "pct": 20,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ002072",
+      "name": "凯瑞德",
+      "pct": 10.07,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000533",
+      "name": "顺钠股份",
+      "pct": 10.05,
+      "concepts": [
+        "电网设备",
+        "液冷",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ002366",
+      "name": "融发核电",
+      "pct": 10.05,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600468",
+      "name": "百利电气",
+      "pct": 10.05,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SZ002295",
+      "name": "精艺股份",
+      "pct": 10.03,
+      "concepts": [
+        "工业金属"
+      ]
+    },
+    {
+      "ticker": "SH605169",
+      "name": "洪通燃气",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SH605277",
+      "name": "新亚电子",
+      "pct": 10.02,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600362",
+      "name": "江西铜业",
+      "pct": 10.01,
+      "concepts": [
+        "工业金属"
+      ]
+    },
+    {
+      "ticker": "SH603200",
+      "name": "上海洗霸",
+      "pct": 10,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SH603979",
+      "name": "金诚信",
+      "pct": 10,
+      "concepts": [
+        "有色金属"
+      ]
+    },
+    {
+      "ticker": "SH605162",
+      "name": "新中港",
+      "pct": 10,
+      "concepts": [
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ000997",
+      "name": "新 大 陆",
+      "pct": 9.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600479",
+      "name": "千金药业",
+      "pct": 9.98,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 14,
+      "active_days": 7,
+      "heat_score": 98,
+      "leaders": [
+        {
+          "ticker": "SZ301630",
+          "name": "同宇新材",
+          "pct": 20,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 15,
+      "active_days": 6,
+      "heat_score": 90,
+      "leaders": [
+        {
+          "ticker": "SZ000533",
+          "name": "顺钠股份",
+          "pct": 10.05,
+          "concepts": [
+            "电网设备",
+            "液冷",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH603200",
+          "name": "上海洗霸",
+          "pct": 10,
+          "concepts": [
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH605162",
+          "name": "新中港",
+          "pct": 10,
+          "concepts": [
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 7,
+      "active_days": 5,
+      "heat_score": 35,
+      "leaders": [
+        {
+          "ticker": "SZ000533",
+          "name": "顺钠股份",
+          "pct": 10.05,
+          "concepts": [
+            "电网设备",
+            "液冷",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH600468",
+          "name": "百利电气",
+          "pct": 10.05,
+          "concepts": [
+            "电网设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 13,
+      "active_days": 2,
+      "heat_score": 26,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": [
+        {
+          "ticker": "SZ000533",
+          "name": "顺钠股份",
+          "pct": 10.05,
+          "concepts": [
+            "电网设备",
+            "液冷",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "工业金属",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ002295",
+          "name": "精艺股份",
+          "pct": 10.03,
+          "concepts": [
+            "工业金属"
+          ]
+        },
+        {
+          "ticker": "SH600362",
+          "name": "江西铜业",
+          "pct": 10.01,
+          "concepts": [
+            "工业金属"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "有色金属",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH603979",
+          "name": "金诚信",
+          "pct": 10,
+          "concepts": [
+            "有色金属"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "人形机器人",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ002418",
+      "name": "康盛股份",
+      "last_seen": "2026-08-26",
+      "shared_concepts": [
+        "液冷"
+      ],
+      "trend_pct": 25.28,
+      "trend_days": 6
+    }
+  ]
+}
