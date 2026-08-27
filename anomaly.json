@@ -1,30 +1,54 @@
 {
-  "date": "2026-08-26",
+  "date": "2026-08-27",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "sector_surge",
-      "label": "公用事业",
-      "today": 3,
-      "avg": 1,
+      "label": "农林牧渔",
+      "today": 6,
+      "avg": 1.2,
+      "deviation": 3.91,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "非银金融",
+      "today": 12,
+      "avg": 2.7,
+      "deviation": 3.5,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "机械设备",
+      "today": 7,
+      "avg": 1.9,
+      "deviation": 2.73,
+      "severity": "high"
+    },
+    {
+      "type": "sector_surge",
+      "label": "计算机",
+      "today": 6,
+      "avg": 2,
       "deviation": 2,
       "severity": "medium"
     },
     {
       "type": "sector_surge",
-      "label": "建筑装饰",
-      "today": 3,
-      "avg": 1.1,
+      "label": "煤炭",
+      "today": 4,
+      "avg": 1.5,
       "deviation": 1.67,
       "severity": "medium"
     },
     {
       "type": "density_shift",
       "label": "异动密度",
-      "today": 47,
-      "avg": 36,
-      "deviation": 0.31,
-      "severity": "medium"
+      "today": 70,
+      "avg": 34,
+      "deviation": 1.07,
+      "severity": "high"
     }
   ]
 }

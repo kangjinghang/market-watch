@@ -1955,22 +1955,22 @@
     {
       "week": "2026-W34",
       "date_range": "08-17 ~ 08-23",
-      "total_reasons": 55,
+      "total_reasons": 63,
       "top_concepts": [
+        {
+          "concept": "电子",
+          "count": 4
+        },
         {
           "concept": "创新药",
           "count": 4
         },
         {
-          "concept": "先进封装",
-          "count": 3
-        },
-        {
-          "concept": "电子",
-          "count": 3
-        },
-        {
           "concept": "银行",
+          "count": 4
+        },
+        {
+          "concept": "先进封装",
           "count": 3
         },
         {
@@ -2000,22 +2000,22 @@
       ],
       "emerging": [
         {
+          "concept": "电子",
+          "count": 4,
+          "prev_count": 0
+        },
+        {
           "concept": "创新药",
           "count": 4,
           "prev_count": 0
         },
         {
-          "concept": "先进封装",
-          "count": 3,
-          "prev_count": 0
-        },
-        {
-          "concept": "电子",
-          "count": 3,
-          "prev_count": 0
-        },
-        {
           "concept": "银行",
+          "count": 4,
+          "prev_count": 0
+        },
+        {
+          "concept": "先进封装",
           "count": 3,
           "prev_count": 0
         }
@@ -2066,18 +2066,26 @@
     {
       "week": "2026-W35",
       "date_range": "08-24 ~ 08-30",
-      "total_reasons": 16,
+      "total_reasons": 31,
       "top_concepts": [
         {
-          "concept": "固态电池",
-          "count": 1
+          "concept": "算力",
+          "count": 3
+        },
+        {
+          "concept": "液冷",
+          "count": 3
         },
         {
           "concept": "PCB",
-          "count": 1
+          "count": 2
         },
         {
-          "concept": "算力",
+          "concept": "机器人",
+          "count": 2
+        },
+        {
+          "concept": "固态电池",
           "count": 1
         },
         {
@@ -2085,18 +2093,47 @@
           "count": 1
         },
         {
-          "concept": "机器人",
+          "concept": "AI",
           "count": 1
         },
         {
-          "concept": "液冷",
+          "concept": "证券",
+          "count": 1
+        },
+        {
+          "concept": "CPO",
+          "count": 1
+        },
+        {
+          "concept": "PTFE",
           "count": 1
         }
       ],
-      "emerging": [],
+      "emerging": [
+        {
+          "concept": "算力",
+          "count": 3,
+          "prev_count": 0
+        },
+        {
+          "concept": "液冷",
+          "count": 3,
+          "prev_count": 0
+        }
+      ],
       "fading": [
         {
+          "concept": "电子",
+          "count": 1,
+          "prev_count": 4
+        },
+        {
           "concept": "创新药",
+          "count": 1,
+          "prev_count": 4
+        },
+        {
+          "concept": "银行",
           "count": 0,
           "prev_count": 4
         },
@@ -2104,19 +2141,9 @@
           "concept": "先进封装",
           "count": 0,
           "prev_count": 3
-        },
-        {
-          "concept": "电子",
-          "count": 0,
-          "prev_count": 3
-        },
-        {
-          "concept": "银行",
-          "count": 0,
-          "prev_count": 3
         }
       ]
     }
   ],
-  "generated_at": "2026-08-26T19:42:27.555Z"
+  "generated_at": "2026-08-27T19:41:39.895Z"
 }

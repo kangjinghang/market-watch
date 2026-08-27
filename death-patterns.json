@@ -1,29 +1,35 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-26",
-  "total_deaths": 1120,
+  "date_range": "2026-06-16 ~ 2026-08-27",
+  "total_deaths": 1122,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 35,
+    "高位回落": 34,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1080
+    "自然退潮": 1083
   },
   "recent_deaths": [
     {
-      "ticker": "SZ300313",
-      "name": "天山生物",
-      "death_date": "2026-08-25",
-      "peak_pct": 124.73,
-      "last_pct": 124.73,
-      "last_days": 34,
-      "appearances": 6,
+      "ticker": "SH688137",
+      "name": "近岸蛋白",
+      "death_date": "2026-08-26",
+      "peak_pct": 143.1,
+      "last_pct": 143.1,
+      "last_days": 27,
+      "appearances": 7,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "天山生物2026-08-17收盘价10.73元，涨幅20.02%",
-          "timestamp": 1786896000000,
-          "reason": "所属养殖业板块受猪肉价格上涨及全球粮食危机预警带动活跃",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-df0189ee-274f-4467-bf86-e963a356186e&navBarTransparent=1&navBarTheme=dark"
+          "description": "近岸蛋白2026-08-04收盘价40.53元，涨幅14.30%",
+          "timestamp": 1785772800000,
+          "reason": "所属CRO/医药外包板块因龙头公司药明康德大幅上调业绩指引而集体走强",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7e121020-2a4b-443a-8e9a-e31c4e2d3e8a&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "近岸蛋白2026-08-20收盘价67.49元，涨幅20.00%",
+          "timestamp": 1787155200000,
+          "reason": "医药生物板块整体受海外mRNA疫苗重大进展催化，近岸蛋白作为mRNA原料酶核心供应商，市场预期其业务将受益。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-246114c6-6c8c-4d2a-b8b0-c96b5ce72b4d&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -60,24 +66,6 @@
           "timestamp": 1787155200000,
           "reason": "创新药/疫苗板块受海外mRNA肿瘤疫苗III期成功消息刺激，板块集体高开，键凯科技作为LNP递送材料核心供应商受市场追捧。",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6cfef914-d7a9-414d-b8f2-d468b7eabfe5&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300684",
-      "name": "中石科技",
-      "death_date": "2026-08-18",
-      "peak_pct": 105.51,
-      "last_pct": 105.51,
-      "last_days": 13,
-      "appearances": 5,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "中石科技2026-08-14收盘价67.36元，涨幅20.01%",
-          "timestamp": 1786636800000,
-          "reason": "光模块龙头中际旭创战略入股10.47%，引发市场对公司在AI算力散热环节价值的重估，并带动CPO/散热板块走强。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1af01576-fe61-40b4-81f2-b9f149d4e972&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -122,85 +110,79 @@
       "events": []
     },
     {
-      "ticker": "SZ002388",
-      "name": "新亚制程",
-      "death_date": "2026-08-25",
-      "peak_pct": 74.32,
-      "last_pct": 74.32,
-      "last_days": 36,
-      "appearances": 4,
+      "ticker": "SH688114",
+      "name": "华大智造",
+      "death_date": "2026-08-21",
+      "peak_pct": 57.82,
+      "last_pct": 57.82,
+      "last_days": 22,
+      "appearances": 3,
       "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SH600428",
-      "name": "中远海特",
-      "death_date": "2026-08-18",
-      "peak_pct": 66.44,
-      "last_pct": 66.44,
-      "last_days": 71,
-      "appearances": 9,
-      "pattern": "高位回落",
       "events": [
         {
-          "description": "中远海特2026-06-08收盘价7.48元，跌幅5.56%",
-          "timestamp": 1780848000000,
-          "reason": "全球股市遭遇黑色星期五，港口航运板块受市场避险情绪拖累",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-1be9a60e-0229-4f62-bac9-afa364b96e0b&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中远海特2026-06-30收盘价7.81元，跌幅5.33%",
-          "timestamp": 1782748800000,
-          "reason": "市场对港口航运行业整体表现担忧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-61d81e3f-33cc-466e-9c72-50117e63c4aa&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中远海特2026-07-01收盘价8.23元，涨幅5.38%",
-          "timestamp": 1782835200000,
-          "reason": "市场对高新技术产品出口增长的预期提振港口航运板块",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-75811000-6849-415e-b5ff-88e51d72856c&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中远海特2026-07-10收盘价8.99元，涨幅10.04%",
-          "timestamp": 1783612800000,
-          "reason": "公司发布半年度业绩预增公告，预计净利润同比增长55%到70%，创历史最佳单季业绩",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6d2752d3-a0fc-4a9a-8ca1-5bf15384d425&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中远海特2026-07-13收盘价9.82元，涨幅9.23%",
-          "timestamp": 1783872000000,
-          "reason": "市场看好中国高端制造出口景气度，特种船运力供需格局偏紧",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6d7a87af-c2ef-47ee-b888-312f56adc0a8&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "中远海特2026-07-14收盘价10.58元，涨幅7.74%",
-          "timestamp": 1783958400000,
-          "reason": "公司半年度业绩超预期，叠加新能源出海带动特种船运价坚挺预期",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f2238c0a-8898-4f27-98bf-161ef39344b4&navBarTransparent=1&navBarTheme=dark"
+          "description": "华大智造2026-08-10收盘价61.64元，涨幅14.51%",
+          "timestamp": 1786291200000,
+          "reason": "AI制药产业链上游需求预期提振医疗器械板块，华大智造作为测序仪龙头受益于市场对AI for Science（AI4S）商业化加速的乐观情绪。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f7b3deb2-5b17-474d-9cf4-98a040f4c6fd&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
     {
-      "ticker": "SH688011",
-      "name": "新光光电",
-      "death_date": "2026-08-18",
-      "peak_pct": 58.79,
-      "last_pct": 58.79,
-      "last_days": 32,
-      "appearances": 4,
+      "ticker": "SZ300363",
+      "name": "博腾股份",
+      "death_date": "2026-08-20",
+      "peak_pct": 57.53,
+      "last_pct": 57.53,
+      "last_days": 20,
+      "appearances": 3,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "新光光电2026-08-07收盘价81.15元，涨幅11.19%",
-          "timestamp": 1786032000000,
-          "reason": "半导体设备、PCB等电子板块整体活跃，行业景气预期提升带动军工电子板块走强",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-75dd4fb7-519b-434f-8f41-3722cb51c5f5&navBarTransparent=1&navBarTheme=dark"
+          "description": "博腾股份2026-08-04收盘价17.73元，涨幅13.58%",
+          "timestamp": 1785772800000,
+          "reason": "CRO行业龙头药明康德大幅上调全年业绩指引，带动CRO板块集体走强，市场预期行业景气度回升。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3e60cfbe-b78a-487c-8303-b0260d2a8e0f&navBarTransparent=1&navBarTheme=dark"
         },
         {
-          "description": "新光光电2026-08-17收盘价88.33元，涨幅9.51%",
-          "timestamp": 1786896000000,
-          "reason": "军工电子板块受半导体设备及先进封装产业链景气度提升带动，公司作为军工集团核心供应商受到市场关注。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-30665fe2-c3b6-4e2e-afa3-7dad1b249e24&navBarTransparent=1&navBarTheme=dark"
+          "description": "博腾股份2026-08-20收盘价24.48元，涨幅20.00%",
+          "timestamp": 1787155200000,
+          "reason": "医药生物板块整体受海外mRNA癌症疫苗三期阳性消息驱动大幅上涨，博腾股份作为mRNA CDMO服务商受到市场关注。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a6ec8726-246e-4e13-8bf3-d85f638a174f&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SZ300192",
+      "name": "科德教育",
+      "death_date": "2026-08-25",
+      "peak_pct": 57.09,
+      "last_pct": 24.95,
+      "last_days": 6,
+      "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SH601579",
+      "name": "会稽山",
+      "death_date": "2026-08-26",
+      "peak_pct": 46.42,
+      "last_pct": 46.42,
+      "last_days": 33,
+      "appearances": 3,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "会稽山2026-08-14收盘价18.68元，涨幅7.05%",
+          "timestamp": 1786636800000,
+          "reason": "食品饮料板块盘中局部异动带动，市场传闻黄酒行业增长潜力受关注",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-24f70007-21f7-4ea0-9b61-116cc1376cc1&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "会稽山2026-08-24收盘价20.21元，涨幅8.31%",
+          "timestamp": 1787500800000,
+          "reason": "市场对公司2026年中报业绩及全国化、高端化战略突破反应积极",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-145235b4-faa0-427c-b386-e571b12767d2&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }

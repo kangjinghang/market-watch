@@ -1,0 +1,588 @@
+{
+  "date": "2026-08-27",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300456",
+      "name": "赛微电子",
+      "pct": 20.01,
+      "concepts": [
+        "半导体",
+        "CPO",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH688300",
+      "name": "联瑞新材",
+      "pct": 20,
+      "concepts": [
+        "PTFE",
+        "PCB",
+        "AI",
+        "算力"
+      ]
+    },
+    {
+      "ticker": "SZ300368",
+      "name": "汇金股份",
+      "pct": 19.95,
+      "concepts": [
+        "CPO"
+      ]
+    },
+    {
+      "ticker": "SH688091",
+      "name": "上海谊众",
+      "pct": 16.42,
+      "concepts": [
+        "化学制药",
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH688183",
+      "name": "生益电子",
+      "pct": 14.32,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SZ301629",
+      "name": "矽电股份",
+      "pct": 13.71,
+      "concepts": [
+        "半导体",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH688800",
+      "name": "瑞可达",
+      "pct": 12.16,
+      "concepts": [
+        "通信"
+      ]
+    },
+    {
+      "ticker": "SZ301285",
+      "name": "鸿日达",
+      "pct": 11.7,
+      "concepts": [
+        "消费电子",
+        "PCB",
+        "电子"
+      ]
+    },
+    {
+      "ticker": "SH688318",
+      "name": "财富趋势",
+      "pct": 11.15,
+      "concepts": [
+        "证券"
+      ]
+    },
+    {
+      "ticker": "SZ000712",
+      "name": "锦龙股份",
+      "pct": 10.05,
+      "concepts": [
+        "证券"
+      ]
+    },
+    {
+      "ticker": "SZ000576",
+      "name": "甘化科工",
+      "pct": 10.04,
+      "concepts": [
+        "军工"
+      ]
+    },
+    {
+      "ticker": "SZ000890",
+      "name": "法尔胜",
+      "pct": 10.03,
+      "concepts": [
+        "CPO"
+      ]
+    },
+    {
+      "ticker": "SH603319",
+      "name": "美湖股份",
+      "pct": 10.01,
+      "concepts": [
+        "人形机器人",
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH603688",
+      "name": "石英股份",
+      "pct": 10.01,
+      "concepts": [
+        "CPO"
+      ]
+    },
+    {
+      "ticker": "SH600654",
+      "name": "中安科",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002886",
+      "name": "沃特股份",
+      "pct": 9.99,
+      "concepts": [
+        "PTFE",
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH600479",
+      "name": "千金药业",
+      "pct": 9.98,
+      "concepts": [
+        "创新药"
+      ]
+    },
+    {
+      "ticker": "SH601233",
+      "name": "桐昆股份",
+      "pct": 9.98,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 15,
+      "active_days": 7,
+      "heat_score": 105,
+      "leaders": [
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 20,
+          "concepts": [
+            "PTFE",
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ301629",
+          "name": "矽电股份",
+          "pct": 13.71,
+          "concepts": [
+            "半导体",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 15,
+      "active_days": 6,
+      "heat_score": 90,
+      "leaders": [
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 20,
+          "concepts": [
+            "PTFE",
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 9,
+      "active_days": 5,
+      "heat_score": 45,
+      "leaders": [
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 20,
+          "concepts": [
+            "PTFE",
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SH688183",
+          "name": "生益电子",
+          "pct": 14.32,
+          "concepts": [
+            "PCB"
+          ]
+        },
+        {
+          "ticker": "SZ301285",
+          "name": "鸿日达",
+          "pct": 11.7,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ002886",
+          "name": "沃特股份",
+          "pct": 9.99,
+          "concepts": [
+            "PTFE",
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 15,
+      "active_days": 3,
+      "heat_score": 45,
+      "leaders": [
+        {
+          "ticker": "SH688091",
+          "name": "上海谊众",
+          "pct": 16.42,
+          "concepts": [
+            "化学制药",
+            "创新药"
+          ]
+        },
+        {
+          "ticker": "SH600479",
+          "name": "千金药业",
+          "pct": 9.98,
+          "concepts": [
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 7,
+      "active_days": 5,
+      "heat_score": 35,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": [
+        {
+          "ticker": "SZ300456",
+          "name": "赛微电子",
+          "pct": 20.01,
+          "concepts": [
+            "半导体",
+            "CPO",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ300368",
+          "name": "汇金股份",
+          "pct": 19.95,
+          "concepts": [
+            "CPO"
+          ]
+        },
+        {
+          "ticker": "SZ000890",
+          "name": "法尔胜",
+          "pct": 10.03,
+          "concepts": [
+            "CPO"
+          ]
+        },
+        {
+          "ticker": "SH603688",
+          "name": "石英股份",
+          "pct": 10.01,
+          "concepts": [
+            "CPO"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": [
+        {
+          "ticker": "SZ300456",
+          "name": "赛微电子",
+          "pct": 20.01,
+          "concepts": [
+            "半导体",
+            "CPO",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ301629",
+          "name": "矽电股份",
+          "pct": 13.71,
+          "concepts": [
+            "半导体",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电子",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": [
+        {
+          "ticker": "SZ300456",
+          "name": "赛微电子",
+          "pct": 20.01,
+          "concepts": [
+            "半导体",
+            "CPO",
+            "电子"
+          ]
+        },
+        {
+          "ticker": "SZ301285",
+          "name": "鸿日达",
+          "pct": 11.7,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 7,
+      "active_days": 3,
+      "heat_score": 21,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": [
+        {
+          "ticker": "SH688091",
+          "name": "上海谊众",
+          "pct": 16.42,
+          "concepts": [
+            "化学制药",
+            "创新药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SZ301285",
+          "name": "鸿日达",
+          "pct": 11.7,
+          "concepts": [
+            "消费电子",
+            "PCB",
+            "电子"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "军工",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": [
+        {
+          "ticker": "SZ000576",
+          "name": "甘化科工",
+          "pct": 10.04,
+          "concepts": [
+            "军工"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "先进封装",
+      "leader_count": 4,
+      "active_days": 2,
+      "heat_score": 8,
+      "leaders": []
+    },
+    {
+      "concept": "半导体设备",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SH688318",
+          "name": "财富趋势",
+          "pct": 11.15,
+          "concepts": [
+            "证券"
+          ]
+        },
+        {
+          "ticker": "SZ000712",
+          "name": "锦龙股份",
+          "pct": 10.05,
+          "concepts": [
+            "证券"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "医疗服务",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "汽车零部件",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "有色金属",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "小金属",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH603319",
+          "name": "美湖股份",
+          "pct": 10.01,
+          "concepts": [
+            "人形机器人",
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "光模块",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "工业金属",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "PTFE",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": [
+        {
+          "ticker": "SH688300",
+          "name": "联瑞新材",
+          "pct": 20,
+          "concepts": [
+            "PTFE",
+            "PCB",
+            "AI",
+            "算力"
+          ]
+        },
+        {
+          "ticker": "SZ002886",
+          "name": "沃特股份",
+          "pct": 9.99,
+          "concepts": [
+            "PTFE",
+            "PCB"
+          ]
+        }
+      ]
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ002947",
+      "name": "恒铭达",
+      "last_seen": "2026-08-27",
+      "shared_concepts": [
+        "电子",
+        "消费电子"
+      ],
+      "trend_pct": 22.72,
+      "trend_days": 3
+    },
+    {
+      "ticker": "SH601137",
+      "name": "博威合金",
+      "last_seen": "2026-08-27",
+      "shared_concepts": [
+        "AI",
+        "算力"
+      ],
+      "trend_pct": 14.78,
+      "trend_days": 13
+    }
+  ]
+}

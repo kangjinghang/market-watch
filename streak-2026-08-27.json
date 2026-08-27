@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-27",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH601998",
+      "name": "中信银行",
+      "streak": 4,
+      "first_date": "2026-08-20",
+      "last_date": "2026-08-27",
+      "total_pct": 16.09
+    },
+    {
+      "ticker": "SZ001236",
+      "name": "弘业期货",
+      "streak": 3,
+      "first_date": "2026-08-25",
+      "last_date": "2026-08-27",
+      "total_pct": 12.16
+    }
+  ]
+}

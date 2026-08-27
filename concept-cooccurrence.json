@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-25",
-  "total_reasons": 3734,
+  "date_range": "2026-03-05 ~ 2026-08-26",
+  "total_reasons": 3757,
   "total_concepts": 72,
   "total_pairs": 201,
   "nodes": [
@@ -11,22 +11,22 @@
     },
     {
       "id": "AI",
-      "count": 451,
+      "count": 452,
       "type": "technology"
     },
     {
       "id": "电子",
-      "count": 320,
+      "count": 322,
       "type": "sector"
     },
     {
       "id": "创新药",
-      "count": 291,
+      "count": 292,
       "type": "sector"
     },
     {
       "id": "PCB",
-      "count": 233,
+      "count": 235,
       "type": "technology"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "算力",
-      "count": 174,
+      "count": 176,
       "type": "sector"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "id": "机器人",
-      "count": 121,
+      "count": 122,
       "type": "sector"
     },
     {
@@ -65,13 +65,13 @@
       "type": "sector"
     },
     {
-      "id": "玻璃基板",
+      "id": "电子特气",
       "count": 71,
       "type": "sector"
     },
     {
-      "id": "电子特气",
-      "count": 70,
+      "id": "玻璃基板",
+      "count": 71,
       "type": "sector"
     },
     {
@@ -106,7 +106,7 @@
     },
     {
       "id": "CPO",
-      "count": 46,
+      "count": 47,
       "type": "technology"
     },
     {
@@ -140,12 +140,12 @@
       "type": "sector"
     },
     {
-      "id": "汽车零部件",
-      "count": 37,
+      "id": "证券",
+      "count": 38,
       "type": "sector"
     },
     {
-      "id": "证券",
+      "id": "汽车零部件",
       "count": 37,
       "type": "sector"
     },
@@ -176,17 +176,17 @@
     },
     {
       "id": "液冷",
+      "count": 26,
+      "type": "sector"
+    },
+    {
+      "id": "消费电子",
       "count": 24,
       "type": "sector"
     },
     {
       "id": "电子布",
       "count": 24,
-      "type": "sector"
-    },
-    {
-      "id": "消费电子",
-      "count": 23,
       "type": "sector"
     },
     {
@@ -200,14 +200,14 @@
       "type": "sector"
     },
     {
+      "id": "PTFE",
+      "count": 21,
+      "type": "technology"
+    },
+    {
       "id": "医疗服务",
       "count": 21,
       "type": "sector"
-    },
-    {
-      "id": "PTFE",
-      "count": 20,
-      "type": "technology"
     },
     {
       "id": "港股医药",
@@ -285,14 +285,14 @@
       "type": "technology"
     },
     {
+      "id": "银行",
+      "count": 11,
+      "type": "sector"
+    },
+    {
       "id": "CAE",
       "count": 10,
       "type": "technology"
-    },
-    {
-      "id": "银行",
-      "count": 10,
-      "type": "sector"
     },
     {
       "id": "GPU",
@@ -379,7 +379,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 126
+      "weight": 127
     },
     {
       "source": "半导体",
@@ -394,7 +394,7 @@
     {
       "source": "电子",
       "target": "电子特气",
-      "weight": 70
+      "weight": 71
     },
     {
       "source": "AI",
@@ -419,7 +419,7 @@
     {
       "source": "PCB",
       "target": "电子",
-      "weight": 30
+      "weight": 31
     },
     {
       "source": "军工",
@@ -452,14 +452,14 @@
       "weight": 26
     },
     {
-      "source": "电子",
-      "target": "电子布",
+      "source": "消费电子",
+      "target": "电子",
       "weight": 24
     },
     {
-      "source": "消费电子",
-      "target": "电子",
-      "weight": 23
+      "source": "电子",
+      "target": "电子布",
+      "weight": 24
     },
     {
       "source": "PCB",
@@ -607,6 +607,11 @@
       "weight": 11
     },
     {
+      "source": "PCB",
+      "target": "PTFE",
+      "weight": 10
+    },
+    {
       "source": "IPO",
       "target": "存储芯片",
       "weight": 10
@@ -629,11 +634,6 @@
     {
       "source": "存储芯片",
       "target": "电子",
-      "weight": 9
-    },
-    {
-      "source": "PCB",
-      "target": "PTFE",
       "weight": 9
     },
     {
