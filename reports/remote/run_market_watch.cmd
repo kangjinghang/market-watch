@@ -1,6 +1,7 @@
 ﻿@echo off
 setlocal enabledelayedexpansion
 set MAIN_PUSH_TRIES=0
+set MAIN_DERIVED_TRIES=0
 set SITE_PUSH_TRIES=0
 set MAIN_REPO=C:\workspace\trend-trading-agents
 set SITE_REPO=C:\workspace\market-watch
@@ -141,6 +142,24 @@ if not exist "%SITE_REPO%\daily\!TODAY!.json" (
 call npm run build:report -- --in data/watchlist --out "%SITE_REPO%" >> "%LOG%" 2>&1
 :: 全量重算（density/meta）即便因无关 stderr 返回非 0 也不致命：daily 已生成即核心交付达成，仅记 warning
 if !errorlevel! neq 0 echo [!TS!] WARN: full build returned non-zero (likely harmless python stderr), daily already built>> "%LOG%"
+
+:: build 会更新 MAIN_REPO 的派生数据（如 fitness-history.json），但 main push 在 build 之前已执行，
+:: 故此处补推一次 MAIN_REPO，捕获 build 产出的派生文件变更，避免每日累积未提交改动。
+cd /d "%MAIN_REPO%"
+git add data\
+git diff --cached --quiet
+if !errorlevel! equ 0 goto :main_derived_no_change
+git commit -m "data: !TODAY! (derived)" --quiet >> "%LOG%" 2>&1
+:main_derived_push_retry
+git pull --rebase --quiet >> "%LOG%" 2>&1
+git push --quiet >> "%LOG%" 2>&1
+if !errorlevel! equ 0 goto :main_derived_no_change
+set /a MAIN_DERIVED_TRIES+=1
+if !MAIN_DERIVED_TRIES! geq 3 goto :scan_fail
+echo [!TS!] main derived push rejected, pull --rebase + retry (!MAIN_DERIVED_TRIES!/3)>> "%LOG%"
+goto :main_derived_push_retry
+:main_derived_no_change
+echo [!TS!] Main repo derived data push OK>> "%LOG%"
 
 cd /d "%SITE_REPO%"
 git add daily\ series\ meta.json *.json
