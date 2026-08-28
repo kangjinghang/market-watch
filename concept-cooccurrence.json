@@ -1,8 +1,8 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-26",
-  "total_reasons": 3757,
+  "date_range": "2026-03-05 ~ 2026-08-27",
+  "total_reasons": 3785,
   "total_concepts": 72,
-  "total_pairs": 201,
+  "total_pairs": 202,
   "nodes": [
     {
       "id": "半导体",
@@ -11,22 +11,22 @@
     },
     {
       "id": "AI",
-      "count": 452,
+      "count": 453,
       "type": "technology"
     },
     {
       "id": "电子",
-      "count": 322,
+      "count": 323,
       "type": "sector"
     },
     {
       "id": "创新药",
-      "count": 292,
+      "count": 294,
       "type": "sector"
     },
     {
       "id": "PCB",
-      "count": 235,
+      "count": 238,
       "type": "technology"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "算力",
-      "count": 176,
+      "count": 177,
       "type": "sector"
     },
     {
@@ -66,7 +66,7 @@
     },
     {
       "id": "电子特气",
-      "count": 71,
+      "count": 72,
       "type": "sector"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "id": "中药",
-      "count": 45,
+      "count": 46,
       "type": "sector"
     },
     {
@@ -130,17 +130,17 @@
       "type": "sector"
     },
     {
+      "id": "证券",
+      "count": 39,
+      "type": "sector"
+    },
+    {
       "id": "元件",
       "count": 38,
       "type": "sector"
     },
     {
       "id": "军工",
-      "count": 38,
-      "type": "sector"
-    },
-    {
-      "id": "证券",
       "count": 38,
       "type": "sector"
     },
@@ -190,6 +190,11 @@
       "type": "sector"
     },
     {
+      "id": "PTFE",
+      "count": 22,
+      "type": "technology"
+    },
+    {
       "id": "电子树脂",
       "count": 22,
       "type": "sector"
@@ -198,11 +203,6 @@
       "id": "小金属",
       "count": 22,
       "type": "sector"
-    },
-    {
-      "id": "PTFE",
-      "count": 21,
-      "type": "technology"
     },
     {
       "id": "医疗服务",
@@ -255,6 +255,11 @@
       "type": "sector"
     },
     {
+      "id": "房地产",
+      "count": 13,
+      "type": "sector"
+    },
+    {
       "id": "白酒",
       "count": 13,
       "type": "sector"
@@ -270,8 +275,8 @@
       "type": "sector"
     },
     {
-      "id": "房地产",
-      "count": 11,
+      "id": "银行",
+      "count": 12,
       "type": "sector"
     },
     {
@@ -283,11 +288,6 @@
       "id": "PSPI",
       "count": 11,
       "type": "technology"
-    },
-    {
-      "id": "银行",
-      "count": 11,
-      "type": "sector"
     },
     {
       "id": "CAE",
@@ -379,7 +379,7 @@
     {
       "source": "AI",
       "target": "算力",
-      "weight": 127
+      "weight": 128
     },
     {
       "source": "半导体",
@@ -394,7 +394,7 @@
     {
       "source": "电子",
       "target": "电子特气",
-      "weight": 71
+      "weight": 72
     },
     {
       "source": "AI",
@@ -413,13 +413,13 @@
     },
     {
       "source": "PCB",
-      "target": "算力",
+      "target": "电子",
       "weight": 32
     },
     {
       "source": "PCB",
-      "target": "电子",
-      "weight": 31
+      "target": "算力",
+      "weight": 32
     },
     {
       "source": "军工",
@@ -597,6 +597,11 @@
       "weight": 12
     },
     {
+      "source": "PCB",
+      "target": "PTFE",
+      "weight": 11
+    },
+    {
       "source": "PFA",
       "target": "氟化工",
       "weight": 11
@@ -605,11 +610,6 @@
       "source": "HBM",
       "target": "半导体设备",
       "weight": 11
-    },
-    {
-      "source": "PCB",
-      "target": "PTFE",
-      "weight": 10
     },
     {
       "source": "IPO",
@@ -1369,6 +1369,11 @@
     {
       "source": "先进封装",
       "target": "半导体设备",
+      "weight": 2
+    },
+    {
+      "source": "PCB",
+      "target": "电子特气",
       "weight": 2
     }
   ]

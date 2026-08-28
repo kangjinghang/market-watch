@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-28",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH601998",
+      "name": "中信银行",
+      "streak": 5,
+      "first_date": "2026-08-20",
+      "last_date": "2026-08-28",
+      "total_pct": 16.89
+    },
+    {
+      "ticker": "SH600971",
+      "name": "恒源煤电",
+      "streak": 4,
+      "first_date": "2026-08-25",
+      "last_date": "2026-08-28",
+      "total_pct": 15.2
+    },
+    {
+      "ticker": "SZ002742",
+      "name": "冀衡医药",
+      "streak": 3,
+      "first_date": "2026-08-26",
+      "last_date": "2026-08-28",
+      "total_pct": 53.69
+    },
+    {
+      "ticker": "SZ300642",
+      "name": "透景生命",
+      "streak": 3,
+      "first_date": "2026-08-26",
+      "last_date": "2026-08-28",
+      "total_pct": 42.08
+    },
+    {
+      "ticker": "SH600479",
+      "name": "千金药业",
+      "streak": 3,
+      "first_date": "2026-08-26",
+      "last_date": "2026-08-28",
+      "total_pct": 36.58
+    },
+    {
+      "ticker": "SH600610",
+      "name": "中毅达",
+      "streak": 3,
+      "first_date": "2026-08-24",
+      "last_date": "2026-08-28",
+      "total_pct": 33
+    },
+    {
+      "ticker": "SZ000937",
+      "name": "冀中能源",
+      "streak": 3,
+      "first_date": "2026-08-26",
+      "last_date": "2026-08-28",
+      "total_pct": 14.57
+    },
+    {
+      "ticker": "SH603176",
+      "name": "汇通集团",
+      "streak": 3,
+      "first_date": "2026-08-25",
+      "last_date": "2026-08-28",
+      "total_pct": 14.35
+    },
+    {
+      "ticker": "SH600212",
+      "name": "绿能慧充",
+      "streak": 3,
+      "first_date": "2026-08-25",
+      "last_date": "2026-08-28",
+      "total_pct": 13.5
+    }
+  ]
+}

@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-27",
-  "total_deaths": 1122,
+  "date_range": "2026-06-16 ~ 2026-08-28",
+  "total_deaths": 1144,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 34,
+    "高位回落": 36,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1083
+    "自然退潮": 1103
   },
   "recent_deaths": [
     {
@@ -30,6 +30,35 @@
           "timestamp": 1787155200000,
           "reason": "医药生物板块整体受海外mRNA疫苗重大进展催化，近岸蛋白作为mRNA原料酶核心供应商，市场预期其业务将受益。",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-246114c6-6c8c-4d2a-b8b0-c96b5ce72b4d&navBarTransparent=1&navBarTheme=dark"
+        }
+      ]
+    },
+    {
+      "ticker": "SH600721",
+      "name": "百花医药",
+      "death_date": "2026-08-27",
+      "peak_pct": 126.67,
+      "last_pct": 25.89,
+      "last_days": 6,
+      "appearances": 10,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ300313",
+      "name": "天山生物",
+      "death_date": "2026-08-27",
+      "peak_pct": 124.86,
+      "last_pct": 124.86,
+      "last_days": 36,
+      "appearances": 7,
+      "pattern": "自然退潮",
+      "events": [
+        {
+          "description": "天山生物2026-08-17收盘价10.73元，涨幅20.02%",
+          "timestamp": 1786896000000,
+          "reason": "所属养殖业板块受猪肉价格上涨及全球粮食危机预警带动活跃",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-df0189ee-274f-4467-bf86-e963a356186e&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },
@@ -99,6 +128,17 @@
       ]
     },
     {
+      "ticker": "SZ002388",
+      "name": "新亚制程",
+      "death_date": "2026-08-27",
+      "peak_pct": 80,
+      "last_pct": 80,
+      "last_days": 38,
+      "appearances": 5,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
       "ticker": "SZ002581",
       "name": "*ST未名",
       "death_date": "2026-08-21",
@@ -110,79 +150,20 @@
       "events": []
     },
     {
-      "ticker": "SH688114",
-      "name": "华大智造",
-      "death_date": "2026-08-21",
-      "peak_pct": 57.82,
-      "last_pct": 57.82,
-      "last_days": 22,
+      "ticker": "SH688185",
+      "name": "康希诺",
+      "death_date": "2026-08-27",
+      "peak_pct": 72.81,
+      "last_pct": 72.81,
+      "last_days": 8,
       "appearances": 3,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "华大智造2026-08-10收盘价61.64元，涨幅14.51%",
-          "timestamp": 1786291200000,
-          "reason": "AI制药产业链上游需求预期提振医疗器械板块，华大智造作为测序仪龙头受益于市场对AI for Science（AI4S）商业化加速的乐观情绪。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-f7b3deb2-5b17-474d-9cf4-98a040f4c6fd&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300363",
-      "name": "博腾股份",
-      "death_date": "2026-08-20",
-      "peak_pct": 57.53,
-      "last_pct": 57.53,
-      "last_days": 20,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "博腾股份2026-08-04收盘价17.73元，涨幅13.58%",
-          "timestamp": 1785772800000,
-          "reason": "CRO行业龙头药明康德大幅上调全年业绩指引，带动CRO板块集体走强，市场预期行业景气度回升。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3e60cfbe-b78a-487c-8303-b0260d2a8e0f&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "博腾股份2026-08-20收盘价24.48元，涨幅20.00%",
+          "description": "康希诺2026-08-20收盘价64.43元，涨幅20.00%",
           "timestamp": 1787155200000,
-          "reason": "医药生物板块整体受海外mRNA癌症疫苗三期阳性消息驱动大幅上涨，博腾股份作为mRNA CDMO服务商受到市场关注。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-a6ec8726-246e-4e13-8bf3-d85f638a174f&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ300192",
-      "name": "科德教育",
-      "death_date": "2026-08-25",
-      "peak_pct": 57.09,
-      "last_pct": 24.95,
-      "last_days": 6,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SH601579",
-      "name": "会稽山",
-      "death_date": "2026-08-26",
-      "peak_pct": 46.42,
-      "last_pct": 46.42,
-      "last_days": 33,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "会稽山2026-08-14收盘价18.68元，涨幅7.05%",
-          "timestamp": 1786636800000,
-          "reason": "食品饮料板块盘中局部异动带动，市场传闻黄酒行业增长潜力受关注",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-24f70007-21f7-4ea0-9b61-116cc1376cc1&navBarTransparent=1&navBarTheme=dark"
-        },
-        {
-          "description": "会稽山2026-08-24收盘价20.21元，涨幅8.31%",
-          "timestamp": 1787500800000,
-          "reason": "市场对公司2026年中报业绩及全国化、高端化战略突破反应积极",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-145235b4-faa0-427c-b386-e571b12767d2&navBarTransparent=1&navBarTheme=dark"
+          "reason": "受全球mRNA癌症疫苗III期临床成功消息催化，生物制品板块集体大涨，市场重估公司mRNA肿瘤疫苗平台价值。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3570dab8-36e7-4f9a-8d7f-01d007f51a3d&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     }
