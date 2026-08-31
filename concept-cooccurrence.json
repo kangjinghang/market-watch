@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-08-27",
-  "total_reasons": 3785,
+  "date_range": "2026-03-05 ~ 2026-08-30",
+  "total_reasons": 3807,
   "total_concepts": 72,
   "total_pairs": 202,
   "nodes": [
@@ -11,7 +11,7 @@
     },
     {
       "id": "AI",
-      "count": 453,
+      "count": 455,
       "type": "technology"
     },
     {
@@ -26,7 +26,7 @@
     },
     {
       "id": "PCB",
-      "count": 238,
+      "count": 240,
       "type": "technology"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "id": "算力",
-      "count": 177,
+      "count": 178,
       "type": "sector"
     },
     {
@@ -131,7 +131,7 @@
     },
     {
       "id": "证券",
-      "count": 39,
+      "count": 41,
       "type": "sector"
     },
     {
@@ -160,6 +160,11 @@
       "type": "sector"
     },
     {
+      "id": "液冷",
+      "count": 28,
+      "type": "sector"
+    },
+    {
       "id": "氟化工",
       "count": 28,
       "type": "sector"
@@ -175,11 +180,6 @@
       "type": "technology"
     },
     {
-      "id": "液冷",
-      "count": 26,
-      "type": "sector"
-    },
-    {
       "id": "消费电子",
       "count": 24,
       "type": "sector"
@@ -191,7 +191,7 @@
     },
     {
       "id": "PTFE",
-      "count": 22,
+      "count": 23,
       "type": "technology"
     },
     {
@@ -256,11 +256,16 @@
     },
     {
       "id": "房地产",
-      "count": 13,
+      "count": 16,
       "type": "sector"
     },
     {
       "id": "白酒",
+      "count": 13,
+      "type": "sector"
+    },
+    {
+      "id": "银行",
       "count": 13,
       "type": "sector"
     },
@@ -271,11 +276,6 @@
     },
     {
       "id": "化学制药",
-      "count": 12,
-      "type": "sector"
-    },
-    {
-      "id": "银行",
       "count": 12,
       "type": "sector"
     },
@@ -572,6 +572,11 @@
       "weight": 13
     },
     {
+      "source": "PCB",
+      "target": "PTFE",
+      "weight": 12
+    },
+    {
       "source": "AI",
       "target": "玻璃基板",
       "weight": 12
@@ -595,11 +600,6 @@
       "source": "半导体设备",
       "target": "电子",
       "weight": 12
-    },
-    {
-      "source": "PCB",
-      "target": "PTFE",
-      "weight": 11
     },
     {
       "source": "PFA",

@@ -1,0 +1,62 @@
+{
+  "date": "2026-08-31",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH601998",
+      "name": "中信银行",
+      "streak": 6,
+      "first_date": "2026-08-20",
+      "last_date": "2026-08-31",
+      "total_pct": 18.63
+    },
+    {
+      "ticker": "SH600971",
+      "name": "恒源煤电",
+      "streak": 5,
+      "first_date": "2026-08-25",
+      "last_date": "2026-08-31",
+      "total_pct": 17.37
+    },
+    {
+      "ticker": "SZ000937",
+      "name": "冀中能源",
+      "streak": 4,
+      "first_date": "2026-08-26",
+      "last_date": "2026-08-31",
+      "total_pct": 17.39
+    },
+    {
+      "ticker": "SZ000712",
+      "name": "锦龙股份",
+      "streak": 3,
+      "first_date": "2026-08-27",
+      "last_date": "2026-08-31",
+      "total_pct": 53.43
+    },
+    {
+      "ticker": "SZ002886",
+      "name": "沃特股份",
+      "streak": 3,
+      "first_date": "2026-08-27",
+      "last_date": "2026-08-31",
+      "total_pct": 50.39
+    },
+    {
+      "ticker": "SZ002493",
+      "name": "荣盛石化",
+      "streak": 3,
+      "first_date": "2026-08-27",
+      "last_date": "2026-08-31",
+      "total_pct": 29.38
+    },
+    {
+      "ticker": "SH600354",
+      "name": "敦煌种业",
+      "streak": 3,
+      "first_date": "2026-08-27",
+      "last_date": "2026-08-31",
+      "total_pct": 28.93
+    }
+  ]
+}

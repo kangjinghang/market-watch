@@ -1,14 +1,36 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-28",
-  "total_deaths": 1144,
+  "date_range": "2026-06-16 ~ 2026-08-31",
+  "total_deaths": 1161,
   "patterns": {
     "闪崩": 0,
     "高位回落": 36,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1103
+    "自然退潮": 1120
   },
   "recent_deaths": [
+    {
+      "ticker": "SH600378",
+      "name": "昊华科技",
+      "death_date": "2026-08-28",
+      "peak_pct": 176.79,
+      "last_pct": 23,
+      "last_days": 3,
+      "appearances": 8,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ300319",
+      "name": "麦捷科技",
+      "death_date": "2026-08-28",
+      "peak_pct": 170.64,
+      "last_pct": 23,
+      "last_days": 9,
+      "appearances": 7,
+      "pattern": "自然退潮",
+      "events": []
+    },
     {
       "ticker": "SH688137",
       "name": "近岸蛋白",
@@ -99,6 +121,17 @@
       ]
     },
     {
+      "ticker": "SH603011",
+      "name": "合锻智能",
+      "death_date": "2026-08-28",
+      "peak_pct": 111.27,
+      "last_pct": 21.86,
+      "last_days": 4,
+      "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
       "ticker": "SZ000506",
       "name": "招金黄金",
       "death_date": "2026-08-24",
@@ -110,62 +143,15 @@
       "events": []
     },
     {
-      "ticker": "SZ300570",
-      "name": "太辰光",
-      "death_date": "2026-08-20",
-      "peak_pct": 90.31,
-      "last_pct": 51.94,
+      "ticker": "SZ002396",
+      "name": "星网锐捷",
+      "death_date": "2026-08-28",
+      "peak_pct": 98.45,
+      "last_pct": 24.46,
       "last_days": 9,
-      "appearances": 5,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "太辰光2026-08-17收盘价193.80元，涨幅20.00%",
-          "timestamp": 1786896000000,
-          "reason": "公司所属CPO概念板块受英伟达硅光交换机量产消息刺激集体走强，同时市场传闻公司MPO连接器等产品需求旺盛，扩产计划强化增长预期。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-813c3f5a-98a2-404e-aa01-bd59dd24a5ac&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ002388",
-      "name": "新亚制程",
-      "death_date": "2026-08-27",
-      "peak_pct": 80,
-      "last_pct": 80,
-      "last_days": 38,
-      "appearances": 5,
+      "appearances": 7,
       "pattern": "自然退潮",
       "events": []
-    },
-    {
-      "ticker": "SZ002581",
-      "name": "*ST未名",
-      "death_date": "2026-08-21",
-      "peak_pct": 77.64,
-      "last_pct": 75.45,
-      "last_days": 22,
-      "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SH688185",
-      "name": "康希诺",
-      "death_date": "2026-08-27",
-      "peak_pct": 72.81,
-      "last_pct": 72.81,
-      "last_days": 8,
-      "appearances": 3,
-      "pattern": "自然退潮",
-      "events": [
-        {
-          "description": "康希诺2026-08-20收盘价64.43元，涨幅20.00%",
-          "timestamp": 1787155200000,
-          "reason": "受全球mRNA癌症疫苗III期临床成功消息催化，生物制品板块集体大涨，市场重估公司mRNA肿瘤疫苗平台价值。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-3570dab8-36e7-4f9a-8d7f-01d007f51a3d&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
     }
   ],
   "peak_deaths": [
