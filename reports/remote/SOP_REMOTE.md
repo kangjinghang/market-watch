@@ -183,8 +183,12 @@ ssh quant-server 'cmd /c "C:\workspace\market-watch\reports\remote\run_market_wa
 **不是** `market-watch` / `scan` 之类的名字。`schtasks /query` 默认列表里也容易被忽略。
 真实任务名（在 `C:\Windows\System32\Tasks\` 下）：
 
-- **`MarketWatch19`** —— 每天 **19:00** 触发，调 `cmd /c C:\workspace\market-watch\reports\remote\run_market_watch.cmd`（无日期参数 → 脚本内部推断今天）
-- **`MarketWatch23`** —— 每天 **23:00** 触发，同样无参数调用 cmd（**兜底**：19:00 因 400016/WAF/网络失败后的二次机会；数据已存在则 Skip）
+- **`MarketWatch19`** —— **周一至周五 19:00** 触发，调 `cmd /c C:\workspace\market-watch\reports\remote\run_market_watch.cmd`（无日期参数 → 脚本内部推断今天）
+- **`MarketWatch23`** —— **周一至周五 23:00** 触发，同样无参数调用 cmd（**兜底**：19:00 因 400016/WAF/网络失败后的二次机会；数据已存在则 Skip）
+
+> ⚠️ **触发日是"周一~周五"（`ScheduleByWeek` + `DaysOfWeek` 列了 Mon/Tue/Wed/Thu/Fri），
+> 不含周六周日**。所以**周末 `status` 查到"无数据 / MISSING"是完全正常的**，不是故障——
+> A股周末休市，任务本就不触发。工作日才该有数据。
 
 查任务配置（避免再次用错关键词）：
 ```bash
@@ -193,7 +197,8 @@ ssh quant-server "cmd /c \"type C:\Windows\System32\Tasks\MarketWatch23\""
 ```
 
 **推论**：
-- 不手动触发时，每天 19:00 自动跑当天数据（收盘后 4 小时，A股 15:00 收盘，数据齐全）
+- 不手动触发时，**工作日（周一~周五）19:00** 自动跑当天数据（收盘后 4 小时，A股 15:00 收盘，数据齐全）
+- **周末无数据 = 正常**，别当故障排查
 - 刚开盘/盘中**切勿手动 `remote.py run` 当天日期**——会抓半截数据污染产物
-- 若某天 `status` 显示未跑，先检查这两个任务是否被禁用/删除，而非怀疑脚本
+- 若某**工作日** `status` 显示未跑，先检查这两个任务是否被禁用/删除，而非怀疑脚本
 - 查 `schtasks` 列表时用 `findstr "MarketWatch"` 而非 `market-watch`（任务名无连字符）
