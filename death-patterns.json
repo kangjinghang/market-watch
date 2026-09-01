@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-08-31",
-  "total_deaths": 1161,
+  "date_range": "2026-06-16 ~ 2026-09-01",
+  "total_deaths": 1155,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 36,
+    "高位回落": 35,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1120
+    "自然退潮": 1115
   },
   "recent_deaths": [
     {
@@ -17,6 +17,17 @@
       "last_pct": 23,
       "last_days": 3,
       "appearances": 8,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ002636",
+      "name": "金安国纪",
+      "death_date": "2026-08-31",
+      "peak_pct": 172.04,
+      "last_pct": 25.27,
+      "last_days": 7,
+      "appearances": 6,
       "pattern": "自然退潮",
       "events": []
     },
@@ -81,24 +92,6 @@
           "timestamp": 1786896000000,
           "reason": "所属养殖业板块受猪肉价格上涨及全球粮食危机预警带动活跃",
           "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-df0189ee-274f-4467-bf86-e963a356186e&navBarTransparent=1&navBarTheme=dark"
-        }
-      ]
-    },
-    {
-      "ticker": "SZ301080",
-      "name": "百普赛斯",
-      "death_date": "2026-08-21",
-      "peak_pct": 119.82,
-      "last_pct": 119.82,
-      "last_days": 18,
-      "appearances": 5,
-      "pattern": "高位回落",
-      "events": [
-        {
-          "description": "百普赛斯2026-08-03收盘价45.00元，跌幅6.99%",
-          "timestamp": 1785686400000,
-          "reason": "所属的生物制品板块未获市场资金关注，叠加半导体设备等科技板块整体下挫，引发市场情绪转向谨慎。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6f0e8bc4-4b3a-4fc6-91cb-4d23179e6736&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },

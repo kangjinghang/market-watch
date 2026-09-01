@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-01",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SZ000712",
+      "name": "锦龙股份",
+      "streak": 4,
+      "first_date": "2026-08-27",
+      "last_date": "2026-09-01",
+      "total_pct": 59.57
+    },
+    {
+      "ticker": "SH600354",
+      "name": "敦煌种业",
+      "streak": 4,
+      "first_date": "2026-08-27",
+      "last_date": "2026-09-01",
+      "total_pct": 41.84
+    },
+    {
+      "ticker": "SH600562",
+      "name": "国睿科技",
+      "streak": 3,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-01",
+      "total_pct": 53.79
+    },
+    {
+      "ticker": "SZ000560",
+      "name": "我爱我家",
+      "streak": 3,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-01",
+      "total_pct": 47
+    },
+    {
+      "ticker": "SH603269",
+      "name": "海鸥股份",
+      "streak": 3,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-01",
+      "total_pct": 44.88
+    },
+    {
+      "ticker": "SZ300798",
+      "name": "锦鸡股份",
+      "streak": 3,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-01",
+      "total_pct": 34.33
+    },
+    {
+      "ticker": "SH601156",
+      "name": "东航物流",
+      "streak": 3,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-01",
+      "total_pct": 23.58
+    },
+    {
+      "ticker": "SZ000558",
+      "name": "天府文旅",
+      "streak": 3,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-01",
+      "total_pct": 15.57
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "date": "2026-09-01",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300189",
+      "name": "神农种业",
+      "pct": 20.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300642",
+      "name": "透景生命",
+      "pct": 19.99,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ300399",
+      "name": "天利科技",
+      "pct": 12.24,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300530",
+      "name": "领湃科技",
+      "pct": 11.14,
+      "concepts": [
+        "固态电池"
+      ]
+    },
+    {
+      "ticker": "SZ301556",
+      "name": "托普云农",
+      "pct": 10.92,
+      "concepts": []
+    },
+    {
+      "ticker": "SH688696",
+      "name": "极米科技",
+      "pct": 10.4,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002425",
+      "name": "凯撒文化",
+      "pct": 10.09,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH600828",
+      "name": "茂业商业",
+      "pct": 10.08,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000998",
+      "name": "隆平高科",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002104",
+      "name": "恒宝股份",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002721",
+      "name": "金一文化",
+      "pct": 10.03,
+      "concepts": [
+        "服装家纺"
+      ]
+    },
+    {
+      "ticker": "SH601086",
+      "name": "国芳集团",
+      "pct": 10.03,
+      "concepts": []
+    },
+    {
+      "ticker": "SH600354",
+      "name": "敦煌种业",
+      "pct": 10.01,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ000536",
+      "name": "华映科技",
+      "pct": 10,
+      "concepts": [
+        "光学光电子",
+        "电子",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ002107",
+      "name": "沃华医药",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002882",
+      "name": "金龙羽",
+      "pct": 10,
+      "concepts": [
+        "固态电池"
+      ]
+    },
+    {
+      "ticker": "SH603207",
+      "name": "小方制药",
+      "pct": 10,
+      "concepts": [
+        "化学制药"
+      ]
+    },
+    {
+      "ticker": "SH603980",
+      "name": "吉华集团",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002181",
+      "name": "粤 传 媒",
+      "pct": 9.99,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ000158",
+      "name": "常山北明",
+      "pct": 9.98,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ003005",
+      "name": "竞业达",
+      "pct": 9.98,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH600121",
+      "name": "郑州煤电",
+      "pct": 9.98,
+      "concepts": [
+        "煤炭"
+      ]
+    },
+    {
+      "ticker": "SH600410",
+      "name": "华胜天成",
+      "pct": 9.97,
+      "concepts": [
+        "光模块",
+        "AI",
+        "算力"
+      ]
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 32,
+      "active_days": 8,
+      "heat_score": 256,
+      "leaders": [
+        {
+          "ticker": "SZ300399",
+          "name": "天利科技",
+          "pct": 12.24,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ002425",
+          "name": "凯撒文化",
+          "pct": 10.09,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ000536",
+          "name": "华映科技",
+          "pct": 10,
+          "concepts": [
+            "光学光电子",
+            "电子",
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ002181",
+          "name": "粤 传 媒",
+          "pct": 9.99,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ000158",
+          "name": "常山北明",
+          "pct": 9.98,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ003005",
+          "name": "竞业达",
+          "pct": 9.98,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SH600410",
+          "name": "华胜天成",
+          "pct": 9.97,
+          "concepts": [
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 11,
+      "active_days": 6,
+      "heat_score": 66,
+      "leaders": [
+        {
+          "ticker": "SH600410",
+          "name": "华胜天成",
+          "pct": 9.97,
+          "concepts": [
+            "光模块",
+            "AI",
+            "算力"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 2,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": [
+        {
+          "ticker": "SZ000536",
+          "name": "华映科技",
+          "pct": 10,
+          "concepts": [
+            "光学光电子",
+            "电子",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": [
+        {
+          "ticker": "SH603207",
+          "name": "小方制药",
+          "pct": 10,
+          "concepts": [
+            "化学制药"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "固态电池",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": [
+        {
+          "ticker": "SZ300530",
+          "name": "领湃科技",
+          "pct": 11.14,
+          "concepts": [
+            "固态电池"
+          ]
+        },
+        {
+          "ticker": "SZ002882",
+          "name": "金龙羽",
+          "pct": 10,
+          "concepts": [
+            "固态电池"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "中药",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "工业金属",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "PTFE",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SH600551",
+      "name": "时代出版",
+      "last_seen": "2026-09-01",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 33.14,
+      "trend_days": 5
+    },
+    {
+      "ticker": "SH603533",
+      "name": "掌阅科技",
+      "last_seen": "2026-09-01",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 22.84,
+      "trend_days": 8
+    },
+    {
+      "ticker": "SH605162",
+      "name": "新中港",
+      "last_seen": "2026-09-01",
+      "shared_concepts": [
+        "算力"
+      ],
+      "trend_pct": 22.42,
+      "trend_days": 8
+    },
+    {
+      "ticker": "SZ300624",
+      "name": "万兴科技",
+      "last_seen": "2026-09-01",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 21.22,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SH601595",
+      "name": "上海电影",
+      "last_seen": "2026-09-01",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 20.39,
+      "trend_days": 8
+    },
+    {
+      "ticker": "SH603596",
+      "name": "伯特利",
+      "last_seen": "2026-09-01",
+      "shared_concepts": [
+        "电子"
+      ],
+      "trend_pct": 20.08,
+      "trend_days": 13
+    }
+  ]
+}
