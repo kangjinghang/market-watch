@@ -30,13 +30,42 @@ python3 reports/remote/remote.py status --date <可疑日期>   # 看 market-wat
 
 ## 0. 铁律（今天踩的坑，永不再犯）
 
-1. **不要另造重跑脚本**。补跑 / 重跑 = 直接 `remote.py run <日期>`。它后台拉起 `run_market_watch.cmd`，走的是和每晚定时任务**完全相同**的、已验证的生产路径。任何自己写 `Win32_Process.Create` 拉 `snapshot.py` 半截的做法，都绕开了生产路径、且日志落盘不可靠。
+1. **不要另造重跑脚本**。补跑 / 重跑 = 直接 `remote.py run <日期>`。它后台拉起 `run_market_watch.cmd`，走的是和**每个工作日定时任务**完全相同（周一~周五 19:00，见附录）的、已验证的生产路径。任何自己写 `Win32_Process.Create` 拉 `snapshot.py` 半截的做法，都绕开了生产路径、且日志落盘不可靠。
 2. **日志只在 `market-watch.log`**。snapshot/diff/candidates/build 全部 `>> market-watch.log 2>&1`。不要去查 `scan_live_*.log` / `scan*.log` 这些不存在/过时的文件名（早期 `rerun-scan` 残留命名，已废弃）。
 3. **先看日志，别猜 CPU/进程**。排错第一动作永远是 `status`（它 dump `market-watch.log` 尾部），不是 `Get-CimInstance` 看进程 CPU。
 4. **token 由用户保证最新**：`set-token` 纯写 `.env`，不 probe。要验证就单独 `probe`（只读）。
 5. **路径无空格就不套引号**（`Win32_Process.Create` 的 CommandLine）；cmd 重定向 `>>` 前必须有空格。
 6. **上传到 Windows 的 `.cmd`/`.bat` 必须是 CRLF 行尾**。`git pull` 已被 `.gitattributes`(`*.cmd text eol=crlf`) 保成 CRLF，但**手动 `scp` 覆盖服务器 .cmd 时仍必须先在本地转 CRLF**（否则 cmd.exe 解析错乱：注释行 `::` 被当命令执行、变量展开崩、整段脚本废掉）。转法：`python3 -c "open(f).read().replace('\n','\r\n')"` 后 scp。
 7. **改完 `remote.py` 也要验**：至少 `python3 reports/remote/remote.py --help` 确认无 SyntaxError/Warning；改了子命令逻辑再 `python3 -c "import ast; ast.parse(open('reports/remote/remote.py').read())"` 静态校验。今天曾因 docstring 里 `\w` 非 raw 字符串触发 SyntaxWarning 未察觉。
+8. **`git push` 被拒是常态，不是故障**。服务器每个工作日自动 commit 数据（主控仓 `data: <日期>`、站点仓 `data: <日期>`），本地过一夜必然落后 origin。遇到 `rejected / non-fast-forward` 直接 `git pull --rebase` 再 push，别怀疑、别回滚。
+9. **盘中绝不能 `run` 当天日期**。A股 09:30 开盘、15:00 收盘，定时任务设在 19:00（收盘后 4 小时）就是为了让数据齐全。刚开盘/盘中手动 `remote.py run <今天>` 会抓半截数据，直接污染当日产物——**当天数据一律等 19:00 定时任务自动跑**。补跑只用于"过去的日期"。
+
+---
+
+## 0.5 日常巡检（每天早上第一件事）
+
+用户每天会问"检查昨天任务情况"。标准化动作就两步，别自由发挥：
+
+```bash
+# 1) 查昨天（或指定日期）完成情况
+python3 reports/remote/remote.py status --date <昨天日期>
+
+# 2) 若近期日期不确定，批量扫一遍
+for d in 2026-08-27 2026-08-28 2026-08-31; do
+  echo "=== $d ==="
+  python3 reports/remote/remote.py status --date $d | grep -iE "done|Skip|FAILED|MISSING|Clean|Uncommitted"
+done
+```
+
+**判读标准**：
+- 日志出现 `===== market-watch done (target=<日期>) =====` → ✅ 该日成功
+- 出现 `Skip: <日期> data already exists` → ✅ 幂等跳过（数据已有，正常）
+- 双仓 `Clean` + `Behind origin: 0` → ✅ 推送完整
+- `daily MISSING` + 当天是**周末/节假日** → ✅ **正常**（A股休市，任务不触发，见附录）
+- `daily MISSING` + 当天是**工作日** → ❌ 真缺失，走 §1 补跑
+- `Uncommitted: N files` → ⚠️ 有产物没提交，见 §5 决策树对应分支
+
+**不要**因为周末没数据就跑去排查——那是设计如此。
 
 ---
 
@@ -108,9 +137,28 @@ status 显示 scan FAILED / 400016
         ├─ push 被拒(rejected/non-fast-forward) → 本地/服务器 git pull --rebase 合入再 push
         │     （run_market_watch.cmd 的 push 段已有 pull --rebase 重试兜底，此支多发生于
         │      手动 git 操作或极端 rebase 冲突；冲突需人工解决后重跑）
+        ├─ status 显示 Uncommitted: N files（产物没提交） → 见下方"未提交改动"专段
         ├─ snapshot.py 语法错误 → 本地修 snapshot.py（只许 ASCII 注释）→ push → run 重跑
         ├─ 进程卡死无进展 → kill-scan → run 重跑
 ```
+
+**"未提交改动"专段**（`status` 显示 `Uncommitted: N files`）：
+
+先查是哪个文件，再决定补提交还是修脚本：
+```bash
+ssh quant-server "cmd /c \"cd /d C:\workspace\trend-trading-agents && git status --short\""
+```
+- 若是 `data/watchlist/derived/*.json`（如 `fitness-history.json`）→ 说明 build 产出的派生数据
+  没被 push。**已于 2026-08-26 修复**：`run_market_watch.cmd` 在 build 之后补了一段
+  `Main repo derived data push`（此前 main push 在 build 之前执行，所以 build 更新的派生
+  文件永远漏提交）。若修复后又出现，先手动补提交，再查是否新增了别的派生产物：
+  ```bash
+  ssh quant-server "cmd /c \"cd /d C:\workspace\trend-trading-agents && git add data\\ && git commit -m 'data: <日期> derived' && git push\""
+  ```
+- 若是脚本文件（`.cmd`/`.py`/`.ps1`）→ 有人/有流程在服务器上直接改了文件没提交，
+  违反"git 仓唯一源"。先确认改动是否有价值：有用就提交，是调试残留就
+  `git checkout -- <file>` 丢弃。
+- ⚠️ 工作区不干净会让下次 `git pull --rebase` 失败 → 定时任务连锁崩，务必当天清掉。
 > **关于"生产前门禁"**：`run_market_watch.cmd` 里的 `npm run verify` 自检门禁**已于
 > 2026-08-25 暂禁用**——它依赖 `WATCHLIST_DIR` 环境变量跨 powershell→npm→node 三层传递，
 > Windows 上不可靠（`diff-cli` 读不到临时假 raw，永远 FAIL）。改代码时的质量保障改由
@@ -139,12 +187,23 @@ status 显示 scan FAILED / 400016
 改 `run_market_watch.cmd` 调度逻辑后，**必须先本地验证再上生产**（历史教训：连续两次线上 FAILED）：
 
 ```bash
-# ⚠️ 以下两条 npm 命令必须在【主控仓 trend-trading-agents】目录执行，
-#    站点仓 market-watch 没有这些 script，在站点仓跑会报 "Missing script"。
-cd /workspace/trend-trading-agents   # 或本地对应路径
-npm test                              # pipeline-check 单测+集成测试
-npm run verify                        # 管线调度逻辑孪生冒烟（bash verify_pipeline.sh，假 raw 跑真实 diff/candidates/build）
+# ⚠️ 以下 npm 命令必须在【主控仓 trend-trading-agents】目录执行，
+#    站点仓 market-watch 没有 package.json 的这些 script，在站点仓跑会报 "Missing script"。
+cd /path/to/trend-trading-agents     # 服务器 C:\workspace\trend-trading-agents；本地 ~/workspace/github/trend-trading-agents
+
+npm run verify                        # ① 管线调度冒烟（bash verify_pipeline.sh，假 raw 跑真实 diff/candidates/build）
+npm run typecheck                     # ② tsc --noEmit 类型检查
+npm run lint                          # ③ eslint src/
+npx vitest run                        # ④ 单测（主控仓没有 test script，只有 test:watch/coverage，须直接调 vitest）
 ```
+
+> ❌ **注意主控仓没有 `npm test` 这个 script**（2026-09-01 核实：只有
+> `test:watch`/`coverage`/`lint`/`typecheck`/`diff`/`candidates`/`build:report`/`verify`）。
+> 别再写 `npm test`，会报 Missing script。要跑单测用 `npx vitest run`。
+>
+> 💡 实际最常用的只有 ①`npm run verify`（改调度逻辑后必跑）。主控仓配了 husky
+> `prepare`，`git commit` 时会自动跑 verify（git 自带 bash，Windows 上能通，
+> 日志里看到 `[verify] PIPELINE_OK` 就是它）—— 所以**提交即验证**，这是最省事的保障。
 
 > **注意**：`run_market_watch.cmd` 的 `--verify` 模式**已于 2026-08-25 删除**——
 > 它是 `npm run verify`(bash) 的冗余 Windows 重写且已写坏。不要再在服务器跑
@@ -175,6 +234,27 @@ ssh quant-server 'cmd /c "C:\workspace\market-watch\reports\remote\run_market_wa
 > **血泪**：曾 scp 直接覆盖服务器 .cmd（忘了转 CRLF）+ 没让服务器 pull 正式版，
 > 导致服务器工作区既有"未提交 scp 改动"又落后 origin， `git pull` 失败。
 > 现在一律走"本地 commit → push → 服务器 git pull"正规链路，禁用 scp 覆盖生产脚本。
+
+### 若改的是主控仓（trend-trading-agents）的文件
+
+主控仓文件（`snapshot.py`、`verify_pipeline.ps1`、`dist/*.js` 等）也要同步，否则服务器跑的还是旧版：
+
+```bash
+# 1) 判断 dist 是否需要重建：改了 src/*.ts 必须 build，否则服务器跑的仍是旧 dist
+cd /path/to/trend-trading-agents && npm run build    # 生成 dist/*.js（若改的是 TS）
+
+# 2) 本地 commit + push
+git add <改动文件> && git commit -m "..." && git push
+#    git commit 会自动触发 husky pre-commit 跑 npm run verify（见 §7 上方提示）
+
+# 3) 服务器主控仓拉取 + 确认干净
+ssh quant-server "cmd /c \"cd /d C:\workspace\trend-trading-agents && git pull --quiet && git status --short\""
+#    ⚠️ 主控仓每天自动 commit 数据，本地几乎必然落后 → push 被拒就 git pull --rebase 再 push（铁律 8）
+
+# 4) 冒烟：服务器主控仓跑一次 verify（确认管线在服务器环境通）
+ssh quant-server "cmd /c \"cd /d C:\workspace\trend-trading-agents && npm run verify\""
+#    → 期望 [verify] PIPELINE_OK
+```
 
 ---
 
