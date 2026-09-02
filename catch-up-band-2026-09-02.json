@@ -1,0 +1,310 @@
+{
+  "date": "2026-09-02",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SH600892",
+      "name": "大晟文化",
+      "pct": 10.08,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH600967",
+      "name": "内蒙一机",
+      "pct": 10.01,
+      "concepts": [
+        "军工"
+      ]
+    },
+    {
+      "ticker": "SZ000628",
+      "name": "高新发展",
+      "pct": 10,
+      "concepts": [
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SH601606",
+      "name": "长城军工",
+      "pct": 10,
+      "concepts": [
+        "军工"
+      ]
+    },
+    {
+      "ticker": "SH605118",
+      "name": "力鼎光电",
+      "pct": 10,
+      "concepts": [
+        "覆铜板",
+        "计算机",
+        "PCB"
+      ]
+    },
+    {
+      "ticker": "SZ000852",
+      "name": "石化机械",
+      "pct": 9.98,
+      "concepts": [
+        "电网设备"
+      ]
+    },
+    {
+      "ticker": "SH600830",
+      "name": "香溢融通",
+      "pct": 9.97,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 32,
+      "active_days": 8,
+      "heat_score": 256,
+      "leaders": [
+        {
+          "ticker": "SH600892",
+          "name": "大晟文化",
+          "pct": 10.08,
+          "concepts": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 10,
+      "active_days": 5,
+      "heat_score": 50,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": [
+        {
+          "ticker": "SZ000628",
+          "name": "高新发展",
+          "pct": 10,
+          "concepts": [
+            "PCB"
+          ]
+        },
+        {
+          "ticker": "SH605118",
+          "name": "力鼎光电",
+          "pct": 10,
+          "concepts": [
+            "覆铜板",
+            "计算机",
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 6,
+      "active_days": 5,
+      "heat_score": 30,
+      "leaders": [
+        {
+          "ticker": "SZ000852",
+          "name": "石化机械",
+          "pct": 9.98,
+          "concepts": [
+            "电网设备"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 2,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "军工",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SH600967",
+          "name": "内蒙一机",
+          "pct": 10.01,
+          "concepts": [
+            "军工"
+          ]
+        },
+        {
+          "ticker": "SH601606",
+          "name": "长城军工",
+          "pct": 10,
+          "concepts": [
+            "军工"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 3,
+      "active_days": 3,
+      "heat_score": 9,
+      "leaders": []
+    },
+    {
+      "concept": "固态电池",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "计算机",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": [
+        {
+          "ticker": "SH605118",
+          "name": "力鼎光电",
+          "pct": 10,
+          "concepts": [
+            "覆铜板",
+            "计算机",
+            "PCB"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "通信",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "中药",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "工业金属",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "PTFE",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": [
+    {
+      "ticker": "SZ002811",
+      "name": "郑中设计",
+      "last_seen": "2026-09-02",
+      "shared_concepts": [
+        "AI",
+        "PCB"
+      ],
+      "trend_pct": 59.26,
+      "trend_days": 42
+    },
+    {
+      "ticker": "SH603016",
+      "name": "新宏泰",
+      "last_seen": "2026-09-02",
+      "shared_concepts": [
+        "AI",
+        "电网设备"
+      ],
+      "trend_pct": 22.18,
+      "trend_days": 6
+    },
+    {
+      "ticker": "SZ002181",
+      "name": "粤 传 媒",
+      "last_seen": "2026-09-02",
+      "shared_concepts": [
+        "AI"
+      ],
+      "trend_pct": 21.41,
+      "trend_days": 9
+    }
+  ]
+}

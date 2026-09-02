@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-09-01",
-  "total_deaths": 1155,
+  "date_range": "2026-06-16 ~ 2026-09-02",
+  "total_deaths": 1211,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 35,
+    "高位回落": 38,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1115
+    "自然退潮": 1168
   },
   "recent_deaths": [
     {
@@ -28,6 +28,17 @@
       "last_pct": 25.27,
       "last_days": 7,
       "appearances": 6,
+      "pattern": "自然退潮",
+      "events": []
+    },
+    {
+      "ticker": "SZ002827",
+      "name": "高争民爆",
+      "death_date": "2026-09-01",
+      "peak_pct": 171.49,
+      "last_pct": 16.11,
+      "last_days": 7,
+      "appearances": 10,
       "pattern": "自然退潮",
       "events": []
     },
@@ -121,17 +132,6 @@
       "last_pct": 21.86,
       "last_days": 4,
       "appearances": 6,
-      "pattern": "自然退潮",
-      "events": []
-    },
-    {
-      "ticker": "SZ000506",
-      "name": "招金黄金",
-      "death_date": "2026-08-24",
-      "peak_pct": 100.36,
-      "last_pct": 100.36,
-      "last_days": 35,
-      "appearances": 7,
       "pattern": "自然退潮",
       "events": []
     },

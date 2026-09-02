@@ -1,85 +1,45 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "sector_surge",
-      "label": "商贸零售",
-      "today": 9,
-      "avg": 1.5,
-      "deviation": 5,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "食品饮料",
-      "today": 6,
-      "avg": 1.3,
-      "deviation": 3.8,
+      "label": "银行",
+      "today": 4,
+      "avg": 1.1,
+      "deviation": 2.56,
       "severity": "high"
     },
     {
       "type": "sector_surge",
       "label": "国防军工",
-      "today": 8,
-      "avg": 2,
-      "deviation": 3,
-      "severity": "high"
+      "today": 11,
+      "avg": 3.8,
+      "deviation": 1.93,
+      "severity": "medium"
     },
     {
       "type": "sector_surge",
-      "label": "农林牧渔",
-      "today": 9,
-      "avg": 2.6,
-      "deviation": 2.52,
-      "severity": "high"
+      "label": "电力设备",
+      "today": 3,
+      "avg": 1.2,
+      "deviation": 1.57,
+      "severity": "medium"
     },
     {
       "type": "sector_surge",
-      "label": "计算机",
-      "today": 9,
-      "avg": 2.9,
-      "deviation": 2.15,
-      "severity": "high"
+      "label": "汽车",
+      "today": 5,
+      "avg": 2.4,
+      "deviation": 1.05,
+      "severity": "medium"
     },
     {
       "type": "density_shift",
       "label": "异动密度",
-      "today": 121,
-      "avg": 41,
-      "deviation": 1.97,
-      "severity": "high"
-    },
-    {
-      "type": "sector_surge",
-      "label": "建筑装饰",
-      "today": 4,
-      "avg": 1.6,
-      "deviation": 1.55,
-      "severity": "medium"
-    },
-    {
-      "type": "sector_surge",
-      "label": "基础化工",
-      "today": 8,
-      "avg": 3.3,
-      "deviation": 1.46,
-      "severity": "medium"
-    },
-    {
-      "type": "sector_surge",
-      "label": "家用电器",
-      "today": 3,
-      "avg": 1.3,
-      "deviation": 1.4,
-      "severity": "medium"
-    },
-    {
-      "type": "sector_surge",
-      "label": "社会服务",
-      "today": 5,
-      "avg": 2.3,
-      "deviation": 1.22,
+      "today": 70,
+      "avg": 50,
+      "deviation": 0.39,
       "severity": "medium"
     }
   ]

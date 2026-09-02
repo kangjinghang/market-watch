@@ -1,0 +1,70 @@
+{
+  "date": "2026-09-02",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH601998",
+      "name": "中信银行",
+      "streak": 7,
+      "first_date": "2026-08-20",
+      "last_date": "2026-09-02",
+      "total_pct": 18.77
+    },
+    {
+      "ticker": "SH603269",
+      "name": "海鸥股份",
+      "streak": 4,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-02",
+      "total_pct": 56.72
+    },
+    {
+      "ticker": "SZ000558",
+      "name": "天府文旅",
+      "streak": 4,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-02",
+      "total_pct": 14.5
+    },
+    {
+      "ticker": "SZ003005",
+      "name": "竞业达",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-02",
+      "total_pct": 50.04
+    },
+    {
+      "ticker": "SH601086",
+      "name": "国芳集团",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-02",
+      "total_pct": 49.19
+    },
+    {
+      "ticker": "SH688552",
+      "name": "航天南湖",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-02",
+      "total_pct": 25.28
+    },
+    {
+      "ticker": "SZ000731",
+      "name": "四川美丰",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-02",
+      "total_pct": 18.2
+    },
+    {
+      "ticker": "SZ300859",
+      "name": "西域旅游",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-02",
+      "total_pct": 12.21
+    }
+  ]
+}
