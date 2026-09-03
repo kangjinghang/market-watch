@@ -1,0 +1,243 @@
+{
+  "date": "2026-09-03",
+  "lookback_days": 10,
+  "leaders": [
+    {
+      "ticker": "SZ300830",
+      "name": "金现代",
+      "pct": 19.98,
+      "concepts": [
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SZ300400",
+      "name": "劲拓股份",
+      "pct": 13.45,
+      "concepts": [
+        "自动化设备",
+        "AI"
+      ]
+    },
+    {
+      "ticker": "SH600611",
+      "name": "大众交通",
+      "pct": 10.04,
+      "concepts": []
+    },
+    {
+      "ticker": "SH603150",
+      "name": "万朗磁塑",
+      "pct": 10,
+      "concepts": [
+        "证券"
+      ]
+    },
+    {
+      "ticker": "SH603162",
+      "name": "海通发展",
+      "pct": 10,
+      "concepts": []
+    },
+    {
+      "ticker": "SZ002403",
+      "name": "爱仕达",
+      "pct": 9.98,
+      "concepts": [
+        "机器人"
+      ]
+    },
+    {
+      "ticker": "SH600703",
+      "name": "三安光电",
+      "pct": 9.98,
+      "concepts": []
+    }
+  ],
+  "hot_concepts": [
+    {
+      "concept": "AI",
+      "leader_count": 34,
+      "active_days": 9,
+      "heat_score": 306,
+      "leaders": [
+        {
+          "ticker": "SZ300830",
+          "name": "金现代",
+          "pct": 19.98,
+          "concepts": [
+            "AI"
+          ]
+        },
+        {
+          "ticker": "SZ300400",
+          "name": "劲拓股份",
+          "pct": 13.45,
+          "concepts": [
+            "自动化设备",
+            "AI"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "算力",
+      "leader_count": 10,
+      "active_days": 5,
+      "heat_score": 50,
+      "leaders": []
+    },
+    {
+      "concept": "PCB",
+      "leader_count": 8,
+      "active_days": 4,
+      "heat_score": 32,
+      "leaders": []
+    },
+    {
+      "concept": "电网设备",
+      "leader_count": 6,
+      "active_days": 5,
+      "heat_score": 30,
+      "leaders": []
+    },
+    {
+      "concept": "创新药",
+      "leader_count": 12,
+      "active_days": 2,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "电子",
+      "leader_count": 6,
+      "active_days": 4,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "液冷",
+      "leader_count": 8,
+      "active_days": 3,
+      "heat_score": 24,
+      "leaders": []
+    },
+    {
+      "concept": "化学制药",
+      "leader_count": 5,
+      "active_days": 4,
+      "heat_score": 20,
+      "leaders": []
+    },
+    {
+      "concept": "半导体",
+      "leader_count": 6,
+      "active_days": 3,
+      "heat_score": 18,
+      "leaders": []
+    },
+    {
+      "concept": "机器人",
+      "leader_count": 4,
+      "active_days": 4,
+      "heat_score": 16,
+      "leaders": [
+        {
+          "ticker": "SZ002403",
+          "name": "爱仕达",
+          "pct": 9.98,
+          "concepts": [
+            "机器人"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "军工",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": []
+    },
+    {
+      "concept": "证券",
+      "leader_count": 4,
+      "active_days": 3,
+      "heat_score": 12,
+      "leaders": [
+        {
+          "ticker": "SH603150",
+          "name": "万朗磁塑",
+          "pct": 10,
+          "concepts": [
+            "证券"
+          ]
+        }
+      ]
+    },
+    {
+      "concept": "CPO",
+      "leader_count": 5,
+      "active_days": 2,
+      "heat_score": 10,
+      "leaders": []
+    },
+    {
+      "concept": "固态电池",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "消费电子",
+      "leader_count": 3,
+      "active_days": 2,
+      "heat_score": 6,
+      "leaders": []
+    },
+    {
+      "concept": "计算机",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "通信",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "房地产",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "中药",
+      "leader_count": 2,
+      "active_days": 2,
+      "heat_score": 4,
+      "leaders": []
+    },
+    {
+      "concept": "工业金属",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    },
+    {
+      "concept": "PTFE",
+      "leader_count": 2,
+      "active_days": 1,
+      "heat_score": 2,
+      "leaders": []
+    }
+  ],
+  "catchup_candidates": []
+}

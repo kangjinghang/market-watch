@@ -1,12 +1,12 @@
 {
-  "date_range": "2026-06-16 ~ 2026-09-02",
-  "total_deaths": 1211,
+  "date_range": "2026-06-16 ~ 2026-09-03",
+  "total_deaths": 1237,
   "patterns": {
     "闪崩": 0,
-    "高位回落": 38,
+    "高位回落": 37,
     "利空事件": 2,
     "利空+下跌": 3,
-    "自然退潮": 1168
+    "自然退潮": 1195
   },
   "recent_deaths": [
     {
@@ -107,20 +107,38 @@
       ]
     },
     {
-      "ticker": "SH688356",
-      "name": "键凯科技",
-      "death_date": "2026-08-25",
-      "peak_pct": 113.83,
-      "last_pct": 113.83,
-      "last_days": 22,
-      "appearances": 3,
+      "ticker": "SZ003040",
+      "name": "楚天龙",
+      "death_date": "2026-09-02",
+      "peak_pct": 112.26,
+      "last_pct": 112.26,
+      "last_days": 47,
+      "appearances": 10,
       "pattern": "自然退潮",
       "events": [
         {
-          "description": "键凯科技2026-08-20收盘价89.45元，涨幅20.00%",
-          "timestamp": 1787155200000,
-          "reason": "创新药/疫苗板块受海外mRNA肿瘤疫苗III期成功消息刺激，板块集体高开，键凯科技作为LNP递送材料核心供应商受市场追捧。",
-          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-6cfef914-d7a9-414d-b8f2-d468b7eabfe5&navBarTransparent=1&navBarTheme=dark"
+          "description": "楚天龙2026-07-27收盘价10.50元，涨幅4.17%",
+          "timestamp": 1785081600000,
+          "reason": "PCB概念板块走强，AI算力需求带动高端PCB涨价预期",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d48833a4-4023-4040-976b-9b5c0302ddff&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "楚天龙2026-08-06收盘价12.46元，涨幅9.97%",
+          "timestamp": 1785945600000,
+          "reason": "所属【数字货币概念】板块受政策利好驱动集体活跃",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-d0617f9b-ec78-4e5f-a098-f5c770fe236f&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "楚天龙2026-08-07收盘价13.10元，涨幅5.14%",
+          "timestamp": 1786032000000,
+          "reason": "所属通信设备板块受6G及PCB概念驱动，市场传闻英伟达寻求基站厂商合作开发6G基站，提振板块情绪。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-7aced90d-1a7d-4c7d-af5c-138640ac1d59&navBarTransparent=1&navBarTheme=dark"
+        },
+        {
+          "description": "楚天龙2026-08-25收盘价15.48元，涨幅10.02%",
+          "timestamp": 1787587200000,
+          "reason": "所属数字货币概念板块因行业政策利好持续活跃，带动个股连续涨停。",
+          "url": "https://ai.xueqiu.com/ai/seekball/chat?shareId=s-10673342-d3a0-4b17-8a69-fd73abd1e6d4&navBarTransparent=1&navBarTheme=dark"
         }
       ]
     },

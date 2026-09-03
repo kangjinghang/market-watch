@@ -1,8 +1,8 @@
 {
-  "date_range": "2026-03-05 ~ 2026-09-01",
-  "total_reasons": 3904,
+  "date_range": "2026-03-05 ~ 2026-09-02",
+  "total_reasons": 3928,
   "total_concepts": 72,
-  "total_pairs": 202,
+  "total_pairs": 203,
   "nodes": [
     {
       "id": "半导体",
@@ -11,7 +11,7 @@
     },
     {
       "id": "AI",
-      "count": 473,
+      "count": 475,
       "type": "technology"
     },
     {
@@ -21,12 +21,12 @@
     },
     {
       "id": "创新药",
-      "count": 296,
+      "count": 298,
       "type": "sector"
     },
     {
       "id": "PCB",
-      "count": 247,
+      "count": 249,
       "type": "technology"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
       "id": "机器人",
-      "count": 123,
+      "count": 124,
       "type": "sector"
     },
     {
@@ -86,17 +86,17 @@
     },
     {
       "id": "人形机器人",
+      "count": 51,
+      "type": "sector"
+    },
+    {
+      "id": "中药",
       "count": 50,
       "type": "sector"
     },
     {
       "id": "专用设备",
       "count": 49,
-      "type": "sector"
-    },
-    {
-      "id": "中药",
-      "count": 48,
       "type": "sector"
     },
     {
@@ -116,7 +116,12 @@
     },
     {
       "id": "覆铜板",
-      "count": 45,
+      "count": 46,
+      "type": "sector"
+    },
+    {
+      "id": "证券",
+      "count": 44,
       "type": "sector"
     },
     {
@@ -125,13 +130,8 @@
       "type": "sector"
     },
     {
-      "id": "证券",
-      "count": 43,
-      "type": "sector"
-    },
-    {
       "id": "军工",
-      "count": 42,
+      "count": 43,
       "type": "sector"
     },
     {
@@ -220,12 +220,12 @@
       "type": "sector"
     },
     {
-      "id": "自动化设备",
-      "count": 18,
+      "id": "房地产",
+      "count": 19,
       "type": "sector"
     },
     {
-      "id": "房地产",
+      "id": "自动化设备",
       "count": 18,
       "type": "sector"
     },
@@ -260,13 +260,13 @@
       "type": "technology"
     },
     {
-      "id": "银行",
+      "id": "白酒",
       "count": 16,
       "type": "sector"
     },
     {
-      "id": "白酒",
-      "count": 15,
+      "id": "银行",
+      "count": 16,
       "type": "sector"
     },
     {
@@ -305,6 +305,11 @@
       "type": "sector"
     },
     {
+      "id": "计算机",
+      "count": 8,
+      "type": "sector"
+    },
+    {
       "id": "锂电池",
       "count": 8,
       "type": "sector"
@@ -315,13 +320,8 @@
       "type": "sector"
     },
     {
-      "id": "计算机",
-      "count": 7,
-      "type": "sector"
-    },
-    {
       "id": "煤炭",
-      "count": 7,
+      "count": 8,
       "type": "sector"
     },
     {
@@ -399,12 +399,12 @@
     {
       "source": "AI",
       "target": "PCB",
-      "weight": 64
+      "weight": 65
     },
     {
       "source": "人形机器人",
       "target": "机器人",
-      "weight": 50
+      "weight": 51
     },
     {
       "source": "光学光电子",
@@ -452,6 +452,11 @@
       "weight": 26
     },
     {
+      "source": "PCB",
+      "target": "覆铜板",
+      "weight": 24
+    },
+    {
       "source": "消费电子",
       "target": "电子",
       "weight": 24
@@ -460,11 +465,6 @@
       "source": "电子",
       "target": "电子布",
       "weight": 24
-    },
-    {
-      "source": "PCB",
-      "target": "覆铜板",
-      "weight": 23
     },
     {
       "source": "AI",
@@ -502,6 +502,11 @@
       "weight": 19
     },
     {
+      "source": "中药",
+      "target": "创新药",
+      "weight": 19
+    },
+    {
       "source": "军工",
       "target": "半导体",
       "weight": 18
@@ -509,11 +514,6 @@
     {
       "source": "半导体材料",
       "target": "电子特气",
-      "weight": 18
-    },
-    {
-      "source": "中药",
-      "target": "创新药",
       "weight": 18
     },
     {
@@ -1017,6 +1017,11 @@
       "weight": 4
     },
     {
+      "source": "PCB",
+      "target": "计算机",
+      "weight": 4
+    },
+    {
       "source": "液冷",
       "target": "电子",
       "weight": 3
@@ -1134,11 +1139,6 @@
     {
       "source": "半导体",
       "target": "自动化设备",
-      "weight": 3
-    },
-    {
-      "source": "PCB",
-      "target": "计算机",
       "weight": 3
     },
     {
@@ -1374,6 +1374,11 @@
     {
       "source": "PCB",
       "target": "电子特气",
+      "weight": 2
+    },
+    {
+      "source": "覆铜板",
+      "target": "计算机",
       "weight": 2
     }
   ]

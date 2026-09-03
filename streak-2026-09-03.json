@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-03",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH603269",
+      "name": "海鸥股份",
+      "streak": 5,
+      "first_date": "2026-08-28",
+      "last_date": "2026-09-03",
+      "total_pct": 57.44
+    },
+    {
+      "ticker": "SH601086",
+      "name": "国芳集团",
+      "streak": 4,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-03",
+      "total_pct": 64.11
+    },
+    {
+      "ticker": "SZ000731",
+      "name": "四川美丰",
+      "streak": 4,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-03",
+      "total_pct": 20.75
+    },
+    {
+      "ticker": "SH600121",
+      "name": "郑州煤电",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-03",
+      "total_pct": 43.32
+    },
+    {
+      "ticker": "SH603983",
+      "name": "丸美生物",
+      "streak": 3,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-03",
+      "total_pct": 24.85
+    },
+    {
+      "ticker": "SZ300145",
+      "name": "南方泵业",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-03",
+      "total_pct": 23.1
+    },
+    {
+      "ticker": "SH601579",
+      "name": "会稽山",
+      "streak": 3,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-03",
+      "total_pct": 17.26
+    }
+  ]
+}
