@@ -1,0 +1,118 @@
+{
+  "date": "2026-09-04",
+  "min_streak": 3,
+  "entries": [
+    {
+      "ticker": "SH601998",
+      "name": "中信银行",
+      "streak": 8,
+      "first_date": "2026-08-20",
+      "last_date": "2026-09-04",
+      "total_pct": 19.17
+    },
+    {
+      "ticker": "SZ000731",
+      "name": "四川美丰",
+      "streak": 5,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-04",
+      "total_pct": 21.23
+    },
+    {
+      "ticker": "SH601579",
+      "name": "会稽山",
+      "streak": 4,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-04",
+      "total_pct": 24.52
+    },
+    {
+      "ticker": "SH600547",
+      "name": "山东黄金",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-04",
+      "total_pct": 59.96
+    },
+    {
+      "ticker": "SZ002514",
+      "name": "*ST宝馨",
+      "streak": 3,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-04",
+      "total_pct": 54.27
+    },
+    {
+      "ticker": "SZ000892",
+      "name": "欢瑞世纪",
+      "streak": 3,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-04",
+      "total_pct": 53.15
+    },
+    {
+      "ticker": "SH605398",
+      "name": "新炬网络",
+      "streak": 3,
+      "first_date": "2026-09-02",
+      "last_date": "2026-09-04",
+      "total_pct": 34.24
+    },
+    {
+      "ticker": "SH600865",
+      "name": "百大集团",
+      "streak": 3,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-04",
+      "total_pct": 33.37
+    },
+    {
+      "ticker": "SZ002789",
+      "name": "*ST建艺",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-04",
+      "total_pct": 32.23
+    },
+    {
+      "ticker": "SZ300860",
+      "name": "锋尚文化",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-04",
+      "total_pct": 30.54
+    },
+    {
+      "ticker": "SH603976",
+      "name": "正川股份",
+      "streak": 3,
+      "first_date": "2026-09-02",
+      "last_date": "2026-09-04",
+      "total_pct": 29.03
+    },
+    {
+      "ticker": "SH603668",
+      "name": "天马科技",
+      "streak": 3,
+      "first_date": "2026-09-01",
+      "last_date": "2026-09-04",
+      "total_pct": 19.78
+    },
+    {
+      "ticker": "SZ002100",
+      "name": "天康生物",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-04",
+      "total_pct": 17.29
+    },
+    {
+      "ticker": "SZ002214",
+      "name": "*ST大立",
+      "streak": 3,
+      "first_date": "2026-08-31",
+      "last_date": "2026-09-04",
+      "total_pct": 12.12
+    }
+  ]
+}

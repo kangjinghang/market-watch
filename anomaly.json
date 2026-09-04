@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-03",
+  "date": "2026-09-04",
   "lookback_days": 10,
   "anomalies": [
     {
       "type": "sector_surge",
-      "label": "电力设备",
-      "today": 3,
+      "label": "银行",
+      "today": 4,
       "avg": 1.4,
-      "deviation": 1.1,
+      "deviation": 1.91,
       "severity": "medium"
     }
   ]

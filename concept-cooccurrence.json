@@ -1,6 +1,6 @@
 {
-  "date_range": "2026-03-05 ~ 2026-09-02",
-  "total_reasons": 3928,
+  "date_range": "2026-03-05 ~ 2026-09-03",
+  "total_reasons": 3956,
   "total_concepts": 72,
   "total_pairs": 203,
   "nodes": [
@@ -46,7 +46,7 @@
     },
     {
       "id": "机器人",
-      "count": 124,
+      "count": 126,
       "type": "sector"
     },
     {
@@ -120,17 +120,17 @@
       "type": "sector"
     },
     {
+      "id": "军工",
+      "count": 45,
+      "type": "sector"
+    },
+    {
       "id": "证券",
-      "count": 44,
+      "count": 45,
       "type": "sector"
     },
     {
       "id": "光学光电子",
-      "count": 43,
-      "type": "sector"
-    },
-    {
-      "id": "军工",
       "count": 43,
       "type": "sector"
     },
@@ -230,6 +230,11 @@
       "type": "sector"
     },
     {
+      "id": "银行",
+      "count": 18,
+      "type": "sector"
+    },
+    {
       "id": "有色金属",
       "count": 17,
       "type": "sector"
@@ -250,6 +255,11 @@
       "type": "sector"
     },
     {
+      "id": "白酒",
+      "count": 17,
+      "type": "sector"
+    },
+    {
       "id": "TGV",
       "count": 16,
       "type": "technology"
@@ -258,16 +268,6 @@
       "id": "IPO",
       "count": 16,
       "type": "technology"
-    },
-    {
-      "id": "白酒",
-      "count": 16,
-      "type": "sector"
-    },
-    {
-      "id": "银行",
-      "count": 16,
-      "type": "sector"
     },
     {
       "id": "化学制药",
